@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : " / Wuhan University"
+title                    : "Yangyi's Homepage"
 title_separator          : "-"
 name                     : &name "Yangyi Wu (伍杨屹)"
 description              : &description "Assistant Professor, Wuhan University"
