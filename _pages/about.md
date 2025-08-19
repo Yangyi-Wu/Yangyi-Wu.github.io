@@ -16,15 +16,15 @@ Methodologically, I combine **spatial econometrics, network analysis, and multi-
 - **Urban space & public services**: accessibility and equity of green spaces, parks, education, and healthcare facilities.  
 - **Urban resilience & governance**: environmental exposure, infrastructure distribution, and spatial inequalities.
 
-## Opportunities
+## Opportunities & Collaboration
 
 **Students**  
-I am currently recruiting Master’s students interested in urban geography, spatial data analysis, and urban–economic dynamics.  
+- I am currently recruiting Master’s students interested in urban geography, spatial data analysis, and urban–economic dynamics.  
 Looking ahead, I expect to recruit PhD students starting in Fall 2027.  
 
 **Collaboration**  
-I also welcome interdisciplinary collaboration with colleagues in computer science, economics, geography, and urban planning.  
-Please feel free to contact me if you are interested in working together.
+- I also welcome interdisciplinary collaboration with colleagues in computer science, economics, geography, and urban planning.  
+- Please feel free to contact me if you are interested in working together.
 
 ## News
 
