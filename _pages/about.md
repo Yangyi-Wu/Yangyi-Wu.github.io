@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-[中文版本](/zh/)
-
 I am an urban and economic geographer interested in the **interaction between urban spatial structure and economic activities**. My research explores how industrial networks, public services, and infrastructures shape urban equity, innovation, and resilience.
 
 Methodologically, I combine **spatial econometrics, network analysis, and multi-source big data** (such as POIs, human mobility, and remote sensing) to understand the dynamics of urban transformation.

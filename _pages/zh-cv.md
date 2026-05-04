@@ -6,8 +6,6 @@ lang: zh
 author_profile: true
 ---
 
-[English version](/cv/)
-
 个人简介
 ======
 

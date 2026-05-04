@@ -6,8 +6,6 @@ lang: zh
 author_profile: true
 ---
 
-[English version](/talks/)
-
 这里整理近期参与组织的学术会议、分会场以及受邀报告。
 
 ## 会议组织与受邀报告

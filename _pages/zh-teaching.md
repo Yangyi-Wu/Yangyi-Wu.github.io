@@ -6,8 +6,6 @@ lang: zh
 author_profile: true
 ---
 
-[English version](/teaching/)
-
 ## 研究生指导
 
 欢迎对城市地理、空间数据分析和城市经济动态感兴趣的硕士研究生联系。预计自 2027 年秋季起招收博士研究生。

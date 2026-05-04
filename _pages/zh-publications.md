@@ -6,8 +6,6 @@ lang: zh
 author_profile: true
 ---
 
-[English version](/publications/)
-
 本页根据公开 [Google Scholar](https://scholar.google.com/citations?user=Y7KU37UAAAAJ&hl=en) 列表整理，目前收录 32 项成果。
 
 {% include base_path %}

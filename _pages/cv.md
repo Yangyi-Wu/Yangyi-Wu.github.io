@@ -10,8 +10,6 @@ redirect_from:
 
 {% include base_path %}
 
-[中文版本](/zh/cv/)
-
 Profile
 ======
 
