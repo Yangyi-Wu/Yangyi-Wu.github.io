@@ -13,7 +13,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item{% if post.collection == 'publications' and post.visual %} archive__item--publication-rich{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -24,6 +24,19 @@
           {% endif %}
           alt="">
       </div>
+    {% endif %}
+
+    {% if post.collection == 'publications' and post.visual %}
+      {% if page.lang == 'zh' %}
+        {% assign visual_alt = post.visual_alt_zh | default: post.visual_alt_en | default: post.title %}
+      {% else %}
+        {% assign visual_alt = post.visual_alt_en | default: post.visual_alt_zh | default: post.title %}
+      {% endif %}
+      <div class="publication-card">
+        <a class="publication-card__media" href="{{ base_path }}{{ post.url }}" rel="permalink">
+          <img src="{{ post.visual | prepend: base_path }}" alt="{{ visual_alt | escape }}">
+        </a>
+        <div class="publication-card__content">
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
@@ -41,9 +54,17 @@
         {% if page.lang == 'zh' %}
           {% assign published_label = "发表于" %}
           {% assign citation_label = "推荐引用" %}
+          {% assign contribution_label = "核心贡献" %}
+          {% assign highlights_label = "核心亮点" %}
+          {% assign contribution = post.contribution_zh | default: post.contribution_en %}
+          {% assign highlights = post.highlights_zh | default: post.highlights_en %}
         {% else %}
           {% assign published_label = "Published in" %}
           {% assign citation_label = "Recommended citation" %}
+          {% assign contribution_label = "Core contribution" %}
+          {% assign highlights_label = "Highlights" %}
+          {% assign contribution = post.contribution_en | default: post.contribution_zh %}
+          {% assign highlights = post.highlights_en | default: post.highlights_zh %}
         {% endif %}
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
@@ -57,6 +78,21 @@
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    {% endif %}
+
+    {% if post.collection == 'publications' and contribution %}
+      <p class="publication-card__contribution"><strong>{{ contribution_label }}:</strong> {{ contribution }}</p>
+    {% endif %}
+
+    {% if post.collection == 'publications' and highlights %}
+      <div class="publication-card__highlights">
+        <strong>{{ highlights_label }}</strong>
+        <ul>
+          {% for item in highlights %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
     {% endif %}
     
     {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
@@ -85,6 +121,11 @@
       <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% elsif post.bibtexurl %}
       <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    {% endif %}
+
+    {% if post.collection == 'publications' and post.visual %}
+        </div>
+      </div>
     {% endif %}
 
   </article>

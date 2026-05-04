@@ -84,6 +84,71 @@
   }
 }
 
+.archive__item--publication-rich {
+  margin: 1.15em 0 1.6em;
+}
+
+.publication-card {
+  display: grid;
+  gap: 1.15rem;
+  padding: 1rem;
+  border: 1px solid rgba(32, 52, 58, 0.14);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(238, 246, 241, 0.76), rgba(255, 255, 255, 0.94) 42%, rgba(238, 243, 248, 0.82));
+  box-shadow: 0 14px 38px rgba(32, 52, 58, 0.08);
+
+  @include breakpoint($medium) {
+    grid-template-columns: minmax(220px, 34%) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+.publication-card__media {
+  display: block;
+  text-decoration: none !important;
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid rgba(32, 52, 58, 0.12);
+    background: #eef6f1;
+  }
+}
+
+.publication-card__content {
+  min-width: 0;
+
+  .archive__item-title {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 0.7em;
+  }
+}
+
+.publication-card__contribution {
+  color: var(--global-text-color);
+}
+
+.publication-card__highlights {
+  margin: 0.7em 0 0.85em;
+  font-size: $type-size-6;
+
+  ul {
+    margin: 0.35em 0 0;
+    padding-left: 1.1em;
+  }
+
+  li {
+    margin-bottom: 0.25em;
+  }
+}
+
 
 /*
    List view
