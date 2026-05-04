@@ -8,4 +8,4 @@ date: 2026-01-01
 location: "Wuhan, China"
 ---
 
-I am currently recruiting Master's students interested in urban geography, spatial data analysis, and urban-economic dynamics. Looking ahead, I expect to recruit PhD students starting in Fall 2027.
+I am currently recruiting Master's students in Planning for the 2026 cohort, including both professional and academic tracks. For the 2027 cohort, I am recruiting Master's students in Planning and professional Master's students in Design. I expect to begin recruiting PhD students in 2028.
