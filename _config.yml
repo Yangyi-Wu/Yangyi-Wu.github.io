@@ -10,12 +10,13 @@
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
 title                    : "Yangyi's Homepage"
+title_zh                 : "伍杨屹的主页"
 title_separator          : "-"
 name                     : &name "Yangyi Wu (伍杨屹)"
-description              : &description "Assistant Professor, Wuhan University"
-url                      : https://yangyi-wu.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+description              : &description "Associate Professor, School of Urban Design, Wuhan University"
+url                      : https://yangyi-wu.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "Yangyi-Wu/Yangyi-Wu.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,10 +25,14 @@ author:
   # Biographic information
   avatar           : "PersonalI.jpg"
   name             : "Yangyi Wu (伍杨屹), PhD"
+  name_zh          : "伍杨屹（Yangyi Wu）"
   pronouns         : # example: "she/her"  
-  bio              : "Assistant Professor, School of Urban Design, Wuhan University"
+  bio              : "Associate Professor, School of Urban Design, Wuhan University"
+  bio_zh           : "武汉大学城市设计学院副教授"
   location         : "Wuhan, China"
+  location_zh      : "中国武汉"
   employer         : "Wuhan University"
+  employer_zh      : "武汉大学"
   uri              : # URL
   email            : "yangyi.wu@whu.edu.cn" 
 
@@ -47,7 +52,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : #"academicpages"
+  github           : "Yangyi-Wu"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -80,12 +85,12 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+  journal-articles:
+    title: 'Journal Articles'
+  books-and-chapters:
+    title: 'Books, Chapters, and Edited Volumes'
+  dissertations:
+    title: 'Dissertation'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

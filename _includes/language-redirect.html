@@ -1,0 +1,67 @@
+<script>
+  (function () {
+    var basePath = "{{ site.baseurl | default: '' }}";
+    var languagePreferenceKey = "yangyi-wu-site-language";
+    var path = window.location.pathname;
+    var normalizedPath = path.endsWith("/") ? path : path + "/";
+    var languagePairs = {
+      "/": "/zh/",
+      "/publications/": "/zh/publications/",
+      "/talks/": "/zh/talks/",
+      "/teaching/": "/zh/teaching/",
+      "/cv/": "/zh/cv/"
+    };
+
+    function stripBasePath(currentPath) {
+      if (basePath && currentPath.indexOf(basePath) === 0) {
+        return currentPath.slice(basePath.length) || "/";
+      }
+      return currentPath;
+    }
+
+    function withBasePath(targetPath) {
+      if (!basePath || targetPath.indexOf(basePath) === 0) {
+        return targetPath;
+      }
+      return basePath + targetPath;
+    }
+
+    function browserPrefersChinese() {
+      var languages = navigator.languages && navigator.languages.length
+        ? navigator.languages
+        : [navigator.language || navigator.userLanguage || ""];
+      return languages.some(function (language) {
+        return /^zh\b/i.test(language);
+      });
+    }
+
+    function rememberManualChoice(event) {
+      var link = event.target.closest("[data-language-option]");
+      if (!link) {
+        return;
+      }
+      try {
+        localStorage.setItem(languagePreferenceKey, link.dataset.languageOption);
+      } catch (error) {
+        // Ignore storage failures; navigation should still work.
+      }
+    }
+
+    document.addEventListener("click", rememberManualChoice);
+
+    try {
+      if (localStorage.getItem(languagePreferenceKey)) {
+        return;
+      }
+    } catch (error) {
+      // Continue with browser-language detection when storage is unavailable.
+    }
+
+    var relativePath = stripBasePath(normalizedPath);
+    var chineseTarget = languagePairs[relativePath];
+
+    if (browserPrefersChinese() && chineseTarget) {
+      window.location.replace(withBasePath(chineseTarget));
+    }
+  })();
+</script>

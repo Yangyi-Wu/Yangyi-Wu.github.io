@@ -1,152 +1,345 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Yangyi Wu (伍杨屹)",
+    "label": "Associate Professor, School of Urban Design, Wuhan University",
+    "email": "yangyi.wu@whu.edu.cn",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://yangyi-wu.github.io/",
+    "summary": "Urban and economic geographer studying the interaction between urban spatial structure and economic activities, with attention to urban equity, innovation, and resilience.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Wuhan",
+      "countryCode": "CN",
+      "region": "Hubei"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "username": "Y7KU37UAAAAJ",
+        "url": "https://scholar.google.com/citations?user=Y7KU37UAAAAJ&hl=en"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "Yangyi-Wu",
+        "url": "https://github.com/Yangyi-Wu"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "name": "Wuhan University",
+      "position": "Associate Professor, School of Urban Design",
+      "url": "https://www.whu.edu.cn/",
+      "startDate": "",
+      "endDate": "",
+      "summary": "Research and teaching in urban geography, spatial data analysis, and urban-economic dynamics.",
+      "highlights": []
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "To be updated",
+      "area": "PhD",
       "studyType": "",
       "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "endDate": "",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Research methods",
+      "level": "",
+      "keywords": [
+        "Spatial econometrics",
+        "Network analysis",
+        "Multi-source urban big data",
+        "POIs",
+        "Human mobility",
+        "Remote sensing"
+      ]
+    }
+  ],
   "languages": [],
-  "interests": [],
+  "interests": [
+    {
+      "name": "Research interests",
+      "keywords": [
+        "Economic geography",
+        "Industrial space",
+        "Urban public services",
+        "Urban resilience",
+        "Spatial inequality"
+      ]
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Urban Sprawl",
+      "publisher": "The Encyclopedia of Human Geography",
+      "releaseDate": "2026",
+      "website": "",
+      "summary": "Wu, Y. (2026). Urban sprawl. In The Encyclopedia of Human Geography, 1443-1448."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Polycentric Urban Development in China: Dimensions, Effects, and Policies",
+      "publisher": "Chinese Geographical Science",
+      "releaseDate": "2025",
+      "website": "",
+      "summary": "Wei, Y. D., Xiao, W., & Wu, Y. (2025). Chinese Geographical Science, 35(5), 1030-1044."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Institutions, Urban Space, and Residential Markets in Globalizing Shanghai: A Comparative Study of Housing Sale and Rental Prices",
+      "publisher": "Journal of Urban Affairs",
+      "releaseDate": "2025",
+      "website": "",
+      "summary": "Wei, Y. D., Wu, Y., & Li, H. (2025). Journal of Urban Affairs, 47(6), 2191-2214."
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "How Do Urban Amenities Shape Knowledge-Intensive Industry Locations within Cities? A Multi-Scalar Study of Wuhan, China",
+      "publisher": "Applied Geography",
+      "releaseDate": "2025",
+      "website": "",
+      "summary": "Teng, Y., Wu, Y., & Liu, M. (2025). Applied Geography, 180, 103659."
+    },
+    {
+      "name": "Multidimensional Neighborhood Amenity Characteristics and Housing Prices in Urban China",
+      "publisher": "Applied Spatial Analysis and Policy",
+      "releaseDate": "2025",
+      "website": "",
+      "summary": "Qu, Z., Wu, Y., & Liu, M. (2025). Applied Spatial Analysis and Policy, 18(2), 68."
+    },
+    {
+      "name": "Dynamic Impacts of Urban Expansion on Vegetation Growth in Urban Environments: A Sustainable Land Management Framework",
+      "publisher": "Land Use Policy",
+      "releaseDate": "2025",
+      "website": "",
+      "summary": "Liu, M., Luo, Q., Huang, R., Wu, Y., & Zhou, J. (2025). Land Use Policy, 153, 107541."
+    },
+    {
+      "name": "Advancing Multi-Scale Geographic Environmental Monitoring: A Synthesis of Cutting-Edge Research and Scalable Solutions",
+      "publisher": "Land",
+      "releaseDate": "2025",
+      "website": "",
+      "summary": "Wang, J., Wu, Y., Zhang, Y., Lizaga, I., & Zhang, Z. (2025). Land, 14(5), 1059."
+    },
+    {
+      "name": "Urban Equity of Park Use in Peri-Urban Areas during the COVID-19 Pandemic",
+      "publisher": "Landscape and Urban Planning",
+      "releaseDate": "2025",
+      "website": "",
+      "summary": "Wu, Y., Wei, Y. D., Liu, M., & García, I. (2025). Landscape and Urban Planning, 256, 105269."
+    },
+    {
+      "name": "Assessing Urban Park Equity in China through Supply and Demand Balance: A Case Study of Wuhan City, China",
+      "publisher": "Sustainability",
+      "releaseDate": "2025",
+      "website": "",
+      "summary": "Yang, Y., Wu, Y., & Jiao, H. (2025). Sustainability, 17(5), 2255."
+    },
+    {
+      "name": "Centring or Suburbanization? Changing Locations of Producer Services in Shanghai",
+      "publisher": "Environment and Planning A: Economy and Space",
+      "releaseDate": "2024",
+      "website": "",
+      "summary": "Wei, Y. D., Xiao, W., & Wu, Y. (2024). Environment and Planning A: Economy and Space, 56(5), 1482-1502."
+    },
+    {
+      "name": "Urban Structure, Housing Prices and the Double Role of Amenity: A Study of Nanjing, China",
+      "publisher": "Applied Spatial Analysis and Policy",
+      "releaseDate": "2024",
+      "website": "",
+      "summary": "Liu, M., Wei, Y. D., & Wu, Y. (2024). Applied Spatial Analysis and Policy, 17(1), 27-53."
+    },
+    {
+      "name": "Preferences and Barriers of Vulnerable Urban Populations in Affordable Housing in Urban China",
+      "publisher": "Journal of Urban Planning and Development",
+      "releaseDate": "2023",
+      "website": "",
+      "summary": "Wei, Y. D., Wu, Y., Xiao, W., & Wu, X. (2023). Journal of Urban Planning and Development, 149(4), 05023030."
+    },
+    {
+      "name": "Urban Form, Air Pollution, and Walking Behavior: A Study of Salt Lake County, Utah",
+      "publisher": "Journal of Transport & Health",
+      "releaseDate": "2023",
+      "website": "",
+      "summary": "Wei, Y. D., Wu, Y., Xiao, W., Garcia, I., & Wen, M. (2023). Journal of Transport & Health, 33, 101686."
+    },
+    {
+      "name": "Regional Drinking Water Supply in Pakistan: Regional Disparity, Inequality, and Development Pattern",
+      "publisher": "The Professional Geographer",
+      "releaseDate": "2023",
+      "website": "",
+      "summary": "Wu, Y., & Wei, Y. D. (2023). The Professional Geographer, 75(5), 733-749."
+    },
+    {
+      "name": "Green Infrastructure Inequality in the Context of COVID-19: Taking Parks and Trails as Examples",
+      "publisher": "Urban Forestry & Urban Greening",
+      "releaseDate": "2023",
+      "website": "",
+      "summary": "Wu, Y., Wei, Y. D., Liu, M., & García, I. (2023). Urban Forestry & Urban Greening, 86, 128027."
+    },
+    {
+      "name": "Remote Sensing of Watershed",
+      "publisher": "MDPI",
+      "releaseDate": "2023",
+      "website": "",
+      "summary": "Wang, J., Hu, Z., Wu, Y., & Zhang, J. (2023). Remote Sensing of Watershed. MDPI."
+    },
+    {
+      "name": "Tech Firm Births and Agglomeration Economies: (Un)Related Variety, Specialization, and Spatial Externalities",
+      "publisher": "Cities",
+      "releaseDate": "2023",
+      "website": "",
+      "summary": "Xiong, N., Wei, Y. D., & Wu, Y. (2023). Cities, 138, 104349."
+    },
+    {
+      "name": "Characterizing Sprawl Development in Urban China: A Perspective from Urban Amenity",
+      "publisher": "Land",
+      "releaseDate": "2023",
+      "website": "",
+      "summary": "Zhang, D., Wu, Y., & Liu, M. (2023). Land, 12(6), 1180."
+    },
+    {
+      "name": "Regional Development and Inequality within City Regions: A Study of the Yangtze River Delta, China",
+      "publisher": "Geographical Review",
+      "releaseDate": "2023",
+      "website": "",
+      "summary": "Qin, X., Wei, Y. D., Wu, Y., & Huang, X. (2023). Geographical Review, 113(3), 359-385."
+    },
+    {
+      "name": "Remote Sensing of Watershed: Towards a New Research Paradigm",
+      "publisher": "Remote Sensing",
+      "releaseDate": "2023",
+      "website": "",
+      "summary": "Wang, J., Wu, Y., Hu, Z., & Zhang, J. (2023). Remote Sensing, 15(10), 2569."
+    },
+    {
+      "name": "Urban Form and Spatiotemporal Vulnerability of Local Communities to COVID-19",
+      "publisher": "Geographical Review",
+      "releaseDate": "2023",
+      "website": "",
+      "summary": "Wu, Y., Wei, Y. D., & Liu, M. (2023). Geographical Review."
+    },
+    {
+      "name": "Neighborhood, Built Environment and Resilience in Transportation during the COVID-19 Pandemic",
+      "publisher": "Transportation Research Part D: Transport and Environment",
+      "releaseDate": "2022",
+      "website": "",
+      "summary": "Xiao, W., Wei, Y. D., & Wu, Y. (2022). Transportation Research Part D: Transport and Environment, 110, 103428."
+    },
+    {
+      "name": "Amenity, Firm Agglomeration, and Local Creativity of Producer Services in Shanghai",
+      "publisher": "Cities",
+      "releaseDate": "2022",
+      "website": "",
+      "summary": "Wu, Y., Wei, Y. D., Li, H., & Liu, M. (2022). Cities, 120, 103421."
+    },
+    {
+      "name": "Trip Generation, Trip Chains and Polycentric Development in Metropolitan USA: A Case Study of the Wasatch Front Region, Utah",
+      "publisher": "Applied Geography",
+      "releaseDate": "2021",
+      "website": "",
+      "summary": "Wei, Y. D., Xiao, W., & Wu, Y. (2021). Applied Geography, 133, 102488."
+    },
+    {
+      "name": "Regional Inequality, Spatial Polarization and Place Mobility in Provincial China: A Case Study of Jiangsu Province",
+      "publisher": "Applied Geography",
+      "releaseDate": "2020",
+      "website": "",
+      "summary": "Wei, Y. D., Wu, Y., Liao, F. H., & Zhang, L. (2020). Applied Geography, 124, 102296."
+    },
+    {
+      "name": "Firm Suburbanization in the Context of Urban Sprawl: Neighborhood Effect and Sectoral Difference",
+      "publisher": "The Professional Geographer",
+      "releaseDate": "2020",
+      "website": "",
+      "summary": "Wu, Y., Wei, Y. D., & Li, H. (2020). The Professional Geographer, 72(4), 598-617."
+    },
+    {
+      "name": "Analyzing Spatial Heterogeneity of Housing Prices Using Large Datasets",
+      "publisher": "Applied Spatial Analysis and Policy",
+      "releaseDate": "2020",
+      "website": "",
+      "summary": "Wu, Y., Wei, Y. D., & Li, H. (2020). Applied Spatial Analysis and Policy, 13(1), 223-256."
+    },
+    {
+      "name": "Spatial Analysis of Uneven Metropolitan Development in the Context of Big Data",
+      "publisher": "The University of Utah",
+      "releaseDate": "2020",
+      "website": "",
+      "summary": "Wu, Y. (2020). Spatial Analysis of Uneven Metropolitan Development in the Context of Big Data. The University of Utah."
+    },
+    {
+      "name": "Innovation, Network Capabilities, and Sustainable Development of Regional Economies in China",
+      "publisher": "Sustainability",
+      "releaseDate": "2019",
+      "website": "",
+      "summary": "Li, D., Wei, Y. D., Miao, C., Wu, Y., & Xiao, W. (2019). Sustainability, 11(17), 4770."
+    },
+    {
+      "name": "Urban Amenity, Human Capital and Employment Distribution in Shanghai",
+      "publisher": "Habitat International",
+      "releaseDate": "2019",
+      "website": "",
+      "summary": "Li, H., Wei, Y. D., & Wu, Y. (2019). Habitat International, 91, 102025."
+    },
+    {
+      "name": "Analyzing Housing Prices in Shanghai with Open Data: Amenity, Accessibility and Urban Structure",
+      "publisher": "Cities",
+      "releaseDate": "2019",
+      "website": "",
+      "summary": "Li, H., Wei, Y. D., Wu, Y., & Tian, G. (2019). Cities, 91, 165-179."
+    },
+    {
+      "name": "Analyzing the Private Rental Housing Market in Shanghai with Open Data",
+      "publisher": "Land Use Policy",
+      "releaseDate": "2019",
+      "website": "",
+      "summary": "Li, H., Wei, Y. D., & Wu, Y. (2019). Land Use Policy, 85, 271-284."
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
+      "name": "The Challenges of Emerging Technologies to Economic Geography",
+      "event": "Economic Geography Specialty Committee Annual Conference (GSC)",
+      "date": "2025-10-17",
+      "location": "Nanchang, China",
+      "description": "Breakout session co-chair."
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
+      "name": "Big Data-Driven Urban Spatial Transformation",
+      "event": "Urban Geography Specialty Committee Annual Conference (GSC)",
+      "date": "2025-07-25",
+      "location": "Kaifeng, China",
+      "description": "Breakout session co-chair."
     },
     {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
+      "name": "Urban Sensing and Computing",
+      "event": "Geographical Modeling and GIS Analysis Specialty Committee Annual Conference (GSC)",
+      "date": "2025-04-28",
+      "location": "China",
+      "description": "Session co-chair."
     },
     {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "Theoretical Analysis and Practical Exploration of Urban Spatial Justice: A Case Study of Urban Green Spaces",
+      "event": "Qinghe Forum, China University of Geosciences (Wuhan)",
+      "date": "2024-12-04",
+      "location": "Wuhan, China",
+      "description": "Invited talk."
     }
   ],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "course": "Graduate Student Supervision and Research Training",
+      "institution": "School of Urban Design, Wuhan University",
+      "date": "2026",
+      "role": "Student supervision",
+      "description": "Recruiting Master's students interested in urban geography, spatial data analysis, and urban-economic dynamics; expecting to recruit PhD students starting in Fall 2027."
     }
   ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "portfolio": []
 }

@@ -2,6 +2,7 @@
 layout: archive
 title: "CV"
 permalink: /cv/
+lang: en
 author_profile: true
 redirect_from:
   - /resume
@@ -9,56 +10,51 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+[中文版本](/zh/cv/)
 
-Work experience
+Profile
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Yangyi Wu (伍杨屹), PhD, is an Associate Professor in the School of Urban Design at Wuhan University. His research focuses on the interaction between urban spatial structure and economic activities, with attention to urban equity, innovation, and resilience.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Appointment
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+
+* Associate Professor, School of Urban Design, Wuhan University
+* Location: Wuhan, China
+
+Research interests
+======
+
+* Economic geography and industrial space
+* Urban space and public services
+* Urban resilience and governance
+* Spatial econometrics, network analysis, and multi-source urban big data
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
+Talks, sessions, and service
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
+
+<ul>{% for post in site.talks reversed %}
+  {% include archive-single-talk-cv.html  %}
+{% endfor %}</ul>
+
+Teaching and supervision
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+
+<ul>{% for post in site.teaching reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
+Links
 ======
-* Currently signed in to 43 different slack teams
+
+* Email: [yangyi.wu@whu.edu.cn](mailto:yangyi.wu@whu.edu.cn)
+* Google Scholar: [Profile](https://scholar.google.com/citations?user=Y7KU37UAAAAJ&hl=en)
+* GitHub: [Yangyi-Wu](https://github.com/Yangyi-Wu)

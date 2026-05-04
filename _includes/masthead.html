@@ -1,4 +1,10 @@
 {% include base_path %}
+{% assign nav_links = site.data.navigation.main %}
+{% assign site_home_title = site.title %}
+{% if page.lang == "zh" %}
+  {% assign nav_links = site.data.navigation.zh %}
+  {% assign site_home_title = site.title_zh | default: site.title %}
+{% endif %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -6,14 +12,20 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/">{{ site.title }}</a></li>
-          {% for link in site.data.navigation.main %}
+          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/{% if page.lang == "zh" %}zh/{% endif %}">{{ site_home_title }}</a></li>
+          {% for link in nav_links %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% assign language_option = "" %}
+            {% if link.title == "中文" %}
+              {% assign language_option = "zh" %}
+            {% elsif link.title == "English" %}
+              {% assign language_option = "en" %}
+            {% endif %}
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}"{% if language_option != "" %} data-language-option="{{ language_option }}"{% endif %}>{{ link.title }}</a></li>
           {% endfor %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
