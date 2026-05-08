@@ -9,6 +9,9 @@ citation: "Wei, Y. D., Xiao, W., & Wu, Y. (2025). Polycentric Urban Development 
 visual: /images/publications/polycentric-urban-development-china-journal-abstract.png
 visual_alt_en: "Conceptual framework of polycentric urban development in China"
 visual_alt_zh: "中国多中心城市发展的概念框架图"
+thumbnail: /images/publications/polycentric-urban-development-china-thumbnail.png
+thumbnail_alt_en: "Conceptual poster showing polycentricity as a scale, dimension, and mechanism framework"
+thumbnail_alt_zh: "将多中心性概括为尺度、维度与机制框架的概念海报"
 contribution_en: "This review reframes polycentric urban development in China through scale, dimension, and mechanism, showing that Chinese urban regions remain largely monocentric while differentiated morphological and functional centers are emerging."
 contribution_zh: "本文系统梳理中国多中心城市发展的测度、影响与政策机制，指出中国城市区域总体仍以强单中心为主，但正在形成尺度不同、功能不完全匹配的多中心节点。"
 highlights_en:

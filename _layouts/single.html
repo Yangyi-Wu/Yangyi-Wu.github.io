@@ -47,6 +47,51 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
+        {% if page.collection == 'publications' %}
+          {% if page.lang == 'zh' %}
+            {% assign contribution_label = "核心贡献" %}
+            {% assign highlights_label = "核心亮点" %}
+            {% assign visual_label = "图文摘要" %}
+            {% assign visual_alt = page.visual_alt_zh | default: page.visual_alt_en | default: page.title %}
+            {% assign contribution = page.contribution_zh | default: page.contribution_en %}
+            {% assign highlights = page.highlights_zh | default: page.highlights_en %}
+          {% else %}
+            {% assign contribution_label = "Core contribution" %}
+            {% assign highlights_label = "Highlights" %}
+            {% assign visual_label = "Graphical abstract" %}
+            {% assign visual_alt = page.visual_alt_en | default: page.visual_alt_zh | default: page.title %}
+            {% assign contribution = page.contribution_en | default: page.contribution_zh %}
+            {% assign highlights = page.highlights_en | default: page.highlights_zh %}
+          {% endif %}
+
+          {% if contribution or highlights or page.visual %}
+            <div class="publication-detail">
+              {% if contribution %}
+                <p class="publication-detail__contribution"><strong>{{ contribution_label }}:</strong> {{ contribution }}</p>
+              {% endif %}
+
+              {% if highlights %}
+                <div class="publication-detail__highlights">
+                  <strong>{{ highlights_label }}</strong>
+                  <ul>
+                    {% for item in highlights %}
+                      <li>{{ item }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endif %}
+
+              {% if page.visual %}
+                <figure class="publication-detail__visual">
+                  <img src="{{ page.visual | relative_url }}" alt="{{ visual_alt | escape }}">
+                  <figcaption>{{ visual_label }}</figcaption>
+                </figure>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endif %}
+
+        {% unless page.collection == 'publications' %}
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
         {% elsif page.citation and page.paperurl and page.slidesurl %}
@@ -72,6 +117,7 @@ layout: default
         {% elsif page.bibtexurl %}
           <p style="font-size: smaller"><a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
         {% endif %}
+        {% endunless %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>

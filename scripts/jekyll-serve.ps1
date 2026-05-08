@@ -17,4 +17,4 @@ $bundlePath = Join-Path $RubyRoot "bundle\Yangyi-Wu.github.io"
 $env:BUNDLE_PATH = $bundlePath
 
 bundle install
-bundle exec jekyll serve -l -H localhost --port $Port
+bundle exec jekyll serve -l -H localhost --port $Port --config _config.yml,_config-local.yml

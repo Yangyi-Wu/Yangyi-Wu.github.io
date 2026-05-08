@@ -9,6 +9,9 @@ citation: "Wei, Y. D., Wu, Y., Xiao, W., & Wu, X. (2023). Preferences and barrie
 visual: /images/publications/affordable-housing-vulnerable-populations-nanjing-journal-abstract.png
 visual_alt_en: "Graphical abstract of affordable housing mismatch for vulnerable populations in Nanjing"
 visual_alt_zh: "南京脆弱群体保障性住房需求与政策错配的图形摘要"
+thumbnail: /images/publications/affordable-housing-institutional-access-thumbnail.png
+thumbnail_alt_en: "Conceptual poster showing affordable housing mismatch as an institutional access filter"
+thumbnail_alt_zh: "将保障性住房错配概括为制度性可及性过滤机制的概念海报"
 contribution_en: "This article examines affordable housing preferences and policy barriers among vulnerable urban populations in Nanjing. It shows that current programs mismatch heterogeneous needs: migrant workers have strong housing needs but are constrained by hukou, social insurance, eligibility, information, and application barriers."
 contribution_zh: "本文以南京为案例，比较新就业大学毕业生、外来务工人员和本地低收入家庭的保障性住房偏好与政策障碍。研究指出，现有保障性住房政策与不同脆弱群体的真实需求存在错配，尤其是外来务工人员住房需求强烈，却受到户籍、社保年限、资格门槛、信息获取和申请流程等制度性限制。"
 highlights_en:

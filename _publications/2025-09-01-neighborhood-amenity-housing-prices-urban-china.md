@@ -9,6 +9,9 @@ citation: "Qu, Z., Wu, Y., & Liu, M. (2025). Multidimensional Neighborhood Ameni
 visual: /images/publications/neighborhood-amenity-housing-prices-urban-china-journal-abstract.png
 visual_alt_en: "Graphical abstract of multidimensional neighborhood amenities and housing prices in urban China"
 visual_alt_zh: "中国城市社区设施多维特征与住房价格关系的图形摘要"
+thumbnail: /images/publications/neighborhood-amenity-housing-prices-urban-china-thumbnail.png
+thumbnail_alt_en: "Conceptual poster showing neighborhood amenity value as multidimensional, nonlinear, and place-specific"
+thumbnail_alt_zh: "展示社区设施价值具有多维、非线性与地方情境差异的概念海报"
 contribution_en: "This article moves beyond proximity-based amenity measures by proposing a four-dimensional neighborhood amenity framework: quantity, quality, functional mix, and spatial arrangement. Using Wuhan housing transactions and XGBoost-SHAP interpretation, it reveals nonlinear and context-specific amenity effects on housing prices."
 contribution_zh: "本文突破传统以距离和数量衡量城市设施的思路，提出社区设施的四维分析框架：数量、质量、功能混合与空间组织。基于武汉二手房交易和 XGBoost-SHAP 解释，研究揭示了设施对住房价格的非线性、阈值化和情境差异化影响。"
 highlights_en:

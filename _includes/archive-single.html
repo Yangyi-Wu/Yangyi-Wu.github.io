@@ -12,89 +12,67 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% assign post_permalink = post.url | relative_url %}
+{% assign publication_card_visual = post.thumbnail | default: post.visual %}
+
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item{% if post.collection == 'publications' and post.visual %} archive__item--publication-rich{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item{% if post.collection == 'publications' and publication_card_visual %} archive__item--publication-rich{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
           {% if teaser contains "://" %}
             "{{ teaser }}"
           {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+            "{{ teaser | prepend: "/images/" | relative_url }}"
           {% endif %}
           alt="">
       </div>
     {% endif %}
 
-    {% if post.collection == 'publications' and post.visual %}
+    {% if post.collection == 'publications' and publication_card_visual %}
       {% if page.lang == 'zh' %}
-        {% assign visual_alt = post.visual_alt_zh | default: post.visual_alt_en | default: post.title %}
+        {% assign visual_alt = post.thumbnail_alt_zh | default: post.visual_alt_zh | default: post.thumbnail_alt_en | default: post.visual_alt_en | default: post.title %}
       {% else %}
-        {% assign visual_alt = post.visual_alt_en | default: post.visual_alt_zh | default: post.title %}
+        {% assign visual_alt = post.thumbnail_alt_en | default: post.visual_alt_en | default: post.thumbnail_alt_zh | default: post.visual_alt_zh | default: post.title %}
       {% endif %}
       <div class="publication-card">
-        <a class="publication-card__media" href="{{ base_path }}{{ post.url }}" rel="permalink">
-          <img src="{{ post.visual | prepend: base_path }}" alt="{{ visual_alt | escape }}">
-        </a>
         <div class="publication-card__content">
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post_permalink }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        <a href="{{ post_permalink }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    
+
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
-        {% if page.lang == 'zh' %}
-          {% assign published_label = "发表于" %}
-          {% assign citation_label = "推荐引用" %}
-          {% assign contribution_label = "核心贡献" %}
-          {% assign highlights_label = "核心亮点" %}
-          {% assign contribution = post.contribution_zh | default: post.contribution_en %}
-          {% assign highlights = post.highlights_zh | default: post.highlights_en %}
-        {% else %}
-          {% assign published_label = "Published in" %}
-          {% assign citation_label = "Recommended citation" %}
-          {% assign contribution_label = "Core contribution" %}
-          {% assign highlights_label = "Highlights" %}
-          {% assign contribution = post.contribution_en | default: post.contribution_zh %}
-          {% assign highlights = post.highlights_en | default: post.highlights_zh %}
-        {% endif %}
-        {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' %}
-          <p>{{ published_label }} <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.date %}
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
+    {% if page.lang == 'zh' %}
+      {% assign published_label = "发表于" %}
+      {% assign citation_label = "推荐引用" %}
+    {% else %}
+      {% assign published_label = "Published in" %}
+      {% assign citation_label = "Recommended citation" %}
+    {% endif %}
+    {% if post.collection == 'teaching' %}
+      <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% elsif post.collection == 'publications' %}
+      <p>{{ published_label }} <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    {% elsif post.date %}
+      <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+    {% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ post_permalink }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
 
-    {% if post.collection == 'publications' and contribution %}
-      <p class="publication-card__contribution"><strong>{{ contribution_label }}:</strong> {{ contribution }}</p>
-    {% endif %}
-
-    {% if post.collection == 'publications' and highlights %}
-      <div class="publication-card__highlights">
-        <strong>{{ highlights_label }}</strong>
-        <ul>
-          {% for item in highlights %}
-            <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
-    
+    {% unless post.collection == 'publications' %}
     {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
       <p>{{ citation_label }}: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.citation and post.paperurl and post.slidesurl %}
@@ -122,9 +100,13 @@
     {% elsif post.bibtexurl %}
       <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% endif %}
+    {% endunless %}
 
-    {% if post.collection == 'publications' and post.visual %}
+    {% if post.collection == 'publications' and publication_card_visual %}
         </div>
+        <a class="publication-card__media" href="{{ post_permalink }}" rel="permalink">
+          <img src="{{ publication_card_visual | relative_url }}" alt="{{ visual_alt | escape }}">
+        </a>
       </div>
     {% endif %}
 
