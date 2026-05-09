@@ -14,6 +14,10 @@
 
 {% assign post_permalink = post.url | relative_url %}
 {% assign publication_card_visual = post.thumbnail | default: post.visual %}
+{% assign post_href = post_permalink %}
+{% if post.collection == 'publications' and page.lang == 'zh' %}
+  {% assign post_href = post_permalink | append: "?lang=zh" %}
+{% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item{% if post.collection == 'publications' and publication_card_visual %} archive__item--publication-rich{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
@@ -41,9 +45,9 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post_permalink }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post_href }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        <a href="{{ post_permalink }}" rel="permalink">{{ title }}</a>
+        <a href="{{ post_href }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
 

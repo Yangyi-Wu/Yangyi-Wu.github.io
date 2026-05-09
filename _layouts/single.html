@@ -48,43 +48,55 @@ layout: default
         {{ content }}
 
         {% if page.collection == 'publications' %}
-          {% if page.lang == 'zh' %}
-            {% assign contribution_label = "核心贡献" %}
-            {% assign highlights_label = "核心亮点" %}
-            {% assign visual_label = "图文摘要" %}
-            {% assign visual_alt = page.visual_alt_zh | default: page.visual_alt_en | default: page.title %}
-            {% assign contribution = page.contribution_zh | default: page.contribution_en %}
-            {% assign highlights = page.highlights_zh | default: page.highlights_en %}
-          {% else %}
-            {% assign contribution_label = "Core contribution" %}
-            {% assign highlights_label = "Highlights" %}
-            {% assign visual_label = "Graphical abstract" %}
-            {% assign visual_alt = page.visual_alt_en | default: page.visual_alt_zh | default: page.title %}
-            {% assign contribution = page.contribution_en | default: page.contribution_zh %}
-            {% assign highlights = page.highlights_en | default: page.highlights_zh %}
-          {% endif %}
+          {% assign contribution_en = page.contribution_en | default: page.contribution_zh %}
+          {% assign contribution_zh = page.contribution_zh | default: page.contribution_en %}
+          {% assign highlights_en = page.highlights_en | default: page.highlights_zh %}
+          {% assign highlights_zh = page.highlights_zh | default: page.highlights_en %}
+          {% assign visual_alt = page.visual_alt_en | default: page.visual_alt_zh | default: page.title %}
 
-          {% if contribution or highlights or page.visual %}
+          {% if contribution_en or highlights_en or contribution_zh or highlights_zh or page.visual %}
             <div class="publication-detail">
-              {% if contribution %}
-                <p class="publication-detail__contribution"><strong>{{ contribution_label }}:</strong> {{ contribution }}</p>
-              {% endif %}
+              <div data-publication-lang="en">
+                {% if contribution_en %}
+                  <p class="publication-detail__contribution"><strong>Core contribution:</strong> {{ contribution_en }}</p>
+                {% endif %}
 
-              {% if highlights %}
-                <div class="publication-detail__highlights">
-                  <strong>{{ highlights_label }}</strong>
-                  <ul>
-                    {% for item in highlights %}
-                      <li>{{ item }}</li>
-                    {% endfor %}
-                  </ul>
-                </div>
-              {% endif %}
+                {% if highlights_en %}
+                  <div class="publication-detail__highlights">
+                    <strong>Highlights</strong>
+                    <ul>
+                      {% for item in highlights_en %}
+                        <li>{{ item }}</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                {% endif %}
+              </div>
+
+              <div data-publication-lang="zh" hidden>
+                {% if contribution_zh %}
+                  <p class="publication-detail__contribution"><strong>核心贡献:</strong> {{ contribution_zh }}</p>
+                {% endif %}
+
+                {% if highlights_zh %}
+                  <div class="publication-detail__highlights">
+                    <strong>核心亮点</strong>
+                    <ul>
+                      {% for item in highlights_zh %}
+                        <li>{{ item }}</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                {% endif %}
+              </div>
 
               {% if page.visual %}
                 <figure class="publication-detail__visual">
                   <img src="{{ page.visual | relative_url }}" alt="{{ visual_alt | escape }}">
-                  <figcaption>{{ visual_label }}</figcaption>
+                  <figcaption>
+                    <span data-publication-caption="en">Graphical abstract</span>
+                    <span data-publication-caption="zh" hidden>图文摘要</span>
+                  </figcaption>
                 </figure>
               {% endif %}
             </div>

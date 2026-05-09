@@ -47,7 +47,51 @@
       }
     }
 
+    function currentLanguagePreference() {
+      var params = new URLSearchParams(window.location.search);
+      var queryLanguage = params.get("lang");
+      if (queryLanguage === "zh" || queryLanguage === "en") {
+        try {
+          localStorage.setItem(languagePreferenceKey, queryLanguage);
+        } catch (error) {
+          // Ignore storage failures; the query parameter remains authoritative.
+        }
+        return queryLanguage;
+      }
+      try {
+        return localStorage.getItem(languagePreferenceKey) || "";
+      } catch (error) {
+        return "";
+      }
+    }
+
+    function applyPublicationLanguage() {
+      var chosenLanguage = currentLanguagePreference();
+      if (chosenLanguage !== "zh" && chosenLanguage !== "en") {
+        return;
+      }
+
+      document.querySelectorAll("[data-publication-lang]").forEach(function (section) {
+        section.hidden = section.dataset.publicationLang !== chosenLanguage;
+      });
+
+      document.querySelectorAll("[data-publication-caption]").forEach(function (caption) {
+        caption.hidden = caption.dataset.publicationCaption !== chosenLanguage;
+      });
+
+      var languageLink = document.querySelector("[data-language-option]");
+      if (languageLink && window.location.pathname.indexOf("/publication/") === 0) {
+        var nextLanguage = chosenLanguage === "zh" ? "en" : "zh";
+        var params = new URLSearchParams(window.location.search);
+        params.set("lang", nextLanguage);
+        languageLink.dataset.languageOption = nextLanguage;
+        languageLink.textContent = nextLanguage === "zh" ? "中文" : "English";
+        languageLink.href = window.location.pathname + "?" + params.toString();
+      }
+    }
+
     document.addEventListener("click", rememberManualChoice);
+    document.addEventListener("DOMContentLoaded", applyPublicationLanguage);
 
     try {
       if (localStorage.getItem(languagePreferenceKey)) {

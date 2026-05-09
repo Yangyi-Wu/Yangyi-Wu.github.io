@@ -31,6 +31,7 @@ main:
 
   - title: "中文"
     url: /zh/
+    language: zh
     
   # - title: "CV"
   #   url: /cv-json/
@@ -56,3 +57,4 @@ zh:
 
   - title: "English"
     url: /
+    language: en
