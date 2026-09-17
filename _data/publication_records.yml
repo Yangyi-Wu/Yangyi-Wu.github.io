@@ -1,0 +1,154 @@
+# Bibliographic identifiers checked against supplied PDFs or publisher records.
+# Only source-checked summaries and illustrations are displayed by the templates.
+2019-01-01-private-rental-housing-market-shanghai-open-data:
+  authors: "Li, H., Wei, Y. D., & Wu, Y."
+  doi: 10.1016/j.landusepol.2019.04.004
+2019-02-01-housing-prices-shanghai-open-data:
+  authors: "Li, H., Wei, Y. D., Wu, Y., & Tian, G."
+  doi: 10.1016/j.cities.2018.11.016
+2019-03-01-urban-amenity-human-capital-employment-distribution-shanghai:
+  authors: "Li, H., Wei, Y. D., & Wu, Y."
+  doi: 10.1016/j.habitatint.2019.102025
+2019-04-01-innovation-network-capabilities-sustainable-development-regional-economies:
+  authors: "Li, D., Wei, Y. D., Miao, C., Wu, Y., & Xiao, W."
+  doi: 10.3390/su11174770
+2020-01-01-spatial-analysis-uneven-metropolitan-development-big-data:
+  authors: "Wu, Y."
+2020-02-01-spatial-heterogeneity-housing-prices-large-datasets:
+  authors: "Wu, Y., Wei, Y. D., & Li, H."
+  doi: 10.1007/s12061-019-09301-x
+  visual_reviewed: true
+  visual: /images/publications/housing-connectivity-reviewed.png
+  thumbnail: /images/publications/housing-connectivity-reviewed.png
+  visual_alt_en: "Similarity, substitutability and spatial connectivity combine to identify 43 housing submarkets in Salt Lake County."
+  visual_alt_zh: "结合相似性、可替代性和空间连接性，在盐湖县识别 43 个住房子市场。"
+  thumbnail_alt_en: "Housing submarket classification through spatial connectivity."
+  thumbnail_alt_zh: "通过空间连接性识别住房子市场。"
+  featured: true
+  summary_reviewed: true
+  contribution_en: "Housing submarkets need not be defined by simple spatial continuity. This study combines similarity, substitutability and spatial connectivity in a hybrid classification method, linking the definition of local markets to the price processes that operate within them."
+  contribution_zh: "住房子市场不能仅按空间上的连续分布划分。本文将相似性、可替代性和空间连接性纳入混合分类方法，使子市场的识别与其内部的价格形成过程相对应。贡献在于重新处理市场边界与空间关系，而不只是提高房价预测精度。"
+  highlights_en:
+    - "The Salt Lake County case uses a dataset of about 240,000 single-family houses and identifies 43 submarkets."
+    - "A hybrid spatial data-mining procedure balances attribute similarity, spatial relationships and computational feasibility."
+    - "Submarket-based models improve prediction and the interpretation of local housing markets relative to a non-submarket model."
+  highlights_zh:
+    - "以盐湖县约 24 万套独栋住宅为研究对象，识别出 43 个住房子市场。"
+    - "混合空间数据挖掘兼顾属性相似性、空间关系与大规模数据处理的可行性。"
+    - "与未划分子市场的模型相比，分市场建模改善了预测，也使地方住房市场的解释更贴近其空间差异。"
+2020-03-01-firm-suburbanization-urban-sprawl:
+  authors: "Wu, Y., Wei, Y. D., & Li, H."
+  doi: 10.1080/00330124.2020.1750437
+2020-04-01-regional-inequality-spatial-polarization-place-mobility-jiangsu:
+  authors: "Wei, Y. D., Wu, Y., Liao, F. H., & Zhang, L."
+  doi: 10.1016/j.apgeog.2020.102296
+2021-01-01-trip-generation-trip-chains-polycentric-development-utah:
+  authors: "Wei, Y. D., Xiao, W., & Wu, Y."
+  doi: 10.1016/j.apgeog.2021.102488
+2022-01-01-amenity-firm-agglomeration-local-creativity-producer-services-shanghai:
+  authors: "Wu, Y., Wei, Y. D., Li, H., & Liu, M."
+  doi: 10.1016/j.cities.2021.103421
+2022-02-01-neighborhood-built-environment-resilience-transportation-covid:
+  authors: "Xiao, W., Wei, Y. D., & Wu, Y."
+  doi: 10.1016/j.trd.2022.103428
+2023-03-01-urban-form-spatiotemporal-vulnerability-covid:
+  authors: "Wu, Y., Wei, Y. D., & Liu, M."
+  doi: 10.1080/00167428.2022.2155519
+2023-04-01-remote-sensing-watershed-new-paradigm:
+  authors: "Wang, J., Wu, Y., Hu, Z., & Zhang, J."
+  doi: 10.3390/rs15102569
+2023-05-01-regional-development-inequality-city-regions-yangtze-river-delta:
+  authors: "Qin, X., Wei, Y. D., Wu, Y., & Huang, X."
+  doi: 10.1080/00167428.2021.2021780
+2023-06-01-sprawl-development-urban-amenity-china:
+  authors: "Zhang, D., Wu, Y., & Liu, M."
+  doi: 10.3390/land12061180
+2023-07-01-tech-firm-births-agglomeration-economies:
+  authors: "Xiong, N., Wei, Y. D., & Wu, Y."
+  doi: 10.1016/j.cities.2023.104349
+  visual_reviewed: true
+  visual: /images/publications/agglomeration-scales-reviewed.png
+  thumbnail: /images/publications/agglomeration-scales-reviewed.png
+  visual_alt_en: "Specialization and related variety act at neighborhood and city-wide scales; unrelated variety shows no detected effect; urbanization economies act negatively only city-wide."
+  visual_alt_zh: "专业化与相关多样性在邻里和全市尺度发挥作用，非相关多样性未显示影响，城市化经济仅在全市尺度表现为负向作用。"
+  thumbnail_alt_en: "Agglomeration externalities differ by type and scale."
+  thumbnail_alt_zh: "不同集聚外部性具有不同的尺度效应。"
+  featured: true
+  summary_reviewed: true
+  contribution_en: "Agglomeration economies are not one uniform local advantage. The study distinguishes four forms of agglomeration and their spatial reach, showing why the type of externality and the scale of analysis must be considered together when explaining tech firm births."
+  contribution_zh: "集聚并不是一种作用一致的区位优势。本文区分四类集聚经济及其空间作用范围，说明解释科技企业创生时，必须同时考虑外部性的类型与分析尺度，不能用单一的集聚程度替代。"
+  highlights_en:
+    - "Specialization and related variety are associated with firm births at both neighborhood and city-wide scales."
+    - "Specialization is more pronounced at the neighborhood scale and has a broader spatial reach than related variety."
+    - "Unrelated variety has no detected effect across the tested scales; urbanization economies operate negatively only at the city-wide scale."
+  highlights_zh:
+    - "专业化和相关多样性在邻里与全市尺度均发挥作用。"
+    - "专业化的作用在邻里尺度更突出，其空间作用范围也比相关多样性更广。"
+    - "非相关多样性在所检验的尺度上未显示影响；城市化经济仅在全市尺度表现为负向作用。"
+2023-08-01-remote-sensing-of-watershed-book:
+  authors: "Wang, J., Hu, Z., Wu, Y., & Zhang, J. (Eds.)"
+  doi: 10.3390/books978-3-0365-8131-6
+2023-09-01-green-infrastructure-inequality-covid:
+  authors: "Wu, Y., Wei, Y. D., Liu, M., & García, I."
+  doi: 10.1016/j.ufug.2023.128027
+2023-10-01-regional-drinking-water-pakistan:
+  authors: "Wu, Y., & Wei, Y. D."
+  doi: 10.1080/00330124.2023.2183414
+2023-11-01-urban-form-air-pollution-walking:
+  authors: "Wei, Y. D., Wu, Y., Xiao, W., Garcia, I., & Wen, M."
+  doi: 10.1016/j.jth.2023.101686
+2023-12-01-vulnerable-populations-affordable-housing:
+  authors: "Wei, Y. D., Wu, Y., Xiao, W., & Wu, X."
+  doi: 10.1061/JUPDDM.UPENG-4271
+2024-01-01-urban-structure-housing-prices-amenity-nanjing:
+  authors: "Liu, M., Wei, Y. D., & Wu, Y."
+  doi: 10.1007/s12061-023-09536-9
+2024-02-01-producer-services-shanghai:
+  authors: "Wei, Y. D., Xiao, W., & Wu, Y."
+  doi: 10.1177/0308518X241245322
+2025-05-01-urban-park-equity-wuhan:
+  authors: "Yang, Y., Wu, Y., & Jiao, H."
+  doi: 10.3390/su17052255
+  visual_reviewed: true
+  visual: /images/publications/park-matching-reviewed.png
+  thumbnail: /images/publications/park-matching-reviewed.png
+  visual_alt_en: "Quality-adjusted park services are compared with age-sensitive demand; 28.25 percent of Wuhan communities have unmet park demand."
+  visual_alt_zh: "将考虑质量的公园服务供给与年龄差异化需求匹配；武汉案例中 28.25% 的社区存在需求缺口。"
+  thumbnail_alt_en: "Park equity depends on matching services to differentiated needs."
+  thumbnail_alt_zh: "公园公平取决于服务供给与差异化需求是否匹配。"
+  featured: true
+  summary_reviewed: true
+  contribution_en: "Park provision is not the same as park equity. By combining quality-adjusted service capacity and accessibility with age-sensitive demand, this study evaluates whether services match residents' needs. This explains why a well-supplied central area can still face a serious shortfall."
+  contribution_zh: "公园资源多，并不等于公园服务公平。本文将公园质量、服务能力与可达性纳入供给测度，并考虑不同年龄群体的使用需求，把公平的判断从资源数量推进到服务与需求的匹配。因此，供给较高的中心城区仍可能存在严重的需求缺口。"
+  highlights_en:
+    - "In the Wuhan case, 28.25% of communities have unmet park demand."
+    - "Central areas combine high supply with high demand; an apparently favorable resource distribution can conceal a service deficit."
+    - "The assessment supports different responses: upgrading existing parks in constrained central areas and addressing underserved suburban locations."
+  highlights_zh:
+    - "武汉案例中，28.25% 的社区存在公园需求未得到满足的情况。"
+    - "中心城区同时具有较高供给和较高需求，仅观察资源分布会掩盖服务不足。"
+    - "评估结果支持差异化干预：中心城区侧重提升现有公园服务能力，服务不足的郊区侧重补充供给。"
+2025-06-01-park-use-covid-peri-urban:
+  authors: "Wu, Y., Wei, Y. D., Liu, M., & García, I."
+  doi: 10.1016/j.landurbplan.2024.105269
+2025-07-01-multi-scale-geographic-environmental-monitoring:
+  authors: "Wang, J., Wu, Y., Zhang, Y., Lizaga, I., & Zhang, Z."
+  doi: 10.3390/land14051059
+2025-08-01-urban-expansion-vegetation-growth:
+  authors: "Liu, M., Luo, Q., Huang, R., Wu, Y., & Zhou, J."
+  doi: 10.1016/j.landusepol.2025.107541
+2025-09-01-neighborhood-amenity-housing-prices-urban-china:
+  authors: "Qu, Z., Wu, Y., & Liu, M."
+  doi: 10.1007/s12061-025-09667-1
+2025-10-01-urban-amenities-knowledge-intensive-industry-locations:
+  authors: "Teng, Y., Wu, Y., & Liu, M."
+  doi: 10.1016/j.apgeog.2025.103659
+2025-11-01-institutions-urban-space-residential-markets-shanghai:
+  authors: "Wei, Y. D., Wu, Y., & Li, H."
+  doi: 10.1080/07352166.2023.2285465
+2025-12-01-polycentric-urban-development-china:
+  authors: "Wei, Y. D., Xiao, W., & Wu, Y."
+  doi: 10.1007/s11769-025-1516-3
+2026-01-01-urban-sprawl:
+  authors: "Wu, Y."
+  doi: 10.1007/978-3-031-92524-5_211

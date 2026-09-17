@@ -1,0 +1,23 @@
+{
+  "/images/publications/agglomeration-scales-reviewed.png": {
+    "width": 1774,
+    "height": 887,
+    "small": "/images/publications/agglomeration-scales-reviewed-small.webp",
+    "medium": "/images/publications/agglomeration-scales-reviewed-medium.webp",
+    "large": "/images/publications/agglomeration-scales-reviewed-large.webp"
+  },
+  "/images/publications/housing-connectivity-reviewed.png": {
+    "width": 1774,
+    "height": 887,
+    "small": "/images/publications/housing-connectivity-reviewed-small.webp",
+    "medium": "/images/publications/housing-connectivity-reviewed-medium.webp",
+    "large": "/images/publications/housing-connectivity-reviewed-large.webp"
+  },
+  "/images/publications/park-matching-reviewed.png": {
+    "width": 1774,
+    "height": 887,
+    "small": "/images/publications/park-matching-reviewed-small.webp",
+    "medium": "/images/publications/park-matching-reviewed-medium.webp",
+    "large": "/images/publications/park-matching-reviewed-large.webp"
+  }
+}

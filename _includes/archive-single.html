@@ -1,3 +1,6 @@
+{% if post.collection == 'publications' %}
+  {% include publication-card.html paper=post %}
+{% else %}
 {% include base_path %}
 
 {% if post.header.teaser %}
@@ -116,3 +119,4 @@
 
   </article>
 </div>
+{% endif %}

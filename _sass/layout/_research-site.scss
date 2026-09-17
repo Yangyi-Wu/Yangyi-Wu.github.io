@@ -1,0 +1,108 @@
+:root {
+  --global-link-color: #19677a;
+  --global-link-color-visited: #19677a;
+  --global-text-color-light: #62686d;
+}
+
+html[data-theme="dark"] {
+  --global-link-color: #8cdaeb;
+  --global-link-color-visited: #8cdaeb;
+  --global-text-color-light: #dedede;
+}
+
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body { overflow-wrap: break-word; }
+a:focus-visible, input:focus-visible, button:focus-visible {
+  outline: 2px solid var(--global-link-color);
+  outline-offset: 4px;
+}
+.masthead a[aria-current="page"] { border-bottom: 2px solid var(--global-link-color); }
+.page--wide, .publication-page { padding-right: 0; }
+.page__title { line-height: 1.25; }
+.publication-page .page__title { font-size: 28px; margin: 0.8rem 0; }
+.profile-position { color: var(--global-text-color-light); }
+.page__content .profile-lead { font-size: 23px; line-height: 1.65; }
+.research-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 2rem 0;
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--global-border-color);
+  border-bottom: 1px solid var(--global-border-color);
+  h2 { font-size: 19px; margin: 0 0 0.75rem; padding: 0; border: 0; line-height: 1.45; }
+  p { font-size: 16px; margin: 0; line-height: 1.7; }
+}
+.research-theme { scroll-margin-top: 90px; margin-bottom: 2.5rem; }
+.research-question { font-weight: 600; }
+.research-papers { font-size: 16px; line-height: 1.7; }
+.recruitment-list {
+  display: grid;
+  grid-template-columns: minmax(140px, 1fr) 3fr;
+  gap: 12px 24px;
+  dt, dd { margin: 0; padding: 10px 0; border-bottom: 1px solid var(--global-border-color); }
+}
+.publication-toolbar {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 1rem 0 1.6rem;
+  p { margin: 0; font-size: 15px; }
+  label { display: block; font-size: 14px; margin-bottom: 5px; }
+  input { box-sizing: border-box; width: 250px; max-width: 100%; height: 38px; margin: 0; padding: 6px 10px; color: var(--global-text-color); background: var(--global-bg-color); border: 1px solid var(--global-dark-border-color); border-radius: 4px; }
+}
+.publication-group > h2 { margin-top: 2rem; font-size: 22px; }
+.publication-entry {
+  margin: 0;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+  h3 { font-size: 20px; line-height: 1.5; margin: 0 0 0.45rem; }
+  h3 a { color: var(--global-text-color); text-decoration: none; }
+  h3 a:hover { color: var(--global-link-color); text-decoration: underline; }
+  p { margin: 0.3rem 0; font-size: 15px; line-height: 1.65; }
+}
+.publication-authors { color: var(--global-text-color-light); }
+.publication-venue { line-height: 1.6; }
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin: 0.7rem 0;
+  font-size: 14px;
+  a { display: inline-flex; gap: 6px; align-items: center; }
+}
+.publication-media {
+  display: block;
+  margin: 1rem 0 0;
+  width: 100%;
+  max-width: 900px;
+}
+.publication-media img, .publication-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  background: #fff;
+  border: 0;
+  box-shadow: none !important;
+}
+.publication-figure { margin: 1.5rem 0 0; }
+.publication-figure figcaption { color: var(--global-text-color-light); font-size: 13px; margin: 0.7rem 0; }
+.publication-back { font-size: 14px; display: inline-flex; gap: 8px; align-items: center; }
+.publication-page .page__content { margin-top: 1.5rem; }
+.publication-page h2 { font-size: 21px; margin-top: 1.4rem; }
+.publication-page .page__content > h2:first-child { margin-top: 0; }
+@media (max-width: 767px) {
+  .research-overview { grid-template-columns: 1fr; gap: 20px; }
+  .page__content .profile-lead { font-size: 20px; }
+  .publication-page .page__title { font-size: 23px; }
+  .publication-entry h3 { font-size: 18px; }
+  .recruitment-list { grid-template-columns: 1fr; gap: 0; }
+  .recruitment-list dt { border: 0; padding-bottom: 0; }
+  .publication-toolbar > div { width: 100%; }
+  .publication-toolbar input { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

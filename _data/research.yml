@@ -1,0 +1,33 @@
+- id: equity
+  title_zh: 公共服务与空间公平
+  title_en: Public services and spatial equity
+  question_zh: 资源分布较好，为什么仍有人得不到足够的服务？
+  question_en: Why can well-supplied places still leave people's needs unmet?
+  text_zh: 从公园、绿地到住房，关注资源供给、使用机会与不同群体需求之间的关系。将空间公平从设施数量和距离的比较，推进到服务是否真正匹配居民需求的评估。
+  text_en: Across parks, green infrastructure and housing, I study the relationship between provision, opportunities for use and differentiated needs. This work examines service matching alongside conventional measures of facility counts and distance.
+  papers:
+    - /publication/2025-urban-park-equity-wuhan
+    - /publication/2025-park-use-covid-peri-urban
+    - /publication/2023-green-infrastructure-inequality-covid
+- id: innovation
+  title_zh: 产业区位与城市创新
+  title_en: Industrial location and urban innovation
+  question_zh: 哪些集聚关系支持企业发展，它们在多大范围内发挥作用？
+  question_en: Which agglomeration relationships matter for firms, and over what spatial reach?
+  text_zh: 研究知识密集型产业、生产性服务业与城市设施的空间联系。区分产业类型、集聚外部性与地理尺度，解释企业为什么在城市内部形成不同的集聚与扩散格局。
+  text_en: I investigate the spatial relationships among knowledge-intensive industries, producer services and urban amenities. Sector, externality type and geographic scale help explain why firms form different patterns of concentration and dispersion within cities.
+  papers:
+    - /publication/2023-tech-firm-births-agglomeration-economies
+    - /publication/2025-urban-amenities-knowledge-intensive-industry-locations
+    - /publication/2022-amenity-firm-agglomeration-local-creativity-producer-services-shanghai
+- id: structure
+  title_zh: 城市结构与空间异质性
+  title_en: Urban structure and spatial heterogeneity
+  question_zh: 怎样识别真实的地方市场与城市联系，而不只依赖行政边界？
+  question_en: How can local markets and urban connections be identified beyond administrative boundaries?
+  text_zh: 围绕住房子市场、多中心发展与城市蔓延，研究城市空间组织及其差异。结合空间统计、多源数据与分类方法，识别不同尺度上的市场边界和功能联系。
+  text_en: Through housing submarkets, polycentric development and urban sprawl, I study how cities are spatially organized. Spatial statistics, multisource data and classification methods help identify market boundaries and functional connections at different scales.
+  papers:
+    - /publication/2020-spatial-heterogeneity-housing-prices-large-datasets
+    - /publication/2025-polycentric-urban-development-china
+    - /publication/2024-urban-structure-housing-prices-amenity-nanjing

@@ -1,0 +1,22 @@
+<div class="publication-toolbar">
+  <p>{{ site.publications.size }} {% if page.lang == 'zh' %}项成果{% else %}publications{% endif %} · <a href="{{ site.author.googlescholar }}">Google Scholar</a></p>
+  <div data-publication-search hidden>
+    <label for="publication-search">{% if page.lang == 'zh' %}检索成果{% else %}Search publications{% endif %}</label>
+    <input id="publication-search" type="search" autocomplete="off">
+  </div>
+</div>
+<div class="publication-group">
+  <h2>{% if page.lang == 'zh' %}代表研究{% else %}Selected research{% endif %}</h2>
+  {% assign featured = site.publications | where: 'featured', true | reverse %}
+  {% for post in featured %}{% include publication-card.html paper=post %}{% endfor %}
+</div>
+{% for category in site.publication_category %}
+<div class="publication-group">
+  <h2>{% if page.lang == 'zh' %}{{ category[1].title_zh }}{% else %}{{ category[1].title }}{% endif %}</h2>
+  {% for post in site.publications reversed %}
+    {% if post.category == category[0] %}{% unless post.featured %}{% include publication-card.html paper=post %}{% endunless %}{% endif %}
+  {% endfor %}
+</div>
+{% endfor %}
+<p data-publication-empty hidden role="status">{% if page.lang == 'zh' %}没有匹配的成果。{% else %}No matching publications.{% endif %}</p>
+<script src="{{ '/assets/js/publications.js' | relative_url }}" defer></script>

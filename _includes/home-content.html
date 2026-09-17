@@ -1,0 +1,24 @@
+{% if page.lang == 'zh' %}
+<p class="profile-position">武汉大学城市设计学院 · 副教授</p>
+<p class="profile-lead">我研究城市中的空间差异如何形成，以及这些差异如何影响公共服务、企业区位与居民机会。</p>
+<p>以城市与经济地理为基础，结合空间计量、网络分析和多源城市数据，关注城市空间结构背后的社会与经济过程。</p>
+{% else %}
+<p class="profile-position">Associate Professor · School of Urban Design, Wuhan University</p>
+<p class="profile-lead">I study how spatial differences emerge within cities, and how they shape public services, firm locations and residents' opportunities.</p>
+<p>My work draws on urban and economic geography, spatial econometrics, network analysis and multisource urban data to examine the social and economic processes behind urban spatial structure.</p>
+{% endif %}
+<div class="research-overview">
+{% for theme in site.data.research %}
+  <section>
+    <h2><a href="{% if page.lang == 'zh' %}{{ '/zh/research/' | relative_url }}{% else %}{{ '/research/' | relative_url }}{% endif %}#{{ theme.id }}">{% if page.lang == 'zh' %}{{ theme.title_zh }}{% else %}{{ theme.title_en }}{% endif %}</a></h2>
+    <p>{% if page.lang == 'zh' %}{{ theme.question_zh }}{% else %}{{ theme.question_en }}{% endif %}</p>
+  </section>
+{% endfor %}
+</div>
+<h2>{% if page.lang == 'zh' %}代表研究{% else %}Selected research{% endif %}</h2>
+{% assign selected = site.publications | where: 'featured', true | reverse %}
+{% for post in selected %}{% include publication-card.html paper=post %}{% endfor %}
+<p><a href="{% if page.lang == 'zh' %}{{ '/zh/publications/' | relative_url }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">{% if page.lang == 'zh' %}全部研究成果{% else %}All publications{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
+<h2>{% if page.lang == 'zh' %}招生与交流{% else %}Opportunities and contact{% endif %}</h2>
+<p>{% if page.lang == 'zh' %}2027 级招收规划专业硕士研究生和设计专硕，预计自 2028 年起招收博士研究生。欢迎围绕上述研究方向交流与合作。{% else %}For the 2027 cohort, I am recruiting Master's students in Planning and professional Master's students in Design. PhD recruitment is expected to begin in 2028. I welcome discussion and collaboration on these research themes.{% endif %}</p>
+<p><a href="{% if page.lang == 'zh' %}{{ '/zh/team/' | relative_url }}{% else %}{{ '/team/' | relative_url }}{% endif %}">{% if page.lang == 'zh' %}团队与招生{% else %}Group and opportunities{% endif %}</a> · <a href="mailto:yangyi.wu@whu.edu.cn">yangyi.wu@whu.edu.cn</a> · <a href="{% if page.lang == 'zh' %}{{ '/zh/talks/' | relative_url }}{% else %}{{ '/talks/' | relative_url }}{% endif %}">{% if page.lang == 'zh' %}学术活动{% else %}Academic activities{% endif %}</a></p>

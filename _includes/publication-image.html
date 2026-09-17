@@ -1,0 +1,4 @@
+{% assign image_info = site.data.publication_images[include.path] %}
+{% if image_info %}
+<img src="{{ image_info.medium | relative_url }}" srcset="{{ image_info.small | relative_url }} 480w, {{ image_info.medium | relative_url }} 960w, {{ image_info.large | relative_url }} {{ image_info.width }}w" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1100px) 70vw, 850px" width="{{ image_info.width }}" height="{{ image_info.height }}" loading="lazy" decoding="async" alt="{{ include.alt | escape }}">
+{% endif %}

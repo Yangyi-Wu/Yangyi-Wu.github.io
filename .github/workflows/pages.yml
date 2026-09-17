@@ -38,6 +38,13 @@ jobs:
 
       - name: Build site
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+
+      - name: Verify production pages and language behavior
+        run: |
+          node --test tests/language.test.cjs
+          bundle exec ruby scripts/verify-site.rb _site
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'

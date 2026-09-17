@@ -1,0 +1,13 @@
+{% for theme in site.data.research %}
+<section class="research-theme" id="{{ theme.id }}">
+  <h2>{% if page.lang == 'zh' %}{{ theme.title_zh }}{% else %}{{ theme.title_en }}{% endif %}</h2>
+  <p class="research-question">{% if page.lang == 'zh' %}{{ theme.question_zh }}{% else %}{{ theme.question_en }}{% endif %}</p>
+  <p>{% if page.lang == 'zh' %}{{ theme.text_zh }}{% else %}{{ theme.text_en }}{% endif %}</p>
+  <ul class="research-papers">
+  {% for path in theme.papers %}
+    {% assign paper = site.publications | where: 'publication_url', path | first %}
+    <li><a href="{% if page.lang == 'zh' %}{{ paper.alternate_url | relative_url }}{% else %}{{ paper.url | relative_url }}{% endif %}">{{ paper.title }}</a> <span>({{ paper.date | date: '%Y' }})</span></li>
+  {% endfor %}
+  </ul>
+</section>
+{% endfor %}

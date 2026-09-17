@@ -1,20 +1,10 @@
 ---
-layout: archive
-title: "教学与指导"
-permalink: /zh/teaching/
+title: 团队与招生
+permalink: /zh/team/
 lang: zh
 author_profile: true
+wide: true
+redirect_from:
+  - /zh/teaching/
 ---
-
-## 研究生指导
-
-目前招收 2026 级规划专业硕士研究生（专硕/学硕）。2027 级招收规划专业硕士研究生和设计专硕。预计自 2028 年起招收博士研究生。
-
-## 合作方向
-
-欢迎对以下方向感兴趣的学生和合作者通过邮件联系：
-
-- 城市地理与经济地理
-- 空间数据分析与空间计量
-- 城市公共服务、公平与韧性
-- 多源城市大数据，包括 POI、人群流动和遥感数据
+{% include team-content.html %}

@@ -1,0 +1,9 @@
+<div class="publication-links">
+  {% if include.paper.doi %}
+  <a href="https://doi.org/{{ include.paper.doi }}"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> {% if page.lang == 'zh' %}论文原文{% else %}Publisher{% endif %}</a>
+  {% elsif include.paper.source_url %}
+  <a href="{{ include.paper.source_url }}"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> {% if page.lang == 'zh' %}出版信息{% else %}Publication record{% endif %}</a>
+  {% endif %}
+  {% if include.paper.paperurl %}<a href="{{ include.paper.paperurl }}"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> PDF</a>{% endif %}
+  <a href="https://scholar.google.com/scholar?q={{ include.paper.title | uri_escape }}">Google Scholar</a>
+</div>

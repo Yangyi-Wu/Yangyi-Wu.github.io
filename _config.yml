@@ -87,10 +87,13 @@ author:
 publication_category:
   journal-articles:
     title: 'Journal Articles'
+    title_zh: '期刊论文'
   books-and-chapters:
     title: 'Books, Chapters, and Edited Volumes'
+    title_zh: '图书、词条与编辑成果'
   dissertations:
     title: 'Dissertation'
+    title_zh: '学位论文'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -191,6 +194,9 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - scripts
+  - tests
+  - docs
   - vendor
 keep_files:
   - .git

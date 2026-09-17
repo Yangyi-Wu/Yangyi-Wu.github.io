@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<div id="main" role="main">
+  {% include sidebar.html %}
+  <article class="page publication-page">
+    <div class="page__inner-wrap">
+      <a class="publication-back" href="{% if page.lang == 'zh' %}{{ '/zh/publications/' | relative_url }}{% else %}{{ '/publications/' | relative_url }}{% endif %}"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> {% if page.lang == 'zh' %}全部成果{% else %}All publications{% endif %}</a>
+      <header>
+        <h1 class="page__title">{{ page.title }}</h1>
+        <p class="publication-authors">{{ page.authors | escape }}</p>
+        <p class="publication-venue"><i>{{ page.venue }}</i> · {{ page.date | date: '%Y' }}</p>
+        {% include publication-links.html paper=page %}
+      </header>
+      <section class="page__content">
+        {{ content }}
+        {% if page.summary_reviewed %}
+          {% if page.lang == 'zh' %}
+            {% assign contribution = page.contribution_zh %}
+            {% assign highlights = page.highlights_zh %}
+          {% else %}
+            {% assign contribution = page.contribution_en %}
+            {% assign highlights = page.highlights_en %}
+          {% endif %}
+          <h2>{% if page.lang == 'zh' %}研究贡献{% else %}Contribution{% endif %}</h2>
+          <p>{{ contribution }}</p>
+          <h2>{% if page.lang == 'zh' %}主要发现与方法{% else %}Findings and approach{% endif %}</h2>
+          <ul>{% for item in highlights %}<li>{{ item }}</li>{% endfor %}</ul>
+        {% endif %}
+        {% if page.visual_reviewed and page.visual %}
+          {% assign visual_alt = page.visual_alt_en %}
+          {% if page.lang == 'zh' %}{% assign visual_alt = page.visual_alt_zh %}{% endif %}
+          {% assign image_info = site.data.publication_images[page.visual] %}
+          <figure class="publication-figure">
+            <a href="{{ image_info.large | relative_url }}" target="_blank" rel="noopener" aria-label="{% if page.lang == 'zh' %}查看大图{% else %}View full-size figure{% endif %}">
+              {% include publication-image.html path=page.visual alt=visual_alt %}
+            </a>
+            <figcaption>{% if page.lang == 'zh' %}研究概念示意，非实测地图或统计图。{% else %}Conceptual illustration, not an empirical map or statistical plot.{% endif %}</figcaption>
+          </figure>
+        {% endif %}
+      </section>
+    </div>
+  </article>
+</div>

@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "About & CV"
 permalink: /cv/
 lang: en
 author_profile: true
@@ -24,9 +24,9 @@ Appointment
 Research interests
 ======
 
-* Economic geography and industrial space
-* Urban space and public services
-* Urban resilience and governance
+* Economic geography and industrial space: knowledge-intensive industry locations, innovation networks, and spatial diffusion
+* Urban space and public services: accessibility and equity in green spaces, parks, education, and healthcare
+* Urban resilience and governance: environmental exposure, infrastructure provision, and spatial inequality
 * Spatial econometrics, network analysis, and multi-source urban big data
 
 Publications
@@ -46,9 +46,9 @@ Talks, sessions, and service
 Teaching and supervision
 ======
 
-<ul>{% for post in site.teaching reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
+I supervise research on urban spatial equity, industrial location, and spatial data analysis. Recruitment plans cover Master's students in Planning and professional Master's students in Design for the 2027 cohort, with PhD recruitment expected from 2028. The 2026 cohort covers professional and academic Master's tracks in Planning.
+
+See [Group & Opportunities]({{ '/team/' | relative_url }}) for research collaborations and recruitment details. Programs and places are subject to Wuhan University's annual admissions announcements.
 
 Links
 ======
