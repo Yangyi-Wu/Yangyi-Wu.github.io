@@ -33,12 +33,20 @@ empirical maps and statistical plots. WebP variants preserve the source artwork.
 
 ## Homepage selection
 
-The homepage currently selects first-author work in Landscape and Urban Planning
-and Cities. This is an editorial selection, not a claim about universal journal
-rankings. The approved venues are explicit in `_data/homepage.yml` and checked
-before deployment.
+Homepage highlights must fall within the current calendar year and the two
+preceding years (2024-2026 for the September 2026 review), and Yangyi Wu must be
+the first author or an explicitly verified corresponding author. Co-corresponding
+authorship is labeled precisely. Both the template and deployment checks enforce
+the date, authorship and approved-venue requirements; author order is not evidence
+of corresponding authorship.
 
-Two additional bilingual summaries were checked against the supplied papers:
+The current selection is Landscape and Urban Planning (2025, first author) and
+Applied Geography (2025, co-corresponding author). The supplied publisher PDFs,
+page 1, confirm both roles. The 2022 Cities paper remains in the publication
+archive but is no longer a homepage highlight. The approved venues in
+`_data/homepage.yml` are an editorial selection, not a universal journal ranking.
+
+These additional bilingual summaries were checked against the supplied papers:
 
 - Park use in peri-urban areas: `Wu25LAUP_Park equity.pdf`, abstract and
   urban/peri-urban comparison. Distinguishes objective access and quality from
@@ -49,13 +57,18 @@ Two additional bilingual summaries were checked against the supplied papers:
   agglomeration from attractiveness to local creativity and identifies multiple
   spatial relationships. Cross-sectional associations are not causal proof.
   Source: https://doi.org/10.1016/j.cities.2021.103421
+- Urban amenities and knowledge-intensive industry locations:
+  `Teng25JAPG_Amenity and KI.pdf`, abstract, discussion and conclusion. Connects
+  metropolitan sectoral advantage with local amenity diversity and placemaking;
+  does not treat the proposed mechanisms as causal estimates.
+  Source: https://doi.org/10.1016/j.apgeog.2025.103659
 
 Their older illustrations remain pending review and are not enabled by this
-summary update. Five summaries and three illustrations are now source-checked.
+summary update. Six summaries and three illustrations are now source-checked.
 
 ## Follow-up content work
 
-Review the remaining 27 summaries and 29 illustrations against their source papers
+Review the remaining 26 summaries and 29 illustrations against their source papers
 before enabling them. Separate observed associations, proposed frameworks and
 established causal evidence. Do not infer student status or individual author
 contributions from author order. Add student profiles only with confirmed public

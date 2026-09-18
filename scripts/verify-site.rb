@@ -8,6 +8,7 @@ require "set"
 root = Pathname.new(ARGV.fetch(0, "_site"))
 node = ENV.fetch("NODE_EXE", "node")
 records = YAML.safe_load_file("_data/publication_records.yml")
+publications = {}
 checked_scripts = Set.new
 
 def check(condition, message)
@@ -25,6 +26,7 @@ Dir.glob("_publications/*.md").each do |source|
   data = YAML.safe_load(File.read(source, encoding: "UTF-8").split(/^---\s*$\n?/)[1], permitted_classes: [Date, Time])
   record = records.fetch(File.basename(source, ".md"))
   english_path = data.fetch("permalink")
+  publications[english_path] = data.merge(record)
   ["en", "zh"].each do |language|
     path = language == "zh" ? "/zh#{english_path}" : english_path
     page = html(root, path)
@@ -76,19 +78,34 @@ end
 end
 
 homepage = YAML.safe_load_file("_data/homepage.yml")
+selection = homepage.fetch("selection")
+current_year = Date.today.year
+first_year = current_year - selection.fetch("recent_years") + 1
+role_labels = {
+  "first" => {"en" => "First author", "zh" => "第一作者"},
+  "corresponding" => {"en" => "Corresponding author", "zh" => "通讯作者"},
+  "co_corresponding" => {"en" => "Co-corresponding author", "zh" => "共同通讯作者"}
+}
 ["en", "zh"].each do |language|
   prefix = language == "zh" ? "/zh" : ""
   page = html(root, "#{prefix}/")
   check(page.at_css(".profile-lead").text == homepage.fetch(language).fetch("lead"), "Wrong homepage introduction: #{language}")
   check(page.css(".home-highlight").length == homepage.fetch("highlights").length, "Missing homepage highlights: #{language}")
   homepage.fetch("highlights").each do |highlight|
+    record = publications.fetch(highlight.fetch("paper"))
+    year = record.fetch("date").year
+    check((first_year..current_year).cover?(year), "Homepage paper outside #{first_year}-#{current_year}: #{highlight.fetch('paper')}")
+    role = record["wu_author_role"]
+    check(role_labels.key?(role), "Homepage requires first or corresponding authorship: #{highlight.fetch('paper')}")
+    check(!record.fetch("authorship_source", "").empty?, "Unverified homepage authorship: #{highlight.fetch('paper')}")
     entry = page.at_css(".home-highlight[data-publication='#{highlight.fetch('paper')}']")
     check(entry && entry.at_css("h3 a").text == highlight.fetch("title_#{language}"), "Untranslated homepage highlight: #{language}")
     check(entry.at_css("h3 a")["href"] == "#{prefix}#{highlight.fetch('paper')}", "Wrong homepage publication link: #{language}")
     check(entry.at_css("p:not(.home-highlight-source)").text == highlight.fetch("summary_#{language}"), "Missing homepage contribution: #{language}")
     venue = entry.at_css(".home-highlight-source i").text
-    check(homepage.fetch("selection").fetch("allowed_venues").include?(venue), "Unapproved homepage journal: #{venue}")
-    if highlight["first_author"]
+    check(selection.fetch("allowed_venues").include?(venue), "Unapproved homepage journal: #{venue}")
+    check(entry.at_css(".home-highlight-source").text.strip == "#{venue} · #{year} · #{role_labels.fetch(role).fetch(language)}", "Incorrect homepage authorship label: #{language}")
+    if role == "first"
       paper = html(root, "#{prefix}#{highlight.fetch('paper')}")
       check(paper.at_css(".publication-authors").text.start_with?("Wu, Y.,"), "Incorrect first-author label: #{highlight.fetch('paper')}")
     end

@@ -5,19 +5,19 @@ en:
   lead: I work in urban and economic geography, studying the spatial organization of firms, housing markets and public services, and the inequalities associated with it.
   introduction: Drawing on cities in China and metropolitan areas in the United States, I examine how urban amenities relate to industrial location, how housing markets differ across space, and whether parks and green infrastructure meet the needs of different groups. My research combines spatial econometrics, network analysis and multisource urban data.
 selection:
+  recent_years: 3
   allowed_venues:
     - Landscape and Urban Planning
     - Cities
+    - Applied Geography
 highlights:
   - paper: /publication/2025-park-use-covid-peri-urban
-    first_author: true
     title_zh: 公园公平：从空间可达性到实际使用
     title_en: Park equity beyond spatial accessibility
     summary_zh: 城区与近郊的比较表明，客观可达性、居民感知与公园使用之间并不总是一致。研究从资源条件、居民需求和使用行为之间的关系理解公园公平，揭示仅靠距离或数量指标容易遗漏的近郊脆弱性。
     summary_en: A comparison of urban and peri-urban communities shows that objective accessibility, residents' perceptions and park use do not always align. The study relates equity to resource conditions, residents' needs and use, revealing peri-urban vulnerabilities that distance or provision measures alone can miss.
-  - paper: /publication/2022-amenity-firm-agglomeration-local-creativity-producer-services-shanghai
-    first_author: true
-    title_zh: 企业集聚与地方创意：两种不同的区位逻辑
-    title_en: Different location logics for firm agglomeration and local creativity
-    summary_zh: 区分城市设施对企业集聚和地方创意的吸引作用，通过共址、可达性和设施簇等空间关系解释二者差异，说明产业集聚理论与创意理论在城市内部的适用条件并不相同。
-    summary_en: Distinguishing amenity-related attractiveness to firm agglomeration from attractiveness to local creativity, the study identifies co-location, accessibility and amenity clusters as distinct spatial relationships. It clarifies why agglomeration and creativity theories have different applications within cities.
+  - paper: /publication/2025-urban-amenities-knowledge-intensive-industry-locations
+    title_zh: 产业区位：连接都市区竞争优势与地方营造
+    title_en: Linking metropolitan advantage and local placemaking
+    summary_zh: 提出城市设施影响产业区位的多尺度框架：都市区的设施分布形成不同板块的竞争优势，地方的设施组合与多样性塑造具体区位的吸引力。研究将地方营造与产业集聚联系起来，解释为什么相同的设施建设策略在城市内部会产生不同结果。
+    summary_en: A multi-scalar framework connects amenity-based competitive advantages across metropolitan sectors with the local mix and diversity of amenities. It links placemaking to industrial agglomeration and explains why the same amenity strategy can have different implications within a city.

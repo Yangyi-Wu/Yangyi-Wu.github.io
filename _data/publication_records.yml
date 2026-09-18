@@ -142,6 +142,8 @@
 2025-06-01-park-use-covid-peri-urban:
   authors: "Wu, Y., Wei, Y. D., Liu, M., & García, I."
   doi: 10.1016/j.landurbplan.2024.105269
+  wu_author_role: first
+  authorship_source: "Publisher PDF, p. 1: Yangyi Wu is the first listed author; Yehua Dennis Wei is the corresponding author."
   summary_reviewed: true
   contribution_zh: "公园公平不能仅由客观可达性和质量指标判断。本文结合资源评价、居民感知、改善需求与疫情期间的使用变化，在城区与近郊比较中识别这些维度之间的差异。研究说明，空间指标所呈现的资源条件与居民实际感受到、能够使用的公园服务并不总是一致，近郊社区的脆弱性也因此容易被低估。"
   contribution_en: "Objective accessibility and quality measures alone cannot fully describe park equity. Comparing urban and peri-urban communities, the study connects resource assessments, residents' perceptions, improvement needs and pandemic-era changes in use. It shows why measured provision can diverge from experienced services, leaving peri-urban vulnerabilities insufficiently understood."
@@ -165,6 +167,19 @@
 2025-10-01-urban-amenities-knowledge-intensive-industry-locations:
   authors: "Teng, Y., Wu, Y., & Liu, M."
   doi: 10.1016/j.apgeog.2025.103659
+  wu_author_role: co_corresponding
+  authorship_source: "Publisher PDF, p. 1: Yangyi Wu (*) and Meitong Liu (**) are both explicitly identified as corresponding authors."
+  summary_reviewed: true
+  contribution_zh: "本文用多尺度框架解释城市设施与知识密集型产业区位之间的关系。都市区尺度的设施分布决定不同城市板块的潜在竞争优势，地方尺度的设施供给与多样性则通过地方营造形成具体区位的吸引力。研究把地方营造从环境品质和社会生活的讨论推进到产业集聚的解释，并强调其作用取决于所在城市板块的功能与条件。"
+  contribution_en: "The study develops a multi-scalar framework linking urban amenities to knowledge-intensive industry location. Metropolitan amenity patterns establish potential competitive advantages across urban sectors, while local provision and diversity contribute to place-based attractiveness. It extends placemaking beyond environmental quality and social life to the explanation of industrial agglomeration, with effects dependent on each sector's functions and conditions."
+  highlights_zh:
+    - "以武汉汽车产业为案例，区分都市区的板块优势与地方的区位吸引力，避免将城市内部视为均质空间。"
+    - "地方设施的多样性与产业集聚相关；就设施供给水平而言，基础设施和公共服务比消费型设施更受重视。"
+    - "中心城区与外围地区对设施的需求不同，地方营造应与城市板块的功能和目标产业相匹配，而非使用统一的建设模式。"
+  highlights_en:
+    - "The Wuhan automotive-industry case distinguishes metropolitan sectoral advantages from local attractiveness rather than treating intra-urban space as homogeneous."
+    - "Local amenity diversity is associated with industrial clustering; high provision is especially valued for infrastructure and public services rather than consumer amenities."
+    - "Central and peripheral areas have different amenity needs. Placemaking should fit the functions of each urban sector and the requirements of its target industries."
 2025-11-01-institutions-urban-space-residential-markets-shanghai:
   authors: "Wei, Y. D., Wu, Y., & Li, H."
   doi: 10.1080/07352166.2023.2285465
