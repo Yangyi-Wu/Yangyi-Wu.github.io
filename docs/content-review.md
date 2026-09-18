@@ -2,10 +2,28 @@
 
 ## Display policy
 
-All 32 bibliographic records remain available in both languages. Authors are
-transcribed from the existing citations. 31 records have DOI links checked against
-the supplied PDFs or publisher records; the dissertation has a title-specific
-Scholar lookup, not an invented repository URL.
+All 33 bibliographic records remain available in both languages. Authors are
+transcribed from citations and verified records. 32 records have DOI links checked
+against supplied PDFs or publisher records. Every item, including the dissertation,
+links directly to its entry in Yangyi Wu's Google Scholar profile.
+
+## Scholar synchronization, 2026-09-18
+
+Read the complete public profile `Y7KU37UAAAAJ`, showing articles 1-33 with
+"Show more" disabled. Matched all 32 existing records and added the missing 2026
+Land Use Policy paper on politico-economic transition and urban form in the
+Greater Bay Area. Scholar and Crossref agree on the author order, 2026 year,
+volume 171, article 108280 and DOI 10.1016/j.landusepol.2026.108280.
+The December 2026 date is the assigned issue date, not a verified online date.
+The new paper's summary, illustration and corresponding-author role remain
+unverified, so it is not yet a homepage highlight.
+
+`_data/scholar.yml` records the checked date, all 33 article IDs and the observed
+citation snapshot: 1,193 citations, h-index 16 and i10-index 22. These are not live
+counters. Blank article citation cells remain null rather than inferred as zero.
+Existing canonical titles are retained instead of copying Scholar's occasional
+indexing artifacts (for example, the author suffix on the Nanjing housing paper).
+Profile: https://scholar.google.com/citations?user=Y7KU37UAAAAJ&hl=en
 
 Only summaries marked `summary_reviewed` and illustrations marked
 `visual_reviewed` in `_data/publication_records.yml` are displayed. Older assets
@@ -68,7 +86,7 @@ summary update. Six summaries and three illustrations are now source-checked.
 
 ## Follow-up content work
 
-Review the remaining 26 summaries and 29 illustrations against their source papers
+Review the remaining 27 summaries and 30 illustrations against their source papers
 before enabling them. Separate observed associations, proposed frameworks and
 established causal evidence. Do not infer student status or individual author
 contributions from author order. Add student profiles only with confirmed public

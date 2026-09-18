@@ -5,8 +5,13 @@ module AcademicSite
 
     def generate(site)
       records = site.data.fetch("publication_records", {})
+      scholar = site.data.fetch("scholar", {})
       site.collections.fetch("publications").docs.each do |doc|
         doc.data.merge!(records.fetch(doc.basename_without_ext, {}))
+        scholar_record = scholar.fetch("publications", {})[doc.basename_without_ext]
+        if scholar_record
+          doc.data["scholar_url"] = "https://scholar.google.com/citations?view_op=view_citation&user=#{scholar.fetch('profile_id')}&citation_for_view=#{scholar.fetch('profile_id')}:#{scholar_record.fetch('id')}"
+        end
         doc.data["lang"] = "en"
         doc.data["layout"] = "publication"
         doc.data["alternate_url"] = "/zh#{doc.url}"

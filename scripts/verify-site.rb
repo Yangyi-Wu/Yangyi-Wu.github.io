@@ -8,6 +8,7 @@ require "set"
 root = Pathname.new(ARGV.fetch(0, "_site"))
 node = ENV.fetch("NODE_EXE", "node")
 records = YAML.safe_load_file("_data/publication_records.yml")
+scholar = YAML.safe_load_file("_data/scholar.yml")
 publications = {}
 checked_scripts = Set.new
 
@@ -22,9 +23,16 @@ def html(root, path)
   Nokogiri::HTML(File.read(file, encoding: "UTF-8"))
 end
 
+scholar_records = scholar.fetch("publications")
+check(scholar_records.keys.sort == records.keys.sort, "Scholar and publication records differ")
+check(scholar_records.length == scholar.fetch("publication_count"), "Incomplete Scholar snapshot")
+check(scholar_records.values.map { |record| record.fetch("id") }.uniq.length == scholar_records.length, "Duplicate Scholar article IDs")
+
 Dir.glob("_publications/*.md").each do |source|
   data = YAML.safe_load(File.read(source, encoding: "UTF-8").split(/^---\s*$\n?/)[1], permitted_classes: [Date, Time])
   record = records.fetch(File.basename(source, ".md"))
+  scholar_record = scholar_records.fetch(File.basename(source, ".md"))
+  check(data.fetch("date").year == scholar_record.fetch("year"), "Scholar year mismatch: #{source}")
   english_path = data.fetch("permalink")
   publications[english_path] = data.merge(record)
   ["en", "zh"].each do |language|
@@ -32,6 +40,8 @@ Dir.glob("_publications/*.md").each do |source|
     page = html(root, path)
     check(page.at_css("html")["lang"] == language, "Wrong language: #{path}")
     check(page.at_css(".publication-authors").text == record.fetch("authors"), "Missing authors: #{path}")
+    scholar_url = "https://scholar.google.com/citations?view_op=view_citation&user=#{scholar.fetch('profile_id')}&citation_for_view=#{scholar.fetch('profile_id')}:#{scholar_record.fetch('id')}"
+    check(page.css(".publication-links a").any? { |link| link["href"] == scholar_url }, "Wrong Scholar record link: #{path}")
     alternate = page.at_css("[data-language-option]")
     target = language == "zh" ? english_path : "/zh#{english_path}"
     check(alternate && alternate["href"] == target, "Wrong language counterpart: #{path}")
