@@ -5,16 +5,12 @@
     <input id="publication-search" type="search" autocomplete="off">
   </div>
 </div>
-<div class="publication-group">
-  <h2>{% if page.lang == 'zh' %}代表研究{% else %}Selected research{% endif %}</h2>
-  {% assign featured = site.publications | where: 'featured', true | reverse %}
-  {% for post in featured %}{% include publication-card.html paper=post %}{% endfor %}
-</div>
+{% assign publications_by_date = site.publications | sort: 'date' | reverse %}
 {% for category in site.publication_category %}
-<div class="publication-group">
+<div class="publication-group" data-publication-category="{{ category[0] }}">
   <h2>{% if page.lang == 'zh' %}{{ category[1].title_zh }}{% else %}{{ category[1].title }}{% endif %}</h2>
-  {% for post in site.publications reversed %}
-    {% if post.category == category[0] %}{% unless post.featured %}{% include publication-card.html paper=post %}{% endunless %}{% endif %}
+  {% for post in publications_by_date %}
+    {% if post.category == category[0] %}{% include publication-card.html paper=post %}{% endif %}
   {% endfor %}
 </div>
 {% endfor %}

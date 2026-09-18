@@ -24,7 +24,6 @@
   visual_alt_zh: "结合相似性、可替代性和空间连接性，在盐湖县识别 43 个住房子市场。"
   thumbnail_alt_en: "Housing submarket classification through spatial connectivity."
   thumbnail_alt_zh: "通过空间连接性识别住房子市场。"
-  featured: true
   summary_reviewed: true
   contribution_en: "Housing submarkets need not be defined by simple spatial continuity. This study combines similarity, substitutability and spatial connectivity in a hybrid classification method, linking the definition of local markets to the price processes that operate within them."
   contribution_zh: "住房子市场不能仅按空间上的连续分布划分。本文结合相似性、可替代性和空间连接性构建混合分类方法，使子市场的识别与其内部的价格形成过程相对应。贡献在于重新处理市场边界与空间关系，而不只是提高房价预测精度。"
@@ -84,7 +83,6 @@
   visual_alt_zh: "专业化与相关多样性在邻里和全市尺度发挥作用，非相关多样性未显示影响，城市化经济仅在全市尺度表现为负向作用。"
   thumbnail_alt_en: "Agglomeration externalities differ by type and scale."
   thumbnail_alt_zh: "不同集聚外部性具有不同的尺度效应。"
-  featured: true
   summary_reviewed: true
   contribution_en: "Agglomeration economies are not one uniform local advantage. The study distinguishes four forms of agglomeration and their spatial reach, showing why the type of externality and the scale of analysis must be considered together when explaining tech firm births."
   contribution_zh: "集聚并不是一种作用一致的区位优势。本文区分四类集聚经济及其空间作用范围，说明解释科技企业创生时，必须同时考虑外部性的类型与分析尺度，不能用单一的集聚程度替代。"
@@ -127,7 +125,6 @@
   visual_alt_zh: "将考虑质量的公园服务供给与年龄差异化需求匹配；武汉案例中 28.25% 的社区存在需求缺口。"
   thumbnail_alt_en: "Park equity depends on matching services to differentiated needs."
   thumbnail_alt_zh: "公园公平取决于服务供给与差异化需求是否匹配。"
-  featured: true
   summary_reviewed: true
   contribution_en: "Park provision is not the same as park equity. By combining quality-adjusted service capacity and accessibility with age-sensitive demand, this study evaluates whether services match residents' needs. This explains why a well-supplied central area can still face a serious shortfall."
   contribution_zh: "公园资源多，并不等于公园服务公平。本文依据公园质量、服务能力与可达性测度供给，并考虑不同年龄群体的使用需求，把公平的判断从资源数量推进到服务与需求的匹配。因此，供给较高的中心城区仍可能存在严重的需求缺口。"

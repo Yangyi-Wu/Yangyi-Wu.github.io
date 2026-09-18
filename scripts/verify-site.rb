@@ -9,6 +9,7 @@ root = Pathname.new(ARGV.fetch(0, "_site"))
 node = ENV.fetch("NODE_EXE", "node")
 records = YAML.safe_load_file("_data/publication_records.yml")
 scholar = YAML.safe_load_file("_data/scholar.yml")
+publication_categories = YAML.safe_load_file("_config.yml", aliases: true).fetch("publication_category")
 publications = {}
 checked_scripts = Set.new
 
@@ -63,6 +64,17 @@ end
   check(cards.length == records.length, "Incomplete publication list: #{path}")
   links = cards.map { |entry| entry.at_css("h3 a")["href"] }
   check(links.uniq.length == records.length, "Duplicate publications: #{path}")
+  groups = page.css(".publication-group")
+  check(groups.map { |group| group["data-publication-category"] } == publication_categories.keys, "Unexpected publication grouping: #{path}")
+  groups.each do |group|
+    category = group["data-publication-category"]
+    title_key = path.start_with?("/zh/") ? "title_zh" : "title"
+    check(group.at_css("h2").text == publication_categories.fetch(category).fetch(title_key), "Wrong category heading: #{path}")
+    actual = group.css(".publication-entry h3 a").map { |link| link["href"].delete_prefix("/zh") }
+    expected = publications.select { |_, record| record.fetch("category") == category }.sort_by { |_, record| record.fetch("date") }.reverse.map(&:first)
+    check(actual == expected, "Incomplete or non-chronological category #{category}: #{path}")
+  end
+  check(page.css(".publication-media").length == records.values.count { |record| record["visual_reviewed"] && record["thumbnail"] }, "Reviewed publication images missing: #{path}")
   cards.each do |entry|
     media = entry.at_css(".publication-media")
     check(media.nil? || media["href"] == entry.at_css("h3 a")["href"], "Image/title language mismatch")

@@ -30,6 +30,11 @@ Only summaries marked `summary_reviewed` and illustrations marked
 and draft summaries are preserved for subsequent review, not presented as vetted
 research claims. A missing flag means pending review, not missing publication.
 
+The publication archive lists every item once within its publication type, in
+reverse date order. It has no separate selected-research group. Reviewed images
+remain beneath their own entries, and publication detail pages are unchanged.
+Editorial highlights belong only on the homepage and follow its selection policy.
+
 ## Reviewed examples
 
 - Housing submarkets: supplied `Wu19ASAP_SLC Housing Submarkets.pdf`, abstract
