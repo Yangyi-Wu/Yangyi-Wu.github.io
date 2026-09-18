@@ -6,12 +6,33 @@
     "medium": "/images/publications/agglomeration-scales-reviewed-medium.webp",
     "large": "/images/publications/agglomeration-scales-reviewed-large.webp"
   },
+  "/images/publications/amenity-housing-dimensions-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-housing-dimensions-reviewed-small.webp",
+    "medium": "/images/publications/amenity-housing-dimensions-reviewed-medium.webp",
+    "large": "/images/publications/amenity-housing-dimensions-reviewed-large.webp"
+  },
+  "/images/publications/amenity-industry-scales-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-industry-scales-reviewed-small.webp",
+    "medium": "/images/publications/amenity-industry-scales-reviewed-medium.webp",
+    "large": "/images/publications/amenity-industry-scales-reviewed-large.webp"
+  },
   "/images/publications/housing-connectivity-reviewed.png": {
     "width": 1774,
     "height": 887,
     "small": "/images/publications/housing-connectivity-reviewed-small.webp",
     "medium": "/images/publications/housing-connectivity-reviewed-medium.webp",
     "large": "/images/publications/housing-connectivity-reviewed-large.webp"
+  },
+  "/images/publications/park-experienced-equity-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/park-experienced-equity-reviewed-small.webp",
+    "medium": "/images/publications/park-experienced-equity-reviewed-medium.webp",
+    "large": "/images/publications/park-experienced-equity-reviewed-large.webp"
   },
   "/images/publications/park-matching-reviewed.png": {
     "width": 1774,

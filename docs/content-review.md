@@ -86,12 +86,17 @@ These additional bilingual summaries were checked against the supplied papers:
   does not treat the proposed mechanisms as causal estimates.
   Source: https://doi.org/10.1016/j.apgeog.2025.103659
 
-Their older illustrations remain pending review and are not enabled by this
-summary update. Six summaries and three illustrations are now source-checked.
+The September 19 image audit replaced and enabled the park-use and industry-scale
+illustrations and the neighborhood-amenity/housing illustration. The housing
+summary was also checked against the supplied Qu2025ASAP PDF, pp. 1-2 and 22.
+Its framework separates accessibility (quantity and quality) from activity
+(functional mix and spatial arrangement); cross-sectional associations do not
+establish causality. Seven summaries and six illustrations are now source-checked.
+See `docs/publication-image-audit.md` for rejected-image reasons and output checks.
 
 ## Follow-up content work
 
-Review the remaining 27 summaries and 30 illustrations against their source papers
+Review the remaining 26 summaries and 27 illustrations against their source papers
 before enabling them. Separate observed associations, proposed frameworks and
 established causal evidence. Do not infer student status or individual author
 contributions from author order. Add student profiles only with confirmed public
