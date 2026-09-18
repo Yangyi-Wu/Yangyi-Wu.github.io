@@ -47,6 +47,13 @@
 2022-01-01-amenity-firm-agglomeration-local-creativity-producer-services-shanghai:
   authors: "Wu, Y., Wei, Y. D., Li, H., & Liu, M."
   doi: 10.1016/j.cities.2021.103421
+  visual_reviewed: true
+  visual: /images/publications/amenity-creativity-distinction-watercolor-reviewed.png
+  thumbnail: /images/publications/amenity-creativity-distinction-watercolor-reviewed.png
+  visual_alt_en: "Co-location, accessibility and amenity clusters represent distinct spatial relationships. Amenity associations with firm agglomeration weaken away from the CBD, while associations with local creativity persist into suburbs. These are observational relationships."
+  visual_alt_zh: "共址、可达性和设施集群代表不同的空间关系。设施与企业集聚的关联随远离中央商务区而减弱，与地方创意的关联则延续至郊区。这些是观察性研究中的关联。"
+  thumbnail_alt_en: "Firm agglomeration and local creativity require different spatial explanations."
+  thumbnail_alt_zh: "企业集聚与地方创意需要不同的空间解释。"
   summary_reviewed: true
   contribution_zh: "城市设施对企业集聚的吸引力与对地方创意的吸引力并不相同。本文以这两个维度构建理论框架，结合共址、可达性与高密度设施簇等空间关系，解释城市设施在上海都市区内部的差异化作用。研究明确了产业集聚理论与创意理论在不同研究对象和城市空间中的适用差异。"
   contribution_en: "Attractiveness to firm agglomeration and attractiveness to local creativity are distinct dimensions of urban amenities. The study develops a framework connecting these dimensions to co-location, accessibility and high-density amenity clusters within Shanghai. It clarifies how the applicability of agglomeration and creativity theories differs across research objects and urban space."
@@ -140,8 +147,8 @@
   authors: "Wu, Y., Wei, Y. D., Liu, M., & García, I."
   doi: 10.1016/j.landurbplan.2024.105269
   visual_reviewed: true
-  visual: /images/publications/park-experienced-equity-reviewed.png
-  thumbnail: /images/publications/park-experienced-equity-reviewed.png
+  visual: /images/publications/park-experienced-equity-watercolor-reviewed.png
+  thumbnail: /images/publications/park-experienced-equity-watercolor-reviewed.png
   visual_alt_en: "Conceptual comparison: urban-center and western peri-urban communities have similar objective park access but different perceptions and improvement needs. Equity assessment combines access, quality, perceptions, needs and changes in use."
   visual_alt_zh: "概念对照：中心城区与西部近郊的客观公园可达性相近，但居民感知和改善需求不同。公平评价需要结合可达性、质量、感知、需求与使用变化。"
   thumbnail_alt_en: "Similar measured park access does not mean the same experienced equity."
@@ -169,8 +176,8 @@
   authors: "Qu, Z., Wu, Y., & Liu, M."
   doi: 10.1007/s12061-025-09667-1
   visual_reviewed: true
-  visual: /images/publications/amenity-housing-dimensions-reviewed.png
-  thumbnail: /images/publications/amenity-housing-dimensions-reviewed.png
+  visual: /images/publications/amenity-housing-dimensions-watercolor-reviewed.png
+  thumbnail: /images/publications/amenity-housing-dimensions-watercolor-reviewed.png
   visual_alt_en: "A four-dimensional amenity framework: accessibility covers quantity and quality; activity covers functional mix and spatial arrangement. Their associations with housing value are nonlinear and context-dependent."
   visual_alt_zh: "设施评价的四维框架：可达性维度包括数量和质量，活动维度包括功能混合与空间组织。它们与住房价值的关联具有非线性和情境差异。"
   thumbnail_alt_en: "Amenity value depends on quantity, quality, functional mix and spatial arrangement, not proximity alone."
@@ -190,8 +197,8 @@
   authors: "Teng, Y., Wu, Y., & Liu, M."
   doi: 10.1016/j.apgeog.2025.103659
   visual_reviewed: true
-  visual: /images/publications/amenity-industry-scales-reviewed.png
-  thumbnail: /images/publications/amenity-industry-scales-reviewed.png
+  visual: /images/publications/amenity-industry-scales-watercolor-reviewed.png
+  thumbnail: /images/publications/amenity-industry-scales-watercolor-reviewed.png
   visual_alt_en: "A proposed multi-scalar framework connects metropolitan urban-sector resource advantages with local amenity diversity and availability. Place-based attractiveness depends on the surrounding urban context."
   visual_alt_zh: "多尺度概念框架连接都市区城市板块的资源优势与地方设施的多样性和供给水平，说明地方吸引力取决于所在城市空间的功能与条件。"
   thumbnail_alt_en: "Industrial attractiveness combines metropolitan resource advantages and local placemaking."
@@ -212,9 +219,45 @@
 2025-11-01-institutions-urban-space-residential-markets-shanghai:
   authors: "Wei, Y. D., Wu, Y., & Li, H."
   doi: 10.1080/07352166.2023.2285465
+  visual_reviewed: true
+  visual: /images/publications/housing-tenure-context-watercolor-reviewed.png
+  thumbnail: /images/publications/housing-tenure-context-watercolor-reviewed.png
+  visual_alt_en: "Within a shared global, institutional and urban context, buyers place greater emphasis on service amenities and renters on job opportunities. The comparison treats tenure as a dimension of urban inequality, not as an absolute division of preferences."
+  visual_alt_zh: "在共同的全球化、制度与城市空间背景下，买方相对更重视服务设施，租方相对更重视就业机会。租售比较将住房占有方式视为城市不平等的一个维度，并非把两类人群的偏好绝对分开。"
+  thumbnail_alt_en: "One city, two housing markets: tenure differentiates urban opportunities."
+  thumbnail_alt_zh: "同一座城市中的租售市场不同，住房占有方式与城市机会差异相关。"
+  summary_reviewed: true
+  contribution_zh: "本文把住房租售市场放在同一分析框架中，将房价解释从住宅属性与区位扩展到全球化、制度和都市区空间结构。研究指出，买方和租方面对的机会与约束不同，住房占有方式因此成为理解城市不平等与居住分异的重要维度，不能用统一的住房市场假设解释租金与售价。"
+  contribution_en: "By comparing housing sales and rents within one framework, the study extends price explanations beyond dwelling attributes and location to globalization, institutions and metropolitan spatial structure. Buyers and renters face different opportunities and constraints, making tenure an important dimension of urban inequality and residential segregation rather than treating the housing market as uniform."
+  highlights_zh:
+    - "上海案例中，租方相对更重视就业机会，买方相对更重视服务设施；这并不意味着任一群体只关心单一因素。"
+    - "制度与全球化背景下，就业和优质服务在中心城区的集中与租售群体的空间差异相关，郊区则表现出相对更强的包容性。"
+    - "比较框架同时联系全球、都市区和地方背景；作者也指出代理变量和定量数据不足以完整解释全球化与社会排斥的过程。"
+  highlights_en:
+    - "In Shanghai, renters place relatively greater emphasis on employment opportunities and buyers on service amenities; neither group is assumed to have exclusive preferences."
+    - "Institutional and globalizing contexts help explain the concentration of opportunities and services in central areas and unequal residential outcomes; suburbs appear relatively more inclusive."
+    - "The framework connects global, metropolitan and local contexts. Proxy variables and quantitative data do not fully capture globalization or the processes of social exclusion."
 2025-12-01-polycentric-urban-development-china:
   authors: "Wei, Y. D., Xiao, W., & Wu, Y."
   doi: 10.1007/s11769-025-1516-3
+  visual_reviewed: true
+  visual: /images/publications/polycentric-form-function-watercolor-reviewed.png
+  thumbnail: /images/publications/polycentric-form-function-watercolor-reviewed.png
+  visual_alt_en: "The same five schematic urban centers illustrate the distinction between morphological concentration and functional connectivity. Several physical centers can coexist with dependence on a dominant network center; scale, measurement and institutions matter."
+  visual_alt_zh: "用同样的五个示意中心对照形态上的集聚与功能上的联系：多个空间中心仍可能依赖同一个网络核心，解释多中心发展需要区分尺度、测度与制度背景。"
+  thumbnail_alt_en: "Multiple physical centers do not necessarily form a balanced functional network."
+  thumbnail_alt_zh: "多个空间中心不一定构成均衡的功能网络。"
+  summary_reviewed: true
+  contribution_zh: "这篇综述将多中心发展从一种规划形态目标，转为需要区分尺度、测度和形成机制的研究问题。人口或就业的空间集聚，与城市之间、中心之间的功能联系并不等同。因此，不能仅凭中心数量判断多中心程度，也不能预设它必然带来效率、公平或环境改善。"
+  contribution_en: "This review treats polycentric development not simply as a desired spatial form but as a question of scale, measurement and underlying mechanisms. Spatial concentrations of population or employment are distinct from functional links between centers. Counting centers alone cannot establish the degree of polycentricity or guarantee efficiency, equity or environmental benefits."
+  highlights_zh:
+    - "已有研究显示，中国不少城市区域仍具有较强的单中心特征，同时形成新的次中心；形态与功能指标识别的中心并不总是一致。"
+    - "多中心发展的形成机制因城市与尺度而异，经济、制度和交通因素共同发挥作用，国家与地方政府的作用尤其重要。"
+    - "文章综合已有文献，而非提供新的全国实测地图；疫情后多中心结构与韧性的长期关系仍是待检验问题。"
+  highlights_en:
+    - "The reviewed evidence describes many Chinese urban regions as strongly monocentric with emerging subcenters; centers identified through morphological and functional metrics do not always coincide."
+    - "Economic, institutional and transportation mechanisms differ across cities and scales, with a significant role for the state."
+    - "This is a literature synthesis, not a new nationwide mapped dataset. Long-term relationships between post-pandemic polycentricity and resilience remain open to investigation."
 2026-01-01-urban-sprawl:
   authors: "Wu, Y."
   doi: 10.1007/978-3-031-92524-5_211

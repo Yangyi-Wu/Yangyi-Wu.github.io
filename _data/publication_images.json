@@ -6,12 +6,33 @@
     "medium": "/images/publications/agglomeration-scales-reviewed-medium.webp",
     "large": "/images/publications/agglomeration-scales-reviewed-large.webp"
   },
+  "/images/publications/amenity-creativity-distinction-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-creativity-distinction-reviewed-small.webp",
+    "medium": "/images/publications/amenity-creativity-distinction-reviewed-medium.webp",
+    "large": "/images/publications/amenity-creativity-distinction-reviewed-large.webp"
+  },
+  "/images/publications/amenity-creativity-distinction-watercolor-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-creativity-distinction-watercolor-reviewed-small.webp",
+    "medium": "/images/publications/amenity-creativity-distinction-watercolor-reviewed-medium.webp",
+    "large": "/images/publications/amenity-creativity-distinction-watercolor-reviewed-large.webp"
+  },
   "/images/publications/amenity-housing-dimensions-reviewed.png": {
     "width": 1536,
     "height": 1024,
     "small": "/images/publications/amenity-housing-dimensions-reviewed-small.webp",
     "medium": "/images/publications/amenity-housing-dimensions-reviewed-medium.webp",
     "large": "/images/publications/amenity-housing-dimensions-reviewed-large.webp"
+  },
+  "/images/publications/amenity-housing-dimensions-watercolor-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-housing-dimensions-watercolor-reviewed-small.webp",
+    "medium": "/images/publications/amenity-housing-dimensions-watercolor-reviewed-medium.webp",
+    "large": "/images/publications/amenity-housing-dimensions-watercolor-reviewed-large.webp"
   },
   "/images/publications/amenity-industry-scales-reviewed.png": {
     "width": 1536,
@@ -20,12 +41,33 @@
     "medium": "/images/publications/amenity-industry-scales-reviewed-medium.webp",
     "large": "/images/publications/amenity-industry-scales-reviewed-large.webp"
   },
+  "/images/publications/amenity-industry-scales-watercolor-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-industry-scales-watercolor-reviewed-small.webp",
+    "medium": "/images/publications/amenity-industry-scales-watercolor-reviewed-medium.webp",
+    "large": "/images/publications/amenity-industry-scales-watercolor-reviewed-large.webp"
+  },
   "/images/publications/housing-connectivity-reviewed.png": {
     "width": 1774,
     "height": 887,
     "small": "/images/publications/housing-connectivity-reviewed-small.webp",
     "medium": "/images/publications/housing-connectivity-reviewed-medium.webp",
     "large": "/images/publications/housing-connectivity-reviewed-large.webp"
+  },
+  "/images/publications/housing-tenure-context-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/housing-tenure-context-reviewed-small.webp",
+    "medium": "/images/publications/housing-tenure-context-reviewed-medium.webp",
+    "large": "/images/publications/housing-tenure-context-reviewed-large.webp"
+  },
+  "/images/publications/housing-tenure-context-watercolor-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/housing-tenure-context-watercolor-reviewed-small.webp",
+    "medium": "/images/publications/housing-tenure-context-watercolor-reviewed-medium.webp",
+    "large": "/images/publications/housing-tenure-context-watercolor-reviewed-large.webp"
   },
   "/images/publications/park-experienced-equity-reviewed.png": {
     "width": 1536,
@@ -34,11 +76,32 @@
     "medium": "/images/publications/park-experienced-equity-reviewed-medium.webp",
     "large": "/images/publications/park-experienced-equity-reviewed-large.webp"
   },
+  "/images/publications/park-experienced-equity-watercolor-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/park-experienced-equity-watercolor-reviewed-small.webp",
+    "medium": "/images/publications/park-experienced-equity-watercolor-reviewed-medium.webp",
+    "large": "/images/publications/park-experienced-equity-watercolor-reviewed-large.webp"
+  },
   "/images/publications/park-matching-reviewed.png": {
     "width": 1774,
     "height": 887,
     "small": "/images/publications/park-matching-reviewed-small.webp",
     "medium": "/images/publications/park-matching-reviewed-medium.webp",
     "large": "/images/publications/park-matching-reviewed-large.webp"
+  },
+  "/images/publications/polycentric-form-function-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/polycentric-form-function-reviewed-small.webp",
+    "medium": "/images/publications/polycentric-form-function-reviewed-medium.webp",
+    "large": "/images/publications/polycentric-form-function-reviewed-large.webp"
+  },
+  "/images/publications/polycentric-form-function-watercolor-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/polycentric-form-function-watercolor-reviewed-small.webp",
+    "medium": "/images/publications/polycentric-form-function-watercolor-reviewed-medium.webp",
+    "large": "/images/publications/polycentric-form-function-watercolor-reviewed-large.webp"
   }
 }

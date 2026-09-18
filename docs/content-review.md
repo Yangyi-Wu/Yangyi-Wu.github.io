@@ -91,12 +91,19 @@ illustrations and the neighborhood-amenity/housing illustration. The housing
 summary was also checked against the supplied Qu2025ASAP PDF, pp. 1-2 and 22.
 Its framework separates accessibility (quantity and quality) from activity
 (functional mix and spatial arrangement); cross-sectional associations do not
-establish causality. Seven summaries and six illustrations are now source-checked.
+establish causality. A second batch checked the Shanghai housing-market paper
+(supplied Wei24JUA PDF, PDF pp. 2 and 18), the polycentricity review (supplied
+Wei2025CGS PDF, pp. 1-2 and 9), and the already-checked Cities creativity paper.
+Their images were replaced; the first two received source-checked bilingual
+summaries. Nine summaries and nine illustrations are now source-checked.
 See `docs/publication-image-audit.md` for rejected-image reasons and output checks.
+The six newly reviewed conceptual illustrations subsequently received the user's
+requested planning pen-and-watercolor styling. Labels, topology and scientific
+distinctions were checked again; the original flat versions are preserved.
 
 ## Follow-up content work
 
-Review the remaining 26 summaries and 27 illustrations against their source papers
+Review the remaining 24 summaries and 24 illustrations against their source papers
 before enabling them. Separate observed associations, proposed frameworks and
 established causal evidence. Do not infer student status or individual author
 contributions from author order. Add student profiles only with confirmed public
