@@ -35,6 +35,28 @@ a:focus-visible, input:focus-visible, button:focus-visible {
   p { font-size: 16px; margin: 0; line-height: 1.7; }
 }
 .research-theme { scroll-margin-top: 90px; margin-bottom: 2.5rem; }
+.home-content {
+  max-width: 960px;
+  .home-introduction > p { margin-bottom: 1rem; }
+  .profile-lead { font-size: 22px; line-height: 1.65; }
+  .home-introduction > p:not(.profile-lead):not(.profile-position) { font-size: 17px; line-height: 1.8; }
+  .home-section { margin-top: 1.8rem; }
+  .home-section h2 { font-size: 22px; margin: 0 0 1rem; padding-bottom: 0.6rem; }
+  .home-profile-links { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px; }
+  .home-profile-links a { display: inline-flex; gap: 7px; align-items: center; }
+  .home-research-areas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  h3 { font-size: 18px; line-height: 1.5; margin: 0 0 0.5rem; }
+  .home-research-areas p { font-size: 16px; line-height: 1.75; margin: 0; }
+  .home-section-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; border-bottom: 1px solid var(--global-border-color); }
+  .home-section-heading h2 { margin-bottom: 0; border: 0; }
+  .home-section-heading > a { font-size: 14px; margin-bottom: 0.6rem; }
+  .home-highlight { padding: 1rem 0; border-bottom: 1px solid var(--global-border-color); }
+  .home-highlight h3 a { color: var(--global-text-color); text-decoration: none; }
+  .home-highlight h3 a:hover { color: var(--global-link-color); text-decoration: underline; }
+  .home-highlight p { font-size: 16px; line-height: 1.75; margin: 0.4rem 0; }
+  .home-highlight .home-highlight-source { font-size: 14px; color: var(--global-text-color-light); margin-bottom: 0; }
+  .home-contact > p { font-size: 16px; line-height: 1.8; }
+}
 .research-question { font-weight: 600; }
 .research-papers { font-size: 16px; line-height: 1.7; }
 .recruitment-list {
@@ -96,6 +118,9 @@ a:focus-visible, input:focus-visible, button:focus-visible {
 .publication-page h2 { font-size: 21px; margin-top: 1.4rem; }
 .publication-page .page__content > h2:first-child { margin-top: 0; }
 @media (max-width: 767px) {
+  .home-content .home-research-areas { grid-template-columns: 1fr; gap: 18px; }
+  .home-content .profile-lead { font-size: 19px; }
+  .home-content .home-introduction > p:not(.profile-lead):not(.profile-position) { font-size: 16px; }
   .research-overview { grid-template-columns: 1fr; gap: 20px; }
   .page__content .profile-lead { font-size: 20px; }
   .publication-page .page__title { font-size: 23px; }

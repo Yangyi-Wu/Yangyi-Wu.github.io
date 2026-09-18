@@ -1,6 +1,8 @@
 - id: equity
   title_zh: 公共服务与空间公平
   title_en: Public services and spatial equity
+  overview_zh: 关注公园、绿地与住房的供给和使用机会，考察公共资源配置如何回应不同群体的需求。
+  overview_en: Provision and opportunities for use in parks, green infrastructure and housing, with attention to the needs of different groups.
   question_zh: 资源分布较好，为什么仍有人得不到足够的服务？
   question_en: Why can well-supplied places still leave people's needs unmet?
   text_zh: 从公园、绿地到住房，关注资源供给、使用机会与不同群体需求之间的关系。将空间公平从设施数量和距离的比较，推进到服务是否真正匹配居民需求的评估。
@@ -12,6 +14,8 @@
 - id: innovation
   title_zh: 产业区位与城市创新
   title_en: Industrial location and urban innovation
+  overview_zh: 研究城市设施、产业关联与集聚外部性，解释企业在城市内部的区位选择及其尺度差异。
+  overview_en: Urban amenities, industrial linkages and agglomeration externalities as explanations for firm location across spatial scales.
   question_zh: 哪些集聚关系支持企业发展，它们在多大范围内发挥作用？
   question_en: Which agglomeration relationships matter for firms, and over what spatial reach?
   text_zh: 研究知识密集型产业、生产性服务业与城市设施的空间联系。区分产业类型、集聚外部性与地理尺度，解释企业为什么在城市内部形成不同的集聚与扩散格局。
@@ -23,6 +27,8 @@
 - id: structure
   title_zh: 城市结构与空间异质性
   title_en: Urban structure and spatial heterogeneity
+  overview_zh: 通过住房子市场、多中心发展与城市蔓延，研究城市内部的市场边界、功能联系和空间分异。
+  overview_en: Market boundaries, functional connections and spatial differentiation through housing submarkets, polycentric development and urban sprawl.
   question_zh: 怎样识别真实的地方市场与城市联系，而不只依赖行政边界？
   question_en: How can local markets and urban connections be identified beyond administrative boundaries?
   text_zh: 围绕住房子市场、多中心发展与城市蔓延，研究城市空间组织及其差异。结合空间统计、多源数据与分类方法，识别不同尺度上的市场边界和功能联系。

@@ -75,6 +75,22 @@ end
   end
 end
 
+homepage = YAML.safe_load_file("_data/homepage.yml")
+["en", "zh"].each do |language|
+  prefix = language == "zh" ? "/zh" : ""
+  page = html(root, "#{prefix}/")
+  check(page.at_css(".profile-lead").text == homepage.fetch(language).fetch("lead"), "Wrong homepage introduction: #{language}")
+  check(page.css(".home-highlight").length == homepage.fetch("highlights").length, "Missing homepage highlights: #{language}")
+  homepage.fetch("highlights").each do |highlight|
+    entry = page.at_css(".home-highlight[data-publication='#{highlight.fetch('paper')}']")
+    check(entry && entry.at_css("h3 a").text == highlight.fetch("title_#{language}"), "Untranslated homepage highlight: #{language}")
+    check(entry.at_css("h3 a")["href"] == "#{prefix}#{highlight.fetch('paper')}", "Wrong homepage publication link: #{language}")
+    check(entry.css("p").first.text == highlight.fetch("summary_#{language}"), "Missing homepage contribution: #{language}")
+  end
+  check(page.css(".publication-entry").empty?, "Homepage repeats the full publication archive: #{language}")
+  check(page.css(".home-research-areas section").length == 3, "Missing homepage research areas: #{language}")
+end
+
 Dir.glob(root.join("**/*.html")).each do |file|
   page = Nokogiri::HTML(File.read(file, encoding: "UTF-8"))
   page.css("script:not([src])").each do |script|

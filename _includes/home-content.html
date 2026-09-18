@@ -1,24 +1,59 @@
-{% if page.lang == 'zh' %}
-<p class="profile-position">武汉大学城市设计学院 · 副教授</p>
-<p class="profile-lead">我研究城市中的空间差异如何形成，以及这些差异如何影响公共服务、企业区位与居民机会。</p>
-<p>以城市与经济地理为基础，结合空间计量、网络分析和多源城市数据，关注城市空间结构背后的社会与经济过程。</p>
-{% else %}
-<p class="profile-position">Associate Professor · School of Urban Design, Wuhan University</p>
-<p class="profile-lead">I study how spatial differences emerge within cities, and how they shape public services, firm locations and residents' opportunities.</p>
-<p>My work draws on urban and economic geography, spatial econometrics, network analysis and multisource urban data to examine the social and economic processes behind urban spatial structure.</p>
-{% endif %}
-<div class="research-overview">
-{% for theme in site.data.research %}
-  <section>
-    <h2><a href="{% if page.lang == 'zh' %}{{ '/zh/research/' | relative_url }}{% else %}{{ '/research/' | relative_url }}{% endif %}#{{ theme.id }}">{% if page.lang == 'zh' %}{{ theme.title_zh }}{% else %}{{ theme.title_en }}{% endif %}</a></h2>
-    <p>{% if page.lang == 'zh' %}{{ theme.question_zh }}{% else %}{{ theme.question_en }}{% endif %}</p>
+{% assign home = site.data.homepage[page.lang] %}
+{% assign language_prefix = '' %}
+{% if page.lang == 'zh' %}{% assign language_prefix = '/zh' %}{% endif %}
+{% assign title_key = 'title_' | append: page.lang %}
+{% assign overview_key = 'overview_' | append: page.lang %}
+{% assign summary_key = 'summary_' | append: page.lang %}
+<div class="home-content">
+  <div class="home-introduction">
+    <p class="profile-position">{% if page.lang == 'zh' %}武汉大学城市设计学院 · 副教授{% else %}Associate Professor · School of Urban Design, Wuhan University{% endif %}</p>
+    <p class="profile-lead">{{ home.lead }}</p>
+    <p>{{ home.introduction }}</p>
+    <p class="home-profile-links">
+      <a href="{{ language_prefix | append: '/cv/' | relative_url }}">{% if page.lang == 'zh' %}个人简历{% else %}About & CV{% endif %}</a>
+      <a href="{{ language_prefix | append: '/team/' | relative_url }}">{% if page.lang == 'zh' %}招生信息{% else %}Student opportunities{% endif %}</a>
+      <a href="mailto:yangyi.wu@whu.edu.cn"><i class="fa-regular fa-envelope" aria-hidden="true"></i> {% if page.lang == 'zh' %}联系我{% else %}Contact{% endif %}</a>
+    </p>
+  </div>
+  <section class="home-section" aria-labelledby="home-research-title">
+    <h2 id="home-research-title">{% if page.lang == 'zh' %}研究方向{% else %}Research areas{% endif %}</h2>
+    <div class="home-research-areas">
+      {% for theme in site.data.research %}
+      <section>
+        <h3><a href="{{ language_prefix | append: '/research/' | relative_url }}#{{ theme.id }}">{{ theme[title_key] }}</a></h3>
+        <p>{{ theme[overview_key] }}</p>
+      </section>
+      {% endfor %}
+    </div>
   </section>
-{% endfor %}
+  <section class="home-section" aria-labelledby="home-highlights-title">
+    <div class="home-section-heading">
+      <h2 id="home-highlights-title">{% if page.lang == 'zh' %}研究选读{% else %}Research highlights{% endif %}</h2>
+      <a href="{{ language_prefix | append: '/publications/' | relative_url }}">{% if page.lang == 'zh' %}全部成果{% else %}All publications{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    {% for highlight in site.data.homepage.highlights %}
+      {% assign paper = site.publications | where: 'url', highlight.paper | first %}
+      {% if paper.summary_reviewed %}
+      <article class="home-highlight" data-publication="{{ paper.url }}">
+        <h3><a href="{{ language_prefix | append: paper.url | relative_url }}">{{ highlight[title_key] }}</a></h3>
+        <p>{{ highlight[summary_key] }}</p>
+        <p class="home-highlight-source"><i>{{ paper.venue }}</i> · {{ paper.date | date: '%Y' }}</p>
+      </article>
+      {% endif %}
+    {% endfor %}
+  </section>
+  <section class="home-section home-contact" aria-labelledby="home-contact-title">
+    <h2 id="home-contact-title">{% if page.lang == 'zh' %}学生与合作{% else %}Students and collaboration{% endif %}</h2>
+    {% if page.lang == 'zh' %}
+    <p>欢迎对城市空间公平、产业区位和空间数据分析感兴趣的同学联系我，也欢迎围绕这些问题开展研究合作。</p>
+    <p><strong>2027 级招生：</strong>规划专业硕士研究生、设计专硕。预计自 <strong>2028 年</strong>起招收博士研究生，具体安排以学校招生通知为准。</p>
+    {% else %}
+    <p>I welcome prospective students interested in urban spatial equity, industrial location and spatial data analysis, as well as research collaborations on these topics.</p>
+    <p><strong>2027 entry:</strong> Master's students in Planning and professional Master's students in Design. PhD recruitment is expected from <strong>2028</strong>, subject to the university's admissions announcements.</p>
+    {% endif %}
+    <p class="home-profile-links">
+      <a href="{{ language_prefix | append: '/team/' | relative_url }}">{% if page.lang == 'zh' %}团队与招生{% else %}Group & opportunities{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      <a href="mailto:yangyi.wu@whu.edu.cn">yangyi.wu@whu.edu.cn</a>
+    </p>
+  </section>
 </div>
-<h2>{% if page.lang == 'zh' %}代表研究{% else %}Selected research{% endif %}</h2>
-{% assign selected = site.publications | where: 'featured', true | reverse %}
-{% for post in selected %}{% include publication-card.html paper=post %}{% endfor %}
-<p><a href="{% if page.lang == 'zh' %}{{ '/zh/publications/' | relative_url }}{% else %}{{ '/publications/' | relative_url }}{% endif %}">{% if page.lang == 'zh' %}全部研究成果{% else %}All publications{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
-<h2>{% if page.lang == 'zh' %}招生与交流{% else %}Opportunities and contact{% endif %}</h2>
-<p>{% if page.lang == 'zh' %}2027 级招收规划专业硕士研究生和设计专硕，预计自 2028 年起招收博士研究生。欢迎围绕上述研究方向交流与合作。{% else %}For the 2027 cohort, I am recruiting Master's students in Planning and professional Master's students in Design. PhD recruitment is expected to begin in 2028. I welcome discussion and collaboration on these research themes.{% endif %}</p>
-<p><a href="{% if page.lang == 'zh' %}{{ '/zh/team/' | relative_url }}{% else %}{{ '/team/' | relative_url }}{% endif %}">{% if page.lang == 'zh' %}团队与招生{% else %}Group and opportunities{% endif %}</a> · <a href="mailto:yangyi.wu@whu.edu.cn">yangyi.wu@whu.edu.cn</a> · <a href="{% if page.lang == 'zh' %}{{ '/zh/talks/' | relative_url }}{% else %}{{ '/talks/' | relative_url }}{% endif %}">{% if page.lang == 'zh' %}学术活动{% else %}Academic activities{% endif %}</a></p>
