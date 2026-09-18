@@ -13,7 +13,7 @@ thumbnail: /images/publications/remote-sensing-watershed-knowledge-atlas-thumbna
 thumbnail_alt_en: "Conceptual poster presenting Remote Sensing of Watershed as a knowledge atlas"
 thumbnail_alt_zh: "将《Remote Sensing of Watershed》呈现为流域遥感知识图谱的概念海报"
 contribution_en: "This edited volume positions watershed remote sensing as an integrated knowledge field connecting methods, environmental systems, and governance applications. It brings hydrology, ecology, hazards, and watershed management into a shared remote-sensing framework."
-contribution_zh: "本书将流域遥感定位为连接方法、环境系统与治理应用的综合知识领域。它把水文、生态、灾害和流域管理纳入同一个遥感研究框架，呈现流域研究从技术观测走向综合应用的知识体系。"
+contribution_zh: "本书将流域遥感定位为连接方法、环境系统与治理应用的综合知识领域。它围绕水文、生态、灾害和流域管理建立统一的遥感研究框架，呈现流域研究从技术观测走向综合应用的知识体系。"
 highlights_en:
   - "Organizes watershed remote sensing as a knowledge atlas rather than a single-method toolkit."
   - "Connects data acquisition, preprocessing, modeling, validation, and visualization with applied watershed questions."

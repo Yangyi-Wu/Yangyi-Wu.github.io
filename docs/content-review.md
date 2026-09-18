@@ -31,9 +31,31 @@ The three replacements are generated conceptual illustrations. They contain no
 geographic boundaries or invented effect sizes. Captions distinguish them from
 empirical maps and statistical plots. WebP variants preserve the source artwork.
 
+## Homepage selection
+
+The homepage currently selects first-author work in Landscape and Urban Planning
+and Cities. This is an editorial selection, not a claim about universal journal
+rankings. The approved venues are explicit in `_data/homepage.yml` and checked
+before deployment.
+
+Two additional bilingual summaries were checked against the supplied papers:
+
+- Park use in peri-urban areas: `Wu25LAUP_Park equity.pdf`, abstract and
+  urban/peri-urban comparison. Distinguishes objective access and quality from
+  perceptions, improvement needs and pandemic-era park use.
+  Source: https://doi.org/10.1016/j.landurbplan.2024.105269
+- Amenities and creativity: `Wu22Cities_Amenity and creativity.pdf`, abstract,
+  theoretical framework and conclusion. Distinguishes attractiveness to firm
+  agglomeration from attractiveness to local creativity and identifies multiple
+  spatial relationships. Cross-sectional associations are not causal proof.
+  Source: https://doi.org/10.1016/j.cities.2021.103421
+
+Their older illustrations remain pending review and are not enabled by this
+summary update. Five summaries and three illustrations are now source-checked.
+
 ## Follow-up content work
 
-Review the remaining 29 summaries and illustrations against their source papers
+Review the remaining 27 summaries and 29 illustrations against their source papers
 before enabling them. Separate observed associations, proposed frameworks and
 established causal evidence. Do not infer student status or individual author
 contributions from author order. Add student profiles only with confirmed public

@@ -35,9 +35,9 @@
       {% assign paper = site.publications | where: 'url', highlight.paper | first %}
       {% if paper.summary_reviewed %}
       <article class="home-highlight" data-publication="{{ paper.url }}">
+        <p class="home-highlight-source"><i>{{ paper.venue }}</i> · {{ paper.date | date: '%Y' }}{% if highlight.first_author %} · {% if page.lang == 'zh' %}第一作者{% else %}First author{% endif %}{% endif %}</p>
         <h3><a href="{{ language_prefix | append: paper.url | relative_url }}">{{ highlight[title_key] }}</a></h3>
         <p>{{ highlight[summary_key] }}</p>
-        <p class="home-highlight-source"><i>{{ paper.venue }}</i> · {{ paper.date | date: '%Y' }}</p>
       </article>
       {% endif %}
     {% endfor %}

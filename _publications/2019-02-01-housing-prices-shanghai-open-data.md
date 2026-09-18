@@ -21,7 +21,7 @@ highlights_en:
   - "Argues that spatial access to services also produces institutional questions about who can afford amenity-rich places."
 highlights_zh:
   - "将开放数据住房研究从价格制图推进到价值资本化机制分析。"
-  - "把公共设施、私人服务设施和交通可达性纳入同一个住房市场解释框架。"
+  - "构建同时解释公共设施、私人服务设施和交通可达性作用的住房市场分析框架。"
   - "指出上海住房市场仍受到单中心结构组织，但不同空间圈层的价值机制并不相同。"
   - "强调服务设施的空间可达性也会转化为谁能负担优质区位的制度性问题。"
 ---

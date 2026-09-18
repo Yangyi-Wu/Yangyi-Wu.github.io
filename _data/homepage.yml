@@ -1,22 +1,23 @@
 zh:
   lead: 我从事城市与经济地理研究，关注企业集聚、住房市场与公共服务的空间组织及其不平等。
-  introduction: 我的研究以中国城市和美国都市区为案例，考察城市设施与产业区位的联系、住房市场的空间分异，以及公园和绿地服务能否满足不同群体的需求。研究中结合空间计量、网络分析与多源城市数据。
+  introduction: 我的研究以中国城市和美国都市区为案例，分析城市设施与产业区位的联系、住房市场的空间分异，以及公园和绿地服务能否满足不同群体的需求。研究中结合空间计量、网络分析与多源城市数据。
 en:
   lead: I work in urban and economic geography, studying the spatial organization of firms, housing markets and public services, and the inequalities associated with it.
   introduction: Drawing on cities in China and metropolitan areas in the United States, I examine how urban amenities relate to industrial location, how housing markets differ across space, and whether parks and green infrastructure meet the needs of different groups. My research combines spatial econometrics, network analysis and multisource urban data.
+selection:
+  allowed_venues:
+    - Landscape and Urban Planning
+    - Cities
 highlights:
-  - paper: /publication/2025-urban-park-equity-wuhan
-    title_zh: 公园公平：从资源分布到供需匹配
-    title_en: Park equity through the matching of services and needs
-    summary_zh: 将公园质量、服务能力与不同年龄群体的需求纳入同一评估框架，解释为什么公园资源较多的地区仍可能服务不足，并为中心城区和郊区提出不同的改善方向。
-    summary_en: Bringing park quality, service capacity and age-sensitive demand into one assessment explains why well-supplied areas can still be underserved, and supports different responses in central and suburban areas.
-  - paper: /publication/2023-tech-firm-births-agglomeration-economies
-    title_zh: 企业集聚：区分外部性与作用尺度
-    title_en: Distinguishing the types and spatial reach of agglomeration
-    summary_zh: 区分专业化、相关多样性等集聚外部性，比较其在邻里与全市尺度上同科技企业创生的关系。研究表明，集聚的类型与空间作用范围需要共同考虑。
-    summary_en: Comparing specialization, related variety and other agglomeration externalities at neighborhood and city-wide scales shows why both the type and spatial reach of agglomeration matter for understanding tech firm births.
-  - paper: /publication/2020-spatial-heterogeneity-housing-prices-large-datasets
-    title_zh: 住房子市场：结合市场相似性与空间联系
-    title_en: Housing submarkets shaped by similarity and spatial connectivity
-    summary_zh: 结合住宅属性的相似性、可替代性与空间连接性识别住房子市场，使市场划分与地方价格形成过程相对应，也改善了大规模房价数据的建模与解释。
-    summary_en: Combining similarity, substitutability and spatial connectivity links the identification of housing submarkets to local price formation, improving the modeling and interpretation of large housing datasets.
+  - paper: /publication/2025-park-use-covid-peri-urban
+    first_author: true
+    title_zh: 公园公平：从空间可达性到实际使用
+    title_en: Park equity beyond spatial accessibility
+    summary_zh: 城区与近郊的比较表明，客观可达性、居民感知与公园使用之间并不总是一致。研究从资源条件、居民需求和使用行为之间的关系理解公园公平，揭示仅靠距离或数量指标容易遗漏的近郊脆弱性。
+    summary_en: A comparison of urban and peri-urban communities shows that objective accessibility, residents' perceptions and park use do not always align. The study relates equity to resource conditions, residents' needs and use, revealing peri-urban vulnerabilities that distance or provision measures alone can miss.
+  - paper: /publication/2022-amenity-firm-agglomeration-local-creativity-producer-services-shanghai
+    first_author: true
+    title_zh: 企业集聚与地方创意：两种不同的区位逻辑
+    title_en: Different location logics for firm agglomeration and local creativity
+    summary_zh: 区分城市设施对企业集聚和地方创意的吸引作用，通过共址、可达性和设施簇等空间关系解释二者差异，说明产业集聚理论与创意理论在城市内部的适用条件并不相同。
+    summary_en: Distinguishing amenity-related attractiveness to firm agglomeration from attractiveness to local creativity, the study identifies co-location, accessibility and amenity clusters as distinct spatial relationships. It clarifies why agglomeration and creativity theories have different applications within cities.

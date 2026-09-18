@@ -54,7 +54,8 @@ a:focus-visible, input:focus-visible, button:focus-visible {
   .home-highlight h3 a { color: var(--global-text-color); text-decoration: none; }
   .home-highlight h3 a:hover { color: var(--global-link-color); text-decoration: underline; }
   .home-highlight p { font-size: 16px; line-height: 1.75; margin: 0.4rem 0; }
-  .home-highlight .home-highlight-source { font-size: 14px; color: var(--global-text-color-light); margin-bottom: 0; }
+  .home-highlight .home-highlight-source { font-size: 14px; color: var(--global-link-color); margin: 0 0 0.5rem; }
+  .home-highlight-source i { font-style: normal; font-weight: 600; }
   .home-contact > p { font-size: 16px; line-height: 1.8; }
 }
 .research-question { font-weight: 600; }

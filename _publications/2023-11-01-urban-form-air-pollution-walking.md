@@ -13,7 +13,7 @@ thumbnail: /images/publications/urban-form-air-pollution-walking-salt-lake-thumb
 thumbnail_alt_en: "Simplified cover visual using the original Salt Lake County walking and urban form map"
 thumbnail_alt_zh: "基于原文盐湖县步行与城市形态地图制作的封面图"
 contribution_en: "This article examines walking origins, destinations, and paths in Salt Lake County to show that walkability is jointly shaped by urban spatial structure and air pollution. It argues that compact development alone is insufficient: healthy walking requires job mixture, pollution reduction, open-space routes, and polycentric development."
-contribution_zh: "本文以盐湖县为案例，将步行起点、终点和路径分开考察，揭示步行性同时受到城市空间结构和空气污染影响。研究指出，单纯提高紧凑度并不足以促进健康步行，还需要优化就业混合、降低污染暴露、改善开放空间路径，并推动多中心发展。"
+contribution_zh: "本文以盐湖县为案例，分别分析步行起点、终点和路径，揭示步行性同时受到城市空间结构和空气污染影响。研究指出，单纯提高紧凑度并不足以促进健康步行，还需要优化就业混合、降低污染暴露、改善开放空间路径，并推动多中心发展。"
 highlights_en:
   - "Models walking origins, destinations, and paths separately, distinguishing walking frequency from walking duration."
   - "Shows a strong spatial inequality: downtown and eastern Salt Lake County walk more, while western minority communities walk less."

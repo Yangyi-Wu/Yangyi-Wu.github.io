@@ -13,7 +13,7 @@ thumbnail: /images/publications/institutions-residential-markets-shanghai-thumbn
 thumbnail_alt_en: "Conceptual poster showing tenure as an axis of urban inequality in Shanghai housing markets"
 thumbnail_alt_zh: "展示产权与租住身份作为城市不平等轴线的上海住房市场概念海报"
 contribution_en: "This article compares Shanghai's housing sale and rental markets within one framework, showing that global city forces, institutions, urban space, amenities, and accessibility shape buyers and renters differently and turn homeownership into a new axis of urban inequality."
-contribution_zh: "本文以上海为案例比较住房销售与租赁市场，将全球化、制度、城市空间、设施与可达性纳入同一分析框架，揭示买房者和租房者的偏好分化，以及以产权和居住身份为核心的新型城市不平等。"
+contribution_zh: "本文以上海为案例比较住房销售与租赁市场，结合全球化、制度、城市空间、设施与可达性建立分析框架，揭示买房者和租房者的偏好分化，以及以产权和居住身份为核心的新型城市不平等。"
 highlights_en:
   - "Builds an integrated framework linking global, metropolitan, and local development contexts to residential market outcomes."
   - "Uses open housing, amenity, and accessibility data to compare the spatial patterns and determinants of sale prices and rents."

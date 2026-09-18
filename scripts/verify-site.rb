@@ -85,7 +85,13 @@ homepage = YAML.safe_load_file("_data/homepage.yml")
     entry = page.at_css(".home-highlight[data-publication='#{highlight.fetch('paper')}']")
     check(entry && entry.at_css("h3 a").text == highlight.fetch("title_#{language}"), "Untranslated homepage highlight: #{language}")
     check(entry.at_css("h3 a")["href"] == "#{prefix}#{highlight.fetch('paper')}", "Wrong homepage publication link: #{language}")
-    check(entry.css("p").first.text == highlight.fetch("summary_#{language}"), "Missing homepage contribution: #{language}")
+    check(entry.at_css("p:not(.home-highlight-source)").text == highlight.fetch("summary_#{language}"), "Missing homepage contribution: #{language}")
+    venue = entry.at_css(".home-highlight-source i").text
+    check(homepage.fetch("selection").fetch("allowed_venues").include?(venue), "Unapproved homepage journal: #{venue}")
+    if highlight["first_author"]
+      paper = html(root, "#{prefix}#{highlight.fetch('paper')}")
+      check(paper.at_css(".publication-authors").text.start_with?("Wu, Y.,"), "Incorrect first-author label: #{highlight.fetch('paper')}")
+    end
   end
   check(page.css(".publication-entry").empty?, "Homepage repeats the full publication archive: #{language}")
   check(page.css(".home-research-areas section").length == 3, "Missing homepage research areas: #{language}")
@@ -93,6 +99,8 @@ end
 
 Dir.glob(root.join("**/*.html")).each do |file|
   page = Nokogiri::HTML(File.read(file, encoding: "UTF-8"))
+  forbidden = ["\u8003\u5bdf", "\u7eb3\u5165"]
+  check(forbidden.none? { |word| page.css("#main").text.include?(word) }, "Disallowed Chinese wording: #{file}")
   page.css("script:not([src])").each do |script|
     next if script["type"] == "application/ld+json" || !checked_scripts.add?(script.text)
     mode = script["type"] == "module" ? "module" : "commonjs"

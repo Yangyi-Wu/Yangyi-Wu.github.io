@@ -27,7 +27,7 @@
   featured: true
   summary_reviewed: true
   contribution_en: "Housing submarkets need not be defined by simple spatial continuity. This study combines similarity, substitutability and spatial connectivity in a hybrid classification method, linking the definition of local markets to the price processes that operate within them."
-  contribution_zh: "住房子市场不能仅按空间上的连续分布划分。本文将相似性、可替代性和空间连接性纳入混合分类方法，使子市场的识别与其内部的价格形成过程相对应。贡献在于重新处理市场边界与空间关系，而不只是提高房价预测精度。"
+  contribution_zh: "住房子市场不能仅按空间上的连续分布划分。本文结合相似性、可替代性和空间连接性构建混合分类方法，使子市场的识别与其内部的价格形成过程相对应。贡献在于重新处理市场边界与空间关系，而不只是提高房价预测精度。"
   highlights_en:
     - "The Salt Lake County case uses a dataset of about 240,000 single-family houses and identifies 43 submarkets."
     - "A hybrid spatial data-mining procedure balances attribute similarity, spatial relationships and computational feasibility."
@@ -48,6 +48,17 @@
 2022-01-01-amenity-firm-agglomeration-local-creativity-producer-services-shanghai:
   authors: "Wu, Y., Wei, Y. D., Li, H., & Liu, M."
   doi: 10.1016/j.cities.2021.103421
+  summary_reviewed: true
+  contribution_zh: "城市设施对企业集聚的吸引力与对地方创意的吸引力并不相同。本文以这两个维度构建理论框架，结合共址、可达性与高密度设施簇等空间关系，解释城市设施在上海都市区内部的差异化作用。研究明确了产业集聚理论与创意理论在不同研究对象和城市空间中的适用差异。"
+  contribution_en: "Attractiveness to firm agglomeration and attractiveness to local creativity are distinct dimensions of urban amenities. The study develops a framework connecting these dimensions to co-location, accessibility and high-density amenity clusters within Shanghai. It clarifies how the applicability of agglomeration and creativity theories differs across research objects and urban space."
+  highlights_zh:
+    - "在 1 公里尺度上，城市设施对地方创意的解释力强于对一般生产性服务业集聚的解释力。"
+    - "共址、可达性与高密度设施簇等空间关系同时存在，不能以单一距离指标替代。"
+    - "设施与企业集聚的关联随远离中央商务区而减弱，与地方创意的关联则延续至郊区。研究主要依据横截面数据，不将这些关联直接视为因果证据。"
+  highlights_en:
+    - "At the 1-km scale, urban amenities explain local creativity more strongly than general producer-service agglomeration."
+    - "Co-location, accessibility and high-density amenity clusters coexist as spatial relationships; a single distance measure cannot represent them all."
+    - "Amenity associations with firm agglomeration weaken farther from the CBD, while associations with creativity persist into suburban areas. The largely cross-sectional analysis does not establish causality."
 2022-02-01-neighborhood-built-environment-resilience-transportation-covid:
   authors: "Xiao, W., Wei, Y. D., & Wu, Y."
   doi: 10.1016/j.trd.2022.103428
@@ -119,7 +130,7 @@
   featured: true
   summary_reviewed: true
   contribution_en: "Park provision is not the same as park equity. By combining quality-adjusted service capacity and accessibility with age-sensitive demand, this study evaluates whether services match residents' needs. This explains why a well-supplied central area can still face a serious shortfall."
-  contribution_zh: "公园资源多，并不等于公园服务公平。本文将公园质量、服务能力与可达性纳入供给测度，并考虑不同年龄群体的使用需求，把公平的判断从资源数量推进到服务与需求的匹配。因此，供给较高的中心城区仍可能存在严重的需求缺口。"
+  contribution_zh: "公园资源多，并不等于公园服务公平。本文依据公园质量、服务能力与可达性测度供给，并考虑不同年龄群体的使用需求，把公平的判断从资源数量推进到服务与需求的匹配。因此，供给较高的中心城区仍可能存在严重的需求缺口。"
   highlights_en:
     - "In the Wuhan case, 28.25% of communities have unmet park demand."
     - "Central areas combine high supply with high demand; an apparently favorable resource distribution can conceal a service deficit."
@@ -131,6 +142,17 @@
 2025-06-01-park-use-covid-peri-urban:
   authors: "Wu, Y., Wei, Y. D., Liu, M., & García, I."
   doi: 10.1016/j.landurbplan.2024.105269
+  summary_reviewed: true
+  contribution_zh: "公园公平不能仅由客观可达性和质量指标判断。本文结合资源评价、居民感知、改善需求与疫情期间的使用变化，在城区与近郊比较中识别这些维度之间的差异。研究说明，空间指标所呈现的资源条件与居民实际感受到、能够使用的公园服务并不总是一致，近郊社区的脆弱性也因此容易被低估。"
+  contribution_en: "Objective accessibility and quality measures alone cannot fully describe park equity. Comparing urban and peri-urban communities, the study connects resource assessments, residents' perceptions, improvement needs and pandemic-era changes in use. It shows why measured provision can diverge from experienced services, leaving peri-urban vulnerabilities insufficiently understood."
+  highlights_zh:
+    - "在盐湖城案例中，南部近郊居民对可达性的评价比传统空间指标所显示的更积极。"
+    - "中心城区与西部近郊的客观可达性相近，但居民感知不同；公园质量也呈现明显的东西差异。"
+    - "西部社区对基础设施改善的需求更高，疫情期间公园使用更容易受到质量感知问题的影响。"
+  highlights_en:
+    - "In Salt Lake City, southern peri-urban residents perceive accessibility more positively than conventional spatial measures suggest."
+    - "Urban-center and western peri-urban communities have similar objective accessibility but different perceptions; park quality also shows a marked east-west divide."
+    - "Western communities report greater needs for basic infrastructure improvements, and their pandemic-era park use is more vulnerable to perceived quality problems."
 2025-07-01-multi-scale-geographic-environmental-monitoring:
   authors: "Wang, J., Wu, Y., Zhang, Y., Lizaga, I., & Zhang, Z."
   doi: 10.3390/land14051059
