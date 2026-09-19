@@ -1,3 +1,4 @@
+<p>{{ site.data.homepage[page.lang].research_intro }}</p>
 {% for theme in site.data.research %}
 <section class="research-theme" id="{{ theme.id }}">
   <h2>{% if page.lang == 'zh' %}{{ theme.title_zh }}{% else %}{{ theme.title_en }}{% endif %}</h2>

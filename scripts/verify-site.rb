@@ -100,6 +100,7 @@ end
 end
 
 homepage = YAML.safe_load_file("_data/homepage.yml")
+research = YAML.safe_load_file("_data/research.yml")
 selection = homepage.fetch("selection")
 current_year = Date.today.year
 first_year = current_year - selection.fetch("recent_years") + 1
@@ -112,6 +113,25 @@ role_labels = {
   prefix = language == "zh" ? "/zh" : ""
   page = html(root, "#{prefix}/")
   check(page.at_css(".profile-lead").text == homepage.fetch(language).fetch("lead"), "Wrong homepage introduction: #{language}")
+  %w[introduction approach research_intro invitation].each do |key|
+    check(page.css(".home-content p").any? { |p| p.text == homepage.fetch(language).fetch(key) }, "Missing homepage #{key}: #{language}")
+  end
+  research_page = html(root, "#{prefix}/research/")
+  cv_page = html(root, "#{prefix}/cv/")
+  research.each do |theme|
+    section = page.at_css("[data-research-theme='#{theme.fetch('id')}']")
+    check(section && section.at_css("h3 a").text == theme.fetch("title_#{language}"), "Inconsistent homepage research theme: #{language}")
+    check(section.at_css("h3 a")["href"] == "#{prefix}/research/##{theme.fetch('id')}", "Wrong research theme link: #{language}")
+    check(section.at_css("p").text == theme.fetch("overview_#{language}"), "Missing homepage research context: #{language}")
+    detail = research_page.at_css("##{theme.fetch('id')}")
+    check(detail && detail.at_css("h2").text == theme.fetch("title_#{language}"), "Missing research theme anchor: #{language}")
+    check(detail.at_css(".research-question").text == theme.fetch("question_#{language}"), "Missing research question: #{language}")
+    check(detail.css("p").last.text == theme.fetch("text_#{language}"), "Missing research discussion: #{language}")
+    links = detail.css(".research-papers a").map { |a| a["href"] }
+    check(links == theme.fetch("papers").map { |path| "#{prefix}#{path}" }, "Incorrect theme publications: #{language}")
+    theme.fetch("papers").each { |path| check(publications.key?(path), "Unknown research publication: #{path}") }
+    check(cv_page.css("#main a").any? { |a| a.text == theme.fetch("title_#{language}") && a["href"] == "#{prefix}/research/##{theme.fetch('id')}" }, "Inconsistent CV research theme: #{language}")
+  end
   check(page.css(".home-highlight").length == homepage.fetch("highlights").length, "Missing homepage highlights: #{language}")
   homepage.fetch("highlights").each do |highlight|
     record = publications.fetch(highlight.fetch("paper"))

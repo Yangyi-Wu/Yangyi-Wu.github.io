@@ -20,9 +20,9 @@ author_profile: true
 研究方向
 ======
 
-* 经济地理与产业空间：知识密集型产业区位、创新网络与空间扩散
-* 城市空间与公共服务：绿地、公园、教育和医疗设施的可达性与空间公平
-* 城市韧性与治理：环境暴露、基础设施配置与城市空间不平等
+{% for theme in site.data.research %}
+* [{{ theme.title_zh }}]({{ '/zh/research/' | relative_url }}#{{ theme.id }})：{{ theme.overview_zh }}
+{% endfor %}
 * 研究方法：空间计量、网络分析与多源城市大数据
 
 发表成果

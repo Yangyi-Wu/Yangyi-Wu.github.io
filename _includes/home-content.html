@@ -13,6 +13,7 @@
     <p class="profile-position">{% if page.lang == 'zh' %}武汉大学城市设计学院 · 副教授{% else %}Associate Professor · School of Urban Design, Wuhan University{% endif %}</p>
     <p class="profile-lead">{{ home.lead }}</p>
     <p>{{ home.introduction }}</p>
+    <p>{{ home.approach }}</p>
     <p class="home-profile-links">
       <a href="{{ language_prefix | append: '/cv/' | relative_url }}">{% if page.lang == 'zh' %}个人简历{% else %}About & CV{% endif %}</a>
       <a href="{{ language_prefix | append: '/team/' | relative_url }}">{% if page.lang == 'zh' %}招生信息{% else %}Student opportunities{% endif %}</a>
@@ -20,10 +21,11 @@
     </p>
   </div>
   <section class="home-section" aria-labelledby="home-research-title">
-    <h2 id="home-research-title">{% if page.lang == 'zh' %}研究方向{% else %}Research areas{% endif %}</h2>
+    <h2 id="home-research-title">{% if page.lang == 'zh' %}研究议题{% else %}Research themes{% endif %}</h2>
+    <p class="home-research-intro">{{ home.research_intro }}</p>
     <div class="home-research-areas">
       {% for theme in site.data.research %}
-      <section>
+      <section data-research-theme="{{ theme.id }}">
         <h3><a href="{{ language_prefix | append: '/research/' | relative_url }}#{{ theme.id }}">{{ theme[title_key] }}</a></h3>
         <p>{{ theme[overview_key] }}</p>
       </section>
@@ -49,11 +51,10 @@
   </section>
   <section class="home-section home-contact" aria-labelledby="home-contact-title">
     <h2 id="home-contact-title">{% if page.lang == 'zh' %}学生与合作{% else %}Students and collaboration{% endif %}</h2>
+    <p>{{ home.invitation }}</p>
     {% if page.lang == 'zh' %}
-    <p>欢迎对城市空间公平、产业区位和空间数据分析感兴趣的同学联系我，也欢迎围绕这些问题开展研究合作。</p>
     <p><strong>2027 级招生：</strong>规划专业硕士研究生、设计专硕。预计自 <strong>2028 年</strong>起招收博士研究生，具体安排以学校招生通知为准。</p>
     {% else %}
-    <p>I welcome prospective students interested in urban spatial equity, industrial location and spatial data analysis, as well as research collaborations on these topics.</p>
     <p><strong>2027 entry:</strong> Master's students in Planning and professional Master's students in Design. PhD recruitment is expected from <strong>2028</strong>, subject to the university's admissions announcements.</p>
     {% endif %}
     <p class="home-profile-links">

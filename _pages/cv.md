@@ -24,9 +24,9 @@ Appointment
 Research interests
 ======
 
-* Economic geography and industrial space: knowledge-intensive industry locations, innovation networks, and spatial diffusion
-* Urban space and public services: accessibility and equity in green spaces, parks, education, and healthcare
-* Urban resilience and governance: environmental exposure, infrastructure provision, and spatial inequality
+{% for theme in site.data.research %}
+* [{{ theme.title_en }}]({{ '/research/' | relative_url }}#{{ theme.id }}): {{ theme.overview_en }}
+{% endfor %}
 * Spatial econometrics, network analysis, and multi-source urban big data
 
 Publications

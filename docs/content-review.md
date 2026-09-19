@@ -56,6 +56,23 @@ empirical maps and statistical plots. WebP variants preserve the source artwork.
 
 ## Homepage selection
 
+### Research framing, 2026-09-19
+
+The bilingual homepage now introduces the scholar's urban and economic geography
+work through concrete questions and research settings rather than a list of topics.
+Metropolitan spatial structure, urban amenities and spatial inequality are
+intersecting themes, not a single causal chain claimed to be established by all
+papers. Shared `_data/research.yml` content keeps homepage, research page and CV
+theme names aligned; existing section anchors are preserved.
+
+Research-page descriptions connect each theme to specific publications. They do
+not claim a comprehensive theory of urban transformation or procedural justice.
+The park-equity homepage example is Salt Lake City, not Wuhan; the separate
+supply-demand park study is in Wuhan. Recruitment details and reviewed-image
+gates are unchanged. Production verification covers bilingual theme text, anchors,
+publication links and CV consistency, alongside existing highlight restrictions.
+Desktop and 390px mobile homepages were visually checked in both languages.
+
 Homepage highlights must fall within the current calendar year and the two
 preceding years (2024-2026 for the September 2026 review), and Yangyi Wu must be
 the first author or an explicitly verified corresponding author. Co-corresponding

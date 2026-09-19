@@ -1,9 +1,15 @@
 zh:
-  lead: 我从事城市与经济地理研究，关注企业集聚、住房市场与公共服务的空间组织及其不平等。
-  introduction: 我的研究以中国城市和美国都市区为案例，分析城市设施与产业区位的联系、住房市场的空间分异，以及公园和绿地服务能否满足不同群体的需求。研究中结合空间计量、网络分析与多源城市数据。
+  lead: 我从事城市与经济地理研究，关注城市内部的发展差异及其空间机制。
+  introduction: 企业为什么在某些城区集聚，住房市场为什么分化，公园资源为什么未必惠及最需要它的人？我的研究将这些问题放回具体的城市空间中，分析区位、设施组合与社区条件的作用，尤其关注同一因素在不同地方和尺度上的差异。
+  approach: 从上海、武汉到盐湖城，我结合企业和住房数据、城市设施信息与居民调查，运用空间计量、网络分析和空间分类方法，理解都市区内的经济活动与日常生活，并讨论规划如何回应这些差异。
+  research_intro: 我的研究围绕以下相互交叉的议题展开。住房、产业与绿色空间提供了不同的观察角度，尺度和地方情境是贯穿其中的关注点。
+  invitation: 欢迎对这些问题感兴趣的同学和同行交流。可以从一个具体的城市现象、一篇论文，或一个尚未想清楚的研究问题谈起。
 en:
-  lead: I work in urban and economic geography, studying the spatial organization of firms, housing markets and public services, and the inequalities associated with it.
-  introduction: Drawing on cities in China and metropolitan areas in the United States, I examine how urban amenities relate to industrial location, how housing markets differ across space, and whether parks and green infrastructure meet the needs of different groups. My research combines spatial econometrics, network analysis and multisource urban data.
+  lead: I work in urban and economic geography, studying uneven development within cities and the spatial mechanisms behind it.
+  introduction: Why do firms cluster in particular districts, housing markets fragment, and park resources sometimes fail to reach those who need them most? I study these questions in their urban contexts, examining location, amenity combinations and neighborhood conditions, with particular attention to how relationships vary across places and scales.
+  approach: From Shanghai and Wuhan to Salt Lake City, I combine firm and housing data, amenity information and resident surveys with spatial econometrics, network analysis and spatial classification. My work examines metropolitan economic activity and everyday life, and what their spatial differences mean for planning.
+  research_intro: My research develops through the intersecting themes below. Housing, industry and green space offer different perspectives, with scale and local context running through the work.
+  invitation: I welcome conversations with students and colleagues who share these interests. A particular urban observation, a paper, or a research question still taking shape can be a good place to start.
 selection:
   recent_years: 3
   allowed_venues:
@@ -12,12 +18,12 @@ selection:
     - Applied Geography
 highlights:
   - paper: /publication/2025-park-use-covid-peri-urban
-    title_zh: 公园公平：从空间可达性到实际使用
+    title_zh: 公园公平：距离之外，还有使用与需求
     title_en: Park equity beyond spatial accessibility
-    summary_zh: 城区与近郊的比较表明，客观可达性、居民感知与公园使用之间并不总是一致。研究从资源条件、居民需求和使用行为之间的关系理解公园公平，揭示仅靠距离或数量指标容易遗漏的近郊脆弱性。
-    summary_en: A comparison of urban and peri-urban communities shows that objective accessibility, residents' perceptions and park use do not always align. The study relates equity to resource conditions, residents' needs and use, revealing peri-urban vulnerabilities that distance or provision measures alone can miss.
+    summary_zh: 盐湖城西部近郊的公园可达性与中心城区相近，居民对基本设施的改善需求却更高。这项研究把客观供给与居民体验结合起来理解公平：评价公园服务，需要同时关心人们能否到达、需要什么，以及实际如何使用。
+    summary_en: In western peri-urban Salt Lake City, park accessibility was similar to that in central areas, yet residents reported greater needs for improvements to basic facilities. The study brings objective provision and residents' experiences into the same equity assessment, considering access, needs and actual use together.
   - paper: /publication/2025-urban-amenities-knowledge-intensive-industry-locations
     title_zh: 产业区位：连接都市区竞争优势与地方营造
     title_en: Linking metropolitan advantage and local placemaking
-    summary_zh: 提出城市设施影响产业区位的多尺度框架：都市区的设施分布形成不同板块的竞争优势，地方的设施组合与多样性塑造具体区位的吸引力。研究将地方营造与产业集聚联系起来，解释为什么相同的设施建设策略在城市内部会产生不同结果。
-    summary_en: A multi-scalar framework connects amenity-based competitive advantages across metropolitan sectors with the local mix and diversity of amenities. It links placemaking to industrial agglomeration and explains why the same amenity strategy can have different implications within a city.
+    summary_zh: 以武汉汽车产业为案例，研究提出连接都市区资源获取与地方设施组合的多尺度框架。地方营造由此成为理解产业吸引力的一部分：具体区位的设施条件，需要放在整个城市的资源联系中理解，而不能简单复制一套设施清单。
+    summary_en: "Using Wuhan's automotive industry, the study proposes a multi-scalar framework linking metropolitan resource access with local amenity combinations. Placemaking becomes part of the explanation for industrial attractiveness: local conditions need to be understood within wider urban resource connections, rather than through a standard amenity checklist."
