@@ -20,6 +20,13 @@
     "medium": "/images/publications/amenity-creativity-distinction-watercolor-reviewed-medium.webp",
     "large": "/images/publications/amenity-creativity-distinction-watercolor-reviewed-large.webp"
   },
+  "/images/publications/amenity-creativity-point-patterns-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-creativity-point-patterns-reviewed-small.webp",
+    "medium": "/images/publications/amenity-creativity-point-patterns-reviewed-medium.webp",
+    "large": "/images/publications/amenity-creativity-point-patterns-reviewed-large.webp"
+  },
   "/images/publications/amenity-housing-dimensions-reviewed.png": {
     "width": 1536,
     "height": 1024,
@@ -47,6 +54,13 @@
     "small": "/images/publications/amenity-industry-scales-watercolor-reviewed-small.webp",
     "medium": "/images/publications/amenity-industry-scales-watercolor-reviewed-medium.webp",
     "large": "/images/publications/amenity-industry-scales-watercolor-reviewed-large.webp"
+  },
+  "/images/publications/amenity-industry-spatial-model-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-industry-spatial-model-reviewed-small.webp",
+    "medium": "/images/publications/amenity-industry-spatial-model-reviewed-medium.webp",
+    "large": "/images/publications/amenity-industry-spatial-model-reviewed-large.webp"
   },
   "/images/publications/housing-connectivity-reviewed.png": {
     "width": 1774,
@@ -89,6 +103,13 @@
     "small": "/images/publications/park-matching-reviewed-small.webp",
     "medium": "/images/publications/park-matching-reviewed-medium.webp",
     "large": "/images/publications/park-matching-reviewed-large.webp"
+  },
+  "/images/publications/polycentric-cartographic-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/polycentric-cartographic-reviewed-small.webp",
+    "medium": "/images/publications/polycentric-cartographic-reviewed-medium.webp",
+    "large": "/images/publications/polycentric-cartographic-reviewed-large.webp"
   },
   "/images/publications/polycentric-form-function-reviewed.png": {
     "width": 1536,

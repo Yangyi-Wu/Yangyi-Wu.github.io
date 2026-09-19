@@ -71,10 +71,11 @@ image as conceptual. Archive images remain below the bibliographic entry.
 Status after two batches: nine approved illustrations and nine source-checked
 bilingual summaries; 24 records still have no approved illustration or summary.
 
-## User-requested watercolor direction
+## Earlier watercolor pass (superseded)
 
-After the scientific review, the user requested planning hand-sketch/watercolor
-styling for the conceptual images. Use pen-and-wash architectural scenes and
+After the scientific review, the user suggested planning hand-sketch/watercolor
+as a possible style. The implementation applied this too broadly. That pass used
+pen-and-wash architectural scenes and
 restrained watercolor for abstract schematics. All labels, topology, diagram
 counts and scientific distinctions must survive the style transfer. Actual maps
 or statistical figures must not be freely repainted. White backgrounds and crisp
@@ -95,14 +96,38 @@ All six new conceptual replacements passed a subsequent watercolor review:
 - Creativity: square/circle legend, all three relationship configurations and
   observed outcome distinctions retained.
 
-The website now references these six `-watercolor-reviewed.png` variants via
-responsive WebP assets. The flat originals remain available in the repository.
+The website initially referenced these six `-watercolor-reviewed.png` variants
+via responsive WebP assets. Both these and the flat originals remain available
+in the repository, but the clarified policy below supersedes the style choice.
 Exact successful style-transfer prompts are in
 `docs/publication-watercolor-prompts-2026-09.md`. Two stalled edit attempts were
 terminated without an accepted asset and successfully retried with the built-in
 image engine; no CLI/API fallback was used.
 
-## Website verification
+## Discipline-specific correction
+
+The user clarified that only design/planning proposal drawings should use a
+hand-drawn style. A park-equity assessment is not a park-design proposal, and a
+housing-price analysis is not an architectural design. Match the graphic's role
+and disciplinary methods rather than applying one aesthetic to all publications.
+
+The first batch replaces three geography graphics:
+
+- `polycentric-cartographic-reviewed.png`: point concentrations versus a
+  five-center network. This is a hypothetical spatial schematic, not a real map.
+- `amenity-industry-spatial-model-reviewed.png`: an idealized metropolitan
+  pattern and local-scale computational model. The title/footer do not identify
+  these invented geometries as observed Wuhan locations.
+- `amenity-creativity-point-patterns-reviewed.png`: matched point configurations
+  distinguish firm concentration from the share of creative firms, followed by
+  three relationship schematics. The source's creative-firm ratio is confirmed
+  in the supplied PDF, pp. 10 and 14. Illustrative counts are not reported data.
+
+All three remove watercolor/sketch rendering. Exact prompts, visual policy and
+generation checks are in `docs/publication-discipline-prompts-2026-09.md`.
+The other three replacements are generated and awaiting site integration.
+
+## Earlier website verification
 
 Production Jekyll build and the site validator pass: 33 entries, 66 bilingual
 detail routes, nine enabled images and 824,816 bytes of default archive images

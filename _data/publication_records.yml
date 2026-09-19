@@ -48,10 +48,10 @@
   authors: "Wu, Y., Wei, Y. D., Li, H., & Liu, M."
   doi: 10.1016/j.cities.2021.103421
   visual_reviewed: true
-  visual: /images/publications/amenity-creativity-distinction-watercolor-reviewed.png
-  thumbnail: /images/publications/amenity-creativity-distinction-watercolor-reviewed.png
-  visual_alt_en: "Co-location, accessibility and amenity clusters represent distinct spatial relationships. Amenity associations with firm agglomeration weaken away from the CBD, while associations with local creativity persist into suburbs. These are observational relationships."
-  visual_alt_zh: "共址、可达性和设施集群代表不同的空间关系。设施与企业集聚的关联随远离中央商务区而减弱，与地方创意的关联则延续至郊区。这些是观察性研究中的关联。"
+  visual: /images/publications/amenity-creativity-point-patterns-reviewed.png
+  thumbnail: /images/publications/amenity-creativity-point-patterns-reviewed.png
+  visual_alt_en: "Paired hypothetical point patterns distinguish firm concentration from the share of creative firms. Three smaller schematics show co-location, accessibility and amenity clusters; none depicts observed locations."
+  visual_alt_zh: "用同一组假设点位区分企业的空间集聚与创意企业占比，下方分别示意共址、可达性和设施集群。点位不代表实测企业区位。"
   thumbnail_alt_en: "Firm agglomeration and local creativity require different spatial explanations."
   thumbnail_alt_zh: "企业集聚与地方创意需要不同的空间解释。"
   summary_reviewed: true
@@ -197,8 +197,8 @@
   authors: "Teng, Y., Wu, Y., & Liu, M."
   doi: 10.1016/j.apgeog.2025.103659
   visual_reviewed: true
-  visual: /images/publications/amenity-industry-scales-watercolor-reviewed.png
-  thumbnail: /images/publications/amenity-industry-scales-watercolor-reviewed.png
+  visual: /images/publications/amenity-industry-spatial-model-reviewed.png
+  thumbnail: /images/publications/amenity-industry-spatial-model-reviewed.png
   visual_alt_en: "A proposed multi-scalar framework connects metropolitan urban-sector resource advantages with local amenity diversity and availability. Place-based attractiveness depends on the surrounding urban context."
   visual_alt_zh: "多尺度概念框架连接都市区城市板块的资源优势与地方设施的多样性和供给水平，说明地方吸引力取决于所在城市空间的功能与条件。"
   thumbnail_alt_en: "Industrial attractiveness combines metropolitan resource advantages and local placemaking."
@@ -241,8 +241,8 @@
   authors: "Wei, Y. D., Xiao, W., & Wu, Y."
   doi: 10.1007/s11769-025-1516-3
   visual_reviewed: true
-  visual: /images/publications/polycentric-form-function-watercolor-reviewed.png
-  thumbnail: /images/publications/polycentric-form-function-watercolor-reviewed.png
+  visual: /images/publications/polycentric-cartographic-reviewed.png
+  thumbnail: /images/publications/polycentric-cartographic-reviewed.png
   visual_alt_en: "The same five schematic urban centers illustrate the distinction between morphological concentration and functional connectivity. Several physical centers can coexist with dependence on a dominant network center; scale, measurement and institutions matter."
   visual_alt_zh: "用同样的五个示意中心对照形态上的集聚与功能上的联系：多个空间中心仍可能依赖同一个网络核心，解释多中心发展需要区分尺度、测度与制度背景。"
   thumbnail_alt_en: "Multiple physical centers do not necessarily form a balanced functional network."

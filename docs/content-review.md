@@ -97,9 +97,13 @@ Wei2025CGS PDF, pp. 1-2 and 9), and the already-checked Cities creativity paper.
 Their images were replaced; the first two received source-checked bilingual
 summaries. Nine summaries and nine illustrations are now source-checked.
 See `docs/publication-image-audit.md` for rejected-image reasons and output checks.
-The six newly reviewed conceptual illustrations subsequently received the user's
-requested planning pen-and-watercolor styling. Labels, topology and scientific
-distinctions were checked again; the original flat versions are preserved.
+An intermediate pass applied pen-and-watercolor styling too broadly. The user
+clarified that hand drawing is for actual design/planning proposal graphics,
+not all research involving parks, buildings or planning. The discipline-specific
+correction uses analytical spatial patterns, models and institutional relations.
+Original and intermediate versions are preserved. The first three corrected
+images are integrated; three further replacements await integration. See
+`docs/publication-discipline-prompts-2026-09.md` for the continuing visual policy.
 
 ## Follow-up content work
 
