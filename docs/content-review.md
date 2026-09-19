@@ -101,8 +101,8 @@ An intermediate pass applied pen-and-watercolor styling too broadly. The user
 clarified that hand drawing is for actual design/planning proposal graphics,
 not all research involving parks, buildings or planning. The discipline-specific
 correction uses analytical spatial patterns, models and institutional relations.
-Original and intermediate versions are preserved. The first three corrected
-images are integrated; three further replacements await integration. See
+Original and intermediate versions are preserved. All six corrected images are
+integrated, still totaling nine approved illustrations and nine summaries. See
 `docs/publication-discipline-prompts-2026-09.md` for the continuing visual policy.
 
 ## Follow-up content work

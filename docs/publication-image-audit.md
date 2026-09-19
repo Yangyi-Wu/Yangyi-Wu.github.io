@@ -125,7 +125,21 @@ The first batch replaces three geography graphics:
 
 All three remove watercolor/sketch rendering. Exact prompts, visual policy and
 generation checks are in `docs/publication-discipline-prompts-2026-09.md`.
-The other three replacements are generated and awaiting site integration.
+The second batch completes the other three replacements:
+
+- `park-equity-assessment-reviewed.png`: an objective/experienced comparison
+  using matched schematic access networks, not landscape design scenes. Equal
+  access is not presented as equal quality or equal service experience.
+- `housing-tenure-institutional-reviewed.png`: a typographic institutional
+  framework, with both markets connected to both services and jobs. Relative
+  emphasis is stated explicitly; there is no absolute preference split.
+- `amenity-housing-analysis-reviewed.png`: crisp digital configuration diagrams
+  group quantity/quality under accessibility and mix/arrangement under activity.
+  Neither illustrative arrangement is presented as a universal optimum.
+
+All six new files replace watercolor references in the shared bilingual metadata.
+No other illustration or summary has been newly approved: the site still has
+nine approved illustrations and nine reviewed summaries, with 24 pending.
 
 ## Earlier website verification
 
@@ -135,3 +149,14 @@ detail routes, nine enabled images and 824,816 bytes of default archive images
 checks cover desktop park rendering, 390-pixel mobile morphology/function
 rendering without horizontal overflow, image-to-internal-detail navigation and
 English-to-Chinese detail switching with the same watercolor asset.
+
+## Discipline-specific verification
+
+After the six replacements, the production build and site validator pass:
+33 entries, 66 bilingual detail routes, nine enabled images and 585,082 bytes of
+default archive images, below the unchanged 1 MB budget. All six language tests
+pass. Browser QA confirms the new morphology/function figure loads at desktop
+width, the tenure figure loads at 390-pixel viewport width without horizontal
+overflow, image clicks enter the Chinese internal detail route, and switching
+to English retains the same new image and corresponding article. Full-size image
+links remain available on detail pages. Temporary viewport overrides are reset.

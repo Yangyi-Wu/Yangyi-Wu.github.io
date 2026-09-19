@@ -27,6 +27,13 @@
     "medium": "/images/publications/amenity-creativity-point-patterns-reviewed-medium.webp",
     "large": "/images/publications/amenity-creativity-point-patterns-reviewed-large.webp"
   },
+  "/images/publications/amenity-housing-analysis-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-housing-analysis-reviewed-small.webp",
+    "medium": "/images/publications/amenity-housing-analysis-reviewed-medium.webp",
+    "large": "/images/publications/amenity-housing-analysis-reviewed-large.webp"
+  },
   "/images/publications/amenity-housing-dimensions-reviewed.png": {
     "width": 1536,
     "height": 1024,
@@ -82,6 +89,20 @@
     "small": "/images/publications/housing-tenure-context-watercolor-reviewed-small.webp",
     "medium": "/images/publications/housing-tenure-context-watercolor-reviewed-medium.webp",
     "large": "/images/publications/housing-tenure-context-watercolor-reviewed-large.webp"
+  },
+  "/images/publications/housing-tenure-institutional-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/housing-tenure-institutional-reviewed-small.webp",
+    "medium": "/images/publications/housing-tenure-institutional-reviewed-medium.webp",
+    "large": "/images/publications/housing-tenure-institutional-reviewed-large.webp"
+  },
+  "/images/publications/park-equity-assessment-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/park-equity-assessment-reviewed-small.webp",
+    "medium": "/images/publications/park-equity-assessment-reviewed-medium.webp",
+    "large": "/images/publications/park-equity-assessment-reviewed-large.webp"
   },
   "/images/publications/park-experienced-equity-reviewed.png": {
     "width": 1536,
