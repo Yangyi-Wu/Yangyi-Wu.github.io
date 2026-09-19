@@ -104,6 +104,10 @@ correction uses analytical spatial patterns, models and institutional relations.
 Original and intermediate versions are preserved. All six corrected images are
 integrated, still totaling nine approved illustrations and nine summaries. See
 `docs/publication-discipline-prompts-2026-09.md` for the continuing visual policy.
+A subsequent comparison retained three of those figures but refined park equity,
+industry location and creativity to restore the research contribution and remove
+uninformative spatial decoration. See
+`docs/publication-figure-refinement-2026-09.md`; the approved count is unchanged.
 
 ## Follow-up content work
 

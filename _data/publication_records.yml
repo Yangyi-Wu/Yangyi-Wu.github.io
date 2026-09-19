@@ -48,10 +48,10 @@
   authors: "Wu, Y., Wei, Y. D., Li, H., & Liu, M."
   doi: 10.1016/j.cities.2021.103421
   visual_reviewed: true
-  visual: /images/publications/amenity-creativity-point-patterns-reviewed.png
-  thumbnail: /images/publications/amenity-creativity-point-patterns-reviewed.png
-  visual_alt_en: "Paired hypothetical point patterns distinguish firm concentration from the share of creative firms. Three smaller schematics show co-location, accessibility and amenity clusters; none depicts observed locations."
-  visual_alt_zh: "用同一组假设点位区分企业的空间集聚与创意企业占比，下方分别示意共址、可达性和设施集群。点位不代表实测企业区位。"
+  visual: /images/publications/amenity-creativity-spatial-context-reviewed.png
+  thumbnail: /images/publications/amenity-creativity-spatial-context-reviewed.png
+  visual_alt_en: "Co-location, accessibility and amenity clusters coexist as spatial relationships. A qualitative CBD-to-suburb comparison contrasts amenity associations that weaken for firm agglomeration with those that persist for creativity. The lines are not estimated effect curves or mapped flows."
+  visual_alt_zh: "共址、可达性和设施集群等空间关系同时存在。中心到郊区的定性对照说明，设施与企业集聚的关联随远离中央商务区而减弱，与地方创意的关联则延续至郊区。线条不是估计效应曲线或实测流量。"
   thumbnail_alt_en: "Firm agglomeration and local creativity require different spatial explanations."
   thumbnail_alt_zh: "企业集聚与地方创意需要不同的空间解释。"
   summary_reviewed: true
@@ -147,10 +147,10 @@
   authors: "Wu, Y., Wei, Y. D., Liu, M., & García, I."
   doi: 10.1016/j.landurbplan.2024.105269
   visual_reviewed: true
-  visual: /images/publications/park-equity-assessment-reviewed.png
-  thumbnail: /images/publications/park-equity-assessment-reviewed.png
-  visual_alt_en: "Conceptual comparison: urban-center and western peri-urban communities have similar objective park access but different perceptions and improvement needs. Equity assessment combines access, quality, perceptions, needs and changes in use."
-  visual_alt_zh: "概念对照：中心城区与西部近郊的客观公园可达性相近，但居民感知和改善需求不同。公平评价需要结合可达性、质量、感知、需求与使用变化。"
+  visual: /images/publications/park-equity-lenses-reviewed.png
+  thumbnail: /images/publications/park-equity-lenses-reviewed.png
+  visual_alt_en: "Objective provision and resident experience jointly inform context-specific park-equity assessment. Western peri-urban communities have access similar to the urban center but greater basic-infrastructure needs; their park use was more vulnerable to perceived quality problems during COVID-19. Conceptual synthesis, not a map or causal model."
+  visual_alt_zh: "公平评价同时联系客观供给与居民体验，并区分城区和近郊情境。西部近郊的客观可达性与中心城区相近，但基础设施改善需求更高，疫情期间公园使用也更容易受到质量感知问题的影响。本图为概念归纳，并非地图或因果模型。"
   thumbnail_alt_en: "Similar measured park access does not mean the same experienced equity."
   thumbnail_alt_zh: "客观公园可达性相近，不意味着居民拥有相同的服务体验。"
   wu_author_role: first
@@ -197,10 +197,10 @@
   authors: "Teng, Y., Wu, Y., & Liu, M."
   doi: 10.1016/j.apgeog.2025.103659
   visual_reviewed: true
-  visual: /images/publications/amenity-industry-spatial-model-reviewed.png
-  thumbnail: /images/publications/amenity-industry-spatial-model-reviewed.png
-  visual_alt_en: "A proposed multi-scalar framework connects metropolitan urban-sector resource advantages with local amenity diversity and availability. Place-based attractiveness depends on the surrounding urban context."
-  visual_alt_zh: "多尺度概念框架连接都市区城市板块的资源优势与地方设施的多样性和供给水平，说明地方吸引力取决于所在城市空间的功能与条件。"
+  visual: /images/publications/amenity-industry-mechanisms-reviewed.png
+  thumbnail: /images/publications/amenity-industry-mechanisms-reviewed.png
+  visual_alt_en: "Adapted from the paper's proposed framework: metropolitan potential resource access underpins competitive advantage, while local amenity availability and diversity support placemaking. These nested mechanisms jointly explain industrial attractiveness within an urban spatial context; schematic connections are not causal estimates."
+  visual_alt_zh: "依据原文理论框架重组：都市区的潜在资源获取条件构成竞争优势，地方设施供给与多样性支持地方营造。两种嵌套尺度的机制共同解释城市空间背景下的产业吸引力，示意连线不代表因果效应估计。"
   thumbnail_alt_en: "Industrial attractiveness combines metropolitan resource advantages and local placemaking."
   thumbnail_alt_zh: "产业区位吸引力需要同时理解都市区资源优势与地方营造。"
   wu_author_role: co_corresponding

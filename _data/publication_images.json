@@ -27,6 +27,13 @@
     "medium": "/images/publications/amenity-creativity-point-patterns-reviewed-medium.webp",
     "large": "/images/publications/amenity-creativity-point-patterns-reviewed-large.webp"
   },
+  "/images/publications/amenity-creativity-spatial-context-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-creativity-spatial-context-reviewed-small.webp",
+    "medium": "/images/publications/amenity-creativity-spatial-context-reviewed-medium.webp",
+    "large": "/images/publications/amenity-creativity-spatial-context-reviewed-large.webp"
+  },
   "/images/publications/amenity-housing-analysis-reviewed.png": {
     "width": 1536,
     "height": 1024,
@@ -47,6 +54,13 @@
     "small": "/images/publications/amenity-housing-dimensions-watercolor-reviewed-small.webp",
     "medium": "/images/publications/amenity-housing-dimensions-watercolor-reviewed-medium.webp",
     "large": "/images/publications/amenity-housing-dimensions-watercolor-reviewed-large.webp"
+  },
+  "/images/publications/amenity-industry-mechanisms-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-industry-mechanisms-reviewed-small.webp",
+    "medium": "/images/publications/amenity-industry-mechanisms-reviewed-medium.webp",
+    "large": "/images/publications/amenity-industry-mechanisms-reviewed-large.webp"
   },
   "/images/publications/amenity-industry-scales-reviewed.png": {
     "width": 1536,
@@ -103,6 +117,13 @@
     "small": "/images/publications/park-equity-assessment-reviewed-small.webp",
     "medium": "/images/publications/park-equity-assessment-reviewed-medium.webp",
     "large": "/images/publications/park-equity-assessment-reviewed-large.webp"
+  },
+  "/images/publications/park-equity-lenses-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/park-equity-lenses-reviewed-small.webp",
+    "medium": "/images/publications/park-equity-lenses-reviewed-medium.webp",
+    "large": "/images/publications/park-equity-lenses-reviewed-large.webp"
   },
   "/images/publications/park-experienced-equity-reviewed.png": {
     "width": 1536,

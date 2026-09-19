@@ -160,3 +160,25 @@ width, the tenure figure loads at 390-pixel viewport width without horizontal
 overflow, image clicks enter the Chinese internal detail route, and switching
 to English retains the same new image and corresponding article. Full-size image
 links remain available on detail pages. Temporary viewport overrides are reset.
+
+## Contribution-first comparison
+
+A subsequent side-by-side review found that the discipline-specific pass was not
+uniformly better. The industry rendering still emphasized invented urban form,
+the park-equity figure repeated an uninformative access network, and the creativity
+figure dropped the amenity/context finding while defining counts and shares.
+
+Only these three are revised again: `amenity-industry-mechanisms-reviewed.png`,
+`park-equity-lenses-reviewed.png` and
+`amenity-creativity-spatial-context-reviewed.png`. They restore the paper-specific
+frameworks and findings, without adding empirical maps or quantitative curves.
+Industry and creativity use the original papers' Figure 1 as source references.
+The other three discipline-specific figures are retained. Full comparison,
+source checks, exact prompts and corrections are recorded in
+`docs/publication-figure-refinement-2026-09.md`.
+
+The subsequent production build and bilingual validator pass with 517,012 bytes
+of default archive images; all six language tests pass. Desktop/mobile browser
+checks and internal-detail/language/full-size-link checks pass. Small annotations
+still require full-size reading on phones; thumbnail overflow is not the same
+as complete text legibility. No new illustrations or summaries were approved.
