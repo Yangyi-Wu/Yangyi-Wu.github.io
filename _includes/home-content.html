@@ -4,32 +4,26 @@
 {% assign title_key = 'title_' | append: page.lang %}
 {% assign overview_key = 'overview_' | append: page.lang %}
 {% assign summary_key = 'summary_' | append: page.lang %}
+{% assign caption_key = 'figure_caption_' | append: page.lang %}
 {% assign selection = site.data.homepage.selection %}
 {% assign current_year = site.time | date: '%Y' | plus: 0 %}
 {% assign first_year = current_year | minus: selection.recent_years | plus: 1 %}
 {% assign eligible_roles = 'first,corresponding,co_corresponding' | split: ',' %}
 <div class="home-content">
-  <div class="home-introduction">
-    <img class="urban-cover" src="{{ '/images/utsi-urban-study.jpg' | relative_url }}" width="2172" height="724" fetchpriority="high" alt="{% if page.lang == 'zh' %}城市空间概念图：不同密度的街区、就业中心与滨水公共空间。非真实城市地图。{% else %}Conceptual city illustration showing neighborhoods, employment centers and waterfront public space; not a map of a real city.{% endif %}">
-    <div class="home-hero-copy">
-    <p class="group-eyebrow">{{ site.data.group[page.lang].affiliation }}</p>
+  <header class="home-identity">
+    <p class="group-wordmark" aria-hidden="true">UTSI</p>
     <h1 class="group-home-title">{{ site.data.group[page.lang].name }}<span>{{ site.data.group[page.lang].type }}</span></h1>
-    <p class="profile-lead">{{ home.lead }}</p>
-    <a class="home-hero-link" href="{{ language_prefix | append: '/research/' | relative_url }}">{% if page.lang == 'zh' %}探索我们的研究{% else %}Explore our research{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-    </div>
-    <span class="cover-note">{% if page.lang == 'zh' %}城市空间 · 概念示意{% else %}Urban space · Concept illustration{% endif %}</span>
-  </div>
-  <section class="home-brief home-section" aria-label="{% if page.lang == 'zh' %}课题组简介{% else %}Group introduction{% endif %}">
-    <div>
-    <p>{{ home.introduction }}</p>
-    </div><div>
-    <p>{{ home.approach }}</p>
-    <p class="home-profile-links">
+    <p class="group-eyebrow">{{ site.data.group[page.lang].affiliation }}</p>
+    <nav class="home-index" aria-label="{% if page.lang == 'zh' %}课题组索引{% else %}Group index{% endif %}">
       <a href="{{ language_prefix | append: '/about/' | relative_url }}">{% if page.lang == 'zh' %}认识课题组{% else %}About the group{% endif %}</a>
       <a href="{{ language_prefix | append: '/people/' | relative_url }}">{% if page.lang == 'zh' %}团队成员{% else %}People{% endif %}</a>
       <a href="{{ language_prefix | append: '/projects/' | relative_url }}">{% if page.lang == 'zh' %}科研项目{% else %}Projects{% endif %}</a>
-    </p>
-    </div>
+    </nav>
+  </header>
+  <section class="home-introduction" aria-label="{% if page.lang == 'zh' %}课题组简介{% else %}Group introduction{% endif %}">
+    <p class="profile-lead">{{ home.lead }}</p>
+    <p>{{ home.introduction }}</p>
+    <p class="home-approach">{{ home.approach }}</p>
   </section>
   {% capture research_section %}
   <section class="home-section" aria-labelledby="home-research-title">
@@ -38,7 +32,6 @@
     <div class="home-research-areas">
       {% for theme in site.data.research %}
       <section data-research-theme="{{ theme.id }}">
-        <span class="theme-number" aria-hidden="true">0{{ forloop.index }}</span>
         <h3><a href="{{ language_prefix | append: '/research/' | relative_url }}#{{ theme.id }}">{{ theme[title_key] }}</a></h3>
         <p>{{ theme[overview_key] }}</p>
       </section>
@@ -60,11 +53,12 @@
         <p class="home-highlight-source"><i>{{ paper.venue }}</i> · {{ paper_year }} · {% case paper.wu_author_role %}{% when 'first' %}{% if page.lang == 'zh' %}第一作者{% else %}First author{% endif %}{% when 'corresponding' %}{% if page.lang == 'zh' %}通讯作者{% else %}Corresponding author{% endif %}{% when 'co_corresponding' %}{% if page.lang == 'zh' %}共同通讯作者{% else %}Co-corresponding author{% endif %}{% endcase %}</p>
         <h3><a href="{{ language_prefix | append: paper.url | relative_url }}">{{ highlight[title_key] }}</a></h3>
         <p>{{ highlight[summary_key] }}</p>
-        {% if paper.visual_reviewed and paper.thumbnail %}
-        {% assign alt_key = 'thumbnail_alt_' | append: page.lang %}
-        {% assign visual_alt = paper[alt_key] %}
-        <a class="publication-media" href="{{ language_prefix | append: paper.url | relative_url }}" aria-label="{{ highlight[title_key] | escape }}">{% include publication-image.html path=paper.thumbnail alt=visual_alt %}</a>
-        {% endif %}
+        <figure class="home-original-figure">
+          <a class="publication-media" href="{{ language_prefix | append: paper.url | relative_url }}" aria-label="{{ highlight[title_key] | escape }}">
+            <img src="{{ '/images/research-originals/' | append: highlight.figure | append: '-1280.webp' | relative_url }}" srcset="{{ '/images/research-originals/' | append: highlight.figure | append: '-640.webp' | relative_url }} 640w, {{ '/images/research-originals/' | append: highlight.figure | append: '-1280.webp' | relative_url }} 1280w" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1100px) 360px, 406px" width="1280" height="{{ highlight.figure_height }}" loading="eager" decoding="async" alt="{{ highlight[caption_key] | escape }}">
+          </a>
+          <figcaption>{{ highlight[caption_key] }}</figcaption>
+        </figure>
       </article>
       {% endif %}
     {% endfor %}

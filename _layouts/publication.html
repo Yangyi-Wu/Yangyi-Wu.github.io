@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
-<div id="main" role="main">
-  {% include sidebar.html %}
-  <article class="page publication-page">
-    <div class="page__inner-wrap">
+<main id="main" class="group-main">
+  <article class="group-page page__content group-page--inner">
+    <aside class="group-page-heading">
+      <p class="group-eyebrow">UTSI · {% if page.lang == 'zh' %}论文成果{% else %}Publications{% endif %}</p>
       <a class="publication-back" href="{% if page.lang == 'zh' %}{{ '/zh/publications/' | relative_url }}{% else %}{{ '/publications/' | relative_url }}{% endif %}"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> {% if page.lang == 'zh' %}全部成果{% else %}All publications{% endif %}</a>
+    </aside>
+    <div class="group-page-body publication-page">
       <header>
         <h1 class="page__title">{{ page.title }}</h1>
         <p class="publication-authors">{{ page.authors | escape }}</p>
@@ -41,4 +43,4 @@ layout: default
       </section>
     </div>
   </article>
-</div>
+</main>

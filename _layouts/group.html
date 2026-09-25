@@ -2,13 +2,13 @@
 layout: default
 ---
 <main id="main" class="group-main{% if page.group_home %} group-main--home{% endif %}">
-  <article class="group-page page__content">
+  <article class="group-page page__content{% unless page.group_home %} group-page--inner{% endunless %}">
     {% unless page.group_home %}
     <header class="group-page-heading">
       <p class="group-eyebrow">UTSI · {% if page.lang == 'zh' %}武汉大学{% else %}Wuhan University{% endif %}</p>
       <h1 class="page__title">{{ page.title }}</h1>
     </header>
     {% endunless %}
-    {{ content }}
+    <div class="group-page-body">{{ content }}</div>
   </article>
 </main>

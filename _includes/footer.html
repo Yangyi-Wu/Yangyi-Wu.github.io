@@ -1,4 +1,8 @@
 {% include base_path %}
+<div class="footer-identity">
+  <p><strong>{% if page.lang == 'zh' %}UTSI · 城市转型与空间不平等课题组{% else %}UTSI · Urban Transformation and Spatial Inequality{% endif %}</strong><br>{% if page.lang == 'zh' %}武汉大学城市设计学院{% else %}School of Urban Design, Wuhan University{% endif %}</p>
+  <p><a href="mailto:yangyi.wu@whu.edu.cn">yangyi.wu@whu.edu.cn</a></p>
+</div>
 {% assign follow_label = site.data.ui-text[site.locale].follow_label %}
 {% assign feed_label = site.data.ui-text[site.locale].feed_label | default: "Feed" %}
 {% assign powered_by = site.data.ui-text[site.locale].powered_by | default: "Powered by" %}

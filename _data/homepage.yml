@@ -1,13 +1,13 @@
 zh:
   lead: 理解城市如何转型，以及谁能从中受益。
-  introduction: 企业与就业向哪里集聚，住房市场如何分化，公共资源又由谁使用？我们研究城市变化背后的空间机制，关注增长与转型如何改变不同地区、不同群体的生活机会。
-  approach: 课题组由武汉大学城市设计学院伍杨屹副教授牵头，以城市与经济地理为基础，结合空间数据、居民调查与定量分析，将地方经验与规划问题联系起来。
+  introduction: 企业与就业向哪里集聚，住房市场如何分化，公共资源又由谁使用？我们从这些问题出发，研究城市转型如何改变不同地区、不同群体的生活机会。
+  approach: 课题组由武汉大学城市设计学院伍杨屹副教授牵头，以城市与经济地理为基础，结合空间数据、居民调查与定量分析开展研究。
   research_intro: 从城市转型的动力，到空间组织的变化，再到机会与资源的分配，三个方向共同构成我们的研究主线。
   invitation: 欢迎对这些问题感兴趣的同学和同行交流。可以从一个具体的城市现象、一篇论文，或一个尚未想清楚的研究问题谈起。
 en:
   lead: Understanding how cities transform, and who benefits.
-  introduction: Where do firms and jobs concentrate, how do housing markets differentiate, and who uses public resources? We study the spatial mechanisms of urban change and how growth and transformation reshape opportunities across places and social groups.
-  approach: Led by Associate Professor Yangyi Wu at Wuhan University’s School of Urban Design, the group draws on urban and economic geography, combining spatial data, resident surveys and quantitative analysis to connect local evidence with planning questions.
+  introduction: How do firms and jobs concentrate, housing markets differentiate, and people use public resources? These questions guide our research on how urban transformation reshapes opportunities across places and social groups.
+  approach: Led by Associate Professor Yangyi Wu at Wuhan University’s School of Urban Design, we combine urban and economic geography with spatial data, resident surveys and quantitative analysis.
   research_intro: Our research connects the drivers of urban transformation, changes in spatial organization, and the distribution of opportunities and resources.
   invitation: We welcome conversations with students and colleagues who share these interests. A particular urban observation, a paper, or a research question still taking shape can be a good place to start.
 selection:
@@ -18,12 +18,20 @@ selection:
     - Applied Geography
 highlights:
   - paper: /publication/2025-park-use-covid-peri-urban
+    figure: park-equity-study-area
+    figure_height: 988
+    figure_caption_zh: 盐湖城公园与受访者分布。原文图 1，Wu et al. (2025)。
+    figure_caption_en: Parks and respondents in Salt Lake City. Original Fig. 1, Wu et al. (2025).
     title_zh: 公园公平：距离之外，还有使用与需求
     title_en: Park equity beyond spatial accessibility
-    summary_zh: 盐湖城西部近郊的公园可达性与中心城区相近，居民对基本设施的改善需求却更高。这项研究把客观供给与居民体验结合起来理解公平：评价公园服务，需要同时关心人们能否到达、需要什么，以及实际如何使用。
-    summary_en: In western peri-urban Salt Lake City, park accessibility was similar to that in central areas, yet residents reported greater needs for improvements to basic facilities. The study brings objective provision and residents' experiences into the same equity assessment, considering access, needs and actual use together.
+    summary_zh: 公园公平不能只用距离衡量。盐湖城案例将客观可达性、居民需求与实际使用相互对照，揭示可达性相近的地区，居民的设施改善需求仍有明显差异。
+    summary_en: Park equity is not captured by distance alone. Comparing access, residents' needs and actual use in Salt Lake City shows why similar accessibility can coexist with different needs for facility improvements.
   - paper: /publication/2025-urban-amenities-knowledge-intensive-industry-locations
+    figure: amenity-industry-framework
+    figure_height: 925
+    figure_caption_zh: 城市舒适性与产业区位的多尺度框架。原文图 1，Teng et al. (2025)。
+    figure_caption_en: A multi-scalar framework of amenities and industry location. Original Fig. 1, Teng et al. (2025).
     title_zh: 产业区位：连接都市区竞争优势与地方营造
     title_en: Linking metropolitan advantage and local placemaking
-    summary_zh: 以武汉汽车产业为案例，研究提出连接都市区资源获取与地方设施组合的多尺度框架。地方营造由此成为理解产业吸引力的一部分：具体区位的设施条件，需要放在整个城市的资源联系中理解，而不能简单复制一套设施清单。
-    summary_en: "Using Wuhan's automotive industry, the study proposes a multi-scalar framework linking metropolitan resource access with local amenity combinations. Placemaking becomes part of the explanation for industrial attractiveness: local conditions need to be understood within wider urban resource connections, rather than through a standard amenity checklist."
+    summary_zh: 研究将都市区资源获取与地方设施组合放在同一框架中，解释舒适性如何影响武汉汽车产业区位。地方营造的作用取决于更广泛的城市空间联系，而非一套固定的设施清单。
+    summary_en: Urban amenities shape industry location through metropolitan resource access and local amenity combinations. The Wuhan study links competitive advantage with placemaking, explaining why local attractiveness depends on wider spatial connections rather than a standard amenity checklist.
