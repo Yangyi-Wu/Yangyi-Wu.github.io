@@ -1,6 +1,6 @@
 @font-face {
   font-family: "UTSI Sans";
-  src: url("../webfonts/utsi/utsi-sans.woff2") format("woff2");
+  src: url("../webfonts/utsi/utsi-sans.woff2?v=#{$site-asset-version}") format("woff2");
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
@@ -120,10 +120,18 @@ a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible
 .home-research-areas h3 a { color: var(--global-text-color); text-decoration: none; }
 .home-research-areas h3 a:hover { color: var(--global-link-color); }
 .home-research-areas p { font-size: 16px; line-height: 1.9; margin: 0; max-width: 730px; }
+.home-theme-step { display: block; margin-bottom: 10px; font-size: 12px; color: var(--global-link-color); font-variant-numeric: tabular-nums; }
+.home-research-areas .home-theme-translation { margin-top: 8px; font-size: 13px; color: var(--global-text-color-light); }
+.home-research-areas .home-theme-question { margin-bottom: 12px; font-size: 19px; line-height: 1.65; font-weight: 600; }
+.home-theme-focus { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 32px; margin: 18px 0 12px; padding-left: 18px; font-size: 14px; color: var(--global-text-color-light); }
+.home-theme-focus li { margin: 0; padding: 0; }
+.home-theme-focus li::marker { color: var(--global-link-color); }
 .home-content > .home-bottom-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; padding-bottom: 84px; border-top: 1px solid var(--global-border-color); }
 .home-bottom-grid > section { min-width: 0; }
 .home-bottom-grid h2 { font-size: 26px; margin: 0 0 22px; }
 .home-contact p, .home-content .group-news li { font-size: 15px; line-height: 1.9; }
+.home-contact .home-admissions-title { margin: 28px 0 12px; font-size: 19px; }
+.home-contact .home-phd-note { font-size: 13px; color: var(--global-text-color-light); }
 .home-profile-links { margin: 22px 0 0; }
 
 .research-overview { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 32px; padding: 28px 0; margin: 28px 0; border-block: 1px solid var(--global-border-color); }
@@ -239,6 +247,9 @@ a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible
   .home-research-areas section { grid-template-columns: 1fr; gap: 12px; padding: 24px 0; }
   .home-research-areas h3 { font-size: 23px; }
   .home-research-areas p { font-size: 15px; }
+  .home-theme-step { margin-bottom: 6px; }
+  .home-research-areas .home-theme-question { font-size: 17px; }
+  .home-theme-focus { gap: 8px 22px; font-size: 13px; }
   .home-content > .home-bottom-grid { grid-template-columns: 1fr; gap: 36px; padding-bottom: 50px; }
   .home-bottom-grid h2 { font-size: 25px; }
   .research-overview { grid-template-columns: 1fr; gap: 24px; }
@@ -268,7 +279,13 @@ a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible
 @media (max-width: 400px) {
   .group-person { grid-template-columns: 1fr; }
   .home-hero .group-home-title { font-size: 35px; }
-  html[lang="en"] .home-hero .group-home-title { font-size: 29px; }
+  html[lang="en"] .home-hero .group-home-title { font-size: 27px; }
   .language-entry h1 { font-size: 27px; }
+}
+@media (max-width: 359px) {
+  .home-theme-focus { grid-template-columns: 1fr; }
+  .home-hero .group-eyebrow { margin-bottom: 16px; }
+  .home-hero .group-home-title { margin-bottom: 16px; }
+  .home-hero .profile-lead { font-size: 14px; margin-bottom: 12px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

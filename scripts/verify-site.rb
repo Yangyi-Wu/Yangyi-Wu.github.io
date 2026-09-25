@@ -127,6 +127,9 @@ role_labels = {
   page = html(root, language == "zh" ? "/zh/" : "/en/")
   check(page.at_css(".group-home-title") && page.css(".sidebar").empty?, "Missing group homepage identity")
   check(page.css("link[rel='stylesheet']").any? { |link| link["href"].match?(%r{/assets/css/main\.css\?v=\d+$}) }, "Missing stylesheet cache version")
+  font_preload = page.at_css("link[rel='preload'][as='font']")
+  check(font_preload && font_preload["href"].match?(%r{/assets/webfonts/utsi/utsi-sans\.woff2\?v=\d+$}), "Missing font cache version")
+  check(root.join("assets/css/main.css").read.include?(font_preload["href"].split("/").last), "Font preload and stylesheet versions differ")
   check(page.at_css(".home-hero .home-identity") && page.css(".urban-cover").empty?, "Homepage must use the institutional identity")
   city_photo = page.at_css(".home-hero .site-city-photo")
   check(city_photo && city_photo["fetchpriority"] == "high" && city_photo["srcset"], "Missing responsive hero photograph")
@@ -156,16 +159,29 @@ role_labels = {
   end
   check(html(root, "#{prefix}/join/").css(".group-admissions dt").map(&:text) == %w[2027 2028 2026], "Incorrect admissions cohorts")
   check(page.at_css(".profile-lead").text == homepage.fetch(language).fetch("lead"), "Wrong homepage introduction: #{language}")
-  %w[introduction approach research_intro invitation].each do |key|
+  check(page.at_css(".home-section-label h2").text == homepage.fetch(language).fetch("perspective_title"), "Wrong research perspective heading: #{language}")
+  section_order = page.css(".home-content > section, .home-content > .home-bottom-grid").map { |section| section["class"].split.last }
+  check(section_order == %w[home-introduction home-research home-selected home-section], "Homepage must introduce the framework before its research highlights")
+  check(page.at_css("#home-research-title").text == (language == "zh" ? "研究主线" : "Research framework"), "Wrong framework heading")
+  check(page.at_css("#home-highlights-title").text == (language == "zh" ? "研究亮点" : "Research highlights"), "Wrong highlights heading")
+  admissions = YAML.safe_load_file("_data/group.yml").fetch("admissions").find { |cohort| cohort.fetch("year") == "2027" }
+  check(page.at_css(".home-admissions").text.include?(admissions.fetch(language)), "Homepage admissions differ from the shared data")
+  check(page.at_css(".home-phd-note").text.include?("2028"), "Missing expected PhD recruitment year")
+  %w[introduction approach research_intro invitation conversation].each do |key|
     check(page.css(".home-content p").any? { |p| p.text == homepage.fetch(language).fetch(key) }, "Missing homepage #{key}: #{language}")
   end
   research_page = html(root, "#{prefix}/research/")
   cv_page = html(root, "#{prefix}/cv/")
-  research.each do |theme|
+  research.each_with_index do |theme, index|
     section = page.at_css("[data-research-theme='#{theme.fetch('id')}']")
     check(section && section.at_css("h3 a").text == theme.fetch("title_#{language}"), "Inconsistent homepage research theme: #{language}")
     check(section.at_css("h3 a")["href"] == "#{prefix}/research/##{theme.fetch('id')}", "Wrong research theme link: #{language}")
-    check(section.at_css("p").text == theme.fetch("overview_#{language}"), "Missing homepage research context: #{language}")
+    check(section.at_css(".home-theme-step").text == format("%02d", index + 1), "Incorrect research framework sequence")
+    check(section.at_css(".home-theme-question").text == theme.fetch("home_question_#{language}"), "Missing homepage research question: #{language}")
+    check(section.at_css(".home-theme-overview").text == theme.fetch("overview_#{language}"), "Missing homepage research context: #{language}")
+    check(section.css(".home-theme-focus li").map(&:text) == theme.fetch("focus_#{language}"), "Missing homepage research topics: #{language}")
+    check(theme.fetch("focus_zh").length == theme.fetch("focus_en").length, "Unpaired research topics")
+    check(section.at_css(".text-link")["href"] == "#{prefix}/research/##{theme.fetch('id')}", "Wrong research detail link")
     detail = research_page.at_css("##{theme.fetch('id')}")
     check(detail && detail.at_css("h2").text == theme.fetch("title_#{language}"), "Missing research theme anchor: #{language}")
     check(detail.at_css(".research-question").text == theme.fetch("question_#{language}"), "Missing research question: #{language}")

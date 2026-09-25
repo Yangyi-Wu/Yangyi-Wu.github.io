@@ -3,6 +3,8 @@
 {% if page.lang == 'zh' %}{% assign language_prefix = '/zh' %}{% endif %}
 {% assign title_key = 'title_' | append: page.lang %}
 {% assign overview_key = 'overview_' | append: page.lang %}
+{% assign question_key = 'home_question_' | append: page.lang %}
+{% assign focus_key = 'focus_' | append: page.lang %}
 {% assign summary_key = 'summary_' | append: page.lang %}
 {% assign caption_key = 'figure_caption_' | append: page.lang %}
 {% assign selection = site.data.homepage.selection %}
@@ -21,30 +23,37 @@
     {% include photo-credit.html %}
   </header>
   <section class="home-introduction" aria-label="{% if page.lang == 'zh' %}课题组简介{% else %}Group introduction{% endif %}">
-    <div class="home-section-label"><span>UTSI</span><h2>{% if page.lang == 'zh' %}城市与经济地理{% else %}Urban and economic geography{% endif %}</h2></div>
+    <div class="home-section-label"><span>UTSI</span><h2>{{ home.perspective_title }}</h2></div>
     <div class="home-introduction-copy">
     <p>{{ home.introduction }}</p>
     <p class="home-approach">{{ home.approach }}</p>
     <a class="text-link" href="{{ language_prefix | append: '/about/' | relative_url }}">{% if page.lang == 'zh' %}认识课题组{% else %}About the group{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
     </div>
   </section>
-  {% capture research_section %}
   <section class="home-section home-research" aria-labelledby="home-research-title">
-    <h2 id="home-research-title">{% if page.lang == 'zh' %}研究议题{% else %}Research themes{% endif %}</h2>
+    <h2 id="home-research-title">{% if page.lang == 'zh' %}研究主线{% else %}Research framework{% endif %}</h2>
     <p class="home-research-intro">{{ home.research_intro }}</p>
     <div class="home-research-areas">
       {% for theme in site.data.research %}
       <section data-research-theme="{{ theme.id }}">
-        <h3><a href="{{ language_prefix | append: '/research/' | relative_url }}#{{ theme.id }}">{{ theme[title_key] }}</a></h3>
-        <p>{{ theme[overview_key] }}</p>
+        <div class="home-theme-heading">
+          <span class="home-theme-step" aria-hidden="true">0{{ forloop.index }}</span>
+          <h3><a href="{{ language_prefix | append: '/research/' | relative_url }}#{{ theme.id }}">{{ theme[title_key] }}</a></h3>
+          {% if page.lang == 'zh' %}<p class="home-theme-translation" lang="en">{{ theme.title_en }}</p>{% endif %}
+        </div>
+        <div class="home-theme-copy">
+          <p class="home-theme-question">{{ theme[question_key] }}</p>
+          <p class="home-theme-overview">{{ theme[overview_key] }}</p>
+          <ul class="home-theme-focus" aria-label="{% if page.lang == 'zh' %}研究内容{% else %}Research topics{% endif %}">{% for topic in theme[focus_key] %}<li>{{ topic }}</li>{% endfor %}</ul>
+          <a class="text-link" href="{{ language_prefix | append: '/research/' | relative_url }}#{{ theme.id }}">{% if page.lang == 'zh' %}了解{{ theme.title_zh }}研究{% else %}Explore {{ theme.title_en | downcase }}{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
       </section>
       {% endfor %}
     </div>
   </section>
-  {% endcapture %}
   <section class="home-section home-selected" aria-labelledby="home-highlights-title">
     <div class="home-section-heading">
-      <h2 id="home-highlights-title">{% if page.lang == 'zh' %}研究选读{% else %}Research highlights{% endif %}</h2>
+      <h2 id="home-highlights-title">{% if page.lang == 'zh' %}研究亮点{% else %}Research highlights{% endif %}</h2>
       <a href="{{ language_prefix | append: '/publications/' | relative_url }}">{% if page.lang == 'zh' %}全部成果{% else %}All publications{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
     </div>
     <div class="home-highlights-grid">
@@ -70,7 +79,6 @@
     {% endfor %}
     </div>
   </section>
-  {{ research_section }}
   <div class="home-bottom-grid home-section">
   <section class="home-section" aria-labelledby="home-news-title">
     <div class="home-section-heading"><h2 id="home-news-title">{% if page.lang == 'zh' %}学术动态{% else %}News{% endif %}</h2><a href="{{ language_prefix | append: '/news/' | relative_url }}">{% if page.lang == 'zh' %}全部动态{% else %}All news{% endif %}</a></div>
@@ -79,10 +87,14 @@
   <section class="home-section home-contact" aria-labelledby="home-contact-title">
     <h2 id="home-contact-title">{% if page.lang == 'zh' %}学生与合作{% else %}Students and collaboration{% endif %}</h2>
     <p>{{ home.invitation }}</p>
+    <p>{{ home.conversation }}</p>
+    <h3 class="home-admissions-title">{% if page.lang == 'zh' %}招生信息{% else %}Admissions{% endif %}</h3>
+    {% assign admissions = site.data.group.admissions | where: 'year', '2027' | first %}
+    <p class="home-admissions"><strong>{{ admissions.year }}{% if page.lang == 'zh' %} 级招生：{% else %} entry: {% endif %}</strong>{{ admissions[page.lang] }}</p>
     {% if page.lang == 'zh' %}
-    <p><strong>2027 级招生：</strong>规划专业硕士研究生、设计专硕。预计自 <strong>2028 年</strong>起招收博士研究生，具体安排以学校招生通知为准。</p>
+    <p class="home-phd-note">预计自 2028 年起招收博士研究生，具体安排以学校招生通知为准。</p>
     {% else %}
-    <p><strong>2027 entry:</strong> Master's students in Planning and professional Master's students in Design. PhD recruitment is expected from <strong>2028</strong>, subject to the university's admissions announcements.</p>
+    <p class="home-phd-note">PhD recruitment is expected from 2028, subject to the university's admissions announcements.</p>
     {% endif %}
     <p class="home-profile-links">
       <a href="{{ language_prefix | append: '/join/' | relative_url }}">{% if page.lang == 'zh' %}招生与合作{% else %}Join us{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>

@@ -8,6 +8,8 @@
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
+$site-asset-version: "{{ site.time | date: '%s' }}";
+
 @import
     "vendor/breakpoint/breakpoint",
 

@@ -1,17 +1,21 @@
 zh:
   hero_lines: ['城市转型', '与空间不平等']
-  lead: 理解城市如何转型，以及谁能从中受益。
-  introduction: 企业与就业向哪里集聚，住房市场如何分化，公共资源又由谁使用？我们从这些问题出发，研究城市转型如何改变不同地区、不同群体的生活机会。
-  approach: 课题组由武汉大学城市设计学院伍杨屹副教授牵头，以城市与经济地理为基础，结合空间数据、居民调查与定量分析开展研究。
-  research_intro: 从城市转型的动力，到空间组织的变化，再到机会与资源的分配，三个方向共同构成我们的研究主线。
-  invitation: 欢迎对这些问题感兴趣的同学和同行交流。可以从一个具体的城市现象、一篇论文，或一个尚未想清楚的研究问题谈起。
+  lead: 理解城市如何转型，以及经济与空间过程如何塑造发展机会的差异。
+  perspective_title: 城市与经济地理视角
+  introduction: 城市的发展并非均衡展开。经济活动、人口流动、住房市场与公共资源不断重塑城市空间，也使不同地区和群体获得不同的发展机会。
+  approach: 课题组依托武汉大学城市设计学院，由伍杨屹副教授牵头。我们结合城市与经济地理理论、空间分析与地理数据，研究城市空间结构的演化、地方优势的形成和发展机会的空间分布。
+  research_intro: 城市为何转型，转型如何重组空间，又如何改变发展机会的分布？三个方向分别关注转型动力、空间组织及其不平等后果，共同构成课题组的研究主线。
+  invitation: 欢迎对城市与经济地理、空间分析和城市发展问题感兴趣的学生与同行交流。
+  conversation: 交流可以从一个具体的城市现象、一篇论文，或一个正在形成的研究问题开始。
 en:
   hero_lines: ['Urban Transformation', 'and Spatial Inequality']
-  lead: Understanding how cities transform, and who benefits.
-  introduction: How do firms and jobs concentrate, housing markets differentiate, and people use public resources? These questions guide our research on how urban transformation reshapes opportunities across places and social groups.
-  approach: Led by Associate Professor Yangyi Wu at Wuhan University’s School of Urban Design, we combine urban and economic geography with spatial data, resident surveys and quantitative analysis.
-  research_intro: Our research connects the drivers of urban transformation, changes in spatial organization, and the distribution of opportunities and resources.
-  invitation: We welcome conversations with students and colleagues who share these interests. A particular urban observation, a paper, or a research question still taking shape can be a good place to start.
+  lead: Understanding urban transformation and how economic and spatial processes shape unequal development opportunities.
+  perspective_title: An urban and economic geography perspective
+  introduction: Urban development unfolds unevenly. Economic activity, population movements, housing markets and public resources reshape urban space, creating different opportunities across places and social groups.
+  approach: Based at Wuhan University's School of Urban Design and led by Associate Professor Yangyi Wu, we combine urban and economic geography, spatial analysis and geospatial data to study changing urban structures, the formation of place advantages and the spatial distribution of development opportunities.
+  research_intro: Why do cities transform, how does transformation reorganize space, and how does it change the distribution of opportunities? Our three themes connect the drivers of transformation, spatial organization and unequal outcomes.
+  invitation: We welcome students and colleagues interested in urban and economic geography, spatial analysis and urban development.
+  conversation: A conversation can begin with an urban observation, a paper, or a research question that is still taking shape.
 selection:
   recent_years: 3
   allowed_venues:
@@ -33,7 +37,7 @@ highlights:
     figure_height: 925
     figure_caption_zh: 城市舒适性与产业区位的多尺度框架。原文图 1，Teng et al. (2025)。
     figure_caption_en: A multi-scalar framework of amenities and industry location. Original Fig. 1, Teng et al. (2025).
-    title_zh: 产业区位：连接都市区竞争优势与地方营造
-    title_en: Linking metropolitan advantage and local placemaking
+    title_zh: 产业区位：城市优势如何影响地方发展
+    title_en: Industry location and the role of urban advantages in local development
     summary_zh: 研究将都市区资源获取与地方设施组合放在同一框架中，解释舒适性如何影响武汉汽车产业区位。地方营造的作用取决于更广泛的城市空间联系，而非一套固定的设施清单。
     summary_en: Urban amenities shape industry location through metropolitan resource access and local amenity combinations. The Wuhan study links competitive advantage with placemaking, explaining why local attractiveness depends on wider spatial connections rather than a standard amenity checklist.
