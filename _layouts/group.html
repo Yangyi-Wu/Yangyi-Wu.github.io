@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<main id="main" class="group-main">
+<main id="main" class="group-main{% if page.group_home %} group-main--home{% endif %}">
   <article class="group-page page__content">
     {% unless page.group_home %}
     <header class="group-page-heading">

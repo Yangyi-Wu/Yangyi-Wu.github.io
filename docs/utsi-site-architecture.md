@@ -48,6 +48,8 @@ Admissions follow the owner's supplied 2026/2027/2028 plans, subject to official
 
 ## Maintenance
 
+The homepage and language entry share `images/utsi-urban-study.jpg`, an AI-generated fictional urban model illustration. It is explicitly a concept image, not an empirical map, real location or research result. Desktop uses a full-width cover; mobile separates the clear title area from a shallow city image within the same band. Research highlights precede the three research themes, and retain their verified contribution summaries and approved publication figures.
+
 - `_data/group.yml`: paired group copy, projects, news and admissions.
 - `_data/students.yml`: owner-supplied, anonymized bilingual student collaborator profiles.
 - `_data/research.yml`: paired research themes and related publications.

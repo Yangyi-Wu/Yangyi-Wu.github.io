@@ -10,34 +10,48 @@
 {% assign eligible_roles = 'first,corresponding,co_corresponding' | split: ',' %}
 <div class="home-content">
   <div class="home-introduction">
+    <img class="urban-cover" src="{{ '/images/utsi-urban-study.jpg' | relative_url }}" width="2172" height="724" fetchpriority="high" alt="{% if page.lang == 'zh' %}城市空间概念图：不同密度的街区、就业中心与滨水公共空间。非真实城市地图。{% else %}Conceptual city illustration showing neighborhoods, employment centers and waterfront public space; not a map of a real city.{% endif %}">
+    <div class="home-hero-copy">
     <p class="group-eyebrow">{{ site.data.group[page.lang].affiliation }}</p>
     <h1 class="group-home-title">{{ site.data.group[page.lang].name }}<span>{{ site.data.group[page.lang].type }}</span></h1>
     <p class="profile-lead">{{ home.lead }}</p>
+    <a class="home-hero-link" href="{{ language_prefix | append: '/research/' | relative_url }}">{% if page.lang == 'zh' %}探索我们的研究{% else %}Explore our research{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <span class="cover-note">{% if page.lang == 'zh' %}城市空间 · 概念示意{% else %}Urban space · Concept illustration{% endif %}</span>
+  </div>
+  <section class="home-brief home-section" aria-label="{% if page.lang == 'zh' %}课题组简介{% else %}Group introduction{% endif %}">
+    <div>
     <p>{{ home.introduction }}</p>
+    </div><div>
     <p>{{ home.approach }}</p>
     <p class="home-profile-links">
       <a href="{{ language_prefix | append: '/about/' | relative_url }}">{% if page.lang == 'zh' %}认识课题组{% else %}About the group{% endif %}</a>
       <a href="{{ language_prefix | append: '/people/' | relative_url }}">{% if page.lang == 'zh' %}团队成员{% else %}People{% endif %}</a>
       <a href="{{ language_prefix | append: '/projects/' | relative_url }}">{% if page.lang == 'zh' %}科研项目{% else %}Projects{% endif %}</a>
     </p>
-  </div>
+    </div>
+  </section>
+  {% capture research_section %}
   <section class="home-section" aria-labelledby="home-research-title">
     <h2 id="home-research-title">{% if page.lang == 'zh' %}研究议题{% else %}Research themes{% endif %}</h2>
     <p class="home-research-intro">{{ home.research_intro }}</p>
     <div class="home-research-areas">
       {% for theme in site.data.research %}
       <section data-research-theme="{{ theme.id }}">
+        <span class="theme-number" aria-hidden="true">0{{ forloop.index }}</span>
         <h3><a href="{{ language_prefix | append: '/research/' | relative_url }}#{{ theme.id }}">{{ theme[title_key] }}</a></h3>
         <p>{{ theme[overview_key] }}</p>
       </section>
       {% endfor %}
     </div>
   </section>
+  {% endcapture %}
   <section class="home-section" aria-labelledby="home-highlights-title">
     <div class="home-section-heading">
       <h2 id="home-highlights-title">{% if page.lang == 'zh' %}研究选读{% else %}Research highlights{% endif %}</h2>
       <a href="{{ language_prefix | append: '/publications/' | relative_url }}">{% if page.lang == 'zh' %}全部成果{% else %}All publications{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
     </div>
+    <div class="home-highlights-grid">
     {% for highlight in site.data.homepage.highlights %}
       {% assign paper = site.publications | where: 'url', highlight.paper | first %}
       {% assign paper_year = paper.date | date: '%Y' | plus: 0 %}
@@ -54,7 +68,10 @@
       </article>
       {% endif %}
     {% endfor %}
+    </div>
   </section>
+  {{ research_section }}
+  <div class="home-bottom-grid home-section">
   <section class="home-section" aria-labelledby="home-news-title">
     <div class="home-section-heading"><h2 id="home-news-title">{% if page.lang == 'zh' %}学术动态{% else %}News{% endif %}</h2><a href="{{ language_prefix | append: '/news/' | relative_url }}">{% if page.lang == 'zh' %}全部动态{% else %}All news{% endif %}</a></div>
     {% assign prefix = language_prefix %}{% include group-news.html %}
@@ -72,4 +89,5 @@
       <a href="mailto:yangyi.wu@whu.edu.cn">yangyi.wu@whu.edu.cn</a>
     </p>
   </section>
+  </div>
 </div>

@@ -93,6 +93,7 @@ end
 
 entry_page = html(root, "/")
 check(entry_page.at_css("html")["data-language-entry"] == "true", "Missing language entry")
+check(entry_page.at_css(".urban-cover"), "Missing language-entry visual")
 check(entry_page.css("[data-language-option]").map { |a| a["href"] }.sort == %w[/en/ /zh/], "Chooser must have working no-JS links")
 %w[/en/ /zh/ /about/ /zh/about/ /projects/ /zh/projects/ /people/ /zh/people/ /news/ /zh/news/ /join/ /zh/join/ /research/ /zh/research/ /team/ /zh/team/ /cv/ /zh/cv/ /talks/ /zh/talks/].each do |path|
   page = html(root, path)
@@ -124,6 +125,9 @@ role_labels = {
   prefix = language == "zh" ? "/zh" : ""
   page = html(root, language == "zh" ? "/zh/" : "/en/")
   check(page.at_css(".group-home-title") && page.css(".sidebar").empty?, "Missing group homepage identity")
+  cover = page.at_css(".home-introduction .urban-cover")
+  check(cover && cover["fetchpriority"] == "high" && root.join(cover["src"].delete_prefix("/")).size < 600_000, "Missing or oversized homepage cover")
+  check(page.css(".home-highlights-grid .home-highlight").length == 2, "Missing editorial highlights layout")
   check(page.css(".home-highlight img").length == homepage.fetch("highlights").length, "Missing homepage visuals")
   projects = html(root, "#{prefix}/projects/")
   check(projects.css(".group-project").length == 4, "Missing verified projects")
