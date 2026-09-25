@@ -23,6 +23,7 @@
     {% if site.author.github %}
       <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     {% endif %}
+    <li><a href="{{ '/sitemap/' | relative_url }}">{% if page.lang == 'zh' %}站点地图{% else %}Sitemap{% endif %}</a></li>
     {% if site.author.bitbucket %}
       <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
     {% endif %}

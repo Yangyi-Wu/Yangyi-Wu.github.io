@@ -10,23 +10,26 @@
 {% assign first_year = current_year | minus: selection.recent_years | plus: 1 %}
 {% assign eligible_roles = 'first,corresponding,co_corresponding' | split: ',' %}
 <div class="home-content">
-  <header class="home-identity">
-    <p class="group-wordmark" aria-hidden="true">UTSI</p>
-    <h1 class="group-home-title">{{ site.data.group[page.lang].name }}<span>{{ site.data.group[page.lang].type }}</span></h1>
-    <p class="group-eyebrow">{{ site.data.group[page.lang].affiliation }}</p>
-    <nav class="home-index" aria-label="{% if page.lang == 'zh' %}课题组索引{% else %}Group index{% endif %}">
-      <a href="{{ language_prefix | append: '/about/' | relative_url }}">{% if page.lang == 'zh' %}认识课题组{% else %}About the group{% endif %}</a>
-      <a href="{{ language_prefix | append: '/people/' | relative_url }}">{% if page.lang == 'zh' %}团队成员{% else %}People{% endif %}</a>
-      <a href="{{ language_prefix | append: '/projects/' | relative_url }}">{% if page.lang == 'zh' %}科研项目{% else %}Projects{% endif %}</a>
-    </nav>
+  <header class="home-hero">
+    {% include site-photo.html %}
+    <div class="home-identity">
+      <p class="group-eyebrow">UTSI RESEARCH GROUP · {% if page.lang == 'zh' %}武汉大学{% else %}WUHAN UNIVERSITY{% endif %}</p>
+      <h1 class="group-home-title">{% for line in home.hero_lines %}<span>{{ line }}</span>{% endfor %}</h1>
+      <p class="profile-lead">{{ home.lead }}</p>
+      <a class="hero-research-link" href="#home-research-title">{% if page.lang == 'zh' %}研究方向{% else %}Our research{% endif %} <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+    </div>
+    {% include photo-credit.html %}
   </header>
   <section class="home-introduction" aria-label="{% if page.lang == 'zh' %}课题组简介{% else %}Group introduction{% endif %}">
-    <p class="profile-lead">{{ home.lead }}</p>
+    <div class="home-section-label"><span>UTSI</span><h2>{% if page.lang == 'zh' %}城市与经济地理{% else %}Urban and economic geography{% endif %}</h2></div>
+    <div class="home-introduction-copy">
     <p>{{ home.introduction }}</p>
     <p class="home-approach">{{ home.approach }}</p>
+    <a class="text-link" href="{{ language_prefix | append: '/about/' | relative_url }}">{% if page.lang == 'zh' %}认识课题组{% else %}About the group{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
   </section>
   {% capture research_section %}
-  <section class="home-section" aria-labelledby="home-research-title">
+  <section class="home-section home-research" aria-labelledby="home-research-title">
     <h2 id="home-research-title">{% if page.lang == 'zh' %}研究议题{% else %}Research themes{% endif %}</h2>
     <p class="home-research-intro">{{ home.research_intro }}</p>
     <div class="home-research-areas">
@@ -39,7 +42,7 @@
     </div>
   </section>
   {% endcapture %}
-  <section class="home-section" aria-labelledby="home-highlights-title">
+  <section class="home-section home-selected" aria-labelledby="home-highlights-title">
     <div class="home-section-heading">
       <h2 id="home-highlights-title">{% if page.lang == 'zh' %}研究选读{% else %}Research highlights{% endif %}</h2>
       <a href="{{ language_prefix | append: '/publications/' | relative_url }}">{% if page.lang == 'zh' %}全部成果{% else %}All publications{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
@@ -50,14 +53,17 @@
       {% assign paper_year = paper.date | date: '%Y' | plus: 0 %}
       {% if paper.summary_reviewed and selection.allowed_venues contains paper.venue and paper_year >= first_year and paper_year <= current_year and eligible_roles contains paper.wu_author_role %}
       <article class="home-highlight" data-publication="{{ paper.url }}">
+        <div class="home-highlight-copy">
         <p class="home-highlight-source"><i>{{ paper.venue }}</i> · {{ paper_year }} · {% case paper.wu_author_role %}{% when 'first' %}{% if page.lang == 'zh' %}第一作者{% else %}First author{% endif %}{% when 'corresponding' %}{% if page.lang == 'zh' %}通讯作者{% else %}Corresponding author{% endif %}{% when 'co_corresponding' %}{% if page.lang == 'zh' %}共同通讯作者{% else %}Co-corresponding author{% endif %}{% endcase %}</p>
         <h3><a href="{{ language_prefix | append: paper.url | relative_url }}">{{ highlight[title_key] }}</a></h3>
         <p>{{ highlight[summary_key] }}</p>
+        <a class="text-link" href="{{ language_prefix | append: paper.url | relative_url }}">{% if page.lang == 'zh' %}阅读研究{% else %}Read the research{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
         <figure class="home-original-figure">
           <a class="publication-media" href="{{ language_prefix | append: paper.url | relative_url }}" aria-label="{{ highlight[title_key] | escape }}">
-            <img src="{{ '/images/research-originals/' | append: highlight.figure | append: '-1280.webp' | relative_url }}" srcset="{{ '/images/research-originals/' | append: highlight.figure | append: '-640.webp' | relative_url }} 640w, {{ '/images/research-originals/' | append: highlight.figure | append: '-1280.webp' | relative_url }} 1280w" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1100px) 360px, 406px" width="1280" height="{{ highlight.figure_height }}" loading="eager" decoding="async" alt="{{ highlight[caption_key] | escape }}">
+            <img src="{{ '/images/research-originals/' | append: highlight.figure | append: '-1280.webp' | relative_url }}" srcset="{{ '/images/research-originals/' | append: highlight.figure | append: '-640.webp' | relative_url }} 640w, {{ '/images/research-originals/' | append: highlight.figure | append: '-1280.webp' | relative_url }} 1280w" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1100px) 50vw, 600px" width="1280" height="{{ highlight.figure_height }}" loading="lazy" decoding="async" alt="{{ highlight[caption_key] | escape }}">
           </a>
-          <figcaption>{{ highlight[caption_key] }}</figcaption>
+          <figcaption><span>{{ highlight[caption_key] }}</span><a class="figure-zoom" href="{{ '/images/research-originals/' | append: highlight.figure | append: '-1280.webp' | relative_url }}" target="_blank" rel="noopener" title="{% if page.lang == 'zh' %}查看原图{% else %}View original figure{% endif %}" aria-label="{% if page.lang == 'zh' %}查看原图{% else %}View original figure{% endif %}"><i class="fa-solid fa-expand" aria-hidden="true"></i></a></figcaption>
         </figure>
       </article>
       {% endif %}

@@ -93,11 +93,12 @@ end
 
 entry_page = html(root, "/")
 check(entry_page.at_css("html")["data-language-entry"] == "true", "Missing language entry")
-check(entry_page.at_css(".group-wordmark") && entry_page.css(".urban-cover").empty?, "Language entry must use the typographic identity")
+check(entry_page.at_css(".group-wordmark") && entry_page.at_css(".site-city-photo"), "Language entry must use the group identity and licensed city photograph")
 check(entry_page.css("[data-language-option]").map { |a| a["href"] }.sort == %w[/en/ /zh/], "Chooser must have working no-JS links")
 %w[/en/ /zh/ /about/ /zh/about/ /projects/ /zh/projects/ /people/ /zh/people/ /news/ /zh/news/ /join/ /zh/join/ /research/ /zh/research/ /team/ /zh/team/ /cv/ /zh/cv/ /talks/ /zh/talks/].each do |path|
   page = html(root, path)
   check(page.at_css("[data-language-option]"), "Missing language switch: #{path}")
+  check(page.css("script[src]").none? { |script| script["src"].match?(/mathjax|plotly|polyfill/) }, "Unneeded diagram engine on a main page: #{path}")
   expected_alternate = path.start_with?("/zh/") ? path.delete_prefix("/zh") : "/zh#{path}"
   expected_alternate = "/en/" if path == "/zh/"
   expected_alternate = "/zh/" if path == "/en/"
@@ -126,7 +127,12 @@ role_labels = {
   page = html(root, language == "zh" ? "/zh/" : "/en/")
   check(page.at_css(".group-home-title") && page.css(".sidebar").empty?, "Missing group homepage identity")
   check(page.css("link[rel='stylesheet']").any? { |link| link["href"].match?(%r{/assets/css/main\.css\?v=\d+$}) }, "Missing stylesheet cache version")
-  check(page.at_css(".home-identity") && page.css(".urban-cover").empty?, "Homepage must use the editorial identity")
+  check(page.at_css(".home-hero .home-identity") && page.css(".urban-cover").empty?, "Homepage must use the institutional identity")
+  city_photo = page.at_css(".home-hero .site-city-photo")
+  check(city_photo && city_photo["fetchpriority"] == "high" && city_photo["srcset"], "Missing responsive hero photograph")
+  check(root.join(city_photo["src"].delete_prefix("/")).size < 500_000, "Hero photograph exceeds image budget")
+  check(page.css(".photo-credit a").length == 2, "Missing photographer and license credits")
+  check(root.join("assets/webfonts/utsi/utsi-sans.woff2").size < 1_500_000, "Site font exceeds budget")
   check(page.css(".home-highlights-grid .home-highlight").length == 2, "Missing editorial highlights layout")
   check(page.css(".home-highlight img").length == homepage.fetch("highlights").length, "Missing homepage visuals")
   projects = html(root, "#{prefix}/projects/")
@@ -182,7 +188,7 @@ role_labels = {
     check(entry.at_css("h3 a")["href"] == "#{prefix}#{highlight.fetch('paper')}", "Wrong homepage publication link: #{language}")
     check(entry.at_css("p:not(.home-highlight-source)").text == highlight.fetch("summary_#{language}"), "Missing homepage contribution: #{language}")
     figure = entry.at_css(".home-original-figure")
-    check(figure.at_css("figcaption").text == highlight.fetch("figure_caption_#{language}"), "Missing original-figure provenance: #{language}")
+    check(figure.at_css("figcaption span").text == highlight.fetch("figure_caption_#{language}"), "Missing original-figure provenance: #{language}")
     check(figure.at_css("a")["href"] == "#{prefix}#{highlight.fetch('paper')}", "Original figure must link to localized research")
     image = figure.at_css("img")
     expected_image = "/images/research-originals/#{highlight.fetch('figure')}-1280.webp"

@@ -1,4 +1,7 @@
 ---
+mathjax: true
+plotly: true
+mermaid: true
 permalink: /markdown/
 title: "Markdown"
 author_profile: true

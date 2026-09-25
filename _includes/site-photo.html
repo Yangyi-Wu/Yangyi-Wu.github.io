@@ -1,0 +1,3 @@
+{% assign photo = site.data.site_visual.photo %}
+{% assign alt_key = 'alt_' | append: page.lang %}
+<img class="site-city-photo" src="{{ photo.large | relative_url }}" srcset="{{ photo.small | relative_url }} 960w, {{ photo.large | relative_url }} 1920w" sizes="100vw" width="{{ photo.width }}" height="{{ photo.height }}" alt="{{ photo[alt_key] | escape }}" fetchpriority="high" decoding="async">
