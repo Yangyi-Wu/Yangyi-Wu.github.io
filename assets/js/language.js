@@ -24,6 +24,17 @@
     if (link) remember(link.dataset.languageOption);
   });
 
+  // The shared entry asks new visitors; only an explicit saved choice redirects.
+  if (root.dataset.languageEntry === "true") {
+    var preference = requested;
+    if (preference !== "zh" && preference !== "en") {
+      try { preference = localStorage.getItem(key); } catch (error) { /* Keep the chooser available. */ }
+    } else remember(preference);
+    if (preference === "zh") navigate(root.dataset.chineseHome);
+    if (preference === "en") navigate(root.dataset.englishHome);
+    return;
+  }
+
   // Preserve old shared publication URLs, including their language query.
   if (requested === "zh" || requested === "en") {
     remember(requested);
@@ -35,17 +46,5 @@
     return;
   }
 
-  // Explicit deep links keep their language; only the default home chooses one.
-  if (root.dataset.siteHome !== "true" || language !== "en" || !alternate) return;
-  var preference;
-  try { preference = localStorage.getItem(key); } catch (error) { /* Use browser preferences. */ }
-  if (preference !== "zh" && preference !== "en") {
-    var languages = navigator.languages || [navigator.language || "en"];
-    preference = "en";
-    for (var i = 0; i < languages.length; i++) {
-      var candidate = languages[i].toLowerCase().split(/[-_]/)[0];
-      if (candidate === "zh" || candidate === "en") { preference = candidate; break; }
-    }
-  }
-  if (preference === "zh") navigate(alternate);
+  // Explicit language routes and shared deep links are never overridden.
 })();

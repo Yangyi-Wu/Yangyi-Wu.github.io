@@ -27,9 +27,10 @@ module AcademicSite
         site.pages << translated
       end
 
-      %w[/ /publications/ /research/ /team/ /cv/ /talks/].each do |path|
+      %w[/en/ /publications/ /research/ /team/ /cv/ /talks/].each do |path|
         english = site.pages.find { |page| page.url == path }
-        chinese = site.pages.find { |page| page.url == "/zh#{path}" }
+        chinese_path = path == "/en/" ? "/zh/" : "/zh#{path}"
+        chinese = site.pages.find { |page| page.url == chinese_path }
         next unless english && chinese
         english.data["alternate_url"] = chinese.url
         chinese.data["alternate_url"] = english.url

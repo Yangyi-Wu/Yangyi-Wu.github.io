@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /en/
 title: Urban Transformation and Spatial Inequality Research Group
 layout: group
 group_home: true

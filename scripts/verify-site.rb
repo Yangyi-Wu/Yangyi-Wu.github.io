@@ -91,10 +91,15 @@ end
   puts "#{path}: #{cards.length} publications; default images #{bytes} bytes"
 end
 
-%w[/ /zh/ /about/ /zh/about/ /projects/ /zh/projects/ /people/ /zh/people/ /news/ /zh/news/ /join/ /zh/join/ /research/ /zh/research/ /team/ /zh/team/ /cv/ /zh/cv/ /talks/ /zh/talks/].each do |path|
+entry_page = html(root, "/")
+check(entry_page.at_css("html")["data-language-entry"] == "true", "Missing language entry")
+check(entry_page.css("[data-language-option]").map { |a| a["href"] }.sort == %w[/en/ /zh/], "Chooser must have working no-JS links")
+%w[/en/ /zh/ /about/ /zh/about/ /projects/ /zh/projects/ /people/ /zh/people/ /news/ /zh/news/ /join/ /zh/join/ /research/ /zh/research/ /team/ /zh/team/ /cv/ /zh/cv/ /talks/ /zh/talks/].each do |path|
   page = html(root, path)
   check(page.at_css("[data-language-option]"), "Missing language switch: #{path}")
   expected_alternate = path.start_with?("/zh/") ? path.delete_prefix("/zh") : "/zh#{path}"
+  expected_alternate = "/en/" if path == "/zh/"
+  expected_alternate = "/zh/" if path == "/en/"
   check(page.at_css("[data-language-option]")["href"] == expected_alternate, "Wrong paired route: #{path}")
   tails = page.css("#site-nav .persist.tail")
   check(tails.length == 1 && tails.first.at_css("[data-language-option]"), "Unstable navigation order after resizing: #{path}")
@@ -117,12 +122,28 @@ role_labels = {
 }
 ["en", "zh"].each do |language|
   prefix = language == "zh" ? "/zh" : ""
-  page = html(root, "#{prefix}/")
+  page = html(root, language == "zh" ? "/zh/" : "/en/")
   check(page.at_css(".group-home-title") && page.css(".sidebar").empty?, "Missing group homepage identity")
   check(page.css(".home-highlight img").length == homepage.fetch("highlights").length, "Missing homepage visuals")
   projects = html(root, "#{prefix}/projects/")
   check(projects.css(".group-project").length == 4, "Missing verified projects")
   check(html(root, "#{prefix}/people/").at_css(".group-person img"), "Missing PI profile")
+  students = YAML.safe_load_file("_data/students.yml")
+  people = html(root, "#{prefix}/people/")
+  check(people.css(".group-student").length == students.length, "Missing student profiles: #{language}")
+  check(students.map { |student| student.fetch("id") }.sort == %w[d l q t y z], "Incorrect student roster")
+  students.each do |student|
+    profile = people.at_css("[data-student='#{student.fetch('id')}']")
+    check(profile.at_css("h3").text == student.fetch("name_#{language}"), "Incorrect anonymous display name")
+    check(profile.at_css(".group-meta").text == student.fetch("cohort_#{language}"), "Incorrect student cohort")
+    check(profile.css("li").map(&:text) == student.fetch("details_#{language}"), "Incorrect student details")
+    if student["paper"]
+      check(publications.key?(student["paper"]), "Unknown student publication")
+      check(profile.at_css("a")["href"] == "#{prefix}#{student['paper']}", "Wrong student paper language")
+    else
+      check(profile.css("a").empty?, "Unverified student publication link")
+    end
+  end
   check(html(root, "#{prefix}/join/").css(".group-admissions dt").map(&:text) == %w[2027 2028 2026], "Incorrect admissions cohorts")
   check(page.at_css(".profile-lead").text == homepage.fetch(language).fetch("lead"), "Wrong homepage introduction: #{language}")
   %w[introduction approach research_intro invitation].each do |key|

@@ -11,11 +11,11 @@ The group identity follows the owner-approved conversation, not a claim of forma
 
 ## Bilingual Structure
 
-Keep Jekyll/AcademicPages and existing publication URLs. English lives at `/`, Chinese at `/zh/`. Every main page and publication has a corresponding language route. Language switching preserves the current page.
+Keep Jekyll/AcademicPages and existing publication URLs. `/` is a language chooser for first-time visitors, with ordinary links to `/en/` and `/zh/`. Returning visitors at `/` follow their saved choice. Browser language never overrides an explicit choice or a deep link. Every main page and publication has a corresponding language route. Language switching preserves the current page. Existing English inner-page URLs are unchanged.
 
 | Page | English | Chinese | Purpose |
 | --- | --- | --- | --- |
-| Home | `/` | `/zh/` | Identity, agenda, selected research, news, recruitment |
+| Home | `/en/` | `/zh/` | Identity, agenda, selected research, news, recruitment |
 | About | `/about/` | `/zh/about/` | Research philosophy, methods, planning relevance |
 | Research | `/research/` | `/zh/research/` | Three themes with questions and linked papers |
 | Projects | `/projects/` | `/zh/projects/` | Verified funding titles, periods and roles |
@@ -42,13 +42,14 @@ Faculty source: https://sud.whu.edu.cn/info/1611/49111.htm
 
 Checked 2026-09-25 against the official faculty page in the browser. Four selected projects are shown with their published roles. English translations of Chinese project titles are descriptive, not certified grant titles. No award numbers, budgets, student membership or project outputs are inferred.
 
-Student and alumni rosters were not verified from public faculty information; omit empty sections. Existing papers and approved illustrations are retained. Highlight selection remains limited to the latest three calendar years, selected journals and verified first/corresponding authorship.
+The owner supplied six student collaborator profiles on 2026-09-25. Display their initials (Z, Y, Q, T, L, D) exactly as provided; do not infer legal names from publication authors. Only T is explicitly identified as a current group member. Other profiles report supplied collaboration, admission and internship information without assuming current group membership or alumni status. Completed unpublished manuscripts are not described as accepted or forthcoming. Existing papers and approved illustrations are retained. Highlight selection remains limited to the latest three calendar years, selected journals and verified first/corresponding authorship.
 
 Admissions follow the owner's supplied 2026/2027/2028 plans, subject to official university notices. No funded vacancy is implied.
 
 ## Maintenance
 
 - `_data/group.yml`: paired group copy, projects, news and admissions.
+- `_data/students.yml`: owner-supplied, anonymized bilingual student collaborator profiles.
 - `_data/research.yml`: paired research themes and related publications.
 - `_data/homepage.yml`: homepage introduction and curated highlights.
 - `_data/publication_themes.yml`: publication-to-theme assignments.

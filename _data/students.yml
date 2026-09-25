@@ -1,0 +1,73 @@
+# Supplied by the site owner; initials are intentional public display names.
+- id: z
+  name_zh: Z同学
+  name_en: Student Z
+  cohort_zh: 2019级 · 城乡规划本科
+  cohort_en: 2019 entry cohort · Undergraduate Urban and Rural Planning
+  details_zh:
+    - 2024级保研至武汉大学。
+    - 合作论文发表于 Land（2023）。
+  details_en:
+    - Admitted to graduate study at Wuhan University through recommendation for 2024 entry.
+    - Coauthored a paper published in Land (2023).
+  paper: /publication/2023-sprawl-development-urban-amenity-china
+  paper_label: Land · 2023
+- id: y
+  name_zh: Y同学
+  name_en: Student Y
+  cohort_zh: 2019级 · 城乡规划本科
+  cohort_en: 2019 entry cohort · Undergraduate Urban and Rural Planning
+  details_zh:
+    - 2024级保研至武汉大学。
+    - 2025年10月至2026年6月，在北京美团实习。
+  details_en:
+    - Admitted to graduate study at Wuhan University through recommendation for 2024 entry.
+    - Interned at Meituan in Beijing from October 2025 to June 2026.
+- id: q
+  name_zh: Q同学
+  name_en: Student Q
+  cohort_zh: 2021级
+  cohort_en: 2021 entry cohort
+  details_zh:
+    - 2025年保研至北京大学深圳研究生院。
+    - 论文发表于 Applied Spatial Analysis and Policy（2025）。
+  details_en:
+    - Secured recommended admission to Peking University Shenzhen Graduate School in 2025.
+    - Published a paper in Applied Spatial Analysis and Policy (2025).
+  paper: /publication/2025-neighborhood-amenity-housing-prices-urban-china
+  paper_label: Applied Spatial Analysis and Policy · 2025
+- id: t
+  name_zh: T同学
+  name_en: Student T
+  cohort_zh: 2021级
+  cohort_en: 2021 entry cohort
+  details_zh:
+    - 目前在武汉大学本课题组开展研究。
+    - 论文发表于 Applied Geography（2025）。
+  details_en:
+    - Currently conducting research with the group at Wuhan University.
+    - Published a paper in Applied Geography (2025).
+  paper: /publication/2025-urban-amenities-knowledge-intensive-industry-locations
+  paper_label: Applied Geography · 2025
+- id: l
+  name_zh: L同学
+  name_en: Student L
+  cohort_zh: 2021级
+  cohort_en: 2021 entry cohort
+  details_zh:
+    - 保研至武汉大学。
+    - 已完成1篇论文，尚未发表。
+  details_en:
+    - Secured recommended admission to Wuhan University.
+    - One manuscript completed; not yet published.
+- id: d
+  name_zh: D同学
+  name_en: Student D
+  cohort_zh: 2022级
+  cohort_en: 2022 entry cohort
+  details_zh:
+    - 保研至清华大学城乡规划专业。
+    - 已完成2篇论文，尚未发表。
+  details_en:
+    - Secured recommended admission to Urban and Rural Planning at Tsinghua University.
+    - Two manuscripts completed; not yet published.

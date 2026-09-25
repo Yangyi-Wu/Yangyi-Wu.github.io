@@ -16,6 +16,19 @@
   <p class="group-links"><a href="{{ prefix | append: '/cv/' | relative_url }}">{{ g.cv }}</a><a href="{{ site.data.group.source }}">{{ g.faculty }}</a><a href="mailto:yangyi.wu@whu.edu.cn">yangyi.wu@whu.edu.cn</a></p></div>
 </section>
 <section class="group-section"><h2>{{ g.education_title }}</h2><ul>{% for degree in g.education %}<li>{{ degree }}</li>{% endfor %}</ul></section>
+<section class="group-section" aria-labelledby="student-collaborators-title">
+  <h2 id="student-collaborators-title">{% if page.lang == 'zh' %}学生与研究合作{% else %}Students and Research Collaborators{% endif %}</h2>
+  {% assign name_key = 'name_' | append: page.lang %}
+  {% assign cohort_key = 'cohort_' | append: page.lang %}
+  {% assign details_key = 'details_' | append: page.lang %}
+  {% for student in site.data.students %}
+  <article class="group-student" data-student="{{ student.id }}">
+    <div><h3>{{ student[name_key] }}</h3><p class="group-meta">{{ student[cohort_key] }}</p></div>
+    <div><ul>{% for detail in student[details_key] %}<li>{{ detail }}</li>{% endfor %}</ul>
+    {% if student.paper %}<p class="group-links"><a href="{{ prefix | append: student.paper | relative_url }}">{{ student.paper_label }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>{% endif %}</div>
+  </article>
+  {% endfor %}
+</section>
 <p><a href="{{ prefix | append: '/join/' | relative_url }}">{% if page.lang == 'zh' %}招生与研究合作{% else %}Study and collaborate with us{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
 {% when 'projects' %}
 <p>{{ g.project_intro }}</p>
