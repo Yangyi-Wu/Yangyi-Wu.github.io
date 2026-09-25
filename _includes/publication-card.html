@@ -1,7 +1,7 @@
 {% assign paper = include.paper | default: post %}
 {% assign paper_url = paper.url %}
 {% if page.lang == 'zh' %}{% assign paper_url = paper.alternate_url %}{% endif %}
-<article class="publication-entry">
+<article class="publication-entry" data-publication-themes="{{ paper.research_themes | join: ' ' }}">
   <h3><a href="{{ paper_url | relative_url }}">{{ paper.title }}</a></h3>
   <p class="publication-authors">{{ paper.authors | escape }}</p>
   <p class="publication-venue"><i>{{ paper.venue }}</i> · {{ paper.date | date: '%Y' }}</p>

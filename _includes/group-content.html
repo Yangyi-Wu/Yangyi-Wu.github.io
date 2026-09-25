@@ -1,0 +1,42 @@
+{% assign g = site.data.group[page.lang] %}
+{% assign prefix = '' %}{% if page.lang == 'zh' %}{% assign prefix = '/zh' %}{% endif %}
+{% assign title_key = 'title_' | append: page.lang %}
+{% case page.group_section %}
+{% when 'about' %}
+<p class="group-intro">{{ g.about }}</p>
+<p>{{ g.agenda }}</p>
+<section class="group-section"><h2>{{ g.methods_title }}</h2><p>{{ g.methods }}</p></section>
+<section class="group-section"><h2>{{ g.practice_title }}</h2><p>{{ g.practice }}</p></section>
+<p><a href="{{ prefix | append: '/research/' | relative_url }}">{% if page.lang == 'zh' %}研究方向{% else %}Research themes{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
+{% when 'people' %}
+<h2>{{ g.pi_title }}</h2>
+<section class="group-person">
+  <img src="{{ '/images/PersonalI.jpg' | relative_url }}" width="180" height="220" alt="{{ g.pi_name }}">
+  <div><h3>{{ g.pi_name }}</h3><p class="group-meta">{{ g.pi_role }}<br>{{ g.affiliation }}</p><p>{{ g.pi_bio }}</p>
+  <p class="group-links"><a href="{{ prefix | append: '/cv/' | relative_url }}">{{ g.cv }}</a><a href="{{ site.data.group.source }}">{{ g.faculty }}</a><a href="mailto:yangyi.wu@whu.edu.cn">yangyi.wu@whu.edu.cn</a></p></div>
+</section>
+<section class="group-section"><h2>{{ g.education_title }}</h2><ul>{% for degree in g.education %}<li>{{ degree }}</li>{% endfor %}</ul></section>
+<p><a href="{{ prefix | append: '/join/' | relative_url }}">{% if page.lang == 'zh' %}招生与研究合作{% else %}Study and collaborate with us{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
+{% when 'projects' %}
+<p>{{ g.project_intro }}</p>
+{% assign role_key = 'role_' | append: page.lang %}{% assign funder_key = 'funder_' | append: page.lang %}{% assign question_key = 'question_' | append: page.lang %}
+<h2>{{ g.led }}</h2>
+{% for project in site.data.group.projects %}
+{% if forloop.index == 2 %}<h2>{{ g.collaborative }}</h2>{% endif %}
+<article class="group-project" id="{{ project.id }}">
+<p class="group-meta">{{ project[funder_key] }} · {{ project.period }} · <strong>{{ project[role_key] }}</strong></p>
+<h3>{{ project[title_key] }}</h3>
+{% if project[question_key] %}<p>{{ project[question_key] }}</p>{% endif %}
+</article>
+{% endfor %}
+<p class="group-source"><a href="{{ site.data.group.source }}">{{ g.source_label }}</a></p>
+{% when 'news' %}
+<p>{{ g.news_intro }}</p>
+{% include group-news.html %}
+{% when 'join' %}
+<p class="group-intro">{{ g.join_intro }}</p>
+<h2>{{ g.recruitment_title }}</h2>
+<dl class="group-admissions">{% for admission in site.data.group.admissions %}<dt>{{ admission.year }}</dt><dd>{{ admission[page.lang] }}</dd>{% endfor %}</dl>
+<p>{{ g.recruitment_note }}</p>
+<section class="group-section"><h2>{{ g.contact_title }}</h2><p>{{ g.contact }}</p><p><a href="mailto:yangyi.wu@whu.edu.cn">yangyi.wu@whu.edu.cn</a></p></section>
+{% endcase %}

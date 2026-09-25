@@ -1,12 +1,11 @@
 ---
 permalink: /
-title: Yangyi Wu
+title: Urban Transformation and Spatial Inequality Research Group
+layout: group
+group_home: true
 lang: en
-author_profile: true
+author_profile: false
 wide: true
-excerpt: "Yangyi Wu, Associate Professor at Wuhan University. Research on industrial location, housing markets and spatial equity in urban services."
-redirect_from:
-  - /about/
-  - /about.html
+excerpt: "UTSI Research Group at Wuhan University. Urban transformation, spatial restructuring and spatial inequality. Led by Yangyi Wu."
 ---
 {% include home-content.html %}

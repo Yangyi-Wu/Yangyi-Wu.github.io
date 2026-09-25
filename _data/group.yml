@@ -1,0 +1,123 @@
+pages:
+  about: {en: About the Group, zh: 课题组简介}
+  projects: {en: Research Projects, zh: 科研项目}
+  people: {en: People, zh: 团队成员}
+  news: {en: News, zh: 学术动态}
+  join: {en: Join Us, zh: 招生招聘}
+source: https://sud.whu.edu.cn/info/1611/49111.htm
+source_checked: '2026-09-25'
+en:
+  name: Urban Transformation and Spatial Inequality
+  type: UTSI Research Group
+  affiliation: School of Urban Design, Wuhan University
+  about: The UTSI Research Group studies how urban transformation reorganizes economic activity and everyday life, and why the resulting opportunities differ across places and social groups. Led by Yangyi Wu at Wuhan University, our work connects urban and economic geography with questions of planning and spatial justice.
+  agenda: Urban change is not experienced equally. A new employment center can expand job opportunities while changing housing pressures; a well-served neighborhood may still leave some residents unable to use its resources. We examine these relationships across metropolitan, neighborhood and individual scales.
+  methods_title: Data and methods
+  methods: Our research combines firm and housing records, urban amenity data, geospatial information and resident surveys. Spatial econometrics, network analysis and spatial classification help distinguish proximity from connection, resource provision from actual use, and city-wide patterns from local differences.
+  practice_title: Research and planning
+  practice: We connect evidence on urban development with decisions about resource allocation, green infrastructure and spatial planning. The aim is to identify which relationships depend on local context and which can inform planning elsewhere.
+  pi_title: Principal investigator
+  pi_name: Yangyi Wu
+  pi_role: Associate Professor · Department of Urban Planning
+  pi_bio: Yangyi Wu works in urban and economic geography, with a focus on urban spatial change, amenities and unequal access to resources. He joined Wuhan University in 2022 after postdoctoral research at the University of Utah.
+  education_title: Education
+  education: ['PhD, Geography, University of Utah, 2020', 'MS, Geospatial Information Sciences, University of Texas at Dallas, 2015', 'Bachelor’s degree, Surveying and Mapping Engineering, Wuhan University, 2013']
+  faculty: Faculty profile
+  cv: Full CV
+  project_intro: Projects led by Yangyi Wu and collaborative projects in which he participates. Roles and project periods follow the faculty profile; they do not imply that every project is led by UTSI.
+  led: Principal investigator
+  collaborative: Participation and collaboration
+  source_label: Project information from the faculty profile
+  join_intro: We welcome students interested in urban and economic geography, planning and spatial inequality. A background in human geography, planning, geospatial science, computing or economics can offer a useful starting point.
+  contact_title: Get in touch
+  contact: Please email Yangyi Wu with your academic background, research interests and a question you would like to explore. A CV and an example of relevant work are helpful. Admissions follow the university’s official procedures.
+  recruitment_title: Admissions
+  recruitment_note: Programs, places and application arrangements are subject to Wuhan University’s annual admissions announcements. PhD recruitment from 2028 is an expectation, not a confirmed admission offer.
+  news_intro: Publications and academic activities involving Yangyi Wu and collaborators.
+zh:
+  name: 城市转型与空间不平等
+  type: UTSI课题组
+  affiliation: 武汉大学城市设计学院
+  about: 城市转型与空间不平等课题组由武汉大学城市设计学院伍杨屹副教授牵头，开展城市与经济地理研究。我们关注城市转型如何改变经济活动与日常生活的空间组织，以及不同地区、不同群体获得发展机会的差异。
+  agenda: 城市变化对不同人的意义并不相同。新的就业中心可能增加工作机会，也可能改变住房压力；设施完善的社区，也未必让所有居民都能充分使用公共资源。我们从都市区、社区到个体的不同尺度，研究这些联系及其形成条件。
+  methods_title: 数据与方法
+  methods: 研究结合企业和住房数据、城市设施信息、地理空间数据与居民调查，运用空间计量、网络分析和空间分类方法，区分地理邻近与实际联系、资源供给与实际使用、整体格局与地方差异。
+  practice_title: 研究与规划
+  practice: 我们将城市发展的实证研究与资源配置、绿色基础设施和空间规划问题联系起来，判断哪些规律依赖地方情境，哪些经验可以为其他城市的规划提供参考。
+  pi_title: 课题组负责人
+  pi_name: 伍杨屹
+  pi_role: 副教授 · 城市规划系
+  pi_bio: 伍杨屹从事城市与经济地理研究，关注城市空间变化、城市舒适性及资源获取的不平等。曾在美国犹他大学开展博士后研究，2022 年加入武汉大学城市设计学院。
+  education_title: 教育经历
+  education: ['2020 年，犹他大学，地理学博士', '2015 年，德克萨斯大学达拉斯分校，地理空间信息科学硕士', '2013 年，武汉大学，测绘工程学士']
+  faculty: 学院个人主页
+  cv: 完整简历
+  project_intro: 以下列出伍杨屹主持及参与合作的科研项目。项目角色与起止年份依据学院公开资料，不将合作项目表述为课题组主持项目。
+  led: 主持项目
+  collaborative: 参与及合作项目
+  source_label: 项目信息来源：学院个人主页
+  join_intro: 欢迎对城市与经济地理、城乡规划和空间不平等感兴趣的同学。人文地理、城乡规划、地理信息、计算机和经济学等背景，都可以为这些问题带来有价值的视角。
+  contact_title: 联系方式
+  contact: 请通过邮件介绍你的学习背景、研究兴趣，以及希望深入研究的问题。可以附上个人简历和相关作品或研究经历。正式申请须遵循学校招生程序。
+  recruitment_title: 招生安排
+  recruitment_note: 具体专业、名额和申请安排以武汉大学当年度招生通知为准。2028 年起招收博士研究生为预计安排，并非已确定的招生承诺。
+  news_intro: 伍杨屹及合作者的论文发表与学术活动。
+projects:
+  - id: talent-amenities
+    lead: true
+    period: '2025–2027'
+    role_zh: 主持
+    role_en: Principal investigator
+    funder_zh: 国家自然科学基金青年项目
+    funder_en: NSFC Young Scientists Fund
+    title_zh: 主客观舒适性视角下人才城市生活空间选择偏好与分异机制研究：以武汉市为例
+    title_en: Talent’s urban living-space preferences and differentiation through subjective and objective amenities in Wuhan
+    question_zh: 城市设施的客观条件与个人感知，如何共同解释人才生活空间的选择与分化？
+    question_en: How do objective amenity conditions and subjective perceptions help explain talent’s living-space choices and differentiation?
+  - id: residential-wellbeing
+    period: '2024–2027'
+    role_zh: 参与
+    role_en: Participant
+    funder_zh: 国家自然科学基金面上项目
+    funder_en: NSFC General Program
+    title_zh: 立体化居住环境对幸福感的结构化影响及时空效应研究
+    title_en: Structural influences and spatiotemporal effects of three-dimensional residential environments on well-being
+  - id: health-place
+    period: '2023–2027'
+    role_zh: 合作
+    role_en: Collaborator
+    funder_zh: 美国国立卫生院专项项目
+    funder_en: National Institutes of Health
+    title_zh: 地区社会经济条件与个体健康及死亡风险：地方机制与个体心理社会过程
+    title_en: 'Area-level Socioeconomic Conditions and Individual level Health and Mortality: Exploring Place-Based Mechanisms and Individual level Psychosocial Processes'
+  - id: comparative-inequality
+    period: '2018–2023'
+    role_zh: 参与
+    role_en: Participant
+    funder_zh: 美国国家科学基金会
+    funder_en: National Science Foundation
+    title_zh: 区域不平等动态比较：多尺度与跨国视角
+    title_en: 'Comparative Regional Inequality Dynamics: Multiscalar and Multinational Perspectives'
+admissions:
+  - year: '2027'
+    zh: 规划专业硕士研究生、设计专硕。
+    en: Master’s students in Planning and professional Master’s students in Design.
+  - year: '2028'
+    zh: 预计开始招收博士研究生。
+    en: PhD recruitment expected to begin.
+  - year: '2026'
+    zh: 规划专业硕士研究生（专硕、学硕）。
+    en: Master’s students in Planning, professional and academic tracks.
+news:
+  - date: '2025'
+    title_zh: 公园使用公平研究发表于 Landscape and Urban Planning
+    title_en: Park-use equity study published in Landscape and Urban Planning
+    url: /publication/2025-park-use-covid-peri-urban
+  - date: '2025'
+    title_zh: 城市舒适性与知识密集型产业区位研究发表于 Applied Geography
+    title_en: Urban amenities and knowledge-intensive industry locations in Applied Geography
+    url: /publication/2025-urban-amenities-knowledge-intensive-industry-locations
+  - date: '2025'
+    title_zh: 中国多中心城市发展研究发表于 Chinese Geographical Science
+    title_en: Polycentric urban development in China in Chinese Geographical Science
+    url: /publication/2025-polycentric-urban-development-china

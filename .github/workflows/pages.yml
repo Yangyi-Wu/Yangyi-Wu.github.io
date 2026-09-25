@@ -43,7 +43,7 @@ jobs:
 
       - name: Verify production pages and language behavior
         run: |
-          node --test tests/language.test.cjs
+          node --test tests/language.test.cjs tests/publications.test.cjs
           bundle exec ruby scripts/verify-site.rb _site
 
       - name: Upload Pages artifact

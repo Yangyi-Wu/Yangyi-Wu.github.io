@@ -1,10 +1,21 @@
 <div class="publication-toolbar">
   <p>{{ site.publications.size }} {% if page.lang == 'zh' %}项成果{% else %}publications{% endif %} · <a href="{{ site.author.googlescholar }}">Google Scholar</a></p>
   <div data-publication-search hidden>
+    <div>
+    <label for="publication-theme">{% if page.lang == 'zh' %}研究主题{% else %}Research theme{% endif %}</label>
+    <select id="publication-theme">
+      <option value="">{% if page.lang == 'zh' %}全部主题{% else %}All themes{% endif %}</option>
+      {% for theme in site.data.research %}<option value="{{ theme.id }}">{% if page.lang == 'zh' %}{{ theme.title_zh }}{% else %}{{ theme.title_en }}{% endif %}</option>{% endfor %}
+      <option value="methods">{% if page.lang == 'zh' %}方法与交叉研究{% else %}Methods and interdisciplinary work{% endif %}</option>
+    </select>
+    </div>
+    <div>
     <label for="publication-search">{% if page.lang == 'zh' %}检索成果{% else %}Search publications{% endif %}</label>
     <input id="publication-search" type="search" autocomplete="off">
+    </div>
   </div>
 </div>
+<p class="publication-result-count" data-publication-count role="status" aria-live="polite"></p>
 {% assign publications_by_date = site.publications | sort: 'date' | reverse %}
 {% for category in site.publication_category %}
 <div class="publication-group" data-publication-category="{{ category[0] }}">

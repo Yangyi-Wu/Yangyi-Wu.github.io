@@ -1,6 +1,7 @@
 <p>{{ site.data.homepage[page.lang].research_intro }}</p>
 {% for theme in site.data.research %}
 <section class="research-theme" id="{{ theme.id }}">
+  <span id="{{ theme.legacy_id }}" aria-hidden="true"></span>
   <h2>{% if page.lang == 'zh' %}{{ theme.title_zh }}{% else %}{{ theme.title_en }}{% endif %}</h2>
   <p class="research-question">{% if page.lang == 'zh' %}{{ theme.question_zh }}{% else %}{{ theme.question_en }}{% endif %}</p>
   <p>{% if page.lang == 'zh' %}{{ theme.text_zh }}{% else %}{{ theme.text_en }}{% endif %}</p>

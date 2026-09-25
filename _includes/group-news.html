@@ -1,0 +1,5 @@
+<ul class="group-news">
+{% for item in site.data.group.news %}
+<li><time>{{ item.date }}</time><a href="{{ prefix | append: item.url | relative_url }}">{{ item[title_key] }}</a></li>
+{% endfor %}
+</ul>

@@ -1,9 +1,11 @@
 ---
 permalink: /zh/
-title: 伍杨屹
+title: 城市转型与空间不平等课题组
+layout: group
+group_home: true
 lang: zh
-author_profile: true
+author_profile: false
 wide: true
-excerpt: "伍杨屹，武汉大学城市设计学院副教授，从事城市与经济地理研究，关注产业区位、住房市场与公共服务的空间公平。"
+excerpt: "UTSI城市转型与空间不平等课题组，依托武汉大学城市设计学院，由伍杨屹副教授负责，研究城市转型、空间重构与空间不平等。"
 ---
 {% include home-content.html %}

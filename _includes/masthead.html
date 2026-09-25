@@ -1,10 +1,10 @@
 {% assign nav_links = site.data.navigation.main %}
 {% assign home_path = '/' %}
-{% assign site_home_title = 'Yangyi Wu' %}
+{% assign site_home_title = 'UTSI Research Group' %}
 {% if page.lang == 'zh' %}
   {% assign nav_links = site.data.navigation.zh %}
   {% assign home_path = '/zh/' %}
-  {% assign site_home_title = '伍杨屹' %}
+  {% assign site_home_title = 'UTSI课题组' %}
 {% endif %}
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -12,7 +12,7 @@
       <nav id="site-nav" class="greedy-nav" aria-label="{% if page.lang == 'zh' %}主导航{% else %}Main navigation{% endif %}">
         <button aria-label="{% if page.lang == 'zh' %}更多栏目{% else %}More pages{% endif %}"><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ home_path | relative_url }}">{{ site_home_title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ home_path | relative_url }}" aria-label="{{ site_home_title }}"><span class="group-brand-full">{{ site_home_title }}</span><span class="group-brand-short" aria-hidden="true">UTSI</span></a></li>
           {% for link in nav_links %}
           <li class="masthead__menu-item"><a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
           {% endfor %}

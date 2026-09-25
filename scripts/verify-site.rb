@@ -8,6 +8,7 @@ require "set"
 root = Pathname.new(ARGV.fetch(0, "_site"))
 node = ENV.fetch("NODE_EXE", "node")
 records = YAML.safe_load_file("_data/publication_records.yml")
+themes = YAML.safe_load_file("_data/publication_themes.yml")
 scholar = YAML.safe_load_file("_data/scholar.yml")
 publication_categories = YAML.safe_load_file("_config.yml", aliases: true).fetch("publication_category")
 publications = {}
@@ -25,6 +26,8 @@ def html(root, path)
 end
 
 scholar_records = scholar.fetch("publications")
+check(themes.keys.sort == records.keys.sort, "Incomplete publication theme assignments")
+check(themes.values.all? { |ids| !ids.empty? && (ids - %w[transformation restructuring inequality methods]).empty? }, "Invalid research theme")
 check(scholar_records.keys.sort == records.keys.sort, "Scholar and publication records differ")
 check(scholar_records.length == scholar.fetch("publication_count"), "Incomplete Scholar snapshot")
 check(scholar_records.values.map { |record| record.fetch("id") }.uniq.length == scholar_records.length, "Duplicate Scholar article IDs")
@@ -76,6 +79,7 @@ end
   end
   check(page.css(".publication-media").length == records.values.count { |record| record["visual_reviewed"] && record["thumbnail"] }, "Reviewed publication images missing: #{path}")
   cards.each do |entry|
+    check(!entry["data-publication-themes"].to_s.empty?, "Missing publication themes")
     media = entry.at_css(".publication-media")
     check(media.nil? || media["href"] == entry.at_css("h3 a")["href"], "Image/title language mismatch")
   end
@@ -87,9 +91,11 @@ end
   puts "#{path}: #{cards.length} publications; default images #{bytes} bytes"
 end
 
-%w[/ /zh/ /research/ /zh/research/ /team/ /zh/team/ /cv/ /zh/cv/ /talks/ /zh/talks/].each do |path|
+%w[/ /zh/ /about/ /zh/about/ /projects/ /zh/projects/ /people/ /zh/people/ /news/ /zh/news/ /join/ /zh/join/ /research/ /zh/research/ /team/ /zh/team/ /cv/ /zh/cv/ /talks/ /zh/talks/].each do |path|
   page = html(root, path)
   check(page.at_css("[data-language-option]"), "Missing language switch: #{path}")
+  expected_alternate = path.start_with?("/zh/") ? path.delete_prefix("/zh") : "/zh#{path}"
+  check(page.at_css("[data-language-option]")["href"] == expected_alternate, "Wrong paired route: #{path}")
   tails = page.css("#site-nav .persist.tail")
   check(tails.length == 1 && tails.first.at_css("[data-language-option]"), "Unstable navigation order after resizing: #{path}")
   page.css("#main a[href], #site-nav a[href]").each do |link|
@@ -112,6 +118,12 @@ role_labels = {
 ["en", "zh"].each do |language|
   prefix = language == "zh" ? "/zh" : ""
   page = html(root, "#{prefix}/")
+  check(page.at_css(".group-home-title") && page.css(".sidebar").empty?, "Missing group homepage identity")
+  check(page.css(".home-highlight img").length == homepage.fetch("highlights").length, "Missing homepage visuals")
+  projects = html(root, "#{prefix}/projects/")
+  check(projects.css(".group-project").length == 4, "Missing verified projects")
+  check(html(root, "#{prefix}/people/").at_css(".group-person img"), "Missing PI profile")
+  check(html(root, "#{prefix}/join/").css(".group-admissions dt").map(&:text) == %w[2027 2028 2026], "Incorrect admissions cohorts")
   check(page.at_css(".profile-lead").text == homepage.fetch(language).fetch("lead"), "Wrong homepage introduction: #{language}")
   %w[introduction approach research_intro invitation].each do |key|
     check(page.css(".home-content p").any? { |p| p.text == homepage.fetch(language).fetch(key) }, "Missing homepage #{key}: #{language}")
