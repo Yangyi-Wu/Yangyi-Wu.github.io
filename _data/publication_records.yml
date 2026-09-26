@@ -21,20 +21,20 @@
   visual: /images/publications/housing-connectivity-reviewed.png
   thumbnail: /images/publications/housing-connectivity-reviewed.png
   visual_alt_en: "Similarity, substitutability and spatial connectivity combine to identify 43 housing submarkets in Salt Lake County."
-  visual_alt_zh: "结合相似性、可替代性和空间连接性，在盐湖县识别 43 个住房子市场。"
+  visual_alt_zh: "把相似性、可替代性与空间连接性结合起来，在盐湖县识别出 43 个住房子市场。"
   thumbnail_alt_en: "Housing submarket classification through spatial connectivity."
-  thumbnail_alt_zh: "通过空间连接性识别住房子市场。"
+  thumbnail_alt_zh: "借助空间连接性识别住房子市场。"
   summary_reviewed: true
   contribution_en: "Housing submarkets need not be defined by simple spatial continuity. This study combines similarity, substitutability and spatial connectivity in a hybrid classification method, linking the definition of local markets to the price processes that operate within them."
-  contribution_zh: "住房子市场不能仅按空间上的连续分布划分。本文结合相似性、可替代性和空间连接性构建混合分类方法，使子市场的识别与其内部的价格形成过程相对应。贡献在于重新处理市场边界与空间关系，而不只是提高房价预测精度。"
+  contribution_zh: "住房子市场并不能只按空间上的连续分布来划分。本文把相似性、可替代性与空间连接性结合起来，用一套混合分类方法界定子市场，让市场边界与内部的价格形成过程对应起来。方法的意义不在于把房价预测做得更准，而在于重新处理市场的边界与空间关系。"
   highlights_en:
     - "The Salt Lake County case uses a dataset of about 240,000 single-family houses and identifies 43 submarkets."
     - "A hybrid spatial data-mining procedure balances attribute similarity, spatial relationships and computational feasibility."
     - "Submarket-based models improve prediction and the interpretation of local housing markets relative to a non-submarket model."
   highlights_zh:
     - "以盐湖县约 24 万套独栋住宅为研究对象，识别出 43 个住房子市场。"
-    - "混合空间数据挖掘兼顾属性相似性、空间关系与大规模数据处理的可行性。"
-    - "与未划分子市场的模型相比，分市场建模改善了预测，也使地方住房市场的解释更贴近其空间差异。"
+    - "混合空间数据挖掘方法同时兼顾属性相似性、空间关系和大规模数据处理的可行性。"
+    - "与不划分子市场的模型相比，分市场建模不仅改善了预测，对地方住房市场的解释也更贴近空间差异。"
 2020-03-01-firm-suburbanization-urban-sprawl:
   authors: "Wu, Y., Wei, Y. D., & Li, H."
   doi: 10.1080/00330124.2020.1750437
@@ -51,16 +51,16 @@
   visual: /images/publications/amenity-creativity-spatial-context-reviewed.png
   thumbnail: /images/publications/amenity-creativity-spatial-context-reviewed.png
   visual_alt_en: "Co-location, accessibility and amenity clusters coexist as spatial relationships. A qualitative CBD-to-suburb comparison contrasts amenity associations that weaken for firm agglomeration with those that persist for creativity. The lines are not estimated effect curves or mapped flows."
-  visual_alt_zh: "共址、可达性和设施集群等空间关系同时存在。中心到郊区的定性对照说明，设施与企业集聚的关联随远离中央商务区而减弱，与地方创意的关联则延续至郊区。线条不是估计效应曲线或实测流量。"
+  visual_alt_zh: "共址、可达性与设施集群等空间关系同时存在。从中心城区到郊区的定性对照显示，设施与企业集聚的关联随远离中央商务区而减弱，与地方创意的关联则一直延续到郊区。图中线条并非估计出的效应曲线，也不是实测流量。"
   thumbnail_alt_en: "Firm agglomeration and local creativity require different spatial explanations."
   thumbnail_alt_zh: "企业集聚与地方创意需要不同的空间解释。"
   summary_reviewed: true
-  contribution_zh: "城市设施对企业集聚的吸引力与对地方创意的吸引力并不相同。本文以这两个维度构建理论框架，结合共址、可达性与高密度设施簇等空间关系，解释城市设施在上海都市区内部的差异化作用。研究明确了产业集聚理论与创意理论在不同研究对象和城市空间中的适用差异。"
+  contribution_zh: "城市设施对一般企业集聚的吸引力，和对地方创意的吸引力并不相同。本文围绕这两个维度构建理论框架，并结合共址、可达性与高密度设施簇等空间关系，说明城市设施在上海都市区内部发挥的作用为何不同。研究也澄清了产业集聚理论与创意理论各自适用于什么研究对象、怎样的城市空间。"
   contribution_en: "Attractiveness to firm agglomeration and attractiveness to local creativity are distinct dimensions of urban amenities. The study develops a framework connecting these dimensions to co-location, accessibility and high-density amenity clusters within Shanghai. It clarifies how the applicability of agglomeration and creativity theories differs across research objects and urban space."
   highlights_zh:
-    - "在 1 公里尺度上，城市设施对地方创意的解释力强于对一般生产性服务业集聚的解释力。"
-    - "共址、可达性与高密度设施簇等空间关系同时存在，不能以单一距离指标替代。"
-    - "设施与企业集聚的关联随远离中央商务区而减弱，与地方创意的关联则延续至郊区。研究主要依据横截面数据，不将这些关联直接视为因果证据。"
+    - "在 1 公里尺度上，城市设施对地方创意的解释力，强于对一般生产性服务业集聚的解释力。"
+    - "共址、可达性与高密度设施簇等空间关系同时存在，无法用单一的距离指标涵盖。"
+    - "设施与企业集聚的关联随远离中央商务区而减弱，与地方创意的关联则一直延续到郊区。研究主要依据横截面数据，因此不把这些关联直接当作因果证据。"
   highlights_en:
     - "At the 1-km scale, urban amenities explain local creativity more strongly than general producer-service agglomeration."
     - "Co-location, accessibility and high-density amenity clusters coexist as spatial relationships; a single distance measure cannot represent them all."
@@ -87,20 +87,20 @@
   visual: /images/publications/agglomeration-scales-reviewed.png
   thumbnail: /images/publications/agglomeration-scales-reviewed.png
   visual_alt_en: "Specialization and related variety act at neighborhood and city-wide scales; unrelated variety shows no detected effect; urbanization economies act negatively only city-wide."
-  visual_alt_zh: "专业化与相关多样性在邻里和全市尺度发挥作用，非相关多样性未显示影响，城市化经济仅在全市尺度表现为负向作用。"
+  visual_alt_zh: "专业化和相关多样性在邻里与全市尺度都发挥作用，非相关多样性未显现影响，城市化经济只在全市尺度上呈负向作用。"
   thumbnail_alt_en: "Agglomeration externalities differ by type and scale."
-  thumbnail_alt_zh: "不同集聚外部性具有不同的尺度效应。"
+  thumbnail_alt_zh: "不同类型的集聚外部性，作用尺度也不同。"
   summary_reviewed: true
   contribution_en: "Agglomeration economies are not one uniform local advantage. The study distinguishes four forms of agglomeration and their spatial reach, showing why the type of externality and the scale of analysis must be considered together when explaining tech firm births."
-  contribution_zh: "集聚并不是一种作用一致的区位优势。本文区分四类集聚经济及其空间作用范围，说明解释科技企业创生时，必须同时考虑外部性的类型与分析尺度，不能用单一的集聚程度替代。"
+  contribution_zh: "集聚并不是一种作用一致的区位优势。本文区分四类集聚经济及其空间作用范围，说明解释科技企业创生时，必须同时考虑外部性的类型与分析尺度，不能只看单一的集聚程度。"
   highlights_en:
     - "Specialization and related variety are associated with firm births at both neighborhood and city-wide scales."
     - "Specialization is more pronounced at the neighborhood scale and has a broader spatial reach than related variety."
     - "Unrelated variety has no detected effect across the tested scales; urbanization economies operate negatively only at the city-wide scale."
   highlights_zh:
-    - "专业化和相关多样性在邻里与全市尺度均发挥作用。"
-    - "专业化的作用在邻里尺度更突出，其空间作用范围也比相关多样性更广。"
-    - "非相关多样性在所检验的尺度上未显示影响；城市化经济仅在全市尺度表现为负向作用。"
+    - "专业化和相关多样性在邻里与全市尺度上都有作用。"
+    - "专业化的作用在邻里尺度更突出，作用范围也比相关多样性更广。"
+    - "非相关多样性在所检验的各个尺度上都未显现影响；城市化经济只在全市尺度上呈负向作用。"
 2023-08-01-remote-sensing-of-watershed-book:
   authors: "Wang, J., Hu, Z., Wu, Y., & Zhang, J. (Eds.)"
   doi: 10.3390/books978-3-0365-8131-6
@@ -129,20 +129,20 @@
   visual: /images/publications/park-matching-reviewed.png
   thumbnail: /images/publications/park-matching-reviewed.png
   visual_alt_en: "Quality-adjusted park services are compared with age-sensitive demand; 28.25 percent of Wuhan communities have unmet park demand."
-  visual_alt_zh: "将考虑质量的公园服务供给与年龄差异化需求匹配；武汉案例中 28.25% 的社区存在需求缺口。"
+  visual_alt_zh: "把考虑质量的公园服务供给与不同年龄群体的需求匹配起来；武汉案例中，28.25% 的社区存在需求缺口。"
   thumbnail_alt_en: "Park equity depends on matching services to differentiated needs."
-  thumbnail_alt_zh: "公园公平取决于服务供给与差异化需求是否匹配。"
+  thumbnail_alt_zh: "公园公平取决于服务供给是否匹配不同人群的需求。"
   summary_reviewed: true
   contribution_en: "Park provision is not the same as park equity. By combining quality-adjusted service capacity and accessibility with age-sensitive demand, this study evaluates whether services match residents' needs. This explains why a well-supplied central area can still face a serious shortfall."
-  contribution_zh: "公园资源多，并不等于公园服务公平。本文依据公园质量、服务能力与可达性测度供给，并考虑不同年龄群体的使用需求，把公平的判断从资源数量推进到服务与需求的匹配。因此，供给较高的中心城区仍可能存在严重的需求缺口。"
+  contribution_zh: "公园资源多，并不等于公园服务公平。本文按公园质量、服务能力和可达性衡量供给，同时考虑不同年龄群体的使用需求，把公平的判断从资源数量转向服务与需求的匹配。这解释了为什么供给充足的中心城区，仍可能存在明显的需求缺口。"
   highlights_en:
     - "In the Wuhan case, 28.25% of communities have unmet park demand."
     - "Central areas combine high supply with high demand; an apparently favorable resource distribution can conceal a service deficit."
     - "The assessment supports different responses: upgrading existing parks in constrained central areas and addressing underserved suburban locations."
   highlights_zh:
-    - "武汉案例中，28.25% 的社区存在公园需求未得到满足的情况。"
-    - "中心城区同时具有较高供给和较高需求，仅观察资源分布会掩盖服务不足。"
-    - "评估结果支持差异化干预：中心城区侧重提升现有公园服务能力，服务不足的郊区侧重补充供给。"
+    - "武汉案例中，28.25% 的社区公园需求没有得到满足。"
+    - "中心城区同时存在较高的供给和较高的需求，只看资源分布会掩盖服务不足。"
+    - "评估结果指向不同的改进方向：中心城区应侧重提升现有公园的服务能力，服务不足的郊区则应补充供给。"
 2025-06-01-park-use-covid-peri-urban:
   authors: "Wu, Y., Wei, Y. D., Liu, M., & García, I."
   doi: 10.1016/j.landurbplan.2024.105269
@@ -150,18 +150,18 @@
   visual: /images/publications/park-equity-lenses-reviewed.png
   thumbnail: /images/publications/park-equity-lenses-reviewed.png
   visual_alt_en: "Objective provision and resident experience jointly inform context-specific park-equity assessment. Western peri-urban communities have access similar to the urban center but greater basic-infrastructure needs; their park use was more vulnerable to perceived quality problems during COVID-19. Conceptual synthesis, not a map or causal model."
-  visual_alt_zh: "公平评价同时联系客观供给与居民体验，并区分城区和近郊情境。西部近郊的客观可达性与中心城区相近，但基础设施改善需求更高，疫情期间公园使用也更容易受到质量感知问题的影响。本图为概念归纳，并非地图或因果模型。"
+  visual_alt_zh: "公平评价需要同时考虑客观供给与居民体验，并区分城区和近郊两种情境。西部近郊的客观可达性与中心城区相近，但对基础设施改善的需求更高，疫情期间的公园使用也更容易受质量观感问题影响。本图为概念归纳，不是地图，也不是因果模型。"
   thumbnail_alt_en: "Similar measured park access does not mean the same experienced equity."
-  thumbnail_alt_zh: "客观公园可达性相近，不意味着居民拥有相同的服务体验。"
+  thumbnail_alt_zh: "客观可达性相近，并不意味着居民的服务体验相同。"
   wu_author_role: first
   authorship_source: "Publisher PDF, p. 1: Yangyi Wu is the first listed author; Yehua Dennis Wei is the corresponding author."
   summary_reviewed: true
-  contribution_zh: "公园公平不能仅由客观可达性和质量指标判断。本文结合资源评价、居民感知、改善需求与疫情期间的使用变化，在城区与近郊比较中识别这些维度之间的差异。研究说明，空间指标所呈现的资源条件与居民实际感受到、能够使用的公园服务并不总是一致，近郊社区的脆弱性也因此容易被低估。"
+  contribution_zh: "公园公平不能只靠客观可达性和质量指标来判断。本文把资源评价、居民感知、改善需求与疫情期间的使用变化放在一起，在城区与近郊的对照中观察这些维度的差异。研究说明，空间指标反映的资源条件，与居民实际感受到、能够使用的公园服务并不总是一致，近郊社区的脆弱性也因此容易被低估。"
   contribution_en: "Objective accessibility and quality measures alone cannot fully describe park equity. Comparing urban and peri-urban communities, the study connects resource assessments, residents' perceptions, improvement needs and pandemic-era changes in use. It shows why measured provision can diverge from experienced services, leaving peri-urban vulnerabilities insufficiently understood."
   highlights_zh:
-    - "在盐湖城案例中，南部近郊居民对可达性的评价比传统空间指标所显示的更积极。"
+    - "在盐湖城案例中，南部近郊居民对可达性的评价，比传统空间指标所显示的更乐观。"
     - "中心城区与西部近郊的客观可达性相近，但居民感知不同；公园质量也呈现明显的东西差异。"
-    - "西部社区对基础设施改善的需求更高，疫情期间公园使用更容易受到质量感知问题的影响。"
+    - "西部社区对基础设施改善的需求更高，疫情期间的公园使用也更容易受质量观感问题影响。"
   highlights_en:
     - "In Salt Lake City, southern peri-urban residents perceive accessibility more positively than conventional spatial measures suggest."
     - "Urban-center and western peri-urban communities have similar objective accessibility but different perceptions; park quality also shows a marked east-west divide."
@@ -179,16 +179,16 @@
   visual: /images/publications/amenity-housing-analysis-reviewed.png
   thumbnail: /images/publications/amenity-housing-analysis-reviewed.png
   visual_alt_en: "A four-dimensional amenity framework: accessibility covers quantity and quality; activity covers functional mix and spatial arrangement. Their associations with housing value are nonlinear and context-dependent."
-  visual_alt_zh: "设施评价的四维框架：可达性维度包括数量和质量，活动维度包括功能混合与空间组织。它们与住房价值的关联具有非线性和情境差异。"
+  visual_alt_zh: "设施评价的四维框架：可达性一侧包含数量与质量，活动一侧包含功能混合与空间组织。这些维度与住房价值的关联是非线性的，也随情境而变。"
   thumbnail_alt_en: "Amenity value depends on quantity, quality, functional mix and spatial arrangement, not proximity alone."
-  thumbnail_alt_zh: "设施价值取决于数量、质量、功能混合和空间组织，不能只看距离。"
+  thumbnail_alt_zh: "设施的价值取决于数量、质量、功能混合与空间组织，不能只看距离。"
   summary_reviewed: true
-  contribution_zh: "本文将社区设施的价值解释从距离和数量扩展到设施的组合方式：以数量和质量描述可达性，以功能混合和空间组织描述活动条件。这一框架把“能接近哪些设施”与“设施如何共同支持日常活动”联系起来，说明同样的设施供给，在不同组合与城市情境中可能具有不同的住房价值。"
+  contribution_zh: "本文对社区设施价值的解释，从距离和数量扩展到设施的组合方式：用数量和质量刻画可达性，用功能混合和空间组织刻画活动条件。这一框架把「能接近哪些设施」和「设施如何共同支撑日常活动」放在一起考虑，说明同样的设施供给，在不同组合和城市情境下可能对应不同的住房价值。"
   contribution_en: "The study extends the explanation of amenity value beyond proximity and counts to the configuration of neighborhood resources. Quantity and quality describe accessibility, while functional mix and spatial arrangement describe activity conditions. The framework links which amenities are available with how they jointly support daily activities, helping explain why similar provision can have different housing-value associations across configurations and urban contexts."
   highlights_zh:
     - "武汉案例结合线性回归与 XGBoost-SHAP，分析数量、质量、功能混合和空间组织四类特征。"
-    - "私人服务的房价关联更依赖质量，基本服务则同时依赖数量与质量，不能使用统一的设施评价标准。"
-    - "模型识别出非线性和阈值关系，提示中心区、郊区与外围地区存在偏好差异；横截面数据不能证明因果关系。"
+    - "私人服务的房价关联更依赖质量，基本服务则数量与质量都重要，因此不宜用统一的设施评价标准。"
+    - "模型识别出非线性与阈值关系，提示中心区、郊区与外围地区的偏好存在差异；由于是横截面数据，不能据此推断因果关系。"
   highlights_en:
     - "The Wuhan case combines linear regression and XGBoost-SHAP to examine quantity, quality, functional mix and spatial arrangement."
     - "Private services rely more on quality in their housing-price associations, while both quantity and quality matter for essential services."
@@ -200,18 +200,18 @@
   visual: /images/publications/amenity-industry-mechanisms-reviewed.png
   thumbnail: /images/publications/amenity-industry-mechanisms-reviewed.png
   visual_alt_en: "Adapted from the paper's proposed framework: metropolitan potential resource access underpins competitive advantage, while local amenity availability and diversity support placemaking. These nested mechanisms jointly explain industrial attractiveness within an urban spatial context; schematic connections are not causal estimates."
-  visual_alt_zh: "依据原文理论框架重组：都市区的潜在资源获取条件构成竞争优势，地方设施供给与多样性支持地方营造。两种嵌套尺度的机制共同解释城市空间背景下的产业吸引力，示意连线不代表因果效应估计。"
+  visual_alt_zh: "按原文理论框架重绘：都市区层面的潜在资源获取条件构成竞争优势，地方层面的设施供给与多样性支撑地方营造。两个嵌套尺度的机制共同解释城市空间中的产业吸引力，图中连线为示意，不代表因果效应估计。"
   thumbnail_alt_en: "Industrial attractiveness combines metropolitan resource advantages and local placemaking."
-  thumbnail_alt_zh: "产业区位吸引力需要同时理解都市区资源优势与地方营造。"
+  thumbnail_alt_zh: "理解产业区位吸引力，需要同时看都市区资源优势与地方营造。"
   wu_author_role: co_corresponding
   authorship_source: "Publisher PDF, p. 1: Yangyi Wu (*) and Meitong Liu (**) are both explicitly identified as corresponding authors."
   summary_reviewed: true
-  contribution_zh: "本文用多尺度框架解释城市设施与知识密集型产业区位之间的关系。都市区尺度的设施分布决定不同城市板块的潜在竞争优势，地方尺度的设施供给与多样性则通过地方营造形成具体区位的吸引力。研究把地方营造从环境品质和社会生活的讨论推进到产业集聚的解释，并强调其作用取决于所在城市板块的功能与条件。"
+  contribution_zh: "本文用多尺度框架解释城市设施与知识密集型产业区位之间的关系。都市区尺度的设施分布决定各城市板块的潜在竞争优势，地方尺度的设施供给与多样性则通过地方营造形成具体区位的吸引力。研究把地方营造从环境品质和社会生活的讨论，延伸到对产业集聚的解释，并强调它的作用取决于所在城市板块的功能与条件。"
   contribution_en: "The study develops a multi-scalar framework linking urban amenities to knowledge-intensive industry location. Metropolitan amenity patterns establish potential competitive advantages across urban sectors, while local provision and diversity contribute to place-based attractiveness. It extends placemaking beyond environmental quality and social life to the explanation of industrial agglomeration, with effects dependent on each sector's functions and conditions."
   highlights_zh:
-    - "以武汉汽车产业为案例，区分都市区的板块优势与地方的区位吸引力，避免将城市内部视为均质空间。"
-    - "地方设施的多样性与产业集聚相关；就设施供给水平而言，基础设施和公共服务比消费型设施更受重视。"
-    - "中心城区与外围地区对设施的需求不同，地方营造应与城市板块的功能和目标产业相匹配，而非使用统一的建设模式。"
+    - "以武汉汽车产业为案例，区分都市区的板块优势与地方的区位吸引力，不把城市内部视为均质空间。"
+    - "地方设施的多样性与产业集聚相关；就供给水平而言，基础设施和公共服务比消费型设施更受重视。"
+    - "中心城区与外围地区的设施需求不同，地方营造应当与该板块的功能和目标产业相匹配，而不是套用统一的建设模式。"
   highlights_en:
     - "The Wuhan automotive-industry case distinguishes metropolitan sectoral advantages from local attractiveness rather than treating intra-urban space as homogeneous."
     - "Local amenity diversity is associated with industrial clustering; high provision is especially valued for infrastructure and public services rather than consumer amenities."
@@ -223,16 +223,16 @@
   visual: /images/publications/housing-tenure-institutional-reviewed.png
   thumbnail: /images/publications/housing-tenure-institutional-reviewed.png
   visual_alt_en: "Within a shared global, institutional and urban context, buyers place greater emphasis on service amenities and renters on job opportunities. The comparison treats tenure as a dimension of urban inequality, not as an absolute division of preferences."
-  visual_alt_zh: "在共同的全球化、制度与城市空间背景下，买方相对更重视服务设施，租方相对更重视就业机会。租售比较将住房占有方式视为城市不平等的一个维度，并非把两类人群的偏好绝对分开。"
+  visual_alt_zh: "在同样的全球化、制度与城市空间背景下，买方更看重服务设施，租方更看重就业机会。这项租售比较把住房占有方式视为城市不平等的一个维度，而不是把两类人群的偏好截然分开。"
   thumbnail_alt_en: "One city, two housing markets: tenure differentiates urban opportunities."
-  thumbnail_alt_zh: "同一座城市中的租售市场不同，住房占有方式与城市机会差异相关。"
+  thumbnail_alt_zh: "同一座城市里，租与售是两个不同的市场：住房占有方式与城市机会差异相关。"
   summary_reviewed: true
-  contribution_zh: "本文把住房租售市场放在同一分析框架中，将房价解释从住宅属性与区位扩展到全球化、制度和都市区空间结构。研究指出，买方和租方面对的机会与约束不同，住房占有方式因此成为理解城市不平等与居住分异的重要维度，不能用统一的住房市场假设解释租金与售价。"
+  contribution_zh: "本文把住房的租赁与销售放在同一分析框架下，把房价的解释从住宅属性和区位扩展到全球化、制度与都市区空间结构。研究指出，买方和租方面对的机会与约束并不相同，住房占有方式由此成为理解城市不平等与居住分异的一个重要维度；租金和售价不能用同一套住房市场假设来解释。"
   contribution_en: "By comparing housing sales and rents within one framework, the study extends price explanations beyond dwelling attributes and location to globalization, institutions and metropolitan spatial structure. Buyers and renters face different opportunities and constraints, making tenure an important dimension of urban inequality and residential segregation rather than treating the housing market as uniform."
   highlights_zh:
-    - "上海案例中，租方相对更重视就业机会，买方相对更重视服务设施；这并不意味着任一群体只关心单一因素。"
-    - "制度与全球化背景下，就业和优质服务在中心城区的集中与租售群体的空间差异相关，郊区则表现出相对更强的包容性。"
-    - "比较框架同时联系全球、都市区和地方背景；作者也指出代理变量和定量数据不足以完整解释全球化与社会排斥的过程。"
+    - "上海案例中，租方更看重就业机会，买方更看重服务设施；这并不意味着哪一群人只关心单一因素。"
+    - "在制度与全球化背景下，就业和优质服务向中心城区的集中，与租售群体的空间差异相关，郊区则显得相对更包容。"
+    - "这一比较框架同时关涉全球、都市区和地方三个层面的背景；作者也指出，代理变量和定量数据不足以完整解释全球化与社会排斥的过程。"
   highlights_en:
     - "In Shanghai, renters place relatively greater emphasis on employment opportunities and buyers on service amenities; neither group is assumed to have exclusive preferences."
     - "Institutional and globalizing contexts help explain the concentration of opportunities and services in central areas and unequal residential outcomes; suburbs appear relatively more inclusive."
@@ -244,16 +244,16 @@
   visual: /images/publications/polycentric-cartographic-reviewed.png
   thumbnail: /images/publications/polycentric-cartographic-reviewed.png
   visual_alt_en: "The same five schematic urban centers illustrate the distinction between morphological concentration and functional connectivity. Several physical centers can coexist with dependence on a dominant network center; scale, measurement and institutions matter."
-  visual_alt_zh: "用同样的五个示意中心对照形态上的集聚与功能上的联系：多个空间中心仍可能依赖同一个网络核心，解释多中心发展需要区分尺度、测度与制度背景。"
+  visual_alt_zh: "用同一组五个示意中心对照形态上的集聚与功能上的联系：多个空间中心可能仍然依赖同一个网络核心。理解多中心发展，需要区分尺度、测度和制度背景。"
   thumbnail_alt_en: "Multiple physical centers do not necessarily form a balanced functional network."
   thumbnail_alt_zh: "多个空间中心不一定构成均衡的功能网络。"
   summary_reviewed: true
-  contribution_zh: "这篇综述将多中心发展从一种规划形态目标，转为需要区分尺度、测度和形成机制的研究问题。人口或就业的空间集聚，与城市之间、中心之间的功能联系并不等同。因此，不能仅凭中心数量判断多中心程度，也不能预设它必然带来效率、公平或环境改善。"
+  contribution_zh: "这篇综述把多中心发展从一种规划形态目标，转为需要区分尺度、测度和形成机制的研究问题。人口或就业在空间上的集聚，与城市之间、中心之间的功能联系并不是一回事。因此，既不能只凭中心数量判断多中心程度，也不能预设多中心必然带来效率、公平或环境改善。"
   contribution_en: "This review treats polycentric development not simply as a desired spatial form but as a question of scale, measurement and underlying mechanisms. Spatial concentrations of population or employment are distinct from functional links between centers. Counting centers alone cannot establish the degree of polycentricity or guarantee efficiency, equity or environmental benefits."
   highlights_zh:
-    - "已有研究显示，中国不少城市区域仍具有较强的单中心特征，同时形成新的次中心；形态与功能指标识别的中心并不总是一致。"
-    - "多中心发展的形成机制因城市与尺度而异，经济、制度和交通因素共同发挥作用，国家与地方政府的作用尤其重要。"
-    - "文章综合已有文献，而非提供新的全国实测地图；疫情后多中心结构与韧性的长期关系仍是待检验问题。"
+    - "已有研究显示，中国不少城市区域仍有较强的单中心特征，同时又在形成新的次中心；形态指标与功能指标识别出的中心并不总是一致。"
+    - "多中心发展的形成机制因城市和尺度而异，经济、制度和交通因素共同起作用，其中中央与地方政府的作用尤其重要。"
+    - "文章是对已有文献的综合，并未提供新的全国实测地图；疫情之后多中心结构与韧性之间的长期关系，仍有待检验。"
   highlights_en:
     - "The reviewed evidence describes many Chinese urban regions as strongly monocentric with emerging subcenters; centers identified through morphological and functional metrics do not always coincide."
     - "Economic, institutional and transportation mechanisms differ across cities and scales, with a significant role for the state."

@@ -2,17 +2,17 @@
   legacy_id: innovation
   title_zh: 城市转型
   title_en: Urban Transformation
-  overview_zh: 我们研究经济转型、企业区位和城市优势如何共同塑造地方发展，关注不同城市和地区在转型过程中的差异化路径。
+  overview_zh: 研究经济转型、企业区位与城市优势如何共同塑造地方发展，以及不同城市和地区为何会在转型中走出不同的路径。
   overview_en: We study how economic transformation, firm location and urban advantages shape local development, and why cities and regions follow different paths through these changes.
   home_question_zh: 城市如何适应经济与产业变化？
   home_question_en: How do cities respond to economic and industrial change?
-  home_context_zh: 从上海生产性服务业到武汉汽车产业，我们比较企业集聚、地方创意与设施环境的关系，解释都市区资源联系和地方条件如何共同影响区位选择，并讨论产业政策与地方营造的作用。
+  home_context_zh: 从上海的生产性服务业到武汉的汽车产业，我们比较企业集聚、地方创意与设施环境之间的关系，说明都市区的资源条件和地方因素如何共同影响区位选择，并讨论产业政策与地方营造能起到什么作用。
   home_context_en: Work on Shanghai's producer services and Wuhan's automotive industry connects firm clustering, local creativity and amenities. We examine how metropolitan resource connections and local conditions shape location choices, with implications for industrial policy and placemaking.
-  focus_zh: ['产业转型与企业区位', '城市竞争优势', '经济活动空间集聚', '城市发展路径']
+  focus_zh: ['产业转型与企业区位', '城市竞争优势', '经济活动的空间集聚', '城市发展路径']
   focus_en: ['Industrial change and firm location', 'Urban competitive advantages', 'Spatial agglomeration', 'Urban development paths']
   question_zh: 经济活动的区位选择，如何改变城市发展的动力与地方优势？
   question_en: How do location choices reshape the drivers of urban development and the advantages of places?
-  text_zh: 产业发展不仅取决于生产条件，也与城市提供的设施、服务和资源联系有关。上海生产性服务业研究区分企业集聚与地方创意的区位逻辑；武汉产业研究连接都市区资源获取与地方设施组合。我们由此讨论城市转型中的地方优势如何形成，以及产业政策与地方营造能够回应哪些具体条件。
+  text_zh: 产业发展不只看生产条件，也与城市能提供的设施、服务和资源有关。上海生产性服务业研究区分了企业集聚和地方创意两套不同的区位逻辑；武汉的产业研究则把都市区的资源条件与地方设施的组合放在一起看。由此可以讨论：转型中的地方优势从何而来，产业政策和地方营造又能在哪些环节着力。
   text_en: Industrial development depends on production conditions as well as urban facilities, services and resource connections. Research on Shanghai’s producer services distinguishes the location logic of firm agglomeration from that of local creativity; work in Wuhan links metropolitan resource access to local amenity combinations. These studies inform questions about how place advantages emerge during urban transformation and what industrial policy and placemaking can address.
   papers:
     - /publication/2025-urban-amenities-knowledge-intensive-industry-locations
@@ -22,17 +22,17 @@
   legacy_id: structure
   title_zh: 空间重构
   title_en: Spatial Restructuring
-  overview_zh: 我们研究就业、居住和日常活动如何在城市内部重新分布，以及空间结构如何影响城市功能联系和地方发展。
+  overview_zh: 研究就业、居住和日常活动如何在城市内部重新分布，以及空间结构如何影响城市的功能联系和地方发展。
   overview_en: We study how employment, housing and everyday activities are redistributed within cities, and how spatial structures shape functional connections and local development.
   home_question_zh: 城市变化如何重新组织空间？
   home_question_en: How does urban change reorganize space?
-  home_context_zh: 研究围绕多中心发展、住房子市场与居民出行展开，区分建筑和就业的形态集聚、地点之间的功能联系，以及居民实际形成的活动空间，理解城市结构的不同维度及其规划含义。
+  home_context_zh: 我们从多中心发展、住房子市场和居民出行入手，区分建筑与就业在形态上的集聚、地点之间的功能联系，以及居民实际形成的活动空间，以理解城市结构的不同维度及其规划含义。
   home_context_en: Studies of polycentric development, housing submarkets and travel distinguish the spatial concentration of buildings and jobs from functional connections and residents' activity spaces. Together they clarify different dimensions of urban structure and their implications for planning.
   focus_zh: ['都市空间结构', '多中心发展', '就业与居住空间关系', '城市功能重组']
   focus_en: ['Metropolitan spatial structure', 'Polycentric development', 'Jobs-housing relationships', 'Reorganization of urban functions']
   question_zh: 看似相近的空间格局，是否具有相同的功能联系与组织方式？
   question_en: Do similar spatial patterns imply similar functional connections and forms of urban organization?
-  text_zh: 中心数量、密度和行政边界，不能完整表达都市区的运行方式。多中心研究区分形态集聚与功能联系；住房子市场研究结合属性相似性、可替代性与空间连接性识别地方市场；出行研究将空间结构与居民活动联系起来。这些工作帮助理解城市空间结构的不同维度及其规划含义。
+  text_zh: 中心的数量、密度和行政边界，并不能完整说明都市区是怎样运行的。多中心研究区分形态上的集聚与功能上的联系；住房子市场研究结合属性相似性、可替代性和空间连接性来识别地方市场；出行研究则把空间结构与居民的实际活动放在一起看。这些工作各自揭示了城市空间结构的一个侧面，也各有其规划含义。
   text_en: Center counts, density and administrative boundaries do not fully describe how metropolitan areas work. Polycentricity research distinguishes morphological concentration from functional connections; housing submarket research combines similarity, substitutability and spatial connectivity to identify local markets; travel research connects spatial structure with residents’ activities. These studies address different dimensions of urban organization and their implications for planning.
   papers:
     - /publication/2025-polycentric-urban-development-china
@@ -42,17 +42,17 @@
   legacy_id: equity
   title_zh: 空间不平等
   title_en: Spatial Inequality
-  overview_zh: 我们研究不同地区和群体获得城市资源的差异，关注公共服务、住房市场和地方环境如何影响居民的发展机会。
+  overview_zh: 研究不同地区和不同群体在获取城市资源上的差异，关注公共服务、住房市场和地方环境如何影响居民的机会。
   overview_en: We study differences in access to urban resources across places and social groups, focusing on how public services, housing markets and local environments shape residents' opportunities.
   home_question_zh: 城市发展的机会如何在空间中分布？
   home_question_en: How are the opportunities created by urban development distributed across space?
-  home_context_zh: 公园与绿地研究连接设施分布、质量、可达性和实际使用；住房研究关注租售市场中的区位条件与制度约束；区域研究追踪发展差距的变化。我们据此解释资源配置如何转化为具体的生活条件和机会差异。
+  home_context_zh: 公园与绿地研究把设施分布、质量、可达性和实际使用放在一起考虑；住房研究关注租售两类市场中的区位条件与制度约束；区域研究则追踪发展差距的变化。我们希望说明，资源配置如何转化为具体的生活条件和机会差异。
   home_context_en: Park and green infrastructure research connects provision, quality and accessibility with actual use. Housing studies address location conditions and institutional constraints across sales and rental markets, while regional work traces changing development disparities. These studies examine how resource allocation translates into living conditions and unequal opportunities.
   focus_zh: ['公共资源可达性', '城市设施公平', '住房市场分化', '社会空间差异']
   focus_en: ['Access to public resources', 'Equity in urban amenities', 'Housing market differentiation', 'Socio-spatial disparities']
   question_zh: 资源配置的改善，为什么未必使不同群体同等受益？
   question_en: Why do improvements in resource provision not necessarily benefit social groups equally?
-  text_zh: 公平既涉及资源在哪里，也涉及谁能使用、如何使用，以及不同人的需要。公园研究将客观可达性与质量同居民感知、改善需求和实际使用相对照；住房租售研究比较不同居住身份面对的区位条件与制度约束；区域研究追踪发展差异的变化。我们关注不利处境如何形成，为有针对性的公共资源配置提供证据。
+  text_zh: 公平不只关乎资源分布在哪里，也关乎谁能使用、如何使用，以及谁的需要被满足。公园研究把客观可达性与质量，同居民感知、改善需求和实际使用放在一起比较；住房租售研究比较不同居住身份所面对的区位条件与制度约束；区域研究追踪发展差距的变化。我们关心不利处境是怎样形成的，也希望能为更有针对性的公共资源配置提供依据。
   text_en: Equity concerns where resources are located, who can use them, how they are used and whose needs are met. Park research compares accessibility and quality with residents’ perceptions, needs and use. Housing research examines location conditions and institutional constraints across tenure, while regional studies track changing development disparities. We investigate how disadvantage emerges to inform more targeted allocation of public resources.
   papers:
     - /publication/2025-park-use-covid-peri-urban
