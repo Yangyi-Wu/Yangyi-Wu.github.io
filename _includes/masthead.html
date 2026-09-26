@@ -10,7 +10,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav" aria-label="{% if page.lang == 'zh' %}主导航{% else %}Main navigation{% endif %}">
-        <button title="{% if page.lang == 'zh' %}更多栏目{% else %}More pages{% endif %}" aria-label="{% if page.lang == 'zh' %}更多栏目{% else %}More pages{% endif %}"><i class="fa-solid fa-bars" aria-hidden="true"></i><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        <button class="nav-toggle hidden" type="button" title="{% if page.lang == 'zh' %}更多栏目{% else %}More pages{% endif %}" aria-label="{% if page.lang == 'zh' %}更多栏目{% else %}More pages{% endif %}" aria-controls="nav-overflow" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ home_path | relative_url }}" aria-label="{{ site_home_title }}"><span class="group-brand-name" aria-hidden="true">UTSI</span><span class="group-brand-label" aria-hidden="true">{% if page.lang == 'zh' %}城市转型与空间不平等<br>武汉大学{% else %}Research Group<br>Wuhan University{% endif %}</span></a></li>
           {% for link in nav_links %}
@@ -20,10 +20,10 @@
           <li class="masthead__menu-item persist tail"><a href="{{ page.alternate_url | relative_url }}" data-language-option="{% if page.lang == 'zh' %}en{% else %}zh{% endif %}" lang="{% if page.lang == 'zh' %}en{% else %}zh{% endif %}">{% if page.lang == 'zh' %}English{% else %}中文{% endif %}</a></li>
           {% endif %}
           <li id="theme-toggle" class="masthead__menu-item persist{% unless page.alternate_url %} tail{% endunless %}">
-            <a role="button" tabindex="0" aria-label="{% if page.lang == 'zh' %}切换明暗主题{% else %}Toggle color theme{% endif %}"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i></a>
+            <button type="button" title="{% if page.lang == 'zh' %}切换明暗主题{% else %}Toggle color theme{% endif %}" aria-label="{% if page.lang == 'zh' %}切换明暗主题{% else %}Toggle color theme{% endif %}"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i></button>
           </li>
         </ul>
-        <ul class="hidden-links hidden"></ul>
+        <ul id="nav-overflow" class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>

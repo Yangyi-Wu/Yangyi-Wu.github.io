@@ -65,6 +65,8 @@ end
   page = html(root, path)
   cards = page.css(".publication-entry")
   check(cards.length == records.length, "Incomplete publication list: #{path}")
+  check(page.css("[data-publication-count]").length == 1 && page.at_css(".publication-toolbar [data-publication-count]"), "Publication count must appear once, alongside its filters: #{path}")
+  check(page.at_css("[data-publication-count]").text.start_with?(records.length.to_s), "Missing no-JS publication count: #{path}")
   links = cards.map { |entry| entry.at_css("h3 a")["href"] }
   check(links.uniq.length == records.length, "Duplicate publications: #{path}")
   groups = page.css(".publication-group")
@@ -105,6 +107,10 @@ check(entry_page.css("[data-language-option]").map { |a| a["href"] }.sort == %w[
   check(page.at_css("[data-language-option]")["href"] == expected_alternate, "Wrong paired route: #{path}")
   tails = page.css("#site-nav .persist.tail")
   check(tails.length == 1 && tails.first.at_css("[data-language-option]"), "Unstable navigation order after resizing: #{path}")
+  menu_button = page.at_css("#site-nav button.nav-toggle")
+  check(menu_button && menu_button["type"] == "button" && menu_button["aria-expanded"] == "false", "Missing accessible menu control: #{path}")
+  check(page.at_css("##{menu_button['aria-controls']}.hidden-links"), "Menu control has no matching dropdown: #{path}")
+  check(page.at_css("#theme-toggle button[type='button'][title][aria-label]"), "Theme control must support native keyboard activation: #{path}")
   page.css("#main a[href], #site-nav a[href]").each do |link|
     href = link["href"].split(/[?#]/).first
     next unless href && href.start_with?("/")
@@ -127,6 +133,7 @@ role_labels = {
   page = html(root, language == "zh" ? "/zh/" : "/en/")
   check(page.at_css(".group-home-title") && page.css(".sidebar").empty?, "Missing group homepage identity")
   check(page.css("link[rel='stylesheet']").any? { |link| link["href"].match?(%r{/assets/css/main\.css\?v=\d+$}) }, "Missing stylesheet cache version")
+  check(page.css("script[src]").any? { |script| script["src"].match?(%r{/assets/js/main\.min\.js\?v=\d+$}) }, "Missing navigation script cache version")
   font_preload = page.at_css("link[rel='preload'][as='font']")
   check(font_preload && font_preload["href"].match?(%r{/assets/webfonts/utsi/utsi-sans\.woff2\?v=\d+$}), "Missing font cache version")
   check(root.join("assets/css/main.css").read.include?(font_preload["href"].split("/").last), "Font preload and stylesheet versions differ")

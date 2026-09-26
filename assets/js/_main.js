@@ -133,10 +133,12 @@ $(document).ready(function () {
     }
   });
 
-  // Init smooth scroll, this needs to be slightly more than then fixed masthead height
-  $("a").smoothScroll({
-    offset: -scssMastheadHeight,
-    preventDefault: false,
-  });
+  // Group pages use native scrolling with CSS anchor clearance and reduced-motion support.
+  if (!document.querySelector('.group-main')) {
+    $("a").smoothScroll({
+      offset: -scssMastheadHeight,
+      preventDefault: false,
+    });
+  }
 
 });

@@ -1,5 +1,5 @@
 <div class="publication-toolbar">
-  <p>{{ site.publications.size }} {% if page.lang == 'zh' %}项成果{% else %}publications{% endif %} · <a href="{{ site.author.googlescholar }}">Google Scholar</a></p>
+  <p><span class="publication-result-count" data-publication-count role="status" aria-live="polite">{{ site.publications.size }} {% if page.lang == 'zh' %}项成果{% else %}publications{% endif %}</span> · <a href="{{ site.author.googlescholar }}">Google Scholar</a></p>
   <div data-publication-search hidden>
     <div>
     <label for="publication-theme">{% if page.lang == 'zh' %}研究主题{% else %}Research theme{% endif %}</label>
@@ -15,7 +15,6 @@
     </div>
   </div>
 </div>
-<p class="publication-result-count" data-publication-count role="status" aria-live="polite"></p>
 {% assign publications_by_date = site.publications | sort: 'date' | reverse %}
 {% for category in site.publication_category %}
 <div class="publication-group" data-publication-category="{{ category[0] }}">
