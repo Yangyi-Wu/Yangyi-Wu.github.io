@@ -1,14 +1,14 @@
 zh:
   hero_lines: ['城市转型', '与空间不平等']
-  lead: 研究城市经济、空间结构与公共资源的重组，理解不同地方和群体的发展机会。
+  lead: 研究城市经济、空间结构与公共资源如何重组，以及这些变化如何影响不同地方和群体获得的机会。
   pi: 伍杨屹副教授 · 武汉大学城市设计学院
   perspective_title: 城市与经济地理视角
-  introduction: 企业与就业向哪里集聚，住房市场如何分化，公共资源又由谁使用？产业调整、人口流动和公共投资，通过企业选址、居住选择与日常活动，持续改变都市区和社区的空间关系。
-  approach: 城市转型与空间不平等课题组依托武汉大学城市设计学院，由伍杨屹副教授牵头。我们结合城市与经济地理、城乡规划和空间分析，研究地方优势的形成、城市空间的组织，以及发展机会在不同地方和群体之间的分布。
-  methods: 研究使用企业与住房数据、城市设施信息、地理空间数据和居民调查，将区域与都市区的空间格局同社区环境、居民感知及实际使用相互对照。
-  research_intro: 产业和人口变化如何推动城市转型？就业、居住与日常活动如何重新组织空间？这些变化又如何影响人们获得住房、公共服务和城市环境的机会？三个方向围绕转型动力、空间组织与分配后果展开，也关注它们之间的相互作用。
-  invitation: 欢迎对城市与经济地理、城乡规划和空间分析感兴趣的学生与同行交流。我们期待不同学科背景带来新的问题、数据和解释。
-  conversation: 交流可以从一个具体的城市现象、一篇论文、一次数据观察，或一个正在形成的研究问题开始。有关研究训练、合作议题与招生安排，欢迎来信讨论。
+  introduction: 企业与就业向哪里集聚，住房市场如何分化，公共资源又由谁使用？产业调整、人口流动和公共投资，通过企业选址、居住选择与日常活动，不断改变都市区和社区的空间关系。
+  approach: 课题组依托武汉大学城市设计学院，由伍杨屹副教授牵头，结合城市与经济地理、城乡规划和空间分析，研究地方优势如何形成、城市空间如何组织，以及发展机会怎样在不同地方和群体之间分布。
+  methods: 研究使用企业与住房数据、城市设施信息、地理空间数据和居民调查，在区域与都市区尺度的空间格局之外，同时考察社区环境、居民感知与实际使用。
+  research_intro: 产业和人口变化如何推动城市转型？就业、居住与日常活动如何重新组织空间？这些变化又如何影响人们获得住房、公共服务和城市环境的机会？三个方向分别对应转型动力、空间组织与机会分配，也关注三者之间的相互作用。
+  invitation: 欢迎对城市与经济地理、城乡规划和空间分析感兴趣的学生与同行交流。不同的学科背景往往能带来新的问题、新的数据和新的思路。
+  conversation: 交流可以从一个具体的城市现象、一篇论文、一组数据观察，或者一个尚未成形的研究问题开始。研究训练、合作议题与招生安排，都欢迎来信讨论。
 en:
   hero_lines: ['Urban Transformation', 'and Spatial Inequality']
   lead: We study changing urban economies, spatial structures and public resources, and the opportunities they create across places and communities.
@@ -32,16 +32,16 @@ highlights:
     figure_height: 988
     figure_caption_zh: 盐湖城公园与受访者分布。原文图 1，Wu et al. (2025)。
     figure_caption_en: Parks and respondents in Salt Lake City. Original Fig. 1, Wu et al. (2025).
-    title_zh: 公园公平：连接可达性、居民需求与实际使用
+    title_zh: 公园使用公平：可达性、需求与实际使用
     title_en: Park equity through access, needs and use
-    summary_zh: 盐湖城研究将公园的客观可达性与质量、居民感知和疫情期间的使用变化放在同一比较框架中。南部近郊居民对可达性的评价比空间指标更积极，西部社区则面临更突出的质量短板与基础设施需求。研究以城市与近郊的差异为线索，把公平评价从设施分布推进到居民体验和具体改善需求。
+    summary_zh: 盐湖城这项研究把公园的客观可达性与质量、居民感知，以及疫情期间的使用变化放进同一个框架比较。南部近郊居民对可达性的评价，比空间指标所显示的更乐观；西部社区则面临更明显的质量短板和基础设施缺口。研究以城区与近郊的差异为线索，说明公平评价不能只看设施分布，还要看居民的实际体验和改善需求。
     summary_en: The Salt Lake City study connects objective park access and quality with residents' perceptions and changes in use during COVID-19. Southern peri-urban residents perceived access more positively than spatial measures suggested, while western communities faced greater quality deficits and basic amenity needs. This urban–peri-urban comparison links equity assessment to lived experience and specific priorities for improvement.
   - paper: /publication/2025-urban-amenities-knowledge-intensive-industry-locations
     figure: amenity-industry-framework
     figure_height: 925
-    figure_caption_zh: 城市舒适性与产业区位的多尺度框架。原文图 1，Teng et al. (2025)。
+    figure_caption_zh: 城市设施与产业区位的多尺度框架。原文图 1，Teng et al. (2025)。
     figure_caption_en: A multi-scalar framework of amenities and industry location. Original Fig. 1, Teng et al. (2025).
-    title_zh: 产业区位：都市区优势如何连接地方营造
+    title_zh: 产业区位：都市区优势与地方营造
     title_en: Industry location across metropolitan and local scales
-    summary_zh: 武汉汽车产业研究提出多尺度解释：都市区设施格局塑造城市板块的竞争优势，地方设施的可获得性与多样性影响产业集聚的吸引力。基础设施和公共服务的作用更为稳定。研究将都市区资源联系与地方营造连接起来，为中心区和外围地区提出有区别的设施配置思路。
+    summary_zh: 这项武汉汽车产业研究给出了一个多尺度的解释：都市区的设施格局塑造各城市板块的竞争优势，地方设施的数量与多样性则影响具体区位的集聚吸引力，其中基础设施和公共服务的作用更为稳定。研究把都市区的资源条件与地方营造放在一起考虑，指出中心城区和外围地区的设施配置重点应当有所不同。
     summary_en: "Research on Wuhan's automotive industry develops a multi-scalar explanation of location: metropolitan amenity patterns shape competitive advantage, while local availability and diversity support industrial clustering. Infrastructure and public services show more consistent effects. Connecting metropolitan resource access with placemaking points to different amenity priorities for central and peripheral areas."
