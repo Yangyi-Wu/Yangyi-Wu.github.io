@@ -140,6 +140,8 @@ role_labels = {
   check(page.at_css(".home-hero .home-identity") && page.css(".urban-cover").empty?, "Homepage must use the institutional identity")
   city_photo = page.at_css(".home-hero .site-city-photo")
   check(city_photo && city_photo["fetchpriority"] == "high" && city_photo["srcset"], "Missing responsive hero photograph")
+  check(city_photo["src"] != entry_page.at_css(".site-city-photo")["src"], "Home and entry should use distinct city photographs")
+  check(city_photo["src"] == YAML.safe_load_file("_data/site_visual.yml").fetch("home_photo").fetch("large"), "Wrong homepage photograph")
   check(root.join(city_photo["src"].delete_prefix("/")).size < 500_000, "Hero photograph exceeds image budget")
   check(page.css(".photo-credit a").length == 2, "Missing photographer and license credits")
   check(root.join("assets/webfonts/utsi/utsi-sans.woff2").size < 1_500_000, "Site font exceeds budget")
@@ -174,7 +176,7 @@ role_labels = {
   admissions = YAML.safe_load_file("_data/group.yml").fetch("admissions").find { |cohort| cohort.fetch("year") == "2027" }
   check(page.at_css(".home-admissions").text.include?(admissions.fetch(language)), "Homepage admissions differ from the shared data")
   check(page.at_css(".home-phd-note").text.include?("2028"), "Missing expected PhD recruitment year")
-  %w[introduction approach research_intro invitation conversation].each do |key|
+  %w[introduction approach methods pi research_intro invitation conversation].each do |key|
     check(page.css(".home-content p").any? { |p| p.text == homepage.fetch(language).fetch(key) }, "Missing homepage #{key}: #{language}")
   end
   research_page = html(root, "#{prefix}/research/")
@@ -186,6 +188,7 @@ role_labels = {
     check(section.at_css(".home-theme-step").text == format("%02d", index + 1), "Incorrect research framework sequence")
     check(section.at_css(".home-theme-question").text == theme.fetch("home_question_#{language}"), "Missing homepage research question: #{language}")
     check(section.at_css(".home-theme-overview").text == theme.fetch("overview_#{language}"), "Missing homepage research context: #{language}")
+    check(section.at_css(".home-theme-context").text == theme.fetch("home_context_#{language}"), "Missing concrete research discussion: #{language}")
     check(section.css(".home-theme-focus li").map(&:text) == theme.fetch("focus_#{language}"), "Missing homepage research topics: #{language}")
     check(theme.fetch("focus_zh").length == theme.fetch("focus_en").length, "Unpaired research topics")
     check(section.at_css(".text-link")["href"] == "#{prefix}/research/##{theme.fetch('id')}", "Wrong research detail link")

@@ -1,3 +1,3 @@
-{% assign photo = site.data.site_visual.photo %}
+{% assign photo = include.photo | default: site.data.site_visual.photo %}
 {% assign location_key = 'location_' | append: page.lang %}
 <p class="photo-credit"><span>{{ photo[location_key] }}</span><span><a href="{{ photo.source }}">{{ photo.author }}</a> / <a href="{{ photo.license_url }}">{{ photo.license }}</a> · {% if page.lang == 'zh' %}裁切适配{% else %}Cropped for layout{% endif %}</span></p>

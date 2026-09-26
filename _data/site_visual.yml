@@ -11,3 +11,16 @@ photo:
   source: https://commons.wikimedia.org/wiki/File:Yuejiazui_Junction_Wuhan_Skyline.jpg
   license: CC BY 4.0
   license_url: https://creativecommons.org/licenses/by/4.0/
+home_photo:
+  small: /images/site/wuhan-yezhihu-960.webp
+  large: /images/site/wuhan-yezhihu-1920.webp
+  width: 1920
+  height: 1280
+  alt_zh: 武汉野芷湖的湖面、岸线绿地与住宅社区，摄于2019年。
+  alt_en: Lakefront greenery and residential neighborhoods at Yezhihu, Wuhan, photographed in 2019.
+  location_zh: 武汉 · 野芷湖，2019
+  location_en: Yezhihu, Wuhan · 2019
+  author: Arnie97
+  source: https://commons.wikimedia.org/wiki/File:Yezhihu_Lake_in_Wuhan.jpg
+  license: CC BY-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-sa/4.0/

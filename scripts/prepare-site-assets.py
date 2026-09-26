@@ -20,13 +20,14 @@ def main():
     photos.mkdir(parents=True, exist_ok=True)
     fonts.mkdir(parents=True, exist_ok=True)
 
-    image = Image.open(args.source / "wuhan-yuejiazui.jpg").convert("RGB")
-    for width in (960, 1920):
-        resized = image.copy()
-        resized.thumbnail((width, width))
-        destination = photos / f"wuhan-yuejiazui-{width}.webp"
-        resized.save(destination, "WEBP", quality=80, method=6)
-        print(destination.name, resized.size, destination.stat().st_size)
+    for name in ("wuhan-yuejiazui", "wuhan-yezhihu"):
+        image = Image.open(args.source / f"{name}.jpg").convert("RGB")
+        for width in (960, 1920):
+            resized = image.copy()
+            resized.thumbnail((width, width))
+            destination = photos / f"{name}-{width}.webp"
+            resized.save(destination, "WEBP", quality=80, method=6)
+            print(destination.name, resized.size, destination.stat().st_size)
 
     characters = set(chr(code) for code in range(32, 591))
     for folder in ("_data", "_pages", "_includes", "_layouts", "_publications", "_plugins"):

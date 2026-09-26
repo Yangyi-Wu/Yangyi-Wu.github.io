@@ -6,6 +6,8 @@
   overview_en: We study how economic transformation, firm location and urban advantages shape local development, and why cities and regions follow different paths through these changes.
   home_question_zh: 城市如何适应经济与产业变化？
   home_question_en: How do cities respond to economic and industrial change?
+  home_context_zh: 从上海生产性服务业到武汉汽车产业，我们比较企业集聚、地方创意与设施环境的关系，解释都市区资源联系和地方条件如何共同影响区位选择，并讨论产业政策与地方营造的作用。
+  home_context_en: Work on Shanghai's producer services and Wuhan's automotive industry connects firm clustering, local creativity and amenities. We examine how metropolitan resource connections and local conditions shape location choices, with implications for industrial policy and placemaking.
   focus_zh: ['产业转型与企业区位', '城市竞争优势', '经济活动空间集聚', '城市发展路径']
   focus_en: ['Industrial change and firm location', 'Urban competitive advantages', 'Spatial agglomeration', 'Urban development paths']
   question_zh: 经济活动的区位选择，如何改变城市发展的动力与地方优势？
@@ -24,6 +26,8 @@
   overview_en: We study how employment, housing and everyday activities are redistributed within cities, and how spatial structures shape functional connections and local development.
   home_question_zh: 城市变化如何重新组织空间？
   home_question_en: How does urban change reorganize space?
+  home_context_zh: 研究围绕多中心发展、住房子市场与居民出行展开，区分建筑和就业的形态集聚、地点之间的功能联系，以及居民实际形成的活动空间，理解城市结构的不同维度及其规划含义。
+  home_context_en: Studies of polycentric development, housing submarkets and travel distinguish the spatial concentration of buildings and jobs from functional connections and residents' activity spaces. Together they clarify different dimensions of urban structure and their implications for planning.
   focus_zh: ['都市空间结构', '多中心发展', '就业与居住空间关系', '城市功能重组']
   focus_en: ['Metropolitan spatial structure', 'Polycentric development', 'Jobs-housing relationships', 'Reorganization of urban functions']
   question_zh: 看似相近的空间格局，是否具有相同的功能联系与组织方式？
@@ -42,6 +46,8 @@
   overview_en: We study differences in access to urban resources across places and social groups, focusing on how public services, housing markets and local environments shape residents' opportunities.
   home_question_zh: 城市发展的机会如何在空间中分布？
   home_question_en: How are the opportunities created by urban development distributed across space?
+  home_context_zh: 公园与绿地研究连接设施分布、质量、可达性和实际使用；住房研究关注租售市场中的区位条件与制度约束；区域研究追踪发展差距的变化。我们据此解释资源配置如何转化为具体的生活条件和机会差异。
+  home_context_en: Park and green infrastructure research connects provision, quality and accessibility with actual use. Housing studies address location conditions and institutional constraints across sales and rental markets, while regional work traces changing development disparities. These studies examine how resource allocation translates into living conditions and unequal opportunities.
   focus_zh: ['公共资源可达性', '城市设施公平', '住房市场分化', '社会空间差异']
   focus_en: ['Access to public resources', 'Equity in urban amenities', 'Housing market differentiation', 'Socio-spatial disparities']
   question_zh: 资源配置的改善，为什么未必使不同群体同等受益？

@@ -1,21 +1,25 @@
 zh:
   hero_lines: ['城市转型', '与空间不平等']
-  lead: 理解城市如何转型，以及经济与空间过程如何塑造发展机会的差异。
+  lead: 研究城市经济、空间结构与公共资源的重组，理解不同地方和群体的发展机会。
+  pi: 伍杨屹副教授 · 武汉大学城市设计学院
   perspective_title: 城市与经济地理视角
-  introduction: 城市的发展并非均衡展开。经济活动、人口流动、住房市场与公共资源不断重塑城市空间，也使不同地区和群体获得不同的发展机会。
-  approach: 课题组依托武汉大学城市设计学院，由伍杨屹副教授牵头。我们结合城市与经济地理理论、空间分析与地理数据，研究城市空间结构的演化、地方优势的形成和发展机会的空间分布。
-  research_intro: 城市为何转型，转型如何重组空间，又如何改变发展机会的分布？三个方向分别关注转型动力、空间组织及其不平等后果，共同构成课题组的研究主线。
-  invitation: 欢迎对城市与经济地理、空间分析和城市发展问题感兴趣的学生与同行交流。
-  conversation: 交流可以从一个具体的城市现象、一篇论文，或一个正在形成的研究问题开始。
+  introduction: 企业与就业向哪里集聚，住房市场如何分化，公共资源又由谁使用？产业调整、人口流动和公共投资，通过企业选址、居住选择与日常活动，持续改变都市区和社区的空间关系。
+  approach: 城市转型与空间不平等课题组依托武汉大学城市设计学院，由伍杨屹副教授牵头。我们结合城市与经济地理、城乡规划和空间分析，研究地方优势的形成、城市空间的组织，以及发展机会在不同地方和群体之间的分布。
+  methods: 研究使用企业与住房数据、城市设施信息、地理空间数据和居民调查，将区域与都市区的空间格局同社区环境、居民感知及实际使用相互对照。
+  research_intro: 产业和人口变化如何推动城市转型？就业、居住与日常活动如何重新组织空间？这些变化又如何影响人们获得住房、公共服务和城市环境的机会？三个方向围绕转型动力、空间组织与分配后果展开，也关注它们之间的相互作用。
+  invitation: 欢迎对城市与经济地理、城乡规划和空间分析感兴趣的学生与同行交流。我们期待不同学科背景带来新的问题、数据和解释。
+  conversation: 交流可以从一个具体的城市现象、一篇论文、一次数据观察，或一个正在形成的研究问题开始。有关研究训练、合作议题与招生安排，欢迎来信讨论。
 en:
   hero_lines: ['Urban Transformation', 'and Spatial Inequality']
-  lead: Understanding urban transformation and how economic and spatial processes shape unequal development opportunities.
+  lead: We study changing urban economies, spatial structures and public resources, and the opportunities they create across places and communities.
+  pi: Led by Associate Professor Yangyi Wu · School of Urban Design
   perspective_title: An urban and economic geography perspective
-  introduction: Urban development unfolds unevenly. Economic activity, population movements, housing markets and public resources reshape urban space, creating different opportunities across places and social groups.
-  approach: Based at Wuhan University's School of Urban Design and led by Associate Professor Yangyi Wu, we combine urban and economic geography, spatial analysis and geospatial data to study changing urban structures, the formation of place advantages and the spatial distribution of development opportunities.
-  research_intro: Why do cities transform, how does transformation reorganize space, and how does it change the distribution of opportunities? Our three themes connect the drivers of transformation, spatial organization and unequal outcomes.
-  invitation: We welcome students and colleagues interested in urban and economic geography, spatial analysis and urban development.
-  conversation: A conversation can begin with an urban observation, a paper, or a research question that is still taking shape.
+  introduction: Where do firms and jobs cluster? How do housing markets differentiate, and who uses public resources? Industrial change, migration and public investment reshape metropolitan areas and neighborhoods through location choices, housing decisions and everyday activities.
+  approach: Led by Associate Professor Yangyi Wu at Wuhan University's School of Urban Design, UTSI brings together urban and economic geography, urban planning and spatial analysis. We study how place advantages emerge, how urban space is organized, and how opportunities are distributed across places and social groups.
+  methods: Our research draws on firm and housing data, urban amenity records, geospatial information and resident surveys, connecting regional and metropolitan patterns with neighborhood environments, residents' perceptions and actual use.
+  research_intro: How do industrial and population shifts drive urban transformation? How do work, housing and everyday activities reorganize space? What do these changes mean for access to housing, public services and urban environments? Our themes connect the drivers of transformation, spatial organization and distributional outcomes, including their interactions.
+  invitation: We welcome students and colleagues interested in urban and economic geography, urban planning and spatial analysis. Different disciplinary backgrounds bring new questions, data and perspectives to this work.
+  conversation: A conversation can begin with an urban observation, a paper, a pattern in the data, or an emerging research question. Please get in touch to discuss research training, collaboration or admissions.
 selection:
   recent_years: 3
   allowed_venues:
@@ -28,16 +32,16 @@ highlights:
     figure_height: 988
     figure_caption_zh: 盐湖城公园与受访者分布。原文图 1，Wu et al. (2025)。
     figure_caption_en: Parks and respondents in Salt Lake City. Original Fig. 1, Wu et al. (2025).
-    title_zh: 公园公平：距离之外，还有使用与需求
-    title_en: Park equity beyond spatial accessibility
-    summary_zh: 公园公平不能只用距离衡量。盐湖城案例将客观可达性、居民需求与实际使用相互对照，揭示可达性相近的地区，居民的设施改善需求仍有明显差异。
-    summary_en: Park equity is not captured by distance alone. Comparing access, residents' needs and actual use in Salt Lake City shows why similar accessibility can coexist with different needs for facility improvements.
+    title_zh: 公园公平：连接可达性、居民需求与实际使用
+    title_en: Park equity through access, needs and use
+    summary_zh: 盐湖城研究将公园的客观可达性与质量、居民感知和疫情期间的使用变化放在同一比较框架中。南部近郊居民对可达性的评价比空间指标更积极，西部社区则面临更突出的质量短板与基础设施需求。研究以城市与近郊的差异为线索，把公平评价从设施分布推进到居民体验和具体改善需求。
+    summary_en: The Salt Lake City study connects objective park access and quality with residents' perceptions and changes in use during COVID-19. Southern peri-urban residents perceived access more positively than spatial measures suggested, while western communities faced greater quality deficits and basic amenity needs. This urban–peri-urban comparison links equity assessment to lived experience and specific priorities for improvement.
   - paper: /publication/2025-urban-amenities-knowledge-intensive-industry-locations
     figure: amenity-industry-framework
     figure_height: 925
     figure_caption_zh: 城市舒适性与产业区位的多尺度框架。原文图 1，Teng et al. (2025)。
     figure_caption_en: A multi-scalar framework of amenities and industry location. Original Fig. 1, Teng et al. (2025).
-    title_zh: 产业区位：城市优势如何影响地方发展
-    title_en: Industry location and the role of urban advantages in local development
-    summary_zh: 研究将都市区资源获取与地方设施组合放在同一框架中，解释舒适性如何影响武汉汽车产业区位。地方营造的作用取决于更广泛的城市空间联系，而非一套固定的设施清单。
-    summary_en: Urban amenities shape industry location through metropolitan resource access and local amenity combinations. The Wuhan study links competitive advantage with placemaking, explaining why local attractiveness depends on wider spatial connections rather than a standard amenity checklist.
+    title_zh: 产业区位：都市区优势如何连接地方营造
+    title_en: Industry location across metropolitan and local scales
+    summary_zh: 武汉汽车产业研究提出多尺度解释：都市区设施格局塑造城市板块的竞争优势，地方设施的可获得性与多样性影响产业集聚的吸引力。基础设施和公共服务的作用更为稳定。研究将都市区资源联系与地方营造连接起来，为中心区和外围地区提出有区别的设施配置思路。
+    summary_en: "Research on Wuhan's automotive industry develops a multi-scalar explanation of location: metropolitan amenity patterns shape competitive advantage, while local availability and diversity support industrial clustering. Infrastructure and public services show more consistent effects. Connecting metropolitan resource access with placemaking points to different amenity priorities for central and peripheral areas."
