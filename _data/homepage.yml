@@ -9,7 +9,9 @@ zh:
   approach: >-
     课题组 PI：伍杨屹，副教授，武汉大学城市设计学院。
   methods: >-
-    课题组注重定性与定量相结合的混合研究方法，将空间数据分析与问卷、访谈相互印证，既识别城市与区域的空间格局，也理解居民的日常经验及其背后的形成机制。
+    课题组注重定性与定量相结合，将空间分析与问卷、访谈相互印证，解释城市空间格局及其形成机制，理解不同群体的日常经验。
+  data_analysis: >-
+    研究使用企业登记、住房交易、设施兴趣点（POI）、遥感影像与居民调查等数据，覆盖城市群、城市、社区及个体尺度，结合空间计量、网络分析与定性分析开展研究。
   research_intro: >-
     三个方向对应城市变化的三个环节：产业和人口变化怎样推动城市转型（城市转型），就业、居住和日常活动怎样重新组织城市空间（空间重构），变化的结果在不同地方和人群之间怎样分配（空间不平等）。三个环节首尾相接：转型引发重构，重构改变分配，分配格局又塑造下一轮转型的起点。
   invitation: >-
@@ -26,7 +28,9 @@ en:
   approach: >-
     Principal Investigator: Yangyi Wu, Associate Professor, School of Urban Design, Wuhan University.
   methods: >-
-    We take a mixed-methods approach, combining quantitative and qualitative research. Spatial data analysis, surveys and interviews inform one another, helping us identify urban and regional spatial patterns and understand residents' everyday experiences and the mechanisms that shape them.
+    We combine qualitative and quantitative methods, bringing spatial analysis into dialogue with surveys and interviews to explain urban spatial patterns and their underlying mechanisms, and to understand the everyday experiences of different social groups.
+  data_analysis: >-
+    Our research draws on firm registration and housing transaction records, amenity points of interest (POIs), remote sensing imagery and resident surveys. We work across city-region, city, neighborhood and individual scales, using spatial econometrics, network analysis and qualitative analysis.
   research_intro: >-
     Our three themes follow the chain of urban change: how industrial and population shifts drive it (Urban Transformation), how jobs, housing and daily activities reorganize space (Spatial Restructuring), and how outcomes are distributed across places and groups (Spatial Inequality). The links are sequential and recursive: transformation drives restructuring, restructuring reshapes distribution, and distribution conditions the next round of transformation.
   invitation: >-
