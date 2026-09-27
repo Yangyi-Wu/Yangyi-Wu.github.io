@@ -4,6 +4,8 @@ require "date"
 require "pathname"
 require "open3"
 require "set"
+require "json"
+require "uri"
 
 root = Pathname.new(ARGV.fetch(0, "_site"))
 node = ENV.fetch("NODE_EXE", "node")
@@ -94,11 +96,21 @@ end
 end
 
 entry_page = html(root, "/")
+mark = Nokogiri::XML(root.join("images/favicon.svg").read)
+check(mark.at_xpath("//*[local-name()='title']").text == "UTSI", "Missing UTSI brand icon")
+manifest = JSON.parse(root.join("images/manifest.json").read)
+check(manifest.fetch("short_name") == "UTSI", "Legacy template app identity remains")
+manifest.fetch("icons").each do |icon|
+  check(root.join("images", icon.fetch("src").split("?").first).file?, "Missing app icon")
+end
 check(entry_page.at_css("html")["data-language-entry"] == "true", "Missing language entry")
 check(entry_page.at_css(".group-wordmark") && entry_page.at_css(".site-city-photo"), "Language entry must use the group identity and licensed city photograph")
 check(entry_page.css("[data-language-option]").map { |a| a["href"] }.sort == %w[/en/ /zh/], "Chooser must have working no-JS links")
 %w[/en/ /zh/ /about/ /zh/about/ /projects/ /zh/projects/ /people/ /zh/people/ /news/ /zh/news/ /join/ /zh/join/ /research/ /zh/research/ /team/ /zh/team/ /cv/ /zh/cv/ /talks/ /zh/talks/].each do |path|
   page = html(root, path)
+  icons = page.css('link[rel="icon"], link[rel="apple-touch-icon"]')
+  check(icons.length == 4 && icons.all? { |icon| icon["href"].include?("v=utsi-20260927") }, "Missing versioned site icons: #{path}")
+  icons.each { |icon| check(root.join(URI.parse(icon["href"]).path.delete_prefix("/")).file?, "Missing favicon asset") }
   check(page.at_css("[data-language-option]"), "Missing language switch: #{path}")
   check(page.css("script[src]").none? { |script| script["src"].match?(/mathjax|plotly|polyfill/) }, "Unneeded diagram engine on a main page: #{path}")
   expected_alternate = path.start_with?("/zh/") ? path.delete_prefix("/zh") : "/zh#{path}"
@@ -170,6 +182,8 @@ role_labels = {
   check(html(root, "#{prefix}/join/").css(".group-admissions dt").map(&:text) == expected_cohorts, "Admissions page differs from shared data")
   check(page.at_css(".profile-lead").text == homepage.fetch(language).fetch("lead"), "Wrong homepage introduction: #{language}")
   check(page.at_css(".home-section-label h2").text == homepage.fetch(language).fetch("perspective_title"), "Wrong research perspective heading: #{language}")
+  check(page.at_css(".home-introduction-lead").text == homepage.fetch(language).fetch("introduction"), "Intro layout changed the lead copy")
+  check(page.css(".home-introduction-detail p").map(&:text) == %w[approach methods].map { |key| homepage.fetch(language).fetch(key) }, "Intro layout changed the supporting copy")
   section_order = page.css(".home-content > section, .home-content > .home-bottom-grid").map { |section| section["class"].split.last }
   check(section_order == %w[home-introduction home-research home-selected home-section], "Homepage must introduce the framework before its research highlights")
   check(page.at_css("#home-research-title").text == (language == "zh" ? "研究主线" : "Research framework"), "Wrong framework heading")
