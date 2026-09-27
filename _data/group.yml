@@ -10,12 +10,16 @@ en:
   name: Urban Transformation and Spatial Inequality
   type: UTSI Research Group
   affiliation: School of Urban Design, Wuhan University
-  about: The UTSI Research Group studies how urban transformation reorganizes economic activity and everyday life, and why the resulting opportunities differ across places and social groups. Led by Yangyi Wu at Wuhan University, our work connects urban and economic geography with questions of planning and spatial justice.
-  agenda: Urban change is not experienced equally. A new employment center can expand job opportunities while changing housing pressures; a well-served neighborhood may still leave some residents unable to use its resources. We examine these relationships across metropolitan, neighborhood and individual scales.
+  about: >-
+    The UTSI Research Group, led by Associate Professor Yangyi Wu at Wuhan University's School of Urban Design, conducts empirical research in urban and economic geography. Our work concerns the spatial organization of firm location, housing markets and public resources, and how these processes shape development opportunities across places and social groups.
+  agenda: >-
+    Urban change means different things to different people, and aggregate indicators often conceal that. A sale–rental comparison in Shanghai found that renters and buyers value the same block on entirely different grounds: renters respond to job access and social services, buyers to ownership value and investment conditions. In Jiangsu, falling inequality indices coincided with an almost unmoved core–periphery structure. Our analysis therefore runs from the metropolitan scale down to neighborhoods and individuals, to establish the conditions under which these relationships hold.
   methods_title: Data and methods
-  methods: Our research combines firm and housing records, urban amenity data, geospatial information and resident surveys. Spatial econometrics, network analysis and spatial classification help distinguish proximity from connection, resource provision from actual use, and city-wide patterns from local differences.
+  methods: >-
+    We combine firm- and housing-level microdata, amenity POIs, remote sensing and resident surveys, chiefly through spatial econometrics, network analysis and spatial classification. Two mismatches deserve particular attention. Proximity is not connection: a morphologically polycentric region may lack the daily flows between centers that make polycentricity real. And provision is not use: park accessibility metrics and residents' own assessments can point in opposite directions.
   practice_title: Research and planning
-  practice: We connect evidence on urban development with decisions about resource allocation, green infrastructure and spatial planning. The aim is to identify which relationships depend on local context and which can inform planning elsewhere.
+  practice: >-
+    The endpoint of this work is planning and policy. Polycentricity policy calls for caution: it can foster regional ties, but it can also lengthen commutes and deepen core–periphery divides. Park provision should be judged by the match between supply and demand, not by area per capita alone. Industrial policy and placemaking require different priorities in central and peripheral districts. We aim to distinguish which conclusions depend on local context and which can inform planning elsewhere.
   pi_title: Principal investigator
   pi_name: Yangyi Wu
   pi_role: Associate Professor · Department of Urban Planning
@@ -38,12 +42,16 @@ zh:
   name: 城市转型与空间不平等
   type: UTSI课题组
   affiliation: 武汉大学城市设计学院
-  about: 课题组由武汉大学城市设计学院伍杨屹副教授牵头，开展城市与经济地理研究。我们关注城市转型如何改变经济活动与日常生活的空间格局，以及不同地区、不同群体在获取发展机会上的差异。
-  agenda: 城市变化对不同的人意味着不同的东西。新的就业中心可能带来更多工作机会，也可能抬高居住压力；设施齐全的社区，也未必让每位居民都能用上这些资源。我们从都市区、社区到个体等不同尺度，梳理这些关系及其形成条件。
+  about: >-
+    课题组由武汉大学城市设计学院伍杨屹副教授牵头，从事城市与经济地理的实证研究，关注企业区位、住房市场和公共资源的空间组织，以及这些过程如何影响不同地方、不同人群的发展机会。
+  agenda: >-
+    城市变化对不同人意味着不同的东西，总量指标常常掩盖这一点。上海的租售比较发现，租房者和买房者评价同一个街区，依据完全不同：前者在意通勤是否方便、社会服务是否齐全，后者更看重产权价值和投资属性。江苏的追踪研究则显示，全省不平等指数在下降，核心与边缘的格局却几乎没有变化。所以我们的分析从都市区一直做到社区和个人，弄清这些关系在什么条件下成立。
   methods_title: 数据与方法
-  methods: 研究结合企业与住房数据、城市设施信息、地理空间数据和居民调查，运用空间计量、网络分析和空间分类方法，区分地理邻近与实际联系、资源供给与实际使用、整体格局与地方差异。
+  methods: >-
+    研究结合企业与住房微观数据、设施 POI、遥感和居民问卷，以空间计量、网络分析和空间分类为主要方法。我们特别关注两类「不一致」：地理邻近不等于实际联系——形态上的多中心，未必有中心之间的日常流动支撑；资源供给不等于实际使用——公园的可达性指标和居民自己的评价，可能指向相反的方向。
   practice_title: 研究与规划
-  practice: 我们把城市发展的实证研究与资源配置、绿色基础设施和空间规划问题放在一起讨论，判断哪些规律依赖地方情境，哪些经验可以为其他城市的规划提供参照。
+  practice: >-
+    这些研究最终要回到规划和政策上。多中心政策需要谨慎：它可能加强区域联系，也可能拉长通勤、加深核心与边缘的分化。公园配置要看供需是否匹配，不能只看人均面积。产业政策和地方营造，在中心城区和外围地区的着力点应当不同。我们希望分清，哪些结论依赖地方情境，哪些可以为其他城市所用。
   pi_title: 课题组负责人
   pi_name: 伍杨屹
   pi_role: 副教授 · 城市规划系

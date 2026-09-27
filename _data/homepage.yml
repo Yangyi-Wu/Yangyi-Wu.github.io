@@ -1,24 +1,36 @@
 zh:
   hero_lines: ['城市转型', '与空间不平等']
-  lead: 研究城市经济、空间结构与公共资源如何重组，以及这些变化如何影响不同地方和群体获得的机会。
+  lead: >-
+    关注城市转型中的空间重组与机会分配：产业与就业向何处集聚，住房市场如何分化，公共资源为谁所用。
   pi: 伍杨屹副教授 · 武汉大学城市设计学院
   perspective_title: 城市与经济地理视角
-  introduction: 企业与就业向哪里集聚，住房市场如何分化，公共资源又由谁使用？产业调整、人口流动和公共投资，通过企业选址、居住选择与日常活动，不断改变都市区和社区的空间关系。
-  approach: 课题组依托武汉大学城市设计学院，由伍杨屹副教授牵头，结合城市与经济地理、城乡规划和空间分析，研究地方优势如何形成、城市空间如何组织，以及发展机会怎样在不同地方和群体之间分布。
-  methods: 研究使用企业与住房数据、城市设施信息、地理空间数据和居民调查，把区域与都市区尺度的空间格局，与社区环境、居民感知和实际使用放在一起看。
-  research_intro: 产业和人口变化如何推动城市转型？就业、居住与日常活动如何重新组织空间？这些变化又如何影响人们获得住房、公共服务和城市环境的机会？三个方向分别对应转型动力、空间组织与机会分配，也关注三者之间的相互作用。
-  invitation: 欢迎对城市与经济地理、城乡规划和空间分析感兴趣的学生与同行交流。不同的学科背景往往能带来新的问题、新的数据和新的思路。
+  introduction: >-
+    产业调整、人口流动和公共投资，持续改变着城市的空间格局：企业和就业在哪里集聚，住房市场怎样分化，公共设施谁在用、用得怎么样。课题组以城市与经济地理的视角切入这些问题，落脚点是发展机会的分配：哪些地方、哪些人群得到了机会，哪些没有。
+  approach: >-
+    课题组由伍杨屹副教授牵头，依托武汉大学城市设计学院，从事城市与经济地理的实证研究。研究注重两类证据的相互印证：空间数据揭示设施、企业和人口的分布格局，问卷与访谈记录居民的实际使用和评价。两类证据不一致的地方，往往正是问题所在。
+  methods: >-
+    研究数据包括企业登记与住房交易记录、设施兴趣点（POI）、遥感影像和居民问卷，尺度从城市群到社区、个人；方法上以空间计量、网络分析和空间分类为主。
+  research_intro: >-
+    三个方向对应城市变化的三个环节：产业和人口变化怎样推动城市转型（城市转型），就业、居住和日常活动怎样重新组织城市空间（空间重构），变化的结果在不同地方和人群之间怎样分配（空间不平等）。三个环节并非彼此独立：转型引发重构，重构改变分配，分配格局又塑造下一轮转型的起点。
+  invitation: >-
+    欢迎对城市与经济地理、城乡规划、空间分析感兴趣的学生和同行交流。地理、规划、计算机、经济学背景，都能为研究带来新的角度。
   conversation: 交流可以从一个具体的城市现象、一篇论文、一组数据观察，或者一个尚未成形的研究问题开始。研究训练、合作议题与招生安排，都欢迎来信讨论。
 en:
   hero_lines: ['Urban Transformation', 'and Spatial Inequality']
-  lead: We study changing urban economies, spatial structures and public resources, and the opportunities they create across places and communities.
+  lead: >-
+    We study the spatial processes of urban transformation: how economic activity relocates and clusters, how public resources are redistributed, and how opportunities for different places and social groups change as a result.
   pi: Led by Associate Professor Yangyi Wu · School of Urban Design
   perspective_title: An urban and economic geography perspective
-  introduction: Where do firms and jobs cluster? How do housing markets differentiate, and who uses public resources? Industrial change, migration and public investment reshape metropolitan areas and neighborhoods through location choices, housing decisions and everyday activities.
-  approach: Led by Associate Professor Yangyi Wu at Wuhan University's School of Urban Design, UTSI brings together urban and economic geography, urban planning and spatial analysis. We study how place advantages emerge, how urban space is organized, and how opportunities are distributed across places and social groups.
-  methods: Our research draws on firm and housing data, urban amenity records, geospatial information and resident surveys, connecting regional and metropolitan patterns with neighborhood environments, residents' perceptions and actual use.
-  research_intro: How do industrial and population shifts drive urban transformation? How do work, housing and everyday activities reorganize space? What do these changes mean for access to housing, public services and urban environments? Our themes connect the drivers of transformation, spatial organization and distributional outcomes, including their interactions.
-  invitation: We welcome students and colleagues interested in urban and economic geography, urban planning and spatial analysis. Different disciplinary backgrounds bring new questions, data and perspectives to this work.
+  introduction: >-
+    Industrial restructuring, migration and public investment continually reshape where firms and jobs cluster, how housing markets differentiate, and who makes use of public resources. From the perspective of urban and economic geography, the group examines the mechanisms behind these changes and how they reshape development opportunities for different places and groups across metropolitan areas and neighborhoods.
+  approach: >-
+    Led by Associate Professor Yangyi Wu at Wuhan University's School of Urban Design, the group conducts empirical research in urban and economic geography. Our analyses bring two kinds of evidence together: spatial data describe the distribution of facilities, firms and population, while surveys and interviews record residents' actual use and perceptions. Where the two disagree is often where the problem lies.
+  methods: >-
+    We draw on firm registration and housing transaction records, amenity POIs, remote sensing and geospatial data, and our own resident surveys, at scales from the city region to the neighborhood and the individual; spatial econometrics, network analysis and spatial classification are the principal methods.
+  research_intro: >-
+    Our three themes follow the chain of urban change: how industrial and population shifts drive it (Urban Transformation), how jobs, housing and daily activities reorganize space (Spatial Restructuring), and how outcomes are distributed across places and groups (Spatial Inequality). The links are sequential and recursive: transformation drives restructuring, restructuring reshapes distribution, and distribution conditions the next round of transformation.
+  invitation: >-
+    We welcome students and colleagues interested in urban and economic geography, planning and spatial analysis. Backgrounds in geography, planning, computing or economics each offer a useful perspective on these questions.
   conversation: A conversation can begin with an urban observation, a paper, a pattern in the data, or an emerging research question. Please get in touch to discuss research training, collaboration or admissions.
 selection:
   recent_years: 3
