@@ -11,7 +11,7 @@
 {% when 'people' %}
 <h2>{{ g.pi_title }}</h2>
 <section class="group-person">
-  <img src="{{ '/images/PersonalI.jpg' | relative_url }}" width="180" height="220" alt="{{ g.pi_name }}">
+  <img src="{{ '/images/yangyi-wu-portrait.png' | relative_url }}" width="180" height="225" alt="{{ g.pi_name }}">
   <div><h3>{{ g.pi_name }}</h3><p class="group-meta">{{ g.pi_role }}<br>{{ g.affiliation }}</p><p>{{ g.pi_bio }}</p>
   <p class="group-links"><a href="{{ prefix | append: '/cv/' | relative_url }}">{{ g.cv }}</a><a href="{{ site.data.group.source }}">{{ g.faculty }}</a><a href="mailto:yangyi.wu@whu.edu.cn">yangyi.wu@whu.edu.cn</a></p></div>
 </section>
