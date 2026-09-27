@@ -16,10 +16,10 @@ en:
     Urban change means different things to different people, and aggregate indicators often conceal that. A sale–rental comparison in Shanghai found that renters and buyers value the same block on entirely different grounds: renters respond to job access and social services, buyers to ownership value and investment conditions. In Jiangsu, falling inequality indices coincided with an almost unmoved core–periphery structure. Our analysis therefore runs from the metropolitan scale down to neighborhoods and individuals, to establish the conditions under which these relationships hold.
   methods_title: Data and methods
   methods: >-
-    We combine firm- and housing-level microdata, amenity POIs, remote sensing and resident surveys, chiefly through spatial econometrics, network analysis and spatial classification. Two mismatches deserve particular attention. Proximity is not connection: a morphologically polycentric region may lack the daily flows between centers that make polycentricity real. And provision is not use: park accessibility metrics and residents' own assessments can point in opposite directions.
+    We combine firm- and housing-level microdata, amenity POIs, remote sensing and resident surveys, chiefly through spatial econometrics, network analysis and spatial classification. Two relationships deserve particular attention: proximity becomes real connection only through daily flows between centers, and provision becomes actual use only through residents' experience — park accessibility metrics and residents' own assessments sometimes point in opposite directions.
   practice_title: Research and planning
   practice: >-
-    The endpoint of this work is planning and policy. Polycentricity policy calls for caution: it can foster regional ties, but it can also lengthen commutes and deepen core–periphery divides. Park provision should be judged by the match between supply and demand, not by area per capita alone. Industrial policy and placemaking require different priorities in central and peripheral districts. We aim to distinguish which conclusions depend on local context and which can inform planning elsewhere.
+    The endpoint of this work is planning and policy. Polycentricity policy calls for caution: it can foster regional ties, but it can also lengthen commutes and deepen core–periphery divides. Park provision should be judged by the match between supply and demand, with area per capita only one dimension. Industrial policy and placemaking work best in concert, with different emphases in central and peripheral districts. We aim to distinguish which conclusions depend on local context and which can inform planning elsewhere.
   pi_title: Principal investigator
   pi_name: Yangyi Wu
   pi_role: Associate Professor · Department of Urban Planning
@@ -28,7 +28,7 @@ en:
   education: ['PhD, Geography, University of Utah, 2020', 'MS, Geospatial Information Sciences, University of Texas at Dallas, 2015', 'Bachelor’s degree, Surveying and Mapping Engineering, Wuhan University, 2013']
   faculty: Faculty profile
   cv: Full CV
-  project_intro: Projects led by Yangyi Wu and collaborative projects in which he participates. Roles and project periods follow the faculty profile; they do not imply that every project is led by UTSI.
+  project_intro: Projects led by the group and those we contribute to.
   led: Principal investigator
   collaborative: Participation and collaboration
   source_label: Project information from the faculty profile
@@ -36,7 +36,7 @@ en:
   contact_title: Get in touch
   contact: Please email Yangyi Wu with your academic background, research interests and a question you would like to explore. A CV and an example of relevant work are helpful. Admissions follow the university’s official procedures.
   recruitment_title: Admissions
-  recruitment_note: Programs, places and application arrangements are subject to Wuhan University’s annual admissions announcements. PhD recruitment from 2028 is an expectation, not a confirmed admission offer.
+  recruitment_note: Programs, places and application arrangements follow Wuhan University’s annual admissions announcements.
   news_intro: Publications and academic activities involving Yangyi Wu and collaborators.
 zh:
   name: 城市转型与空间不平等
@@ -48,10 +48,10 @@ zh:
     城市变化对不同人意味着不同的东西，总量指标常常掩盖这一点。上海的租售比较发现，租房者和买房者评价同一个街区，依据完全不同：前者在意通勤是否方便、社会服务是否齐全，后者更看重产权价值和投资属性。江苏的追踪研究则显示，全省不平等指数在下降，核心与边缘的格局却几乎没有变化。所以我们的分析从都市区一直做到社区和个人，弄清这些关系在什么条件下成立。
   methods_title: 数据与方法
   methods: >-
-    研究结合企业与住房微观数据、设施 POI、遥感和居民问卷，以空间计量、网络分析和空间分类为主要方法。我们特别关注两类「不一致」：地理邻近不等于实际联系——形态上的多中心，未必有中心之间的日常流动支撑；资源供给不等于实际使用——公园的可达性指标和居民自己的评价，可能指向相反的方向。
+    研究结合企业与住房微观数据、设施 POI、遥感和居民问卷，以空间计量、网络分析和空间分类为主要方法。两组关系尤其值得关注：从地理邻近到实际联系，需要中心之间的日常流动来验证；从资源供给到实际使用，中间隔着居民的体验——公园的可达性指标和居民自己的评价，有时指向相反的方向。
   practice_title: 研究与规划
   practice: >-
-    这些研究最终要回到规划和政策上。多中心政策需要谨慎：它可能加强区域联系，也可能拉长通勤、加深核心与边缘的分化。公园配置要看供需是否匹配，不能只看人均面积。产业政策和地方营造，在中心城区和外围地区的着力点应当不同。我们希望分清，哪些结论依赖地方情境，哪些可以为其他城市所用。
+    这些研究最终要回到规划和政策上。多中心政策需要谨慎：它可能加强区域联系，也可能拉长通勤、加深核心与边缘的分化。公园配置要看供需是否匹配，人均面积只是其中一个维度。产业政策和地方营造需要相互配合，在中心城区和外围地区各有侧重。我们希望分清，哪些结论依赖地方情境，哪些可以为其他城市所用。
   pi_title: 课题组负责人
   pi_name: 伍杨屹
   pi_role: 副教授 · 城市规划系
@@ -60,7 +60,7 @@ zh:
   education: ['2020 年，犹他大学，地理学博士', '2015 年，德克萨斯大学达拉斯分校，地理空间信息科学硕士', '2013 年，武汉大学，测绘工程学士']
   faculty: 学院个人主页
   cv: 完整简历
-  project_intro: 以下为伍杨屹主持和参与合作的科研项目。项目角色与起止年份依据学院公开资料；参与和合作项目不列为课题组主持项目。
+  project_intro: 以下为课题组主持与参与的科研项目。
   led: 主持项目
   collaborative: 参与及合作项目
   source_label: 项目信息来源：学院个人主页
@@ -68,7 +68,7 @@ zh:
   contact_title: 联系方式
   contact: 请通过邮件介绍你的学习背景、研究兴趣，以及想深入探讨的问题，可以附上简历和相关研究成果。正式申请请按学校招生程序办理。
   recruitment_title: 招生安排
-  recruitment_note: 具体专业、名额和申请安排以武汉大学当年度招生通知为准。2028 年起招收博士研究生为预计安排，并非已确定的招生承诺。
+  recruitment_note: 招生专业、名额与申请安排，以武汉大学当年度招生通知为准。
   news_intro: 伍杨屹及合作者的论文发表与学术活动。
 projects:
   - id: talent-amenities
