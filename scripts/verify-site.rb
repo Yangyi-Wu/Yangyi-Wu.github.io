@@ -166,7 +166,8 @@ role_labels = {
       check(profile.css("a").empty?, "Unverified student publication link")
     end
   end
-  check(html(root, "#{prefix}/join/").css(".group-admissions dt").map(&:text) == %w[2027 2028 2026], "Incorrect admissions cohorts")
+  expected_cohorts = YAML.safe_load_file("_data/group.yml").fetch("admissions").map { |cohort| cohort.fetch("year") }
+  check(html(root, "#{prefix}/join/").css(".group-admissions dt").map(&:text) == expected_cohorts, "Admissions page differs from shared data")
   check(page.at_css(".profile-lead").text == homepage.fetch(language).fetch("lead"), "Wrong homepage introduction: #{language}")
   check(page.at_css(".home-section-label h2").text == homepage.fetch(language).fetch("perspective_title"), "Wrong research perspective heading: #{language}")
   section_order = page.css(".home-content > section, .home-content > .home-bottom-grid").map { |section| section["class"].split.last }
@@ -235,7 +236,7 @@ end
 
 Dir.glob(root.join("**/*.html")).each do |file|
   page = Nokogiri::HTML(File.read(file, encoding: "UTF-8"))
-  forbidden = ["\u8003\u5bdf", "\u7eb3\u5165"]
+  forbidden = ["考察", "纳入"]
   check(forbidden.none? { |word| page.css("#main").text.include?(word) }, "Disallowed Chinese wording: #{file}")
   page.css("script:not([src])").each do |script|
     next if script["type"] == "application/ld+json" || !checked_scripts.add?(script.text)
