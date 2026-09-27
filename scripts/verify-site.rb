@@ -183,7 +183,7 @@ role_labels = {
   check(page.at_css(".profile-lead").text == homepage.fetch(language).fetch("lead"), "Wrong homepage introduction: #{language}")
   check(page.at_css(".home-section-label h2").text == homepage.fetch(language).fetch("perspective_title"), "Wrong research perspective heading: #{language}")
   check(page.at_css(".home-introduction-lead").text == homepage.fetch(language).fetch("introduction"), "Intro layout changed the lead copy")
-  check(page.css(".home-introduction-detail p").map(&:text) == %w[approach methods].map { |key| homepage.fetch(language).fetch(key) }, "Intro layout changed the supporting copy")
+  check(page.css(".home-introduction-detail p").map(&:text) == %w[approach methods data_analysis].map { |key| homepage.fetch(language).fetch(key) }, "Intro layout changed the supporting copy")
   section_order = page.css(".home-content > section, .home-content > .home-bottom-grid").map { |section| section["class"].split.last }
   check(section_order == %w[home-introduction home-research home-selected home-section], "Homepage must introduce the framework before its research highlights")
   check(page.at_css("#home-research-title").text == (language == "zh" ? "研究主线" : "Research framework"), "Wrong framework heading")
@@ -191,7 +191,7 @@ role_labels = {
   admissions = YAML.safe_load_file("_data/group.yml").fetch("admissions").find { |cohort| cohort.fetch("year") == "2027" }
   check(page.at_css(".home-admissions").text.include?(admissions.fetch(language)), "Homepage admissions differ from the shared data")
   check(page.at_css(".home-phd-note").text.include?("2028"), "Missing expected PhD recruitment year")
-  %w[introduction approach methods pi research_intro invitation conversation].each do |key|
+  %w[introduction approach methods data_analysis pi research_intro invitation conversation].each do |key|
     check(page.css(".home-content p").any? { |p| p.text == homepage.fetch(language).fetch(key) }, "Missing homepage #{key}: #{language}")
   end
   research_page = html(root, "#{prefix}/research/")
