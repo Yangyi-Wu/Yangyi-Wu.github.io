@@ -177,18 +177,43 @@ a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible
 .group-person { display: grid; grid-template-columns: 210px minmax(0,1fr); gap: 46px; align-items: start; }
 .group-person img { width: 210px; height: 263px; object-fit: cover; border-radius: 0; }
 .group-person h3 { margin: 0 0 12px; font-size: 32px; }
-.group-student { display: grid; grid-template-columns: 128px minmax(0,1fr); gap: 28px; padding: 24px 0; border-top: 1px solid var(--global-border-color); align-items: start; }
-.group-student--text { grid-template-columns: minmax(0,1fr); padding: 24px 0; }
-.group-subsection { margin: 36px 0 12px; font-size: 20px; }
-.group-student h3 { margin: 0 0 8px; font-size: 23px; line-height: 1.4; }
-.group-student-content { min-width: 0; }
-.group-student-heading { margin-bottom: 16px; }
-.group-student-id img { display: block; width: 128px; height: 128px; object-fit: cover; object-position: center; margin: 0; }
-.group-student .group-dest { margin: 0 0 14px; color: var(--global-text-color); font-size: 15px; line-height: 1.7; }
-.group-student .group-quote { margin: 20px 0 0; padding: 14px 0 0; border-top: 1px solid var(--global-border-color); color: var(--global-text-color-light); font-size: 14px; line-height: 1.9; }
-.group-student ul { margin: 0; padding-left: 18px; font-size: 15px; }
-.group-student p { margin: 8px 0 0; }
-.group-student .group-period { font-size: 14px; line-height: 1.7; }
+.group-page--people a { text-decoration: none; }
+.group-page--people a:hover, .group-page--people a:focus-visible { text-decoration: underline; }
+.people-sections { display: flex; flex-wrap: wrap; gap: 8px 28px; padding-bottom: 8px; font-size: 14px; }
+.people-sections a { display: inline-flex; align-items: center; min-height: 44px; }
+.group-page--people #principal-investigator, .group-subsection, .people-members { scroll-margin-top: 110px; }
+.group-page--people .group-person { grid-template-columns: 180px minmax(0,1fr); gap: 36px; }
+.group-page--people .group-person > img { width: 180px; height: 225px; }
+.group-page--people .group-person h3 { font-size: 28px; }
+.people-education { font-size: 14px; margin-top: 8px; }
+.people-education ul { margin: 6px 0 0; padding-left: 18px; }
+.group-page .group-subsection { display: flex; align-items: baseline; gap: 14px; margin: 0 0 20px; font-size: 26px; }
+.group-member-count { color: var(--global-text-color-light); font-size: 14px; font-weight: 400; font-variant-numeric: tabular-nums; }
+.group-students + .group-students { margin-top: 48px; }
+.group-student-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); column-gap: 48px; align-items: start; }
+.group-student { min-width: 0; padding: 24px 0; border-top: 1px solid var(--global-border-color); }
+.group-student h3 { margin: 0 0 8px; font-size: 22px; line-height: 1.4; }
+.group-student-content, .group-student-identity { min-width: 0; }
+.group-student-heading { display: flex; gap: 20px; align-items: center; min-height: 96px; margin-bottom: 18px; }
+.group-student-id { flex: 0 0 96px; }
+.group-student-id img { display: block; width: 96px; height: 96px; object-fit: cover; object-position: center; margin: 0; }
+.group-student p { margin: 0; }
+.group-student .group-meta { font-size: 13px; line-height: 1.7; }
+.group-student .group-period { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0 0 14px; color: var(--global-text-color-light); font-size: 13px; line-height: 1.7; font-variant-numeric: tabular-nums; }
+.group-period time { color: var(--global-text-color); }
+.group-student .group-dest { margin: 0 0 12px; color: var(--global-text-color); font-size: 14px; line-height: 1.8; }
+.group-student ul { margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.8; }
+.group-student li { margin-bottom: 6px; }
+.group-student .group-links { margin: 12px 0 0; font-size: 13px; }
+.group-student .group-links a { min-height: 36px; overflow-wrap: anywhere; }
+.group-reflection { margin-top: 12px; }
+.group-reflection summary, .people-education summary { display: flex; align-items: center; gap: 12px; width: fit-content; max-width: 100%; min-height: 44px; color: var(--global-link-color); font-size: 13px; cursor: pointer; list-style: none; }
+.group-reflection summary::-webkit-details-marker, .people-education summary::-webkit-details-marker { display: none; }
+.group-reflection summary i, .people-education summary i { flex: 0 0 auto; font-size: 10px; }
+.group-reflection[open] summary i, .people-education[open] summary i { transform: rotate(180deg); }
+.group-reflection summary:hover, .people-education summary:hover { text-decoration: underline; text-underline-offset: 5px; }
+.group-reflection summary:focus-visible, .people-education summary:focus-visible { outline: 2px solid var(--global-link-color); outline-offset: 4px; }
+.group-student .group-quote { margin: 4px 0 0; padding-left: 14px; border-left: 2px solid var(--global-border-color); color: var(--global-text-color-light); font-size: 14px; line-height: 1.9; }
 .group-project { padding: 26px 0; border-top: 1px solid var(--global-border-color); }
 .group-project h3 { margin: 10px 0 16px; }
 .group-project p { margin-bottom: 8px; }
@@ -308,9 +333,10 @@ a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible
   .group-person img { width: 120px; height: 150px; }
   .group-person h3 { font-size: 26px; }
   .group-intro { font-size: 18px; }
-  .group-student { grid-template-columns: 104px minmax(0,1fr); gap: 20px; }
-  .group-student--text { grid-template-columns: minmax(0,1fr); }
-  .group-student-id img { width: 104px; height: 104px; }
+  .group-page--people .group-person { grid-template-columns: 120px minmax(0,1fr); gap: 24px; }
+  .group-page--people .group-person > img { width: 120px; height: 150px; }
+  .group-student-grid { grid-template-columns: minmax(0,1fr); }
+  .group-students + .group-students { margin-top: 32px; }
   .publication-toolbar { gap: 16px; padding-bottom: 20px; margin-bottom: 24px; }
   .publication-toolbar > div, .publication-toolbar [data-publication-search] > div { width: 100%; }
   .publication-toolbar [data-publication-search] { gap: 12px; }
@@ -333,12 +359,10 @@ a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible
   .language-choices { gap: 26px; margin-top: 24px; }
   .language-choices a { min-width: 120px; gap: 24px; font-size: 18px; }
 }
-@media (max-width: 600px) {
-  .group-student { grid-template-columns: minmax(0,1fr); gap: 16px; }
-  .group-student h3 { font-size: 21px; }
-}
 @media (max-width: 400px) {
-  .group-person { grid-template-columns: 1fr; }
+  .group-person, .group-page--people .group-person { grid-template-columns: 1fr; }
+  .group-student-heading { gap: 16px; }
+  .group-student h3 { font-size: 21px; }
   .home-hero .group-home-title { font-size: 35px; }
   html[lang="en"] .home-hero .group-home-title { font-size: 27px; }
   .language-entry h1 { font-size: 27px; }

@@ -9,35 +9,40 @@
 <section class="group-section"><h2>{{ g.practice_title }}</h2><p>{{ g.practice }}</p></section>
 <p><a href="{{ prefix | append: '/research/' | relative_url }}">{% if page.lang == 'zh' %}研究方向{% else %}Research themes{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
 {% when 'people' %}
-<h2>{{ g.pi_title }}</h2>
+<nav class="people-sections" aria-label="{% if page.lang == 'zh' %}成员分组{% else %}People sections{% endif %}"><a href="#principal-investigator">{{ g.pi_title }}</a><a href="#current-members">{% if page.lang == 'zh' %}在组成员{% else %}Current members{% endif %}</a><a href="#alumni-members">{% if page.lang == 'zh' %}已离组成员{% else %}Alumni{% endif %}</a></nav>
+<h2 id="principal-investigator">{{ g.pi_title }}</h2>
 <section class="group-person">
   <img src="{{ '/images/yangyi-wu-portrait.png' | relative_url }}?v=20260928-2" width="180" height="225" alt="{{ g.pi_name }}">
   <div><h3>{{ g.pi_name }}</h3><p class="group-meta">{{ g.pi_role }}<br>{{ g.affiliation }}</p><p>{{ g.pi_bio }}</p>
-  <p class="group-links"><a href="{{ prefix | append: '/cv/' | relative_url }}">{{ g.cv }}</a><a href="{{ site.data.group.source }}">{{ g.faculty }}</a><a href="mailto:yangyi.wu@whu.edu.cn">yangyi.wu@whu.edu.cn</a></p></div>
+  <p class="group-links"><a href="{{ prefix | append: '/cv/' | relative_url }}">{{ g.cv }}</a><a href="{{ site.data.group.source }}">{{ g.faculty }}</a><a href="mailto:yangyi.wu@whu.edu.cn">yangyi.wu@whu.edu.cn</a></p>
+  <details class="people-education"><summary>{{ g.education_title }} <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary><ul>{% for degree in g.education %}<li>{{ degree }}</li>{% endfor %}</ul></details>
+  </div>
 </section>
-<section class="group-section"><h2>{{ g.education_title }}</h2><ul>{% for degree in g.education %}<li>{{ degree }}</li>{% endfor %}</ul></section>
-<section class="group-section" aria-labelledby="student-collaborators-title">
-  <h2 id="student-collaborators-title">{% if page.lang == 'zh' %}学生与研究合作{% else %}Students and Research Collaborators{% endif %}</h2>
+<section class="group-section people-members" id="student-collaborators-title" aria-label="{% if page.lang == 'zh' %}学生与研究合作{% else %}Students and Research Collaborators{% endif %}">
   {% assign name_key = 'name_' | append: page.lang %}
   {% assign cohort_key = 'cohort_' | append: page.lang %}
-  {% assign period_key = 'period_' | append: page.lang %}
+  {% assign period_note_key = 'period_note_' | append: page.lang %}
   {% assign details_key = 'details_' | append: page.lang %}
   {% assign dest_key = 'dest_' | append: page.lang %}
   {% assign quote_key = 'quote_' | append: page.lang %}
   {% assign current_students = site.data.students | where: 'status', 'current' %}
   {% assign alumni_students = site.data.students | where: 'status', 'alumni' %}
-  <div class="group-students" data-student-group="current">
-    <h3 class="group-subsection">{% if page.lang == 'zh' %}在组学生{% else %}Current Members{% endif %}</h3>
+  <section class="group-students" data-student-group="current" aria-labelledby="current-members">
+    <h2 class="group-subsection" id="current-members">{% if page.lang == 'zh' %}在组成员{% else %}Current Members{% endif %}<span class="group-member-count">{{ current_students.size }}</span></h2>
+    <div class="group-student-grid">
     {% for student in current_students %}
     {% include group-student.html student=student %}
     {% endfor %}
-  </div>
-  <div class="group-students" data-student-group="alumni">
-    <h3 class="group-subsection">{% if page.lang == 'zh' %}已离组{% else %}Alumni{% endif %}</h3>
+    </div>
+  </section>
+  <section class="group-students" data-student-group="alumni" aria-labelledby="alumni-members">
+    <h2 class="group-subsection" id="alumni-members">{% if page.lang == 'zh' %}已离组成员{% else %}Alumni{% endif %}<span class="group-member-count">{{ alumni_students.size }}</span></h2>
+    <div class="group-student-grid">
     {% for student in alumni_students %}
     {% include group-student.html student=student %}
     {% endfor %}
-  </div>
+    </div>
+  </section>
 </section>
 <p><a href="{{ prefix | append: '/join/' | relative_url }}">{% if page.lang == 'zh' %}招生与研究合作{% else %}Study and collaborate with us{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
 {% when 'projects' %}

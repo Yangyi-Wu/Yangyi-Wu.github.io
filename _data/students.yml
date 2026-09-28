@@ -1,6 +1,7 @@
 # Supplied by group members through the information form; anonymous display names follow each member's choice.
 - id: deng
   status: current
+  joined: 2026
   name_zh: 邓彦邦
   name_en: Jack Deng
   photo: /images/members/deng.jpg
@@ -12,6 +13,7 @@
     - Undergraduate studies at Wuhan University in Environmental Design and Computer Science and Technology.
 - id: yin
   status: current
+  joined: 2026
   name_zh: 尹同学
   name_en: Student Yin
   photo: /images/members/yin.jpg
@@ -25,6 +27,7 @@
   details_en: []
 - id: d
   status: current
+  joined: 2024
   name_zh: 党安祺
   name_en: Anqi Dang
   photo: /images/members/dang.jpg
@@ -42,24 +45,30 @@
     - Two manuscripts completed; not yet published.
 - id: t
   status: current
-  name_zh: T 同学
-  name_en: Student T
-  cohort_zh: 2021 级
-  cohort_en: 2021 entry cohort
+  joined: 2024
+  name_zh: Y. T.
+  name_en: Y. T.
+  photo: /images/members/t.jpg
+  cohort_zh: 2026 级硕士研究生（专硕）
+  cohort_en: 2026 entry · Professional master's student
+  quote_zh: 伍老师是一个十分风趣幽默的人，组里氛围轻松愉快。在伍老师本科两年的指导教学下，有取得不错的成果，也给予了我许多对未来的指导。
+  quote_en: Professor Wu has a wonderful sense of humor, and the group has a relaxed, friendly atmosphere. During two years of undergraduate research under his guidance, I made good progress and received valuable advice about my future.
   details_zh:
-    - 目前在课题组开展研究。
+    - 本科阶段即参与课题组研究。
     - 论文发表于 Applied Geography（2025）。
   details_en:
-    - Currently conducting research with the group at Wuhan University.
+    - Began working with the group as an undergraduate.
     - Published a paper in Applied Geography (2025).
   paper: /publication/2025-urban-amenities-knowledge-intensive-industry-locations
   paper_label: Applied Geography · 2025
 - id: z
   status: alumni
+  joined: 2022
+  left: 2023
   name_zh: 张同学
   name_en: Student Zhang
-  period_zh: 2022–2023（本科阶段）
-  period_en: 2022–2023 (undergraduate research)
+  period_note_zh: 本科阶段
+  period_note_en: Undergraduate research
   photo: /images/members/zhang.jpg
   cohort_zh: 2019 级 · 城乡规划本科
   cohort_en: 2019 entry cohort · Undergraduate Urban and Rural Planning
@@ -75,8 +84,9 @@
   paper_label: Land · 2023
 - id: y
   status: current
-  name_zh: Y 同学
-  name_en: Student Y
+  joined: 2024
+  name_zh: Z. Yang
+  name_en: Z. Yang
   cohort_zh: 2024 级硕士研究生（专硕）· 城乡规划
   cohort_en: 2024 entry · Professional master's student in Urban and Rural Planning
   details_zh:
@@ -89,10 +99,10 @@
     - Interned at Meituan in Beijing from October 2025 to June 2026.
 - id: q
   status: alumni
+  joined: 2023
+  left: 2025
   name_zh: Q 同学
   name_en: Student Q
-  period_zh: 2023–2025
-  period_en: 2023–2025
   cohort_zh: 2021 级
   cohort_en: 2021 entry cohort
   details_zh:
@@ -105,10 +115,10 @@
   paper_label: Applied Spatial Analysis and Policy · 2025
 - id: l
   status: alumni
+  joined: 2023
+  left: 2025
   name_zh: L 同学
   name_en: Student L
-  period_zh: 2023–2025
-  period_en: 2023–2025
   cohort_zh: 2021 级
   cohort_en: 2021 entry cohort
   details_zh:
@@ -117,3 +127,13 @@
   details_en:
     - Secured recommended admission to Wuhan University.
     - One manuscript completed; not yet published.
+- id: x
+  status: current
+  joined: 2025
+  name_zh: Q. X.
+  name_en: Q. X.
+  photo: /images/members/x.jpg
+  cohort_zh: 2025 级硕士研究生（专硕）
+  cohort_en: 2025 entry · Professional master's student
+  details_zh: []
+  details_en: []

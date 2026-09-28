@@ -165,7 +165,12 @@ role_labels = {
   students = YAML.safe_load_file("_data/students.yml")
   people = html(root, "#{prefix}/people/")
   check(people.css(".group-student").length == students.length, "Missing student profiles: #{language}")
-  check(students.map { |student| student.fetch("id") }.sort == %w[d deng l q t y yin z], "Incorrect student roster")
+  check(students.map { |student| student.fetch("id") }.sort == %w[d deng l q t x y yin z], "Incorrect student roster")
+  check(people.css(".group-student-grid").length == 2, "Missing two-column member groups")
+  check(people.css(".people-sections a").all? { |a| people.at_css(a["href"]) }, "Broken people section navigation")
+  %w[王小明 李小华 滕雅婷 谢强].each do |name|
+    check(!people.at_css(".group-page-body").text.include?(name), "Example or non-public display name on people page")
+  end
   check(students.all? { |student| %w[current alumni].include?(student.fetch("status")) }, "Unknown student status")
   %w[current alumni].each do |status|
     check(people.css("[data-student-group='#{status}'] .group-student").length == students.count { |student| student.fetch("status") == status }, "Incorrect #{status} student grouping: #{language}")
@@ -175,12 +180,9 @@ role_labels = {
     check(profile.at_css("h3").text == student.fetch("name_#{language}"), "Incorrect display name")
     check(profile.at_css(".group-meta").text == student.fetch("cohort_#{language}"), "Incorrect student cohort")
     check(profile.css("li").map(&:text) == student.fetch("details_#{language}"), "Incorrect student details")
-    period = profile.at_css(".group-period")
-    if student["period_#{language}"]
-      check(period && period.text.include?(student.fetch("period_#{language}")), "Incorrect time with the group")
-    else
-      check(period.nil?, "Unverified time with the group")
-    end
+    expected_years = [student.fetch("joined"), student["left"]].compact.map(&:to_s)
+    check(profile.css(".group-period time").map(&:text) == expected_years, "Incorrect time with the group")
+    check(student.fetch("joined").is_a?(Integer), "Missing verified joining year")
     if student["dest_#{language}"]
       dest = profile.at_css(".group-dest")
       check(dest && dest.text == student.fetch("dest_#{language}"), "Incorrect student destination")
@@ -188,6 +190,8 @@ role_labels = {
     if student["quote_#{language}"]
       quote = profile.at_css(".group-quote")
       check(quote && quote.text.include?(student.fetch("quote_#{language}")), "Incorrect student quote")
+      reflection = profile.at_css("details.group-reflection")
+      check(reflection && !reflection.key?("open") && reflection.at_css("summary"), "Personal reflection must be accessible and initially collapsed")
     end
     if student["photo"]
       photo = profile.at_css(".group-student-id img")

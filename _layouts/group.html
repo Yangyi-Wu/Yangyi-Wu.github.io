@@ -2,7 +2,7 @@
 layout: default
 ---
 <main id="main" class="group-main{% if page.group_home %} group-main--home{% endif %}">
-  <article class="group-page page__content{% unless page.group_home %} group-page--inner{% endunless %}">
+  <article class="group-page page__content{% unless page.group_home %} group-page--inner{% endunless %}{% if page.group_section == 'people' %} group-page--people{% endif %}">
     {% unless page.group_home %}
     <header class="group-page-heading">
       <p class="group-eyebrow">UTSI · {% if page.lang == 'zh' %}武汉大学{% else %}Wuhan University{% endif %}</p>
