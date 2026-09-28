@@ -81,7 +81,7 @@ end
     expected = publications.select { |_, record| record.fetch("category") == category }.sort_by { |_, record| record.fetch("date") }.reverse.map(&:first)
     check(actual == expected, "Incomplete or non-chronological category #{category}: #{path}")
   end
-  check(page.css(".publication-media").length == records.values.count { |record| record["visual_reviewed"] && record["thumbnail"] }, "Reviewed publication images missing: #{path}")
+  check(page.css(".publication-media, .publication-entry img").empty?, "Publication list must be text-only: #{path}")
   cards.each do |entry|
     check(!entry["data-publication-themes"].to_s.empty?, "Missing publication themes")
     media = entry.at_css(".publication-media")
