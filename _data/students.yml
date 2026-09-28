@@ -1,42 +1,47 @@
-# Supplied by the site owner; initials are intentional public display names.
-- id: z
-  name_zh: Z 同学
-  name_en: Student Z
-  cohort_zh: 2019 级 · 城乡规划本科
-  cohort_en: 2019 entry cohort · Undergraduate Urban and Rural Planning
+# Supplied by group members through the information form; anonymous display names follow each member's choice.
+- id: deng
+  status: current
+  name_zh: 邓彦邦
+  name_en: Jack Deng
+  photo: /images/members/deng.jpg
+  cohort_zh: 2026 级硕士研究生（学硕）· 设计学
+  cohort_en: 2026 entry · Academic-track master's student in Design
   details_zh:
-    - 2024 级保研至武汉大学。
-    - 合作论文发表于 Land（2023）。
+    - 本科就读于武汉大学环境设计、计算机科学与技术专业。
   details_en:
-    - Admitted to graduate study at Wuhan University through recommendation for 2024 entry.
-    - Coauthored a paper published in Land (2023).
-  paper: /publication/2023-sprawl-development-urban-amenity-china
-  paper_label: Land · 2023
-- id: y
-  name_zh: Y 同学
-  name_en: Student Y
-  cohort_zh: 2019 级 · 城乡规划本科
-  cohort_en: 2019 entry cohort · Undergraduate Urban and Rural Planning
+    - Undergraduate studies at Wuhan University in Environmental Design and Computer Science and Technology.
+- id: yin
+  status: current
+  name_zh: 尹同学
+  name_en: Student Yin
+  photo: /images/members/yin.jpg
+  cohort_zh: 2022 级本科生 · 城乡规划（五年制）
+  cohort_en: 2022 entry · Undergraduate in Urban and Rural Planning (five-year program)
+  dest_zh: 已预推免，2027 年起在课题组攻读硕士（专硕）
+  dest_en: Recommended admission secured; will pursue a professional master's degree with the group from 2027
+  quote_zh: 🌷
+  quote_en: 🌷
+  details_zh: []
+  details_en: []
+- id: d
+  status: current
+  name_zh: 党安祺
+  name_en: Anqi Dang
+  photo: /images/members/dang.jpg
+  cohort_zh: 2022 级本科生 · 城乡规划（五年制）
+  cohort_en: 2022 entry · Undergraduate in Urban and Rural Planning (five-year program)
+  dest_zh: 已预推免至清华大学城乡规划专业攻读硕士
+  dest_en: Recommended admission to the master's program in Urban and Rural Planning at Tsinghua University
+  quote_zh: 从梳理研究思路到反复修改论文，老师总能细致地解答我的困惑，帮助我一点点理清问题。这段经历让我逐渐熟悉了科研的过程，也学会了更严谨地思考和表达。
+  quote_en: From outlining research ideas to revising drafts again and again, my advisor always answered my questions patiently and helped me work through problems step by step. The experience made me familiar with the research process and taught me to think and write with greater rigor.
   details_zh:
-    - 2024 级保研至武汉大学。
-    - 2025 年 10 月至 2026 年 6 月，在美团北京实习。
+    - 国家级大学生创新创业训练项目：空间重构与创新涌现——城市更新对创新产出的空间格局影响研究。
+    - 已完成 2 篇论文，尚未发表。
   details_en:
-    - Admitted to graduate study at Wuhan University through recommendation for 2024 entry.
-    - Interned at Meituan in Beijing from October 2025 to June 2026.
-- id: q
-  name_zh: Q 同学
-  name_en: Student Q
-  cohort_zh: 2021 级
-  cohort_en: 2021 entry cohort
-  details_zh:
-    - 2025 年保研至北京大学深圳研究生院。
-    - 论文发表于 Applied Spatial Analysis and Policy（2025）。
-  details_en:
-    - Secured recommended admission to Peking University Shenzhen Graduate School in 2025.
-    - Published a paper in Applied Spatial Analysis and Policy (2025).
-  paper: /publication/2025-neighborhood-amenity-housing-prices-urban-china
-  paper_label: Applied Spatial Analysis and Policy · 2025
+    - National Undergraduate Innovation and Entrepreneurship Training Program project on how urban renewal reshapes the spatial pattern of innovation output.
+    - Two manuscripts completed; not yet published.
 - id: t
+  status: current
   name_zh: T 同学
   name_en: Student T
   cohort_zh: 2021 级
@@ -49,7 +54,51 @@
     - Published a paper in Applied Geography (2025).
   paper: /publication/2025-urban-amenities-knowledge-intensive-industry-locations
   paper_label: Applied Geography · 2025
+- id: z
+  status: alumni
+  name_zh: 张同学
+  name_en: Student Zhang
+  photo: /images/members/zhang.jpg
+  cohort_zh: 2019 级 · 城乡规划本科
+  cohort_en: 2019 entry cohort · Undergraduate Urban and Rural Planning
+  dest_zh: 毕业后赴武汉大学城市设计学院攻读硕士
+  dest_en: Pursuing a master's degree at the School of Urban Design, Wuhan University
+  quote_zh: 本科阶段就参与科研训练，让我获益良多：科研素养与科研思维的养成、对研究生学习与工作节奏的提前适应，都为继续深造打下了扎实的基础。课题组氛围轻松，沟通顺畅，遇到问题时老师总能及时给出建议和帮助，让我在科研与写作上稳步提升。
+  quote_en: Taking part in research as an undergraduate benefited me greatly. It shaped my research skills and way of thinking, helped me adapt early to the pace of graduate study, and laid a solid foundation for further training. The group has a relaxed atmosphere and smooth communication; whenever I ran into problems, my advisor offered timely advice and help, and I steadily improved in both research and writing.
+  details_zh:
+    - 合作论文发表于 Land（2023）。
+  details_en:
+    - Coauthored a paper published in Land (2023).
+  paper: /publication/2023-sprawl-development-urban-amenity-china
+  paper_label: Land · 2023
+- id: y
+  status: alumni
+  name_zh: Y 同学
+  name_en: Student Y
+  cohort_zh: 2019 级 · 城乡规划本科
+  cohort_en: 2019 entry cohort · Undergraduate Urban and Rural Planning
+  details_zh:
+    - 2024 级保研至武汉大学。
+    - 2025 年 10 月至 2026 年 6 月，在美团北京实习。
+  details_en:
+    - Admitted to graduate study at Wuhan University through recommendation for 2024 entry.
+    - Interned at Meituan in Beijing from October 2025 to June 2026.
+- id: q
+  status: alumni
+  name_zh: Q 同学
+  name_en: Student Q
+  cohort_zh: 2021 级
+  cohort_en: 2021 entry cohort
+  details_zh:
+    - 2025 年保研至北京大学深圳研究生院。
+    - 论文发表于 Applied Spatial Analysis and Policy（2025）。
+  details_en:
+    - Secured recommended admission to Peking University Shenzhen Graduate School in 2025.
+    - Published a paper in Applied Spatial Analysis and Policy (2025).
+  paper: /publication/2025-neighborhood-amenity-housing-prices-urban-china
+  paper_label: Applied Spatial Analysis and Policy · 2025
 - id: l
+  status: alumni
   name_zh: L 同学
   name_en: Student L
   cohort_zh: 2021 级
@@ -60,14 +109,3 @@
   details_en:
     - Secured recommended admission to Wuhan University.
     - One manuscript completed; not yet published.
-- id: d
-  name_zh: D 同学
-  name_en: Student D
-  cohort_zh: 2022 级
-  cohort_en: 2022 entry cohort
-  details_zh:
-    - 保研至清华大学城乡规划专业。
-    - 已完成 2 篇论文，尚未发表。
-  details_en:
-    - Secured recommended admission to Urban and Rural Planning at Tsinghua University.
-    - Two manuscripts completed; not yet published.
