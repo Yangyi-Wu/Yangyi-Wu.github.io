@@ -166,6 +166,10 @@ role_labels = {
   people = html(root, "#{prefix}/people/")
   check(people.css(".group-student").length == students.length, "Missing student profiles: #{language}")
   check(students.map { |student| student.fetch("id") }.sort == %w[d deng l q t x y yin z], "Incorrect student roster")
+  { "t" => "Y. T.", "x" => "Q. X.", "y" => "Z. Y." }.each do |id, initials|
+    student = students.find { |member| member.fetch("id") == id }
+    check(student.fetch("name_#{language}") == initials, "Incorrect initials-only display name")
+  end
   check(people.css(".group-student-grid").length == 2, "Missing two-column member groups")
   check(people.css(".people-sections a").all? { |a| people.at_css(a["href"]) }, "Broken people section navigation")
   %w[王小明 李小华 滕雅婷 谢强].each do |name|
