@@ -46,7 +46,7 @@
 - id: t
   status: current
   joined: 2024
-  name_zh: Y. T.
+  name_zh: T 同学
   name_en: Y. T.
   photo: /images/members/t.jpg
   cohort_zh: 2026 级硕士研究生（专硕）
@@ -85,7 +85,7 @@
 - id: y
   status: current
   joined: 2024
-  name_zh: Z. Y.
+  name_zh: Y 同学
   name_en: Z. Y.
   photo: /images/members/y.jpg
   cohort_zh: 2024 级硕士研究生（专硕）· 城乡规划
@@ -133,7 +133,7 @@
 - id: x
   status: current
   joined: 2025
-  name_zh: Q. X.
+  name_zh: X 同学
   name_en: Q. X.
   photo: /images/members/x.jpg
   cohort_zh: 2025 级硕士研究生（专硕）
