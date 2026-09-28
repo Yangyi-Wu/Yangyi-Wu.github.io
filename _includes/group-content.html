@@ -44,7 +44,7 @@
     </div>
   </section>
 </section>
-<p><a href="{{ prefix | append: '/join/' | relative_url }}">{% if page.lang == 'zh' %}招生与研究合作{% else %}Study and collaborate with us{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
+<p><a href="{{ prefix | append: '/join/' | relative_url }}">{% if page.lang == 'zh' %}学术交流与招生{% else %}Study and collaborate with us{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
 {% when 'projects' %}
 <p>{{ g.project_intro }}</p>
 {% assign role_key = 'role_' | append: page.lang %}{% assign funder_key = 'funder_' | append: page.lang %}{% assign question_key = 'question_' | append: page.lang %}
@@ -63,6 +63,11 @@
 {% include group-news.html %}
 {% when 'join' %}
 <p class="group-intro">{{ g.join_intro }}</p>
+<h2>{{ g.recruitment_title }}</h2>
+<dl class="group-admissions">{% for admission in site.data.group.admissions %}<dt>{{ admission.year }}</dt><dd>{{ admission[page.lang] }}</dd>{% endfor %}</dl>
+<p>{{ g.recruitment_note }}</p>
+<section class="group-section"><h2>{{ g.assistant_title }}</h2><p>{{ g.assistant }}</p></section>
+<section class="group-section"><h2>{{ g.exchange_title }}</h2><p>{{ g.exchange }}</p></section>
 <section class="join-values group-section" aria-labelledby="join-values-title">
   <h2 id="join-values-title">{{ g.growth_title }}</h2>
   {% assign value_label_key = 'label_' | append: page.lang %}
@@ -77,8 +82,5 @@
     {% endfor %}
   </ul>
 </section>
-<h2>{{ g.recruitment_title }}</h2>
-<dl class="group-admissions">{% for admission in site.data.group.admissions %}<dt>{{ admission.year }}</dt><dd>{{ admission[page.lang] }}</dd>{% endfor %}</dl>
-<p>{{ g.recruitment_note }}</p>
 <section class="group-section"><h2>{{ g.contact_title }}</h2><p>{{ g.contact }}</p><p><a href="mailto:yangyi.wu@whu.edu.cn">yangyi.wu@whu.edu.cn</a></p></section>
 {% endcase %}

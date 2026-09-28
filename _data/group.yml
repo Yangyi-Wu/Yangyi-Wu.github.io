@@ -3,7 +3,7 @@ pages:
   projects: {en: Research Projects, zh: 科研项目}
   people: {en: People, zh: 团队成员}
   news: {en: News, zh: 学术动态}
-  join: {en: Join Us, zh: 招生招聘}
+  join: {en: Exchange and Admissions, zh: 学术交流与招生}
 source: https://sud.whu.edu.cn/info/1611/49111.htm
 source_checked: '2026-09-25'
 en:
@@ -38,6 +38,12 @@ en:
   contact: Please email Yangyi Wu with your academic background, research interests and a question you would like to explore. A CV and an example of relevant work are helpful. Admissions follow the university’s official procedures.
   recruitment_title: Admissions
   recruitment_note: Programs, places and application arrangements follow Wuhan University’s annual admissions announcements.
+  assistant_title: Research assistants
+  assistant: >-
+    Undergraduate and master’s students interested in the group’s research are welcome to join ongoing work as research assistants; please get in touch by email.
+  exchange_title: Academic exchange
+  exchange: >-
+    Visiting students and scholars are welcome to spend time with the group, and colleagues interested in collaboration are welcome to get in touch by email.
   news_intro: Publications and academic activities involving Yangyi Wu and collaborators.
 zh:
   name: 城市转型与空间不平等
@@ -71,6 +77,12 @@ zh:
   contact: 请通过邮件介绍你的学习背景、研究兴趣，以及想深入探讨的问题，可以附上简历和相关研究成果。正式申请请按学校招生程序办理。
   recruitment_title: 招生安排
   recruitment_note: 招生专业、名额与申请安排，以武汉大学当年度招生通知为准。
+  assistant_title: 科研助理
+  assistant: >-
+    长期欢迎对课题组研究方向感兴趣的本科生、硕士生以科研助理身份参与研究，有意者请邮件联系。
+  exchange_title: 学术交流
+  exchange: >-
+    欢迎访问学生、访问学者来组交流，也欢迎有意开展合作研究的同行邮件联系。
   news_intro: 伍杨屹及合作者的论文发表与学术活动。
 research_values:
   - word: Understand
@@ -131,8 +143,8 @@ projects:
     title_en: 'Comparative Regional Inequality Dynamics: Multiscalar and Multinational Perspectives'
 admissions:
   - year: '2027'
-    zh: 规划专业硕士研究生、设计专硕。
-    en: Master’s students in Planning and professional Master’s students in Design.
+    zh: 硕士研究生，招生专业：设计学、城乡规划学。
+    en: Master’s students in Design and in Urban and Rural Planning.
   - year: '2028'
     zh: 预计开始招收博士研究生。
     en: PhD recruitment expected to begin.
