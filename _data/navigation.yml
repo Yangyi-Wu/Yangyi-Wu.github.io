@@ -13,7 +13,7 @@ main:
     url: /publications/
   - title: News
     url: /news/
-  - title: Join Us
+  - title: Exchange and Admissions
     url: /join/
 zh:
   - title: 首页
@@ -30,5 +30,5 @@ zh:
     url: /zh/publications/
   - title: 动态
     url: /zh/news/
-  - title: 招生招聘
+  - title: 学术交流与招生
     url: /zh/join/
