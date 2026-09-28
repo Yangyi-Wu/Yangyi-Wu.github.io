@@ -224,6 +224,20 @@ a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible
 .group-news a:hover { color: var(--global-link-color); text-decoration: underline; }
 .group-admissions, .recruitment-list { display: grid; grid-template-columns: 100px minmax(0,1fr); gap: 16px 24px; }
 .group-admissions dt, .group-admissions dd, .recruitment-list dt, .recruitment-list dd { margin: 0; padding: 16px 0; border-bottom: 1px solid var(--global-border-color); }
+.join-values h2 { scroll-margin-top: 110px; }
+.join-values-list { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 28px; padding: 0; margin: 24px 0 0; list-style: none; }
+.join-values-list .join-value { min-width: 0; margin: 0; padding-top: 20px; border-top: 1px solid var(--global-border-color); }
+.join-value h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.4; }
+.join-value h3 span { color: var(--global-link-color); }
+.join-value .join-value-label { margin: 0 0 12px; font-size: 15px; font-weight: 600; line-height: 1.6; }
+.join-value .join-value-description { margin: 0; color: var(--global-text-color-light); font-size: 14px; line-height: 1.85; }
+@media (max-width: 900px) {
+  .join-values-list { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 26px 24px; }
+}
+@media (max-width: 400px) {
+  .join-values-list { column-gap: 20px; }
+  .join-value h3 { font-size: 19px; }
+}
 
 .publication-toolbar { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 20px; padding: 0 0 24px; margin: 0 0 28px; border-bottom: 1px solid var(--global-border-color); }
 .publication-toolbar p { margin: 0; font-size: 14px; }

@@ -210,6 +210,12 @@ role_labels = {
     end
   end
   expected_cohorts = YAML.safe_load_file("_data/group.yml").fetch("admissions").map { |cohort| cohort.fetch("year") }
+  join_page = html(root, "#{prefix}/join/")
+  values = YAML.safe_load_file("_data/group.yml").fetch("research_values")
+  check(join_page.css(".join-value h3").map(&:text) == %w[Understand Think Study Inspire], "Incorrect UTSI research and growth principles")
+  check(join_page.css(".join-value-label").map(&:text) == values.map { |value| value.fetch("label_#{language}") }, "Incorrect translated principle labels")
+  check(join_page.css(".join-value-description").map(&:text) == values.map { |value| value.fetch("description_#{language}") }, "Incorrect translated principle descriptions")
+  check(join_page.css(".group-page-body > .group-intro, .group-page-body > .join-values, .group-page-body > .group-admissions").map { |element| element["class"].split.first } == %w[group-intro join-values group-admissions], "Research principles must appear between the introduction and admissions")
   check(html(root, "#{prefix}/join/").css(".group-admissions dt").map(&:text) == expected_cohorts, "Admissions page differs from shared data")
   check(page.at_css(".profile-lead").text == homepage.fetch(language).fetch("lead"), "Wrong homepage introduction: #{language}")
   check(page.at_css(".home-section-label h2").text == homepage.fetch(language).fetch("perspective_title"), "Wrong research perspective heading: #{language}")

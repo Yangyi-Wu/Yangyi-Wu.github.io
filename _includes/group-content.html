@@ -63,6 +63,20 @@
 {% include group-news.html %}
 {% when 'join' %}
 <p class="group-intro">{{ g.join_intro }}</p>
+<section class="join-values group-section" aria-labelledby="join-values-title">
+  <h2 id="join-values-title">{{ g.growth_title }}</h2>
+  {% assign value_label_key = 'label_' | append: page.lang %}
+  {% assign value_description_key = 'description_' | append: page.lang %}
+  <ul class="join-values-list">
+    {% for value in site.data.group.research_values %}
+    <li class="join-value">
+      <h3 lang="en"><span>{{ value.word | slice: 0 }}</span>{{ value.word | slice: 1, 99 }}</h3>
+      <p class="join-value-label">{{ value[value_label_key] }}</p>
+      <p class="join-value-description">{{ value[value_description_key] }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
 <h2>{{ g.recruitment_title }}</h2>
 <dl class="group-admissions">{% for admission in site.data.group.admissions %}<dt>{{ admission.year }}</dt><dd>{{ admission[page.lang] }}</dd>{% endfor %}</dl>
 <p>{{ g.recruitment_note }}</p>

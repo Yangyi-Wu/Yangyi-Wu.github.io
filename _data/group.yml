@@ -33,6 +33,7 @@ en:
   collaborative: Participation and collaboration
   source_label: Project information from the faculty profile
   join_intro: We welcome students interested in urban and economic geography, planning and spatial inequality. A background in human geography, planning, geospatial science, computing or economics can offer a useful starting point.
+  growth_title: Research and growth
   contact_title: Get in touch
   contact: Please email Yangyi Wu with your academic background, research interests and a question you would like to explore. A CV and an example of relevant work are helpful. Admissions follow the university’s official procedures.
   recruitment_title: Admissions
@@ -65,11 +66,33 @@ zh:
   collaborative: 参与及合作项目
   source_label: 项目信息来源：学院个人主页
   join_intro: 欢迎对城市与经济地理、城乡规划和空间不平等感兴趣的同学。人文地理、城乡规划、地理信息、计算机、经济学等不同背景，都能为这些问题提供新的切入角度。
+  growth_title: 研究与成长
   contact_title: 联系方式
   contact: 请通过邮件介绍你的学习背景、研究兴趣，以及想深入探讨的问题，可以附上简历和相关研究成果。正式申请请按学校招生程序办理。
   recruitment_title: 招生安排
   recruitment_note: 招生专业、名额与申请安排，以武汉大学当年度招生通知为准。
   news_intro: 伍杨屹及合作者的论文发表与学术活动。
+research_values:
+  - word: Understand
+    label_zh: 理解问题
+    label_en: Context and questions
+    description_zh: 从真实的城市现象出发，厘清问题的背景、对象与尺度。
+    description_en: Start with real urban situations and clarify the context, people and spatial scales involved.
+  - word: Think
+    label_zh: 独立思考
+    label_en: Independent thinking
+    description_zh: 结合理论审视经验观察，提出有依据、可讨论的解释。
+    description_en: Use theory to question observations and develop explanations that can be debated and tested.
+  - word: Study
+    label_zh: 严谨求知
+    label_en: Rigorous inquiry
+    description_zh: 用合适的方法分析可靠的证据，如实说明结论及其局限。
+    description_en: Match methods to questions, work carefully with evidence and be clear about the limits of each finding.
+  - word: Inspire
+    label_zh: 相互启发
+    label_en: Learning from one another
+    description_zh: 在讨论、合作与反馈中拓展思路，也帮助彼此成长。
+    description_en: Share ideas, collaborate and offer thoughtful feedback to help one another grow.
 projects:
   - id: talent-amenities
     lead: true
