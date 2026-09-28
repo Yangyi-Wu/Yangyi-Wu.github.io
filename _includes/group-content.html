@@ -20,6 +20,7 @@
   <h2 id="student-collaborators-title">{% if page.lang == 'zh' %}学生与研究合作{% else %}Students and Research Collaborators{% endif %}</h2>
   {% assign name_key = 'name_' | append: page.lang %}
   {% assign cohort_key = 'cohort_' | append: page.lang %}
+  {% assign period_key = 'period_' | append: page.lang %}
   {% assign details_key = 'details_' | append: page.lang %}
   {% assign dest_key = 'dest_' | append: page.lang %}
   {% assign quote_key = 'quote_' | append: page.lang %}
@@ -32,6 +33,7 @@
       <div class="group-student-id">
         {% if student.photo %}<img src="{{ student.photo | relative_url }}" width="210" height="210" loading="lazy" alt="{{ student[name_key] }}">{% endif %}
         <h3>{{ student[name_key] }}</h3><p class="group-meta">{{ student[cohort_key] }}</p>
+        {% if student[period_key] %}<p class="group-period">{% if page.lang == 'zh' %}在组时间：{% else %}Time with the group: {% endif %}{{ student[period_key] }}</p>{% endif %}
         {% if student[dest_key] %}<p class="group-dest">{{ student[dest_key] }}</p>{% endif %}
       </div>
       <div>
@@ -49,6 +51,7 @@
       <div class="group-student-id">
         {% if student.photo %}<img src="{{ student.photo | relative_url }}" width="210" height="210" loading="lazy" alt="{{ student[name_key] }}">{% endif %}
         <h3>{{ student[name_key] }}</h3><p class="group-meta">{{ student[cohort_key] }}</p>
+        {% if student[period_key] %}<p class="group-period">{% if page.lang == 'zh' %}在组时间：{% else %}Time with the group: {% endif %}{{ student[period_key] }}</p>{% endif %}
         {% if student[dest_key] %}<p class="group-dest">{{ student[dest_key] }}</p>{% endif %}
       </div>
       <div>

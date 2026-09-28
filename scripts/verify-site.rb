@@ -175,6 +175,12 @@ role_labels = {
     check(profile.at_css("h3").text == student.fetch("name_#{language}"), "Incorrect display name")
     check(profile.at_css(".group-meta").text == student.fetch("cohort_#{language}"), "Incorrect student cohort")
     check(profile.css("li").map(&:text) == student.fetch("details_#{language}"), "Incorrect student details")
+    period = profile.at_css(".group-period")
+    if student["period_#{language}"]
+      check(period && period.text.include?(student.fetch("period_#{language}")), "Incorrect time with the group")
+    else
+      check(period.nil?, "Unverified time with the group")
+    end
     if student["dest_#{language}"]
       dest = profile.at_css(".group-dest")
       check(dest && dest.text == student.fetch("dest_#{language}"), "Incorrect student destination")
