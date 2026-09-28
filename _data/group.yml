@@ -13,13 +13,13 @@ en:
   about: >-
     The UTSI Research Group, led by Associate Professor Yangyi Wu at Wuhan University's School of Urban Design, conducts empirical research in urban and economic geography. Our work concerns the spatial organization of firm location, housing markets and public resources, and how these processes shape development opportunities across places and social groups.
   agenda: >-
-    Urban change means different things to different people, and aggregate indicators often conceal that. A sale–rental comparison in Shanghai found that renters and buyers value the same block on entirely different grounds: renters respond to job access and social services, buyers to ownership value and investment conditions. In Jiangsu, falling inequality indices coincided with an almost unmoved core–periphery structure. Our analysis therefore runs from the metropolitan scale down to neighborhoods and individuals, to establish the conditions under which these relationships hold.
+    Urban change affects places and people differently. We connect economic transformation, spatial restructuring and the distribution of opportunities, moving between regions, cities, neighborhoods and individual experience. Our aim is to explain how these differences arise and the conditions under which they persist or change.
   methods_title: Data and methods
   methods: >-
-    We combine firm- and housing-level microdata, amenity POIs, remote sensing and resident surveys, chiefly through spatial econometrics, network analysis and spatial classification. Two relationships deserve particular attention: proximity becomes real connection only through daily flows between centers, and provision becomes actual use only through residents' experience — park accessibility metrics and residents' own assessments sometimes point in opposite directions.
+    Two relationships deserve particular attention: proximity becomes real connection only through daily flows between centers, and provision becomes actual use only through residents' experience. Park accessibility metrics and residents' own assessments sometimes point in opposite directions.
   practice_title: Research and planning
   practice: >-
-    The endpoint of this work is planning and policy. Polycentricity policy calls for caution: it can foster regional ties, but it can also lengthen commutes and deepen core–periphery divides. Park provision should be judged by the match between supply and demand, with area per capita only one dimension. Industrial policy and placemaking work best in concert, with different emphases in central and peripheral districts. We aim to distinguish which conclusions depend on local context and which can inform planning elsewhere.
+    Our work informs questions about industrial location, housing and public resource provision. We distinguish findings that depend on local conditions from those that may inform planning elsewhere, and consider whose needs are met by different spatial arrangements.
   pi_title: Principal investigator
   pi_name: Yangyi Wu
   pi_role: Associate Professor · Department of Urban Planning
@@ -52,13 +52,13 @@ zh:
   about: >-
     课题组由武汉大学城市设计学院伍杨屹副教授牵头，从事城市与经济地理的实证研究，关注企业区位、住房市场和公共资源的空间组织，以及这些过程如何影响不同地方、不同人群的发展机会。
   agenda: >-
-    城市变化对不同人意味着不同的东西，总量指标常常掩盖这一点。上海的租售比较发现，租房者和买房者评价同一个街区，依据完全不同：前者在意通勤是否方便、社会服务是否齐全，后者更看重产权价值和投资属性。江苏的追踪研究则显示，全省不平等指数在下降，核心与边缘的格局却几乎没有变化。所以我们的分析从都市区一直做到社区和个人，弄清这些关系在什么条件下成立。
+    城市变化对不同地方和人群的影响并不相同。我们把经济转型、空间重构和机会分配联系起来，在区域、城市、社区与个体经验之间寻找解释，理解这些差异如何形成，以及在什么条件下延续或改变。
   methods_title: 数据与方法
   methods: >-
-    研究结合企业与住房微观数据、设施 POI、遥感和居民问卷，以空间计量、网络分析和空间分类为主要方法。两组关系尤其值得关注：从地理邻近到实际联系，需要中心之间的日常流动来验证；从资源供给到实际使用，中间隔着居民的体验——公园的可达性指标和居民自己的评价，有时指向相反的方向。
+    两组关系尤其值得关注：从地理邻近到实际联系，需要中心之间的日常流动来验证；从资源供给到实际使用，中间隔着居民的体验。公园的可达性指标和居民自己的评价，有时指向相反的方向。
   practice_title: 研究与规划
   practice: >-
-    这些研究最终要回到规划和政策上。多中心政策需要谨慎：它可能加强区域联系，也可能拉长通勤、加深核心与边缘的分化。公园配置要看供需是否匹配，人均面积只是其中一个维度。产业政策和地方营造需要相互配合，在中心城区和外围地区各有侧重。我们希望分清，哪些结论依赖地方情境，哪些可以为其他城市所用。
+    研究回应产业区位、住房和公共资源配置中的实际问题。我们关注不同空间安排满足了谁的需要，也分清哪些结论依赖地方情境、哪些可以为其他城市的规划提供参考。
   pi_title: 课题组负责人
   pi_name: 伍杨屹
   pi_role: 副教授 · 城市规划系

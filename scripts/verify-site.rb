@@ -27,6 +27,30 @@ def html(root, path)
   Nokogiri::HTML(File.read(file, encoding: "UTF-8"))
 end
 
+def check_navigation(page, path)
+  chinese = path.start_with?("/zh/")
+  prefix = chinese ? "/zh" : ""
+  slugs = %w[about research people publications join]
+  links = page.css("#site-nav .masthead__menu-item:not(.persist) a")
+  check(links.map { |a| a["href"] } == slugs.map { |slug| "#{prefix}/#{slug}/" }, "Expected five primary sections: #{path}")
+  titles = chinese ? %w[课题组 研究方向 团队成员 论文成果 学术交流与招生] : ["About", "Research", "People", "Publications", "Exchange and Admissions"]
+  check(links.map(&:text) == titles, "Incorrect localized navigation labels: #{path}")
+  brand = page.at_css("#site-nav .masthead__menu-item--lg a")
+  check(brand["href"] == (chinese ? "/zh/" : "/en/"), "Brand must return to the localized homepage: #{path}")
+  check(page.at_css(".footer-archive a")["href"] == "#{prefix}/news/", "Missing news archive access: #{path}")
+  local_path = path.delete_prefix(prefix)
+  parent = {"/projects/" => "/research/", "/cv/" => "/people/"}[local_path]
+  parent = "/publications/" if local_path.start_with?("/publication/")
+  active = page.css("#site-nav a[aria-current]")
+  if parent
+    check(active.length == 1 && active.first["href"] == "#{prefix}#{parent}" && active.first["aria-current"] == "location", "Incorrect parent navigation: #{path}")
+  elsif slugs.any? { |slug| local_path == "/#{slug}/" }
+    check(active.length == 1 && active.first["href"] == path && active.first["aria-current"] == "page", "Incorrect current page: #{path}")
+  else
+    check(active.empty?, "Unrelated section highlighted: #{path}")
+  end
+end
+
 scholar_records = scholar.fetch("publications")
 check(themes.keys.sort == records.keys.sort, "Incomplete publication theme assignments")
 check(themes.values.all? { |ids| !ids.empty? && (ids - %w[transformation restructuring inequality methods]).empty? }, "Invalid research theme")
@@ -44,6 +68,7 @@ Dir.glob("_publications/*.md").each do |source|
   ["en", "zh"].each do |language|
     path = language == "zh" ? "/zh#{english_path}" : english_path
     page = html(root, path)
+    check_navigation(page, path)
     check(page.at_css("html")["lang"] == language, "Wrong language: #{path}")
     check(page.at_css(".publication-authors").text == record.fetch("authors"), "Missing authors: #{path}")
     scholar_url = "https://scholar.google.com/citations?view_op=view_citation&user=#{scholar.fetch('profile_id')}&citation_for_view=#{scholar.fetch('profile_id')}:#{scholar_record.fetch('id')}"
@@ -65,6 +90,7 @@ end
 
 ["/publications/", "/zh/publications/"].each do |path|
   page = html(root, path)
+  check_navigation(page, path)
   cards = page.css(".publication-entry")
   check(cards.length == records.length, "Incomplete publication list: #{path}")
   check(page.css("[data-publication-count]").length == 1 && page.at_css(".publication-toolbar [data-publication-count]"), "Publication count must appear once, alongside its filters: #{path}")
@@ -108,6 +134,7 @@ check(entry_page.at_css(".group-wordmark") && entry_page.at_css(".site-city-phot
 check(entry_page.css("[data-language-option]").map { |a| a["href"] }.sort == %w[/en/ /zh/], "Chooser must have working no-JS links")
 %w[/en/ /zh/ /about/ /zh/about/ /projects/ /zh/projects/ /people/ /zh/people/ /news/ /zh/news/ /join/ /zh/join/ /research/ /zh/research/ /team/ /zh/team/ /cv/ /zh/cv/ /talks/ /zh/talks/].each do |path|
   page = html(root, path)
+  check_navigation(page, path)
   icons = page.css('link[rel="icon"], link[rel="apple-touch-icon"]')
   check(icons.length == 4 && icons.all? { |icon| icon["href"].include?("v=utsi-20260927") }, "Missing versioned site icons: #{path}")
   icons.each { |icon| check(root.join(URI.parse(icon["href"]).path.delete_prefix("/")).file?, "Missing favicon asset") }
@@ -224,7 +251,14 @@ role_labels = {
   check(page.at_css(".profile-lead").text == homepage.fetch(language).fetch("lead"), "Wrong homepage introduction: #{language}")
   check(page.at_css(".home-section-label h2").text == homepage.fetch(language).fetch("perspective_title"), "Wrong research perspective heading: #{language}")
   check(page.at_css(".home-introduction-lead").text == homepage.fetch(language).fetch("introduction"), "Intro layout changed the lead copy")
-  check(page.css(".home-introduction-detail p").map(&:text) == %w[approach methods data_analysis].map { |key| homepage.fetch(language).fetch(key) }, "Intro layout changed the supporting copy")
+  group_data = YAML.safe_load_file("_data/group.yml").fetch(language)
+  pi_profile = page.at_css("#home-pi")
+  check(pi_profile && pi_profile.at_css("h2").text == group_data.fetch("pi_name"), "Missing homepage PI identity")
+  check(pi_profile.at_css("img")["src"] == people.at_css(".group-person img")["src"], "Homepage must use the approved PI photograph")
+  check(pi_profile.at_css(".home-pi-role").text.include?(group_data.fetch("pi_role")) && pi_profile.at_css(".home-pi-role").text.include?(group_data.fetch("affiliation")), "Missing PI role or affiliation")
+  check(pi_profile.at_css(".home-pi-bio").text == group_data.fetch("pi_bio"), "PI biographies must stay consistent")
+  check(page.at_css(".home-pi a")["href"] == "#home-pi", "Hero identity must link to the PI profile")
+  check(pi_profile.css(".home-pi-links a").map { |a| a["href"] } == ["#{prefix}/cv/", YAML.safe_load_file("_config.yml", aliases: true).fetch("author").fetch("googlescholar"), "mailto:yangyi.wu@whu.edu.cn"], "Incomplete homepage PI links")
   section_order = page.css(".home-content > section, .home-content > .home-bottom-grid").map { |section| section["class"].split.last }
   check(section_order == %w[home-introduction home-research home-selected home-section], "Homepage must introduce the framework before its research highlights")
   check(page.at_css("#home-research-title").text == (language == "zh" ? "研究主线" : "Research framework"), "Wrong framework heading")
@@ -232,11 +266,27 @@ role_labels = {
   admissions = YAML.safe_load_file("_data/group.yml").fetch("admissions").find { |cohort| cohort.fetch("year") == "2027" }
   check(page.at_css(".home-admissions").text.include?(admissions.fetch(language)), "Homepage admissions differ from the shared data")
   check(page.at_css(".home-phd-note").text.include?("2028"), "Missing expected PhD recruitment year")
-  %w[introduction approach methods data_analysis pi research_intro invitation conversation].each do |key|
+  %w[introduction methods pi invitation conversation].each do |key|
     check(page.css(".home-content p").any? { |p| p.text == homepage.fetch(language).fetch(key) }, "Missing homepage #{key}: #{language}")
   end
   research_page = html(root, "#{prefix}/research/")
+  group = YAML.safe_load_file("_data/group.yml")
+  check(research_page.css(".research-sections a").length == 5, "Missing research section navigation")
+  check(research_page.css(".research-sections a").all? { |a| research_page.at_css(a["href"]) }, "Broken research section anchor")
+  check(research_page.css("#research-methods p").map(&:text) == [homepage.fetch(language).fetch("methods"), homepage.fetch(language).fetch("data_analysis"), group.fetch(language).fetch("methods")], "Methods and data must be preserved in Research")
+  check(research_page.css("p").any? { |p| p.text == homepage.fetch(language).fetch("research_intro") }, "Research framework must be preserved in Research")
+  project_links = research_page.css(".research-project-list h3 a")
+  check(project_links.map(&:text) == group.fetch("projects").map { |project| project.fetch("title_#{language}") }, "Missing research project titles")
+  check(project_links.map { |a| a["href"] } == group.fetch("projects").map { |project| "#{prefix}/projects/##{project.fetch('id')}" }, "Incorrect project entry points")
+  check(project_links.all? { |a| projects.at_css("##{a['href'].split('#').last}") }, "Broken project detail anchor")
+  check(projects.at_css(".section-back a")["href"] == "#{prefix}/research/#research-projects", "Missing return from project details")
+  check(page.at_css("#home-news-title + a")["href"] == "#{prefix}/news/", "Missing homepage news archive link")
+  about_page = html(root, "#{prefix}/about/")
+  check(!about_page.at_css(".group-page-body").text.include?(group.fetch(language).fetch("methods")), "Duplicated methods in About")
+  check(about_page.css(".section-links a").map { |a| a["href"] } == %w[research people join].map { |slug| "#{prefix}/#{slug}/" }, "Missing group introduction entry points")
   cv_page = html(root, "#{prefix}/cv/")
+  check(cv_page.at_css("#main").text.include?(admissions.fetch(language)), "CV admissions must use the shared current information")
+  check(cv_page.at_css(".group-page--inner") && cv_page.css(".sidebar").empty?, "CV must share the site page layout")
   research.each_with_index do |theme, index|
     section = page.at_css("[data-research-theme='#{theme.fetch('id')}']")
     check(section && section.at_css("h3 a").text == theme.fetch("title_#{language}"), "Inconsistent homepage research theme: #{language}")
@@ -244,13 +294,13 @@ role_labels = {
     check(section.at_css(".home-theme-step").text == format("%02d", index + 1), "Incorrect research framework sequence")
     check(section.at_css(".home-theme-question").text == theme.fetch("home_question_#{language}"), "Missing homepage research question: #{language}")
     check(section.at_css(".home-theme-overview").text == theme.fetch("overview_#{language}"), "Missing homepage research context: #{language}")
-    check(section.at_css(".home-theme-context").text == theme.fetch("home_context_#{language}"), "Missing concrete research discussion: #{language}")
-    check(section.css(".home-theme-focus li").map(&:text) == theme.fetch("focus_#{language}"), "Missing homepage research topics: #{language}")
+    check(section.css(".home-theme-context, .home-theme-focus").empty?, "Homepage research should be concise")
     check(theme.fetch("focus_zh").length == theme.fetch("focus_en").length, "Unpaired research topics")
     check(section.at_css(".text-link")["href"] == "#{prefix}/research/##{theme.fetch('id')}", "Wrong research detail link")
     detail = research_page.at_css("##{theme.fetch('id')}")
     check(detail && detail.at_css("h2").text == theme.fetch("title_#{language}"), "Missing research theme anchor: #{language}")
     check(detail.at_css(".research-question").text == theme.fetch("question_#{language}"), "Missing research question: #{language}")
+    check(detail.css(".research-focus li").map(&:text) == theme.fetch("focus_#{language}"), "Detailed topics must remain in Research")
     check(detail.css("p").last.text == theme.fetch("text_#{language}"), "Missing research discussion: #{language}")
     links = detail.css(".research-papers a").map { |a| a["href"] }
     check(links == theme.fetch("papers").map { |path| "#{prefix}#{path}" }, "Incorrect theme publications: #{language}")

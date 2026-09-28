@@ -1,9 +1,9 @@
 ---
-layout: archive
-title: "About & CV"
+layout: group
+title: "Curriculum Vitae"
 permalink: /cv/
 lang: en
-author_profile: true
+author_profile: false
 redirect_from:
   - /resume
 ---
@@ -46,9 +46,10 @@ Talks, sessions, and service
 Teaching and supervision
 ======
 
-I supervise research on urban spatial equity, industrial location, and spatial data analysis. Recruitment plans cover Master's students in Planning and professional Master's students in Design for the 2027 cohort, with PhD recruitment expected from 2028. The 2026 cohort covers professional and academic Master's tracks in Planning.
+{% assign admission = site.data.group.admissions | where: 'year', '2027' | first %}
+I supervise research on urban spatial equity, industrial location, and spatial data analysis. {{ admission.year }} entry: {{ admission.en }} PhD recruitment is expected from 2028. The 2026 cohort covers professional and academic Master's tracks in Planning.
 
-See [Group & Opportunities]({{ '/team/' | relative_url }}) for research collaborations and recruitment details. Programs and places are subject to Wuhan University's annual admissions announcements.
+See [Exchange and Admissions]({{ '/join/' | relative_url }}) for research collaborations and recruitment details. Programs and places are subject to Wuhan University's annual admissions announcements.
 
 Links
 ======

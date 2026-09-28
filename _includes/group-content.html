@@ -5,9 +5,12 @@
 {% when 'about' %}
 <p class="group-intro">{{ g.about }}</p>
 <p>{{ g.agenda }}</p>
-<section class="group-section"><h2>{{ g.methods_title }}</h2><p>{{ g.methods }}</p></section>
 <section class="group-section"><h2>{{ g.practice_title }}</h2><p>{{ g.practice }}</p></section>
-<p><a href="{{ prefix | append: '/research/' | relative_url }}">{% if page.lang == 'zh' %}研究方向{% else %}Research themes{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
+<nav class="section-links" aria-label="{% if page.lang == 'zh' %}了解课题组{% else %}Explore the group{% endif %}">
+  <a href="{{ prefix | append: '/research/' | relative_url }}">{% if page.lang == 'zh' %}研究方向{% else %}Research{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+  <a href="{{ prefix | append: '/people/' | relative_url }}">{% if page.lang == 'zh' %}团队成员{% else %}People{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+  <a href="{{ prefix | append: '/join/' | relative_url }}">{{ site.data.group.pages.join[page.lang] }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+</nav>
 {% when 'people' %}
 <nav class="people-sections" aria-label="{% if page.lang == 'zh' %}成员分组{% else %}People sections{% endif %}"><a href="#principal-investigator">{{ g.pi_title }}</a><a href="#current-members">{% if page.lang == 'zh' %}在组成员{% else %}Current members{% endif %}</a><a href="#alumni-members">{% if page.lang == 'zh' %}已离组成员{% else %}Alumni{% endif %}</a></nav>
 <h2 id="principal-investigator">{{ g.pi_title }}</h2>
@@ -46,6 +49,7 @@
 </section>
 <p><a href="{{ prefix | append: '/join/' | relative_url }}">{% if page.lang == 'zh' %}学术交流与招生{% else %}Study and collaborate with us{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
 {% when 'projects' %}
+<p class="section-back"><a href="{{ prefix | append: '/research/' | relative_url }}#research-projects"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> {% if page.lang == 'zh' %}研究方向{% else %}Research{% endif %}</a></p>
 <p>{{ g.project_intro }}</p>
 {% assign role_key = 'role_' | append: page.lang %}{% assign funder_key = 'funder_' | append: page.lang %}{% assign question_key = 'question_' | append: page.lang %}
 <h2>{{ g.led }}</h2>
@@ -59,6 +63,7 @@
 {% endfor %}
 <p class="group-source"><a href="{{ site.data.group.source }}">{{ g.source_label }}</a></p>
 {% when 'news' %}
+<p class="section-back"><a href="{% if page.lang == 'zh' %}{{ '/zh/' | relative_url }}{% else %}{{ '/en/' | relative_url }}{% endif %}#home-news-title"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> {% if page.lang == 'zh' %}首页{% else %}Home{% endif %}</a></p>
 <p>{{ g.news_intro }}</p>
 {% include group-news.html %}
 {% when 'join' %}

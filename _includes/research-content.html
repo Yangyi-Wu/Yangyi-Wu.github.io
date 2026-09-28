@@ -1,15 +1,53 @@
+{% assign g = site.data.group[page.lang] %}
+{% assign research_prefix = '' %}{% if page.lang == 'zh' %}{% assign research_prefix = '/zh' %}{% endif %}
+{% assign title_key = 'title_' | append: page.lang %}
+{% assign role_key = 'role_' | append: page.lang %}
+{% assign funder_key = 'funder_' | append: page.lang %}
+{% assign focus_key = 'focus_' | append: page.lang %}
+<nav class="section-links research-sections" aria-label="{% if page.lang == 'zh' %}研究页目录{% else %}Research sections{% endif %}">
+  {% for theme in site.data.research %}<a href="#{{ theme.id }}">{{ theme[title_key] }}</a>{% endfor %}
+  <a href="#research-methods">{{ g.methods_title }}</a>
+  <a href="#research-projects">{% if page.lang == 'zh' %}科研项目{% else %}Projects{% endif %}</a>
+</nav>
 <p>{{ site.data.homepage[page.lang].research_intro }}</p>
 {% for theme in site.data.research %}
 <section class="research-theme" id="{{ theme.id }}">
   <span id="{{ theme.legacy_id }}" aria-hidden="true"></span>
   <h2>{% if page.lang == 'zh' %}{{ theme.title_zh }}{% else %}{{ theme.title_en }}{% endif %}</h2>
   <p class="research-question">{% if page.lang == 'zh' %}{{ theme.question_zh }}{% else %}{{ theme.question_en }}{% endif %}</p>
-  <p>{% if page.lang == 'zh' %}{{ theme.text_zh }}{% else %}{{ theme.text_en }}{% endif %}</p>
+  <ul class="research-focus">{% for topic in theme[focus_key] %}<li>{{ topic }}</li>{% endfor %}</ul>
+  <div class="research-theme-body">
+  <p class="research-discussion">{% if page.lang == 'zh' %}{{ theme.text_zh }}{% else %}{{ theme.text_en }}{% endif %}</p>
+  <aside class="research-related" aria-labelledby="{{ theme.id }}-papers-title">
+  <h3 id="{{ theme.id }}-papers-title">{% if page.lang == 'zh' %}相关成果{% else %}Related publications{% endif %}</h3>
   <ul class="research-papers">
   {% for path in theme.papers %}
     {% assign paper = site.publications | where: 'publication_url', path | first %}
     <li><a href="{% if page.lang == 'zh' %}{{ paper.alternate_url | relative_url }}{% else %}{{ paper.url | relative_url }}{% endif %}">{{ paper.title }}</a> <span>({{ paper.date | date: '%Y' }})</span></li>
   {% endfor %}
   </ul>
+  </aside>
+  </div>
 </section>
 {% endfor %}
+<section class="research-methods" id="research-methods">
+  <h2>{{ g.methods_title }}</h2>
+  <p>{{ site.data.homepage[page.lang].methods }}</p>
+  <p>{{ site.data.homepage[page.lang].data_analysis }}</p>
+  <p>{{ g.methods }}</p>
+</section>
+<section class="research-projects" id="research-projects">
+  <div class="research-projects-heading">
+    <h2>{% if page.lang == 'zh' %}科研项目{% else %}Research projects{% endif %}</h2>
+    <a class="text-link" href="{{ research_prefix | append: '/projects/' | relative_url }}">{% if page.lang == 'zh' %}项目详情{% else %}Project details{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+  <p>{{ g.project_intro }}</p>
+  <ul class="research-project-list">
+    {% for project in site.data.group.projects %}
+    <li>
+      <p class="group-meta">{{ project[funder_key] }} · {{ project.period }} · {{ project[role_key] }}</p>
+      <h3><a href="{{ research_prefix | append: '/projects/' | relative_url }}#{{ project.id }}">{{ project[title_key] }}</a></h3>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
