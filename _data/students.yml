@@ -74,21 +74,25 @@
   paper: /publication/2023-sprawl-development-urban-amenity-china
   paper_label: Land · 2023
 - id: y
-  status: alumni
+  status: current
   name_zh: Y 同学
   name_en: Student Y
-  cohort_zh: 2019 级 · 城乡规划本科
-  cohort_en: 2019 entry cohort · Undergraduate Urban and Rural Planning
+  cohort_zh: 2024 级硕士研究生（专硕）· 城乡规划
+  cohort_en: 2024 entry · Professional master's student in Urban and Rural Planning
   details_zh:
+    - 2019 级城乡规划本科。
     - 2024 级保研至武汉大学。
     - 2025 年 10 月至 2026 年 6 月，在美团北京实习。
   details_en:
+    - 2019 entry cohort in undergraduate Urban and Rural Planning.
     - Admitted to graduate study at Wuhan University through recommendation for 2024 entry.
     - Interned at Meituan in Beijing from October 2025 to June 2026.
 - id: q
   status: alumni
   name_zh: Q 同学
   name_en: Student Q
+  period_zh: 2023–2025
+  period_en: 2023–2025
   cohort_zh: 2021 级
   cohort_en: 2021 entry cohort
   details_zh:
@@ -103,6 +107,8 @@
   status: alumni
   name_zh: L 同学
   name_en: Student L
+  period_zh: 2023–2025
+  period_en: 2023–2025
   cohort_zh: 2021 级
   cohort_en: 2021 entry cohort
   details_zh:

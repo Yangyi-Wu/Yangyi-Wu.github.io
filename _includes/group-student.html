@@ -1,0 +1,15 @@
+{% assign student = include.student %}
+<article class="group-student{% unless student.photo %} group-student--text{% endunless %}" data-student="{{ student.id }}">
+  {% if student.photo %}<div class="group-student-id"><img src="{{ student.photo | relative_url }}" width="128" height="128" loading="lazy" alt="{{ student[name_key] }}"></div>{% endif %}
+  <div class="group-student-content">
+    <header class="group-student-heading">
+      <h3>{{ student[name_key] }}</h3>
+      <p class="group-meta">{{ student[cohort_key] }}</p>
+      {% if student[period_key] %}<p class="group-period">{% if page.lang == 'zh' %}在组时间：{% else %}Time with the group: {% endif %}{{ student[period_key] }}</p>{% endif %}
+    </header>
+    {% if student[dest_key] %}<p class="group-dest">{{ student[dest_key] }}</p>{% endif %}
+    {% if student[details_key].size > 0 %}<ul>{% for detail in student[details_key] %}<li>{{ detail }}</li>{% endfor %}</ul>{% endif %}
+    {% if student.paper %}<p class="group-links"><a href="{{ prefix | append: student.paper | relative_url }}">{{ student.paper_label }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>{% endif %}
+    {% if student[quote_key] %}<p class="group-quote">{% if page.lang == 'zh' %}「{{ student[quote_key] }}」{% else %}&ldquo;{{ student[quote_key] }}&rdquo;{% endif %}</p>{% endif %}
+  </div>
+</article>
