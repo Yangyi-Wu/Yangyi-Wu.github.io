@@ -178,7 +178,11 @@ a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible
 .group-person img { width: 210px; height: 263px; object-fit: cover; border-radius: 0; }
 .group-person h3 { margin: 0 0 12px; font-size: 32px; }
 .group-student { display: grid; grid-template-columns: 210px minmax(0,1fr); gap: 46px; padding: 28px 0; border-top: 1px solid var(--global-border-color); }
+.group-subsection { margin: 30px 0 0; font-size: 20px; }
 .group-student h3 { margin: 0 0 8px; }
+.group-student-id img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; margin-bottom: 16px; }
+.group-student .group-dest { display: inline-block; margin: 10px 0 0; padding: 3px 10px; background: var(--site-band); color: var(--global-text-color-light); font-size: 12px; line-height: 1.7; }
+.group-student .group-quote { margin: 0 0 12px; font-size: 15px; }
 .group-student ul { margin: 0; padding-left: 18px; font-size: 15px; }
 .group-student p { margin: 8px 0 0; }
 .group-project { padding: 26px 0; border-top: 1px solid var(--global-border-color); }
@@ -301,6 +305,7 @@ a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible
   .group-person h3 { font-size: 26px; }
   .group-intro { font-size: 18px; }
   .group-student { grid-template-columns: 1fr; gap: 12px; }
+  .group-student-id img { max-width: 180px; }
   .publication-toolbar { gap: 16px; padding-bottom: 20px; margin-bottom: 24px; }
   .publication-toolbar > div, .publication-toolbar [data-publication-search] > div { width: 100%; }
   .publication-toolbar [data-publication-search] { gap: 12px; }

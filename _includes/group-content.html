@@ -21,13 +21,44 @@
   {% assign name_key = 'name_' | append: page.lang %}
   {% assign cohort_key = 'cohort_' | append: page.lang %}
   {% assign details_key = 'details_' | append: page.lang %}
-  {% for student in site.data.students %}
-  <article class="group-student" data-student="{{ student.id }}">
-    <div><h3>{{ student[name_key] }}</h3><p class="group-meta">{{ student[cohort_key] }}</p></div>
-    <div><ul>{% for detail in student[details_key] %}<li>{{ detail }}</li>{% endfor %}</ul>
-    {% if student.paper %}<p class="group-links"><a href="{{ prefix | append: student.paper | relative_url }}">{{ student.paper_label }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>{% endif %}</div>
-  </article>
-  {% endfor %}
+  {% assign dest_key = 'dest_' | append: page.lang %}
+  {% assign quote_key = 'quote_' | append: page.lang %}
+  {% assign current_students = site.data.students | where: 'status', 'current' %}
+  {% assign alumni_students = site.data.students | where: 'status', 'alumni' %}
+  <div class="group-students" data-student-group="current">
+    <h3 class="group-subsection">{% if page.lang == 'zh' %}在组学生{% else %}Current Members{% endif %}</h3>
+    {% for student in current_students %}
+    <article class="group-student" data-student="{{ student.id }}">
+      <div class="group-student-id">
+        {% if student.photo %}<img src="{{ student.photo | relative_url }}" width="210" height="210" loading="lazy" alt="{{ student[name_key] }}">{% endif %}
+        <h3>{{ student[name_key] }}</h3><p class="group-meta">{{ student[cohort_key] }}</p>
+        {% if student[dest_key] %}<p class="group-dest">{{ student[dest_key] }}</p>{% endif %}
+      </div>
+      <div>
+        {% if student[quote_key] %}<p class="group-quote">{% if page.lang == 'zh' %}「{{ student[quote_key] }}」{% else %}&ldquo;{{ student[quote_key] }}&rdquo;{% endif %}</p>{% endif %}
+        {% if student[details_key].size > 0 %}<ul>{% for detail in student[details_key] %}<li>{{ detail }}</li>{% endfor %}</ul>{% endif %}
+        {% if student.paper %}<p class="group-links"><a href="{{ prefix | append: student.paper | relative_url }}">{{ student.paper_label }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  <div class="group-students" data-student-group="alumni">
+    <h3 class="group-subsection">{% if page.lang == 'zh' %}已离组{% else %}Alumni{% endif %}</h3>
+    {% for student in alumni_students %}
+    <article class="group-student" data-student="{{ student.id }}">
+      <div class="group-student-id">
+        {% if student.photo %}<img src="{{ student.photo | relative_url }}" width="210" height="210" loading="lazy" alt="{{ student[name_key] }}">{% endif %}
+        <h3>{{ student[name_key] }}</h3><p class="group-meta">{{ student[cohort_key] }}</p>
+        {% if student[dest_key] %}<p class="group-dest">{{ student[dest_key] }}</p>{% endif %}
+      </div>
+      <div>
+        {% if student[quote_key] %}<p class="group-quote">{% if page.lang == 'zh' %}「{{ student[quote_key] }}」{% else %}&ldquo;{{ student[quote_key] }}&rdquo;{% endif %}</p>{% endif %}
+        {% if student[details_key].size > 0 %}<ul>{% for detail in student[details_key] %}<li>{{ detail }}</li>{% endfor %}</ul>{% endif %}
+        {% if student.paper %}<p class="group-links"><a href="{{ prefix | append: student.paper | relative_url }}">{{ student.paper_label }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
 </section>
 <p><a href="{{ prefix | append: '/join/' | relative_url }}">{% if page.lang == 'zh' %}招生与研究合作{% else %}Study and collaborate with us{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
 {% when 'projects' %}

@@ -165,12 +165,29 @@ role_labels = {
   students = YAML.safe_load_file("_data/students.yml")
   people = html(root, "#{prefix}/people/")
   check(people.css(".group-student").length == students.length, "Missing student profiles: #{language}")
-  check(students.map { |student| student.fetch("id") }.sort == %w[d l q t y z], "Incorrect student roster")
+  check(students.map { |student| student.fetch("id") }.sort == %w[d deng l q t y yin z], "Incorrect student roster")
+  check(students.all? { |student| %w[current alumni].include?(student.fetch("status")) }, "Unknown student status")
+  %w[current alumni].each do |status|
+    check(people.css("[data-student-group='#{status}'] .group-student").length == students.count { |student| student.fetch("status") == status }, "Incorrect #{status} student grouping: #{language}")
+  end
   students.each do |student|
     profile = people.at_css("[data-student='#{student.fetch('id')}']")
-    check(profile.at_css("h3").text == student.fetch("name_#{language}"), "Incorrect anonymous display name")
+    check(profile.at_css("h3").text == student.fetch("name_#{language}"), "Incorrect display name")
     check(profile.at_css(".group-meta").text == student.fetch("cohort_#{language}"), "Incorrect student cohort")
     check(profile.css("li").map(&:text) == student.fetch("details_#{language}"), "Incorrect student details")
+    if student["dest_#{language}"]
+      dest = profile.at_css(".group-dest")
+      check(dest && dest.text == student.fetch("dest_#{language}"), "Incorrect student destination")
+    end
+    if student["quote_#{language}"]
+      quote = profile.at_css(".group-quote")
+      check(quote && quote.text.include?(student.fetch("quote_#{language}")), "Incorrect student quote")
+    end
+    if student["photo"]
+      photo = profile.at_css(".group-student-id img")
+      check(photo && photo["src"] == student.fetch("photo") && photo["alt"] == student.fetch("name_#{language}"), "Incorrect student photo")
+      check(root.join(photo["src"].delete_prefix("/")).size < 300_000, "Student photo exceeds image budget")
+    end
     if student["paper"]
       check(publications.key?(student["paper"]), "Unknown student publication")
       check(profile.at_css("a")["href"] == "#{prefix}#{student['paper']}", "Wrong student paper language")
