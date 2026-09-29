@@ -252,6 +252,7 @@ role_labels = {
   check(page.css(".home-introduction").empty?, "Geospatial perspective belongs in the PI profile")
   group_data = YAML.safe_load_file("_data/group.yml").fetch(language)
   pi_profile = page.at_css("#home-pi")
+  check(pi_profile.at_css(".home-pi-person .home-pi-links") && pi_profile.css(".home-pi-description nav").empty?, "PI contact links must stay with the identity")
   check(pi_profile && pi_profile.at_css("h2").text == group_data.fetch("pi_name"), "Missing homepage PI identity")
   check(pi_profile.at_css("img")["src"] == people.at_css(".group-person img")["src"], "Homepage must use the approved PI photograph")
   check(pi_profile.at_css(".home-pi-role").text.include?(group_data.fetch("pi_role")) && pi_profile.at_css(".home-pi-role").text.include?(group_data.fetch("affiliation")), "Missing PI role or affiliation")
