@@ -24,14 +24,6 @@
     </div>
     {% include photo-credit.html photo=site.data.site_visual.home_photo %}
   </header>
-  <section class="home-introduction" aria-label="{% if page.lang == 'zh' %}课题组简介{% else %}Group introduction{% endif %}">
-    <div class="home-section-label"><span>UTSI</span><h2>{{ home.perspective_title }}</h2></div>
-    <div class="home-introduction-copy">
-      <p class="home-introduction-lead">{{ home.introduction }}</p>
-      <p class="home-approach">{{ home.methods }}</p>
-      <a class="text-link" href="{{ language_prefix | append: '/about/' | relative_url }}">{% if page.lang == 'zh' %}认识课题组{% else %}About the group{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-    </div>
-  </section>
   <section class="home-section home-profile" aria-labelledby="home-pi-name">
     <div class="home-pi-profile" id="home-pi">
       <img src="{{ '/images/yangyi-wu-portrait.png' | relative_url }}?v=20260928-2" width="180" height="225" alt="{{ g.pi_name }}" loading="lazy" decoding="async">
@@ -40,7 +32,10 @@
         <h2 id="home-pi-name">{{ g.pi_name }}</h2>
       </div>
       <p class="home-pi-role">{{ g.pi_role }}<br>{{ g.affiliation }}</p>
-      <p class="home-pi-bio">{{ g.pi_bio }}</p>
+      <div class="home-pi-bio">
+        <p>{{ home.pi_statement }}</p>
+        <p>{{ home.pi_approach }}</p>
+      </div>
       <nav class="home-pi-links section-links" aria-label="{% if page.lang == 'zh' %}PI 个人资料与联系{% else %}PI profile and contact{% endif %}">
         <a href="{{ language_prefix | append: '/cv/' | relative_url }}">{{ g.cv }}</a>
         <a href="{{ site.author.googlescholar }}">Google Scholar</a>

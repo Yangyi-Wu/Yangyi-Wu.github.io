@@ -249,19 +249,17 @@ role_labels = {
   check(join_page.css(".group-section p").any? { |p| p.text == join_copy.fetch("exchange") }, "Missing academic exchange note")
   check(html(root, "#{prefix}/join/").css(".group-admissions dt").map(&:text) == expected_cohorts, "Admissions page differs from shared data")
   check(page.at_css(".profile-lead").text == homepage.fetch(language).fetch("lead"), "Wrong homepage introduction: #{language}")
-  check(page.at_css(".home-section-label h2").text == homepage.fetch(language).fetch("perspective_title"), "Wrong research perspective heading: #{language}")
-  check(page.at_css(".home-introduction-lead").text == homepage.fetch(language).fetch("introduction"), "Intro layout changed the lead copy")
+  check(page.css(".home-introduction").empty?, "Geospatial perspective belongs in the PI profile")
   group_data = YAML.safe_load_file("_data/group.yml").fetch(language)
   pi_profile = page.at_css("#home-pi")
   check(pi_profile && pi_profile.at_css("h2").text == group_data.fetch("pi_name"), "Missing homepage PI identity")
   check(pi_profile.at_css("img")["src"] == people.at_css(".group-person img")["src"], "Homepage must use the approved PI photograph")
   check(pi_profile.at_css(".home-pi-role").text.include?(group_data.fetch("pi_role")) && pi_profile.at_css(".home-pi-role").text.include?(group_data.fetch("affiliation")), "Missing PI role or affiliation")
-  check(pi_profile.at_css(".home-pi-bio").text == group_data.fetch("pi_bio"), "PI biographies must stay consistent")
+  check(pi_profile.css(".home-pi-bio p").map(&:text) == %w[pi_statement pi_approach].map { |key| homepage.fetch(language).fetch(key) }, "Missing PI research perspective or approach")
   check(page.at_css(".home-pi a")["href"] == "#home-pi", "Hero identity must link to the PI profile")
   check(pi_profile.css(".home-pi-links a").map { |a| a["href"] } == ["#{prefix}/cv/", YAML.safe_load_file("_config.yml", aliases: true).fetch("author").fetch("googlescholar"), "mailto:yangyi.wu@whu.edu.cn"], "Incomplete homepage PI links")
   section_order = page.css(".home-content > section, .home-content > .home-bottom-grid").map { |section| section["class"].split.last }
-  check(section_order == %w[home-introduction home-profile home-research home-selected home-section], "Homepage must separate the group introduction and PI profile before research")
-  check(page.css(".home-introduction > .home-section-label, .home-introduction > .home-introduction-copy").length == 2, "Introduction title and copy must be separate columns")
+  check(section_order == %w[home-profile home-research home-selected home-section], "Homepage must introduce the PI and perspective together before research")
   check(page.at_css(".home-profile #home-pi") && page.css(".home-introduction #home-pi").empty?, "PI profile must have its own section")
   check(page.css(".home-values").length == 1 && page.at_css(".home-contact .home-values a")["href"] == "#{prefix}/join/#join-values-title", "Research values must sit with students and collaboration")
   check(page.at_css("#home-research-title").text == (language == "zh" ? "研究主线" : "Research framework"), "Wrong framework heading")
@@ -269,7 +267,7 @@ role_labels = {
   admissions = YAML.safe_load_file("_data/group.yml").fetch("admissions").find { |cohort| cohort.fetch("year") == "2027" }
   check(page.at_css(".home-admissions").text.include?(admissions.fetch(language)), "Homepage admissions differ from the shared data")
   check(page.at_css(".home-phd-note").text.include?("2028"), "Missing expected PhD recruitment year")
-  %w[introduction methods pi invitation conversation].each do |key|
+  %w[pi_statement pi_approach pi invitation conversation].each do |key|
     check(page.css(".home-content p").any? { |p| p.text == homepage.fetch(language).fetch(key) }, "Missing homepage #{key}: #{language}")
   end
   research_page = html(root, "#{prefix}/research/")
