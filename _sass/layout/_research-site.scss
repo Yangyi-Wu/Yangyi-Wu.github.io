@@ -339,6 +339,7 @@ html[lang="zh"] .home-highlight h3 { text-wrap: initial; }
 .publication-media { display: block; width: 100%; max-width: 900px; margin: 24px 0 0; }
 .publication-media img, .publication-figure img { display: block; width: 100%; height: auto; max-height: none; border: 0; background: #fff; box-shadow: none !important; }
 .publication-figure { margin: 30px 0 0; }
+.publication-figure--portrait { max-width: 640px; margin-left: auto; margin-right: auto; }
 .publication-figure figcaption { color: var(--global-text-color-light); font-size: 13px; margin: 14px 0; }
 .publication-back { font-size: 14px; display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; }
 .publication-page .page__title { font-size: 36px; margin: 18px 0; line-height: 1.45; }

@@ -33,11 +33,11 @@ layout: default
           {% assign visual_alt = page.visual_alt_en %}
           {% if page.lang == 'zh' %}{% assign visual_alt = page.visual_alt_zh %}{% endif %}
           {% assign image_info = site.data.publication_images[page.visual] %}
-          <figure class="publication-figure">
+          <figure class="publication-figure{% if image_info.height > image_info.width %} publication-figure--portrait{% endif %}">
             <a href="{{ image_info.large | relative_url }}" target="_blank" rel="noopener" aria-label="{% if page.lang == 'zh' %}查看大图{% else %}View full-size figure{% endif %}">
               {% include publication-image.html path=page.visual alt=visual_alt %}
             </a>
-            <figcaption>{% if page.lang == 'zh' %}研究概念示意，非实测地图或统计图。{% else %}Conceptual illustration, not an empirical map or statistical plot.{% endif %}</figcaption>
+            <figcaption>{% if page.lang == 'zh' %}{{ page.visual_caption_zh | default: '研究概念示意，非实测地图或统计图。' }}{% else %}{{ page.visual_caption_en | default: 'Conceptual illustration, not an empirical map or statistical plot.' }}{% endif %}</figcaption>
           </figure>
         {% endif %}
       </section>

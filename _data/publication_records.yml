@@ -147,10 +147,12 @@
   authors: "Wu, Y., Wei, Y. D., Liu, M., & García, I."
   doi: 10.1016/j.landurbplan.2024.105269
   visual_reviewed: true
-  visual: /images/publications/park-equity-lenses-reviewed.png
-  thumbnail: /images/publications/park-equity-lenses-reviewed.png
-  visual_alt_en: "Objective provision and resident experience jointly inform context-specific park-equity assessment. Western peri-urban communities have access similar to the urban center but greater basic-infrastructure needs; their park use was more vulnerable to perceived quality problems during COVID-19. Conceptual synthesis, not a map or causal model."
-  visual_alt_zh: "公平评价需要同时考虑客观供给与居民体验，并区分城区和近郊两种情境。西部近郊的客观可达性与中心城区相近，但对基础设施改善的需求更高，疫情期间的公园使用也更容易受质量观感问题影响。本图为概念归纳，不是地图，也不是因果模型。"
+  visual: /images/publications/park-access-needs-evidence-reviewed.png
+  thumbnail: /images/publications/park-access-needs-evidence-reviewed.png
+  visual_caption_zh: "中心城区与西部近郊的平均公园距离分别约为 322 米和 350 米，提出垃圾清理需求的受访者比例分别为 33.64% 和 50.38%。数据来自原文表 3、表 6；距离四舍五入至整数。该对照说明可达性评价需结合居民需求，不代表垃圾实测量或因果关系；路径图标仅为示意。"
+  visual_caption_en: "Urban-center and western peri-urban average park distances are approximately 322 m and 350 m; 33.64% and 50.38% of respondents, respectively, request litter cleanup. Source: Tables 3 and 6; distances rounded to whole meters. This selected comparison connects access assessment with resident needs, not measured litter or causality. Route symbols are schematic."
+  visual_alt_en: "Urban center versus western peri-urban communities: average park distance 322 versus 350 meters; respondents requesting litter cleanup 33.64% versus 50.38%. Similar access can coexist with different resident needs."
+  visual_alt_zh: "中心城区与西部近郊对照：平均公园距离约 322 米与 350 米，提出垃圾清理需求的受访者比例为 33.64% 与 50.38%。可达性相近，居民需求仍有差异。"
   thumbnail_alt_en: "Similar measured park access does not mean the same experienced equity."
   thumbnail_alt_zh: "客观可达性相近，并不意味着居民的服务体验相同。"
   wu_author_role: first
