@@ -268,7 +268,7 @@ role_labels = {
   admissions = YAML.safe_load_file("_data/group.yml").fetch("admissions").find { |cohort| cohort.fetch("year") == "2027" }
   check(page.at_css(".home-admissions").text.include?(admissions.fetch(language)), "Homepage admissions differ from the shared data")
   check(page.at_css(".home-phd-note").text.include?("2028"), "Missing expected PhD recruitment year")
-  %w[pi_statement pi_approach pi invitation conversation].each do |key|
+  %w[pi_statement pi_approach pi invitation].each do |key|
     check(page.css(".home-content p").any? { |p| p.text == homepage.fetch(language).fetch(key) }, "Missing homepage #{key}: #{language}")
   end
   research_page = html(root, "#{prefix}/research/")

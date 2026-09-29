@@ -1,5 +1,6 @@
 <ul class="group-news">
-{% for item in site.data.group.news %}
+{% assign news_limit = include.limit | default: site.data.group.news.size %}
+{% for item in site.data.group.news limit: news_limit %}
 <li><time>{{ item.date }}</time><a href="{{ prefix | append: item.url | relative_url }}">{{ item[title_key] }}</a></li>
 {% endfor %}
 </ul>

@@ -103,13 +103,11 @@
   <div class="home-bottom-grid home-section">
   <section class="home-section" aria-labelledby="home-news-title">
     <div class="home-section-heading"><h2 id="home-news-title">{% if page.lang == 'zh' %}学术动态{% else %}News{% endif %}</h2><a href="{{ language_prefix | append: '/news/' | relative_url }}">{% if page.lang == 'zh' %}全部动态{% else %}All news{% endif %}</a></div>
-    {% assign prefix = language_prefix %}{% include group-news.html %}
+    {% assign prefix = language_prefix %}{% include group-news.html limit=6 %}
   </section>
   <section class="home-section home-contact" aria-labelledby="home-contact-title">
-    <h2 id="home-contact-title">{% if page.lang == 'zh' %}学生与合作{% else %}Students and collaboration{% endif %}</h2>
+    <div class="home-section-heading"><h2 id="home-contact-title">{% if page.lang == 'zh' %}学生与合作{% else %}Students and collaboration{% endif %}</h2></div>
     <p>{{ home.invitation }}</p>
-    <p>{{ home.conversation }}</p>
-    <h3 class="home-admissions-title">{% if page.lang == 'zh' %}招生信息{% else %}Admissions{% endif %}</h3>
     {% assign admissions = site.data.group.admissions | where: 'year', '2027' | first %}
     <p class="home-admissions"><strong>{{ admissions.year }}{% if page.lang == 'zh' %} 级招生：{% else %} entry: {% endif %}</strong>{{ admissions[page.lang] }}</p>
     {% if page.lang == 'zh' %}

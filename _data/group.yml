@@ -149,6 +149,34 @@ admissions:
     zh: 预计开始招收博士研究生。
     en: PhD recruitment expected to begin.
 news:
+  - date: '2026.07'
+    title_zh: 担任第 20 届 IACP 年会分会场主持人（Chair）
+    title_en: Served as session chair at the 20th IACP Annual Conference
+    url: /talks/
+  - date: '2026.05'
+    title_zh: 共同召集城市与区域管理年会“数智化下的都市圈空间治理”分会场
+    title_en: Co-convened a session on metropolitan spatial governance in the digital age
+    url: /talks/
+  - date: '2026'
+    title_zh: 政治经济转型与大湾区城市形态研究发表于 Land Use Policy
+    title_en: Greater Bay Area urban form and politico-economic transition study in Land Use Policy
+    url: /publication/2026-urban-form-politico-economic-transition-greater-bay-area
+  - date: '2026'
+    title_zh: “城市蔓延”词条发表于 The Encyclopedia of Human Geography
+    title_en: Urban Sprawl chapter published in The Encyclopedia of Human Geography
+    url: /publication/2026-urban-sprawl
+  - date: '2025.10'
+    title_zh: 共同主持经济地理年会“新兴技术对经济地理学的挑战”分会场
+    title_en: Co-chaired the conference session on emerging technologies and economic geography
+    url: /talks/
+  - date: '2025.07'
+    title_zh: 共同主持城市地理年会“大数据驱动的城市空间转型”分会场
+    title_en: Co-chaired the conference session on big data-driven urban spatial transformation
+    url: /talks/
+  - date: '2025.04'
+    title_zh: 共同主持地理建模与 GIS 分析年会“城市感知与计算”分会场
+    title_en: Co-chaired the conference session on urban sensing and computing
+    url: /talks/
   - date: '2025'
     title_zh: 公园使用公平研究发表于 Landscape and Urban Planning
     title_en: Park-use equity study published in Landscape and Urban Planning
