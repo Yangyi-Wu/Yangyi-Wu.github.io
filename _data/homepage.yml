@@ -24,7 +24,7 @@ zh:
 en:
   hero_lines: ['Urban Transformation', 'and Spatial Inequality']
   lead: >-
-    We study the spatial processes of urban transformation: how economic activity relocates and clusters, how public resources are redistributed, and how opportunities for different places and social groups change as a result.
+    We study how urban transformation reshapes the geography of jobs, housing and public resources, and how these changes distribute opportunities across places and people.
   pi: Led by Associate Professor Yangyi Wu · School of Urban Design
   pi_statement: >-
     The UTSI Research Group studies urban transformation from a geospatial perspective, focusing on how industrial restructuring, migration and public investment reshape firm locations, housing markets and the use of public facilities, and redistribute opportunities across places and social groups.
@@ -58,8 +58,8 @@ highlights:
     figure_caption_en: Parks and respondents in Salt Lake City. Original Fig. 1, Wu et al. (2025).
     title_zh: 公园使用公平：可达性、需求与实际使用
     title_en: Park equity through access, needs and use
-    summary_zh: 盐湖城这项研究把公园的客观可达性与质量、居民感知，以及疫情期间的使用变化放进同一个框架比较。南部近郊居民对可达性的评价，比空间指标所显示的更乐观；西部社区则面临更明显的质量短板和基础设施缺口。研究以城区与近郊的差异为线索，说明公平评价不能只看设施分布，还要看居民的实际体验和改善需求。
-    summary_en: The Salt Lake City study connects objective park access and quality with residents' perceptions and changes in use during COVID-19. Southern peri-urban residents perceived access more positively than spatial measures suggested, while western communities faced greater quality deficits and basic amenity needs. This urban–peri-urban comparison links equity assessment to lived experience and specific priorities for improvement.
+    summary_zh: 公园分布并不能完整反映使用公平。盐湖城研究将空间指标与居民感知、疫情期间的使用变化相互对照，发现南部近郊的感知可达性高于客观评价，西部社区则面临更突出的质量短板。公平评价需要同时回应居民的实际体验与改善需求。
+    summary_en: Park distribution alone does not capture equity. In Salt Lake City, southern peri-urban residents perceived better access than spatial measures suggested, while western communities faced greater quality deficits. Comparing spatial indicators, residents' perceptions and pandemic-era use connects equity assessment to lived experience and improvement needs.
   - paper: /publication/2025-urban-amenities-knowledge-intensive-industry-locations
     figure: amenity-industry-framework
     figure_height: 925
@@ -67,5 +67,5 @@ highlights:
     figure_caption_en: A multi-scalar framework of amenities and industry location. Original Fig. 1, Teng et al. (2025).
     title_zh: 产业区位：都市区优势与地方营造
     title_en: Industry location across metropolitan and local scales
-    summary_zh: 这项武汉汽车产业研究给出了一个多尺度的解释：都市区的设施格局塑造各城市板块的竞争优势，地方设施的数量与多样性则影响具体区位的集聚吸引力，其中基础设施和公共服务的作用更为稳定。研究把都市区的资源条件与地方营造放在一起考虑，指出中心城区和外围地区的设施配置重点应当有所不同。
-    summary_en: "Research on Wuhan's automotive industry develops a multi-scalar explanation of location: metropolitan amenity patterns shape competitive advantage, while local availability and diversity support industrial clustering. Infrastructure and public services show more consistent effects. Connecting metropolitan resource access with placemaking points to different amenity priorities for central and peripheral areas."
+    summary_zh: 产业区位同时受都市区格局与地方条件影响。武汉汽车产业研究发现，都市区设施格局塑造板块优势，地方设施的数量与多样性影响集聚吸引力，基础设施和公共服务的作用更稳定。这意味着中心城区与外围地区需要不同的设施配置重点。
+    summary_en: Industry location reflects both metropolitan patterns and local conditions. Research on Wuhan's automotive industry finds that metropolitan amenities shape competitive advantage, while local availability and diversity support clustering. Infrastructure and public services have more consistent effects, pointing to different priorities for central and peripheral areas.

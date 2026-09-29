@@ -3,24 +3,18 @@
   <p><strong>{% if page.lang == 'zh' %}UTSI · 城市转型与空间不平等课题组{% else %}UTSI · Urban Transformation and Spatial Inequality{% endif %}</strong><br>{% if page.lang == 'zh' %}武汉大学城市设计学院{% else %}School of Urban Design, Wuhan University{% endif %}</p>
   <p><a href="mailto:yangyi.wu@whu.edu.cn">yangyi.wu@whu.edu.cn</a></p>
 </div>
+<div class="footer-utility">
 <nav class="footer-archive" aria-label="{% if page.lang == 'zh' %}动态归档{% else %}News archive{% endif %}"><a href="{% if page.lang == 'zh' %}{{ '/zh/news/' | relative_url }}{% else %}{{ '/news/' | relative_url }}{% endif %}">{% if page.lang == 'zh' %}全部动态{% else %}All news{% endif %}</a></nav>
-{% assign follow_label = site.data.ui-text[site.locale].follow_label %}
 {% assign feed_label = site.data.ui-text[site.locale].feed_label | default: "Feed" %}
-{% assign powered_by = site.data.ui-text[site.locale].powered_by | default: "Powered by" %}
 {% assign last_updated_label = "Site last updated" %}
 {% if page.lang == "zh" %}
-  {% assign follow_label = "关注：" %}
   {% assign feed_label = "订阅" %}
-  {% assign powered_by = "由" %}
   {% assign last_updated_label = "网站最后更新" %}
 {% endif %}
 
 {% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
 <div class="page__footer-follow">
   <ul class="social-icons">
-    {% if follow_label %}
-      <li><strong>{{ follow_label }}</strong></li>
-    {% endif %}
     {% if site.author.github %}
       <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     {% endif %}
@@ -34,8 +28,10 @@
   </ul>
 </div>
 {% endif %}
+</div>
 
 <div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ powered_by }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  {{ last_updated_label }} {{ "now" | date: '%Y-%m-%d' }}
+  <span>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</span>
+  <span>{{ last_updated_label }} <time datetime="{{ site.time | date: '%Y-%m-%d' }}">{{ site.time | date: '%Y-%m-%d' }}</time></span>
 </div>
+<p class="footer-colophon">{% if page.lang == 'zh' %}基于{% else %}Built with{% endif %} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> · <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a> · <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a></p>
