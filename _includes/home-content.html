@@ -26,12 +26,15 @@
   </header>
   <section class="home-section home-profile" aria-labelledby="home-pi-name">
     <div class="home-pi-profile" id="home-pi">
+      <div class="home-pi-person">
       <img src="{{ '/images/yangyi-wu-portrait.png' | relative_url }}?v=20260928-2" width="180" height="225" alt="{{ g.pi_name }}" loading="lazy" decoding="async">
       <div class="home-pi-identity">
         <p class="group-eyebrow">{% if page.lang == 'zh' %}课题组负责人 · PI{% else %}Principal investigator{% endif %}</p>
         <h2 id="home-pi-name">{{ g.pi_name }}</h2>
       </div>
       <p class="home-pi-role">{{ g.pi_role }}<br>{{ g.affiliation }}</p>
+      </div>
+      <div class="home-pi-description">
       <div class="home-pi-bio">
         <p>{{ home.pi_statement }}</p>
         <p>{{ home.pi_approach }}</p>
@@ -41,6 +44,7 @@
         <a href="{{ site.author.googlescholar }}">Google Scholar</a>
         <a href="mailto:yangyi.wu@whu.edu.cn">{% if page.lang == 'zh' %}邮件联系{% else %}Email{% endif %} <i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
       </nav>
+      </div>
     </div>
   </section>
   <section class="home-section home-research" aria-labelledby="home-research-title">
