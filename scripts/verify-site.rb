@@ -260,7 +260,10 @@ role_labels = {
   check(page.at_css(".home-pi a")["href"] == "#home-pi", "Hero identity must link to the PI profile")
   check(pi_profile.css(".home-pi-links a").map { |a| a["href"] } == ["#{prefix}/cv/", YAML.safe_load_file("_config.yml", aliases: true).fetch("author").fetch("googlescholar"), "mailto:yangyi.wu@whu.edu.cn"], "Incomplete homepage PI links")
   section_order = page.css(".home-content > section, .home-content > .home-bottom-grid").map { |section| section["class"].split.last }
-  check(section_order == %w[home-introduction home-research home-selected home-section], "Homepage must introduce the framework before its research highlights")
+  check(section_order == %w[home-introduction home-profile home-research home-selected home-section], "Homepage must separate the group introduction and PI profile before research")
+  check(page.css(".home-introduction > .home-section-label, .home-introduction > .home-introduction-copy").length == 2, "Introduction title and copy must be separate columns")
+  check(page.at_css(".home-profile #home-pi") && page.css(".home-introduction #home-pi").empty?, "PI profile must have its own section")
+  check(page.css(".home-values").length == 1 && page.at_css(".home-contact .home-values a")["href"] == "#{prefix}/join/#join-values-title", "Research values must sit with students and collaboration")
   check(page.at_css("#home-research-title").text == (language == "zh" ? "研究主线" : "Research framework"), "Wrong framework heading")
   check(page.at_css("#home-highlights-title").text == (language == "zh" ? "研究亮点" : "Research highlights"), "Wrong highlights heading")
   admissions = YAML.safe_load_file("_data/group.yml").fetch("admissions").find { |cohort| cohort.fetch("year") == "2027" }
