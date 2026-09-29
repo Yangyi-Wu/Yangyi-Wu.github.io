@@ -105,14 +105,19 @@
   joined: 2023
   left: 2025
   name_zh: Q 同学
-  name_en: Student Q
+  name_en: Z. Q.
+  photo: /images/members/q.jpg
   cohort_zh: 2021 级
   cohort_en: 2021 entry cohort
+  dest_zh: 2025 年保研至北京大学城市规划与设计学院（深圳研究生院）
+  dest_en: Admitted through recommendation in 2025 to the School of Urban Planning and Design, Peking University Shenzhen Graduate School
+  quote_zh: 本科阶段有幸加入伍杨屹老师课题组进行科研学习，伍老师治学严谨认真，在科研上悉心引导我们，每次交流都循循善诱，总能为我们带来新的思考启发。生活中老师更像可以无话不谈的朋友，严谨之外的那份洒脱与赤诚，让我看到了学术之外更广阔的人生风景。祝愿伍组未来越来越强大，科研顺利，好运常伴！
+  quote_en: I was fortunate to join Professor Wu's research group as an undergraduate. His rigorous approach and patient guidance helped us learn, and every conversation offered new ideas to think about. Outside research, he felt like a friend I could talk to about anything. His openness and sincerity showed me how much there is to life beyond academia. I wish the group continued growth, successful research and good fortune!
   details_zh:
-    - 2025 年保研至北京大学深圳研究生院。
+    - 研究兴趣：城市空间、建成环境与房价关系。
     - 论文发表于 Applied Spatial Analysis and Policy（2025）。
   details_en:
-    - Secured recommended admission to Peking University Shenzhen Graduate School in 2025.
+    - Research interests include urban space, the built environment and their relationship with housing prices.
     - Published a paper in Applied Spatial Analysis and Policy (2025).
   paper: /publication/2025-neighborhood-amenity-housing-prices-urban-china
   paper_label: Applied Spatial Analysis and Policy · 2025
