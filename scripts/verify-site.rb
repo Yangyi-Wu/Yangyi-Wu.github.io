@@ -343,6 +343,10 @@ end
 
 Dir.glob(root.join("**/*.html")).each do |file|
   page = Nokogiri::HTML(File.read(file, encoding: "UTF-8"))
+  page.css('link[rel="stylesheet"][href], script[src], img[src]').each do |asset|
+    url = asset['href'] || asset['src']
+    check(!url.match?(%r{\Ahttps?://(?:yangyi-wu\.github\.io|(?:www\.)?yangyi-wu\.com)/}i), "Site assets must load from the current origin: #{file}: #{url}")
+  end
   forbidden = ["考察", "纳入"]
   check(forbidden.none? { |word| page.css("#main").text.include?(word) }, "Disallowed Chinese wording: #{file}")
   page.css("script:not([src])").each do |script|
