@@ -146,7 +146,8 @@ a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible
 .page__content .home-section-heading > a:hover { text-decoration: underline; }
 .home-profile, .home-selected, .home-research, .home-content > .home-bottom-grid { position: relative; border-top: 0; }
 .home-selected::before { content: ""; position: absolute; top: 0; left: 40px; right: 40px; border-top: 1px solid var(--global-border-color); }
-.home-content > .home-profile { padding-top: 48px; padding-bottom: 48px; }
+.home-content > .home-profile { padding-top: 48px; padding-bottom: 24px; }
+.home-content > .home-profile + .home-research { padding-top: 24px; }
 .home-profile::before { display: none; }
 .home-highlights-grid { display: block; }
 .home-highlight { display: grid; grid-template-columns: minmax(0, 42fr) minmax(0, 58fr); gap: 48px; padding: 32px 0 44px; align-items: center; }
@@ -391,6 +392,8 @@ a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible
   .home-pi-profile .home-pi-role { grid-column: 2; }
   .home-profile::before, .home-selected::before, .home-research::before, .home-bottom-grid::before { left: 24px; right: 24px; }
   .home-content > .home-section { padding: 36px 24px; }
+  .home-content > .home-profile { padding-bottom: 16px; }
+  .home-content > .home-profile + .home-research { padding-top: 20px; }
   .home-section-heading h2, .home-research > h2 { font-size: 27px; }
   .page__content .home-section-heading > a { font-size: 13px; gap: 8px; }
   .home-highlight { grid-template-columns: 1fr; gap: 20px; padding: 26px 0 34px; }
