@@ -292,5 +292,19 @@
     "small": "/images/publications/watershed-integrated-agenda-2023-v2-reviewed-small.webp",
     "medium": "/images/publications/watershed-integrated-agenda-2023-v2-reviewed-medium.webp",
     "large": "/images/publications/watershed-integrated-agenda-2023-v2-reviewed-large.webp"
+  },
+  "/images/publications/city-region-provincial-scales-2023-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/city-region-provincial-scales-2023-v2-reviewed-small.webp",
+    "medium": "/images/publications/city-region-provincial-scales-2023-v2-reviewed-medium.webp",
+    "large": "/images/publications/city-region-provincial-scales-2023-v2-reviewed-large.webp"
+  },
+  "/images/publications/sprawl-amenity-legacy-2023-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/sprawl-amenity-legacy-2023-v2-reviewed-small.webp",
+    "medium": "/images/publications/sprawl-amenity-legacy-2023-v2-reviewed-medium.webp",
+    "large": "/images/publications/sprawl-amenity-legacy-2023-v2-reviewed-large.webp"
   }
 }

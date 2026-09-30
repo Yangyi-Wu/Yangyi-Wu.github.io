@@ -306,13 +306,61 @@
 2023-05-01-regional-development-inequality-city-regions-yangtze-river-delta:
   authors: "Qin, X., Wei, Y. D., Wu, Y., & Huang, X."
   doi: 10.1080/00167428.2021.2021780
+  summary_reviewed: true
+  summary_source: "Supplied publisher PDF including cover: abstract (p. 2), multiscale inequality and mobility analyses (pp. 12-22), discussion and cross-border/provincial-scale distinctions (pp. 22-24). Online 2022; website retains the final 2023 issue year."
+  contribution_zh: "城市区域整体的趋同，并不意味着省内核心—边缘差距已经消失。本文把区域不平等、空间极化与地方发展位次变化联系起来，追踪长三角 1990—2018 年的演变。研究表明，跨省城市区域有自身的空间结构，不能只靠各省指标的拼接理解；判断一体化是否缓解差距，必须同时辨别所处阶段和地理尺度。"
+  contribution_en: "Convergence across a city-region does not mean that provincial core-periphery divides have disappeared. Linking regional inequality, spatial polarization and changes in places' relative development positions, the study follows the Yangtze River Delta from 1990 to 2018. A cross-border city-region has its own spatial structure rather than simply combining provincial patterns. Assessing integration therefore requires attention to both development stage and geographical scale."
+  highlights_zh:
+    - "早期增长和向上位次变化较多集中于核心地区；后期外围地区增长加快、向上流动增加，整体不平等及极化程度有所下降。地方流动性指相对经济地位变化，不是人口迁移。"
+    - "外围次中心的发展与更广泛的一体化相伴，但新的集聚和省内核心—边缘结构仍然存在，区域整体指标无法完整代表这些差距。"
+    - "城市区域是跨行政边界的不平等分析尺度。多中心发展和外围支持属于研究的政策含义，不等于已经识别一体化政策的因果效应。"
+  highlights_en:
+    - "Early growth and upward place mobility are concentrated in core regions; later peripheral growth and upward movement accompany some decline in overall inequality and polarization. Place mobility concerns relative economic status, not population migration."
+    - "Peripheral subcenters emerge alongside wider integration, while new concentrations and provincial core-periphery structures persist. Aggregate city-region measures do not fully represent those divides."
+    - "City-regions form a cross-border scale for inequality analysis. Polycentric development and peripheral support are policy implications, not identified causal effects of integration policies."
+  visual_reviewed: true
+  visual: /images/publications/city-region-provincial-scales-2023-v2-reviewed.png
+  thumbnail: /images/publications/city-region-provincial-scales-2023-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Qin, Wei, Wu & Huang (2023 final issue; 2022 online), supplied PDF pp. 2, 22-24. Built-in image-generation tool; matched hypothetical cities and provincial compartments show analytical scales, not YRD geography, measured index values or policy effects."
+  visual_caption_zh: "依据 Qin et al. (2023) 的尺度比较：长三角整体的后期趋同，可以与省内核心—边缘差距并存。左右两图使用相同的假设点位，仅改变分析范围；方框与颜色不对应真实省界、城市位置或经济数值，也不表示各省的实际格局完全相同。下方概括发展阶段，不是统计曲线或政策因果链。"
+  visual_caption_en: "Conceptual synthesis of the scale comparison in Qin et al. (2023): later YRD-wide convergence can coexist with provincial core-periphery divides. The two views use matched hypothetical places with different analytical extents. Compartments and colors are not real provincial boundaries, city locations or economic values, nor evidence that all provinces share identical patterns. The chronology summarizes stages, not a statistical series or policy-causal chain."
+  visual_alt_zh: "以同一套假设点位对照跨省城市区域和省内分析：区域后期增长与向上流动，并不消除省内核心—边缘差距；下方区分核心主导增长、外围次中心形成与后期趋同。"
+  visual_alt_en: "Matched hypothetical places contrast a cross-border city-region extent with separate provincial frames. Later peripheral growth and mobility can coexist with persistent provincial divides; a short chronology distinguishes development stages."
+  thumbnail_alt_zh: "大区域趋同可以与省内分化并存。"
+  thumbnail_alt_en: "Regional convergence can coexist with provincial divides."
 2023-06-01-sprawl-development-urban-amenity-china:
   authors: "Zhang, D., Wu, Y., & Liu, M."
   doi: 10.3390/land12061180
+  summary_reviewed: true
+  summary_source: "Supplied publisher PDF: sprawl measure and noncausal model scope (p. 5), classification/Table 3 (p. 8), development-type interpretation (pp. 9-10), synthesis and limitations (pp. 13-14)."
+  contribution_zh: "紧凑发展的趋势，不等于城市生活已经获得充分的服务支撑。本文仍以建成区扩张和人口变化的关系衡量蔓延，同时引入设施变化，辨别武汉不同街道的发展类型。研究识别出一种重要情形：传统郊区正在趋向紧凑、人口继续增长，人均设施增长却低于全市平均。这把蔓延分析从形态判断推进到对历史遗产和服务匹配的诊断。"
+  contribution_en: "A compact-development trend does not guarantee adequate urban services. The study measures sprawl through built-up expansion relative to population change, then brings amenity change into the classification of Wuhan subdistricts. One important type combines compact growth, continued population growth and per-capita amenity growth below the city average. The contribution extends morphological diagnosis to inherited development patterns and the fit between growth and service provision."
+  highlights_zh:
+    - "结合 2015—2021 年人口、遥感与设施兴趣点（POI）资料，按蔓延趋势、设施变化和人口变化形成八类发展模式。设施不是蔓延指数的直接组成项。"
+    - "城市更新、郊区化与乡村变化呈现不同组合。部分传统郊区虽趋向紧凑，仍带有过去蔓延发展的服务短板；这不是所有郊区都缺设施的统一判断。"
+    - "空间过滤与地理加权回归用于描述关联和地方差异，并不识别因果效应。POI 及地表覆盖也不能直接代表服务质量、居民实际使用或详细用地功能。"
+  highlights_en:
+    - "Population, remote-sensing and POI data for 2015-2021 support eight development types combining sprawl trend, amenity change and demographic change. Amenities are not a direct component of the sprawl-index formula."
+    - "Renewal, suburbanization and rural change produce different combinations. Some traditional suburbs show compact trends while retaining service shortfalls associated with past sprawl, not a universal shortage in every suburb."
+    - "Spatial filtering and geographically weighted regression describe associations and local variation, not causation. POIs and land cover do not directly measure service quality, residents' use or detailed land-use functions."
+  visual_reviewed: true
+  visual: /images/publications/sprawl-amenity-legacy-2023-v2-reviewed.png
+  thumbnail: /images/publications/sprawl-amenity-legacy-2023-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Zhang, Wu & Liu (2023), supplied PDF pp. 5, 8-10, 13-14. Built-in image-generation tool; the planning sketch illustrates Type 2, not an observed Wuhan neighborhood, measured population or amenity map."
+  visual_caption_zh: "依据 Zhang, Wu & Liu (2023) 八类发展模式中的一种：紧凑趋势、持续人口增长与低于全市平均的人均设施增长可以并存。手绘街区只说明规划情境，不是武汉实测街道或设施分布。图中区分蔓延测度与服务诊断，避免把设施变化直接当作蔓延指数；引线不表示因果作用。"
+  visual_caption_en: "Conceptual synthesis of one of the eight development types in Zhang, Wu & Liu (2023): a compact trend, continued population growth and below-average per-capita amenity growth can coexist. The planning sketch is not a mapped Wuhan neighborhood or amenity distribution. The graphic distinguishes sprawl measurement from service diagnosis; leader lines do not imply causation."
+  visual_alt_zh: "假设传统郊区的规划手绘示意与三项诊断并列：紧凑发展趋势、人口持续增长、人均设施增长低于全市平均。下方区分建成区扩张相对人口变化的蔓延测度和设施服务诊断。"
+  visual_alt_en: "A hypothetical suburban planning sketch accompanies a compact-development trend, continued population growth and below-average per-capita amenity growth. The lower comparison separates sprawl measurement from service diagnosis."
+  thumbnail_alt_zh: "紧凑趋势并不保证服务充分。"
+  thumbnail_alt_en: "Compact trends do not guarantee adequate services."
 2023-07-01-tech-firm-births-agglomeration-economies:
   authors: "Xiong, N., Wei, Y. D., & Wu, Y."
   doi: 10.1016/j.cities.2023.104349
   visual_reviewed: true
+  summary_source: "Publisher abstract and highlights, https://www.sciencedirect.com/science/article/pii/S0264275123001610, checked 2026-10-01. The supplied source set contains no full PDF for this paper; no additional coefficient or causal-mechanism claim is made."
+  visual_source: "Existing built-in-engine conceptual matrix retained after comparison with the publisher abstract and highlights. Signs summarize reported model associations by type and scale, not magnitudes or causal effects."
+  visual_caption_zh: "Xiong, Wei & Wu (2023) 的类型—尺度对照：集聚外部性并非处处以相同方式发挥作用。图中的 detected effect 概括所检验模型中的关联，不表示因果效应或效应大小；未检出也不等于在所有情境中永远没有作用。这些关联不能直接解释为观测到的知识流动或因果机制。"
+  visual_caption_en: "Type-scale comparison in Xiong, Wei & Wu (2023): agglomeration externalities do not operate uniformly across space. Detected effect summarizes reported model associations, not causal effects or their magnitude; no detected effect is not proof of no relationship in every context. These associations cannot be read directly as observed knowledge flows or causal mechanisms."
   visual: /images/publications/agglomeration-scales-reviewed.png
   thumbnail: /images/publications/agglomeration-scales-reviewed.png
   visual_alt_en: "Specialization and related variety act at neighborhood and city-wide scales; unrelated variety shows no detected effect; urbanization economies act negatively only city-wide."
