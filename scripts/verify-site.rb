@@ -36,6 +36,7 @@ refined_figures = {
   "2025-05-01-urban-park-equity-wuhan" => "/images/publications/park-supply-demand-matching-2025-v2-reviewed.png",
   "2025-06-01-park-use-covid-peri-urban" => "/images/publications/park-equity-experience-v4-reviewed.png",
   "2025-07-01-multi-scale-geographic-environmental-monitoring" => "/images/publications/monitoring-cross-scale-agenda-2025-v2-reviewed.png",
+  "2025-08-01-urban-expansion-vegetation-growth" => "/images/publications/vegetation-dynamic-context-2025-v2-reviewed.png",
   "2025-09-01-neighborhood-amenity-housing-prices-urban-china" => "/images/publications/amenity-housing-framework-v2-reviewed.png",
   "2025-10-01-urban-amenities-knowledge-intensive-industry-locations" => "/images/publications/amenity-industry-nested-v2-reviewed.png"
 }

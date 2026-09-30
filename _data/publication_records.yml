@@ -599,6 +599,28 @@
 2025-08-01-urban-expansion-vegetation-growth:
   authors: "Liu, M., Luo, Q., Huang, R., Wu, Y., & Zhou, J."
   doi: 10.1016/j.landusepol.2025.107541
+  visual_reviewed: true
+  visual: /images/publications/vegetation-dynamic-context-2025-v2-reviewed.png
+  thumbnail: /images/publications/vegetation-dynamic-context-2025-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Liu et al. (2025), publisher abstract, highlights and introduction, DOI 10.1016/j.landusepol.2025.107541. Full PDF unavailable. Built-in image-generation tool; hypothetical land-cover grids do not reproduce measured areas, fitted surfaces or threshold values."
+  visual_caption_zh: "依据 Liu et al.（2025）出版方摘要与引言：直接影响是植被用地被不透水表面替代，间接影响则是剩余植被的增长增强或减弱。研究把扩张强度、植被指数与时间联系起来，识别两类动态阈值及其气候差异：湿润区的扩张强度阈值较高，半干旱区的植被指数阈值较低。格网与植物均为概念示意，不是实测地图、模型曲面或阈值数值；间接增绿不能被预设为足以抵消直接损失。"
+  visual_caption_en: "Synthesis of the publisher abstract and introduction in Liu et al. (2025): direct effects replace vegetation with impervious cover; indirect effects enhance or weaken remaining vegetation. The framework links expansion intensity, vegetation index and time. UEI thresholds are higher in humid zones; VI thresholds are lower in semi-arid zones. Grids and vegetation are illustrative, not measured maps, fitted surfaces or threshold values. Indirect enhancement cannot be assumed to offset direct loss."
+  visual_alt_en: "Direct land-cover conversion is distinguished from indirect enhancement or weakening of remaining vegetation. Time and climate contextualize expansion-intensity and vegetation-index thresholds. Hypothetical grids illustrate the distinction without depicting measured data."
+  visual_alt_zh: "区分土地覆盖替代造成的直接植被损失，以及剩余植被增长增强或减弱的间接响应；时间与气候情境对应扩张强度和植被指数两类阈值。格网为假想示意，不是实测数据。"
+  thumbnail_alt_en: "Vegetation response thresholds vary over time and climate context; direct loss and indirect responses are distinct."
+  thumbnail_alt_zh: "植被响应阈值随时间和气候情境变化，直接损失与间接响应需要区分。"
+  summary_reviewed: true
+  summary_source: "Publisher abstract, highlights and introduction at https://www.sciencedirect.com/science/article/abs/pii/S0264837725000754. No full-PDF fitted curves or numerical threshold reconstruction."
+  contribution_zh: "本文把城市扩张与植被增长的关系，从某一时点的城乡梯度对照扩展到扩张强度、植被指数与时间共同构成的动态框架。其关键贡献是识别间接影响的两类阈值及其气候依赖性，说明不同地区、不同阶段不能套用同一个判断标准。土地管理因此需要区分植被用地转换的直接损失，与剩余植被增长增强或减弱的间接响应，而不是把城市增绿等同于生态损失已经得到补偿。"
+  contribution_en: "The study extends a snapshot comparison along urban-rural gradients into a dynamic framework linking expansion intensity, vegetation index and time. Its contribution is identifying two indirect-response threshold dimensions and their climate dependence. Land management must distinguish direct vegetation loss through conversion from enhancement or weakening of remaining vegetation, rather than assuming indirect greening compensates for conversion losses."
+  highlights_zh:
+    - "研究分析19个城市群的2000-2021年变化，将扩张强度、植被指数与时间共同用于解释动态响应。"
+    - "两类阈值具有气候差异：湿润区的扩张强度阈值较高，半干旱区的植被指数阈值较低；并非一个阈值适用于所有地区。"
+    - "出版方摘要报告，人类活动对阈值变化的解释贡献高于气候变化。分区管理框架是政策建议，不是经过实验验证的恢复成效。"
+  highlights_en:
+    - "The analysis covers 19 urban agglomerations in 2000-2021, combining expansion intensity, vegetation index and time."
+    - "UEI thresholds are higher in humid zones and VI thresholds lower in semi-arid zones; a uniform threshold is inappropriate."
+    - "The publisher abstract reports greater contributions from human activities than climate change to threshold variation. Zoning strategies are recommendations, not experimentally validated restoration outcomes."
 2025-09-01-neighborhood-amenity-housing-prices-urban-china:
   authors: "Qu, Z., Wu, Y., & Liu, M."
   doi: 10.1007/s12061-025-09667-1
