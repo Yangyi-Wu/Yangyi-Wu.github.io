@@ -766,10 +766,12 @@
     - "Core-periphery differences depend on the morphological outcome. Under regionalization, responses differ in aggregation, shape complexity and connectivity, but not significantly in urban area, patch density or land-use diversity."
     - "The study covers 11 Greater Bay Area cities in 2010-2019, measuring six dimensions of urban form with 30 m land-cover data and using two-way fixed effects, moderation analysis and PLS-SEM. Investment mechanism analysis covers only the nine mainland cities because of statistical differences; these models do not establish policy-experiment causal identification."
   visual_reviewed: true
-  visual: /images/publications/urban-form-quadruple-process-reviewed.png
-  thumbnail: /images/publications/urban-form-quadruple-process-reviewed.png
-  visual_source: "Wang et al. (2026), supplied published PDF, p. 4, Fig. 1. Intact original figure; no reconstructed geography or altered relationships."
-  visual_alt_zh: "原文四重过程框架：区域化与分权化、市场化、全球化共同改变地方政府的权力与资本关系；区域协作促进权力的区域尺度重组并缓解城市间竞争。"
-  visual_alt_en: "Original quadruple-process framework connecting regionalization, decentralization, marketization and globalization through local government power, land markets and foreign investment."
-  visual_caption_zh: "四重过程的理论框架。原文图 1，Wang、Wu 与 Zhang（2026），第 4 页；图示表达理论关系，不是回归系数或实测地图。"
-  visual_caption_en: "The quadruple-process conceptual framework. Original Fig. 1, Wang, Wu and Zhang (2026), p. 4; arrows represent theoretical relationships, not regression coefficients or measured geography."
+  visual: /images/publications/urban-form-power-capital-2026-v2-reviewed.png
+  thumbnail: /images/publications/urban-form-power-capital-2026-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Wang, Wu & Zhang (2026), supplied published PDF Fig. 1 and sections 2.2-3.2, 6.1 and 7 (pp. 3-4, 11-13). Built-in image-generation tool used the original Fig. 1 as a relationship reference. Hypothetical patches do not reproduce GBA land cover; theoretical arrows are not coefficient estimates. Original homepage figure retained separately."
+  visual_alt_zh: "区域化与分权化、市场化、全球化相互构成，共同重组权力、资本及地方政府策略。大湾区协作与更高的斑块连通性、用地多样性和斑块密度相关；产业投资为调节作用，基础设施与房地产为中介路径。斑块是概念示意，不是实测地理。"
+  visual_alt_en: "Regionalization is mutually constitutive with the triple process, rescaling power, capital and local-government strategies. GBA cooperation is associated with higher patch connectivity, land-use diversity and patch density. Industry moderation differs from infrastructure and real estate mediation. Patches are hypothetical."
+  thumbnail_alt_zh: "区域化重组权力、资本与城市形态，连通与破碎化可以并存。"
+  thumbnail_alt_en: "Regionalization reshapes power, capital and urban form; connectivity and fragmentation can coexist."
+  visual_caption_zh: "依据 Wang、Wu 与 Zhang（2026）原文图1及讨论、结论整理的图片摘要：区域化与三重转型相互构成，通过权力与资本的尺度重组改变地方政府策略，但协作与竞争仍并存。大湾区证据中，更高的斑块连通性和用地多样性可以与更高斑块密度同时出现；产业投资的调节作用也不同于基础设施与房地产的中介路径。理论箭头不表示因果效应，斑块是概念示意，不是大湾区实测图。首页仍单独使用未改动的原文框架图。"
+  visual_caption_en: "Graphical synthesis of Fig. 1 and the discussion/conclusions in Wang, Wu & Zhang (2026). Regionalization and the triple process are mutually constitutive, rescaling power and capital and changing local-government strategies while cooperation and competition coexist. GBA evidence associates cooperation with higher patch connectivity, diversity and density; industry moderation differs from infrastructure and real estate mediation. Arrows are theoretical, not causal estimates. Patches are hypothetical, not measured GBA land cover. The homepage retains the unaltered original framework separately."
