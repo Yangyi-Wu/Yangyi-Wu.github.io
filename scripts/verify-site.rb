@@ -33,7 +33,9 @@ refined_figures = {
   "2023-12-01-vulnerable-populations-affordable-housing" => "/images/publications/housing-needs-policy-access-2023-v2-reviewed.png",
   "2024-01-01-urban-structure-housing-prices-amenity-nanjing" => "/images/publications/amenity-double-role-regimes-2024-v2-reviewed.png",
   "2024-02-01-producer-services-shanghai" => "/images/publications/producer-services-sector-context-2024-v2-reviewed.png",
+  "2025-05-01-urban-park-equity-wuhan" => "/images/publications/park-supply-demand-matching-2025-v2-reviewed.png",
   "2025-06-01-park-use-covid-peri-urban" => "/images/publications/park-equity-experience-v4-reviewed.png",
+  "2025-07-01-multi-scale-geographic-environmental-monitoring" => "/images/publications/monitoring-cross-scale-agenda-2025-v2-reviewed.png",
   "2025-09-01-neighborhood-amenity-housing-prices-urban-china" => "/images/publications/amenity-housing-framework-v2-reviewed.png",
   "2025-10-01-urban-amenities-knowledge-intensive-industry-locations" => "/images/publications/amenity-industry-nested-v2-reviewed.png"
 }

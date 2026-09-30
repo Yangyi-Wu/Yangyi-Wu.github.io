@@ -348,5 +348,19 @@
     "small": "/images/publications/producer-services-sector-context-2024-v2-reviewed-small.webp",
     "medium": "/images/publications/producer-services-sector-context-2024-v2-reviewed-medium.webp",
     "large": "/images/publications/producer-services-sector-context-2024-v2-reviewed-large.webp"
+  },
+  "/images/publications/park-supply-demand-matching-2025-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/park-supply-demand-matching-2025-v2-reviewed-small.webp",
+    "medium": "/images/publications/park-supply-demand-matching-2025-v2-reviewed-medium.webp",
+    "large": "/images/publications/park-supply-demand-matching-2025-v2-reviewed-large.webp"
+  },
+  "/images/publications/monitoring-cross-scale-agenda-2025-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/monitoring-cross-scale-agenda-2025-v2-reviewed-small.webp",
+    "medium": "/images/publications/monitoring-cross-scale-agenda-2025-v2-reviewed-medium.webp",
+    "large": "/images/publications/monitoring-cross-scale-agenda-2025-v2-reviewed-large.webp"
   }
 }

@@ -525,21 +525,24 @@
   authors: "Yang, Y., Wu, Y., & Jiao, H."
   doi: 10.3390/su17052255
   visual_reviewed: true
-  visual: /images/publications/park-matching-reviewed.png
-  thumbnail: /images/publications/park-matching-reviewed.png
-  visual_alt_en: "Quality-adjusted park services are compared with age-sensitive demand; 28.25 percent of Wuhan communities have unmet park demand."
-  visual_alt_zh: "把考虑质量的公园服务供给与不同年龄群体的需求匹配起来；武汉案例中，28.25% 的社区存在需求缺口。"
+  visual: /images/publications/park-supply-demand-matching-2025-v2-reviewed.png
+  thumbnail: /images/publications/park-supply-demand-matching-2025-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Yang, Wu & Jiao (2025), publisher article sections 2.3 and 4-6, DOI 10.3390/su17052255. Built-in image-generation tool; plans are hypothetical, and 28.25% is a supply-demand classification of communities, not a survey response rate or intervention effect."
+  visual_caption_zh: "依据 Yang、Wu 与 Jiao（2025）的供需匹配框架：公园服务供给结合容量、质量与可达性，需求结合人口年龄结构与开发情境。武汉案例中，28.25% 的社区按相对供需等级被识别为需求未满足，并非这一比例的受访居民直接报告了不满。高供给的中心城区也可能面临更高需求；不同地区需采用有针对性的规划回应。公园与街区均为假想示意，不是武汉实测地图，也不是经过验证的干预效果。"
+  visual_caption_en: "Conceptual synthesis of Yang, Wu & Jiao (2025): service supply combines capacity, quality and accessibility; demand accounts for population age composition and development context. In Wuhan, 28.25% of communities are classified as having unmet demand by relative supply-demand grades, not the share of survey respondents reporting dissatisfaction. High central-area provision can still fall short of demand. Plans are hypothetical, not measured Wuhan geography or tested intervention effects."
+  visual_alt_en: "Park equity as matching quality-adjusted supply to age-sensitive demand. High central-area supply can still fall short of demand; underserved suburbs need context-specific responses. The Wuhan model classifies 28.25 percent of communities as having unmet demand. All plans are hypothetical."
+  visual_alt_zh: "公园公平从资源数量转向质量调整后的服务供给与年龄敏感需求的匹配：中心城区高供给仍可能不够，服务不足的郊区需要因地制宜回应。武汉模型将28.25%的社区归为需求未满足，图中规划图均为假想示意。"
   thumbnail_alt_en: "Park equity depends on matching services to differentiated needs."
   thumbnail_alt_zh: "公园公平取决于服务供给是否匹配不同人群的需求。"
   summary_reviewed: true
   contribution_en: "Park provision is not the same as park equity. By combining quality-adjusted service capacity and accessibility with age-sensitive demand, this study evaluates whether services match residents' needs. This explains why a well-supplied central area can still face a serious shortfall."
   contribution_zh: "公园资源多，并不等于公园服务公平。本文按公园质量、服务能力和可达性衡量供给，同时考虑不同年龄群体的使用需求，把公平的判断从资源数量转向服务与需求的匹配。这解释了为什么供给充足的中心城区，仍可能存在明显的需求缺口。"
   highlights_en:
-    - "In the Wuhan case, 28.25% of communities have unmet park demand."
+    - "In the Wuhan case, 28.25% of communities are classified as having unmet park demand by relative supply-demand grades."
     - "Central areas combine high supply with high demand; an apparently favorable resource distribution can conceal a service deficit."
     - "The assessment supports different responses: upgrading existing parks in constrained central areas and addressing underserved suburban locations."
   highlights_zh:
-    - "武汉案例中，28.25% 的社区公园需求没有得到满足。"
+    - "武汉案例中，28.25% 的社区按相对供需等级被识别为公园需求未满足。"
     - "中心城区同时存在较高的供给和较高的需求，只看资源分布会掩盖服务不足。"
     - "评估结果指向不同的改进方向：中心城区应侧重提升现有公园的服务能力，服务不足的郊区则应补充供给。"
 2025-06-01-park-use-covid-peri-urban:
@@ -571,6 +574,28 @@
 2025-07-01-multi-scale-geographic-environmental-monitoring:
   authors: "Wang, J., Wu, Y., Zhang, Y., Lizaga, I., & Zhang, Z."
   doi: 10.3390/land14051059
+  visual_reviewed: true
+  visual: /images/publications/monitoring-cross-scale-agenda-2025-v2-reviewed.png
+  thumbnail: /images/publications/monitoring-cross-scale-agenda-2025-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Wang et al. (2025), Land editorial, sections 2 and 3.1-3.5, DOI 10.3390/land14051059. Built-in image-generation tool; the article synthesizes 44 topic papers and proposes future directions, not a validated end-to-end monitoring system."
+  visual_caption_zh: "依据 Wang et al.（2025）社论提出的研究议程：多源观测要转化为跨尺度理解，需要处理尺度兼容性、动态耦合与不确定性。下方五项对应原文的理论、协同监测、决策支持、验证与跨学科开放研究方向。景观及尺度范围均为概念示意，不是实测地图；本文综合44篇专题论文，没有验证图中的整套系统或报告其性能。"
+  visual_caption_en: "Research-agenda synthesis of the Wang et al. (2025) editorial: cross-scale understanding requires compatible scales, dynamic coupled models and traceable uncertainty. The five priorities correspond to theory, collaborative monitoring, decision support, validation and open interdisciplinary research. Landscape and extents are schematic. The editorial synthesizes 44 topic papers; it does not validate this entire system or report performance results."
+  visual_alt_en: "A hypothetical landscape with nested local, regional and broader extents, connecting space-air-ground observations with proposed cross-scale integration. Five future research priorities are shown; this is an editorial agenda, not a validated system."
+  visual_alt_zh: "假想景观上相互嵌套的地方、区域与更广范围，将空天地观测与拟议的跨尺度整合联系起来，下方列出五项未来研究重点。这是社论研究议程，不是已验证的系统。"
+  thumbnail_alt_en: "Multi-source observations need compatible scales, dynamic models and uncertainty assessment to support cross-scale understanding."
+  thumbnail_alt_zh: "多源观测需要尺度兼容、动态模型与不确定性评估，才能支持跨尺度理解。"
+  summary_reviewed: true
+  summary_source: "Publisher editorial, sections 1-3.5, https://www.mdpi.com/2073-445X/14/5/1059. No new validation dataset or monitoring performance experiment."
+  contribution_zh: "这篇社论综合44篇专题论文，把多尺度环境监测的关键问题从观测数据的增加，推进到不同尺度的过程如何相互联系。文章强调，多源数据融合需要同时处理尺度兼容性、动态耦合和误差传播，不能把更高分辨率等同于对地理环境的更完整理解。这是对未来理论、技术与应用研究的议程梳理，而非已经验证的监测体系。"
+  contribution_en: "This editorial synthesizes 44 topic papers and shifts attention from acquiring more observations to understanding how environmental processes interact across scales. Multi-source integration requires scale compatibility, dynamic coupling and explicit treatment of error propagation; finer resolution alone does not ensure more complete geographic understanding. The contribution is a research agenda for theory, technology and applications, not a validated monitoring system."
+  highlights_zh:
+    - "提出动态跨尺度模型与统一分类框架，以连接较大范围的格局与地方过程，回应自然要素和人类活动的尺度不兼容问题。"
+    - "空天地协同观测和尺度转换需要同步处理校准、误差来源与不确定性，不能只追求更密集的数据或更细的像元。"
+    - "五项未来重点涵盖理论建模、协同感知、决策支持、不确定性与验证、跨学科开放研究；相关性能和治理成效仍需具体研究检验。"
+  highlights_en:
+    - "Dynamic cross-scale models and compatible classification frameworks are proposed to connect broad patterns with local processes and align natural and human dimensions."
+    - "Space-air-ground sensing and scale conversion require calibration, error attribution and uncertainty assessment alongside denser observations or finer pixels."
+    - "Five future priorities cover theory, collaborative sensing, decision support, uncertainty and validation, and open interdisciplinary research; performance and governance benefits require empirical testing."
 2025-08-01-urban-expansion-vegetation-growth:
   authors: "Liu, M., Luo, Q., Huang, R., Wu, Y., & Zhou, J."
   doi: 10.1016/j.landusepol.2025.107541
