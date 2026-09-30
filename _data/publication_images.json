@@ -208,5 +208,26 @@
     "small": "/images/publications/polycentric-form-function-watercolor-reviewed-small.webp",
     "medium": "/images/publications/polycentric-form-function-watercolor-reviewed-medium.webp",
     "large": "/images/publications/polycentric-form-function-watercolor-reviewed-large.webp"
+  },
+  "/images/publications/rental-employment-access-2019-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/rental-employment-access-2019-v2-reviewed-small.webp",
+    "medium": "/images/publications/rental-employment-access-2019-v2-reviewed-medium.webp",
+    "large": "/images/publications/rental-employment-access-2019-v2-reviewed-large.webp"
+  },
+  "/images/publications/housing-urban-context-2019-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/housing-urban-context-2019-v2-reviewed-small.webp",
+    "medium": "/images/publications/housing-urban-context-2019-v2-reviewed-medium.webp",
+    "large": "/images/publications/housing-urban-context-2019-v2-reviewed-large.webp"
+  },
+  "/images/publications/amenity-employment-sectors-2019-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-employment-sectors-2019-v2-reviewed-small.webp",
+    "medium": "/images/publications/amenity-employment-sectors-2019-v2-reviewed-medium.webp",
+    "large": "/images/publications/amenity-employment-sectors-2019-v2-reviewed-large.webp"
   }
 }

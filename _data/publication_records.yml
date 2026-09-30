@@ -3,12 +3,78 @@
 2019-01-01-private-rental-housing-market-shanghai-open-data:
   authors: "Li, H., Wei, Y. D., & Wu, Y."
   doi: 10.1016/j.landusepol.2019.04.004
+  summary_reviewed: true
+  summary_source: "Publisher PDF: abstract (p. 1), data and multi-level variables (pp. 4-5), rental/sale comparison (p. 11), conclusions (p. 12)."
+  contribution_zh: "租赁市场不能被看作购房市场的简单延伸。本文把就业机会、工资水平和流动人口，与邻里交通及服务设施放在同一框架中，解释上海不同城区的租金关联为何不同。研究将租房可负担性与就业可达性联系起来：租金较低的居住区，并不一定能让居民方便地获得高薪就业机会。"
+  contribution_en: "The rental market cannot be treated as a simple extension of the sales market. The study brings jobs, salaries and migrant population together with neighborhood transport and service amenities to explain spatially varying rent associations in Shanghai. It connects rental affordability with employment accessibility: less expensive places to live do not necessarily offer convenient access to high-paying jobs."
+  highlights_zh:
+    - "整合 33,428 条住宅租赁挂牌记录、劳动力市场与设施数据，区分区域、邻里和住宅属性三个层面的条件。"
+    - "中心区的高薪就业与高租金相伴；郊区租金相对可负担，交通和购物设施可达性则与租金联系更紧。"
+    - "流动人口与租金的关联随圈层变化，不能用统一的方向解释。文中关于租金、通勤负担和制度限制的讨论，不等于对个体通勤路径或因果效应的测量。"
+  highlights_en:
+    - "The analysis integrates 33,428 rental listings with labor-market and amenity data, distinguishing regional, neighborhood and dwelling-level conditions."
+    - "High-paying jobs and high rents are concentrated in central areas; suburban rents are relatively affordable, with transport and shopping access particularly relevant to rental values."
+    - "Migrant-population associations vary across urban zones. The discussion of rent, commuting burdens and institutional restrictions does not constitute measured individual commuting trajectories or causal effects."
+  visual_reviewed: true
+  visual: /images/publications/rental-employment-access-2019-v2-reviewed.png
+  thumbnail: /images/publications/rental-employment-access-2019-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Li, Wei & Wu (2019), publisher PDF pp. 1, 4-5, 11-12. Built-in image-generation tool; urban layouts and transit connections are illustrative, not observed Shanghai geography or flows."
+  visual_caption_zh: "依据 Li, Wei & Wu (2019) 的概念归纳：中心区集中了高薪就业和高租金，郊区租金相对可负担，但交通与服务可达性仍与租金密切相关。租房可负担性需要与就业可达性一起理解。建筑与交通连接为示意，不是上海实测地图、通勤流量或因果效应。"
+  visual_caption_en: "Conceptual synthesis of Li, Wei & Wu (2019): central areas concentrate high-paying jobs and high rents; suburban rents are relatively affordable, while transport and service access remain important to rental values. Rental affordability should be considered alongside employment accessibility. Buildings and transit links are schematic, not measured Shanghai geography, commuting flows or causal effects."
+  visual_alt_zh: "中心区与郊区的租赁市场概念对照：中心区高薪就业与高租金相伴，郊区租金相对可负担但交通可达性重要；就业、工资、流动人口、交通和服务设施共同构成分析框架。"
+  visual_alt_en: "Conceptual comparison of central and suburban rental contexts: high-paying jobs and high rents coincide in central areas, while suburbs offer relatively affordable rents and transport access matters. Jobs, salaries, migrant population, transit and service amenities form the analytical framework."
+  thumbnail_alt_zh: "租房可负担性需要与就业可达性一起理解。"
+  thumbnail_alt_en: "Rental affordability must be understood alongside employment accessibility."
 2019-02-01-housing-prices-shanghai-open-data:
   authors: "Li, H., Wei, Y. D., Wu, Y., & Tian, G."
   doi: 10.1016/j.cities.2018.11.016
+  summary_reviewed: true
+  summary_source: "Publisher PDF: abstract (p. 1), concentric-ring comparisons (pp. 11-12), Tables 6-7 and conclusions (p. 13)."
+  contribution_zh: "住宅属性、交通可达性和服务设施与房价的关系，需要放在都市空间结构中理解。本文把这些条件组合进同一分析框架，并比较上海内城、扩展内城与郊区，说明同一种区位属性在不同圈层中的关联并不相同。研究由此把住房价格分析从一套全市平均关系，推进到对空间情境差异的解释。"
+  contribution_en: "Associations between housing prices, dwelling attributes, transport access and service amenities need to be understood within metropolitan spatial structure. An integrated framework compares Shanghai's inner city, expanded inner city and suburbs, showing that the same locational attributes have different associations across urban zones. It moves the analysis beyond a single city-wide average relationship toward an explanation of spatial context."
+  highlights_zh:
+    - "利用 47,790 条住宅挂牌记录与开放设施数据，结合空间回归和圈层比较，分析上海住房市场的单中心特征。"
+    - "内城的公共与私人服务设施关联突出，扩展内城兼具地铁与服务设施的关联，郊区则更凸显交通可达性的重要性。"
+    - "这些区别是相对关联，并不意味着郊区设施不重要或内城交通无关；挂牌数据与回归结果也不能直接证明因果效应。"
+  highlights_en:
+    - "The study combines 47,790 housing listings with open amenity data, spatial regression and urban-zone comparisons to examine Shanghai's monocentric housing market."
+    - "Public and private service amenities feature prominently in the inner city; metro access and service amenities matter in the expanded inner city; transport accessibility is especially important in the suburbs."
+    - "These are relative associations, not evidence that suburban amenities or inner-city transport are irrelevant. Listing data and regression results do not establish causal effects."
+  visual_reviewed: true
+  visual: /images/publications/housing-urban-context-2019-v2-reviewed.png
+  thumbnail: /images/publications/housing-urban-context-2019-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Li, Wei, Wu & Tian (2019), publisher PDF pp. 1, 11-13, Tables 6-7. Built-in image-generation tool; rings represent analytical zones schematically, not Shanghai boundaries or a measured price surface."
+  visual_caption_zh: "依据 Li, Wei, Wu & Tian (2019) 的圈层比较：住宅属性、交通可达性与服务设施的房价关联随城市空间情境而变。内城、扩展内城和郊区的侧重点不同，但不是排他的偏好分类。圆环及建筑为概念示意，不是上海实际边界或房价曲面；图中连线不表示因果效应。"
+  visual_caption_en: "Conceptual synthesis of the urban-zone comparisons in Li, Wei, Wu & Tian (2019): housing-price associations of dwelling attributes, transport access and service amenities vary with spatial context. The emphasis differs across the inner city, expanded inner city and suburbs without defining exclusive preferences. Rings and buildings are schematic, not Shanghai boundaries or an estimated price surface; connectors do not imply causality."
+  visual_alt_zh: "用三个示意圆环对照内城、扩展内城和郊区：内城突出公共与私人服务设施，扩展内城突出地铁和服务设施，郊区突出公共交通可达性。同一种属性的房价关联并非处处相同。"
+  visual_alt_en: "Three schematic zones contrast the inner city's public and private service amenities, the expanded inner city's metro and service amenities, and suburban transport access. Housing-value associations of the same attributes differ by urban context."
+  thumbnail_alt_zh: "城市空间结构影响区位属性与房价之间的关联。"
+  thumbnail_alt_en: "Urban spatial structure conditions housing-price associations."
 2019-03-01-urban-amenity-human-capital-employment-distribution-shanghai:
   authors: "Li, H., Wei, Y. D., & Wu, Y."
   doi: 10.1016/j.habitatint.2019.102025
+  summary_reviewed: true
+  summary_source: "Publisher PDF: abstract (p. 1), amenity measures (pp. 4-5), sectoral results and Tables 5-6 (pp. 9-10), theoretical interpretation and limitations (pp. 10-11)."
+  contribution_zh: "城市舒适性与人力资本理论并非适用于所有产业的统一区位解释。本文利用大众点评评论热度度量私人服务设施，在上海都市区内部比较生产性服务业与制造业就业。研究表明，理论的解释力取决于设施类别和产业类型，既拓展了城市内部的检验尺度，也说明了不能只靠设施吸引力解释就业集聚的边界。"
+  contribution_en: "Amenity-oriented and human-capital theories do not provide a uniform locational explanation for every industry. Using Dianping comment counts to measure private-service popularity, the study compares producer-service and manufacturing employment within Shanghai. It shows that explanatory relevance depends on amenity category and sector, extending the intra-urban test while identifying limits to an amenity-only account of employment agglomeration."
+  highlights_zh:
+    - "以街道尺度的就业数据与私人服务设施评论热度进行空间回归；评论热度是流行程度的代理，并非直接测量居民满意度。"
+    - "生产性服务业就业与私人服务设施的联系更紧，制造业就业则更关联交通基础设施和当地人口规模；两类产业并非只对应一种条件。"
+    - "人力资本理论只获得部分支持。研究没有直接观测人才作为中介的作用，也未确定设施与就业的因果先后。"
+  highlights_en:
+    - "Spatial regressions relate subdistrict employment to private-service comment counts. Review popularity is a proxy, not a direct measure of residents' satisfaction."
+    - "Producer-service employment is relatively more closely associated with private-service amenities; manufacturing is more related to transport infrastructure and local population. Neither sector has an exclusive set of determinants."
+    - "Human-capital theory receives partial support. The study does not directly observe skilled workers as a mediator or establish the causal direction between amenities and jobs."
+  visual_reviewed: true
+  visual: /images/publications/amenity-employment-sectors-2019-v2-reviewed.png
+  thumbnail: /images/publications/amenity-employment-sectors-2019-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Li, Wei & Wu (2019), publisher PDF pp. 1, 4-5, 9-11 and Tables 5-6. Built-in image-generation tool; hypothetical layouts and symbol sizes are not mapped employment, measured popularity or effect estimates."
+  visual_caption_zh: "依据 Li, Wei & Wu (2019) 的产业对照：生产性服务业与私人服务设施热度的联系较紧，制造业则更关联基础设施和人口规模，说明舒适性及人力资本理论的适用性有产业差异。街区、点位和符号大小均为示意，不代表实测就业、评论数量或效应强弱；两类产业的条件并非互斥，设施与就业的因果方向也未确定。"
+  visual_caption_en: "Conceptual synthesis of the sectoral comparison in Li, Wei & Wu (2019): producer services are relatively more closely associated with private-service popularity, while manufacturing is more related to infrastructure and population. Amenity and human-capital explanations are sector-dependent. Layouts, locations and symbol sizes are illustrative, not measured jobs, comment counts or effects. Conditions are not exclusive to one sector, and causal direction remains unresolved."
+  visual_alt_zh: "生产性服务业与制造业的概念对照：前者较紧地联系私人服务设施热度，后者更关联基础设施和人口规模。人力资本理论提供部分解释，设施与就业的因果方向未确定。"
+  visual_alt_en: "Conceptual comparison of producer services and manufacturing: private-service popularity is relatively more relevant to the former, infrastructure and population to the latter. Human-capital theory offers a partial explanation, with no causal direction established."
+  thumbnail_alt_zh: "舒适性理论的解释力随产业而变。"
+  thumbnail_alt_en: "The explanatory relevance of amenity theory varies by sector."
 2019-04-01-innovation-network-capabilities-sustainable-development-regional-economies:
   authors: "Li, D., Wei, Y. D., Miao, C., Wu, Y., & Xiao, W."
   doi: 10.3390/su11174770
