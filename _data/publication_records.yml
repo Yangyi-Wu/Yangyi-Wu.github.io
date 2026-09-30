@@ -156,20 +156,68 @@
 2020-04-01-regional-inequality-spatial-polarization-place-mobility-jiangsu:
   authors: "Wei, Y. D., Wu, Y., Liao, F. H., & Zhang, L."
   doi: 10.1016/j.apgeog.2020.102296
+  summary_reviewed: true
+  summary_source: "Supplied publisher PDF: abstract and diagnostic distinctions (pp. 1-2), multiscale and spatial analyses, place-mobility and SOM results, synthesis and conclusions (pp. 13-15; Figs. 13-14)."
+  contribution_zh: "缩小地区间的经济差距，与改变核心—边缘空间格局，并不是同一回事。本文把不平等程度、空间极化与地方在发展等级中的流动分开分析，说明常规差距指标下降仍可能伴随高低发展地区的持续集群和较弱的向上流动。研究由此把区域发展的判断，从单一的收敛或分化，推进到对差距、空间结构与地方机会的多尺度解释。"
+  contribution_en: "A narrower economic gap is not the same as a changed spatial core-periphery structure. Separating inequality, polarization and mobility in places' development positions, the study shows how declining conventional inequality can coexist with persistent clusters of high and low development and limited upward mobility. It moves regional-development assessment beyond a single convergence-or-divergence verdict toward a multiscale account of gaps, spatial structure and place opportunities."
+  highlights_zh:
+    - "比较江苏 1978—2014 年的发展轨迹，并结合差距分解、空间自相关、地方流动与自组织映射，区分不同尺度和不同空间划分的变化。"
+    - "2004 年后常规不平等指标下降，但苏南及苏中南部的高—高集群、苏北的低—低集群仍较稳定；极化趋势也随指标和地区划分而异。"
+    - "部分地方的发展地位有所变化，整体核心—边缘等级却没有因此被打破。这里的地方流动指地区发展地位的变化，不是人口迁移，也不意味着所有落后地区都完全无法向上流动。"
+  highlights_en:
+    - "The study compares Jiangsu's development from 1978 to 2014 using inequality decomposition, spatial autocorrelation, place-mobility analyses and self-organizing maps across scales and geographical divisions."
+    - "Conventional inequality declines after 2004, while high-high clusters in southern Jiangsu and southern central Jiangsu and low-low clusters in northern Jiangsu remain persistent. Polarization trends depend on the measure and regional division."
+    - "Some places change development position without overturning the overall core-periphery hierarchy. Place mobility means changes in regions' development status, not population migration, and does not imply that every poorer region has zero upward mobility."
+  visual_reviewed: true
+  visual: /images/publications/regional-gap-structure-2020-v2-reviewed.png
+  thumbnail: /images/publications/regional-gap-structure-2020-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Wei, Wu, Liao & Zhang (2020), supplied PDF pp. 1-2, 13-15 and Figs. 13-14. Built-in image-generation tool; symbolic gap spacing, hypothetical neighboring tiles and illustrative ordering are not empirical index series, Jiangsu boundaries or observed county ranks."
+  visual_caption_zh: "依据 Wei et al. (2020) 区分差距、空间结构与地方发展地位流动：常规不平等下降，并不等于核心—边缘格局消失。不同极化指标和地区划分的走势也不相同。色块间距、相邻拼块与排列连线仅解释概念，不是江苏实测地图、指数曲线或县域排名。"
+  visual_caption_en: "Conceptual synthesis of Wei et al. (2020): a decline in conventional inequality does not erase core-periphery structure. Polarization trends also differ by measure and geographical division. Symbolic spacing, neighboring tiles and ordering traces explain the concepts; they are not measured Jiangsu geography, index series or county rankings."
+  visual_alt_zh: "三个概念对照：差距可以缩小，高—高与低—低集群仍持续，部分地方地位变化也未打破整体核心—边缘格局；所有色块和连线均为示意。"
+  visual_alt_en: "Three conceptual views show a narrowing gap, persistent high-high and low-low spatial clusters, and some place mobility without overturning the core-periphery hierarchy. All tiles, spacing and ordering traces are schematic."
+  thumbnail_alt_zh: "指标上的差距收敛不等于空间发展机会的收敛。"
+  thumbnail_alt_en: "Convergence in an index is not convergence in spatial opportunity."
 2021-01-01-trip-generation-trip-chains-polycentric-development-utah:
   authors: "Wei, Y. D., Xiao, W., & Wu, Y."
   doi: 10.1016/j.apgeog.2021.102488
+  summary_reviewed: true
+  summary_source: "Supplied publisher PDF: abstract (p. 1), employment-center and household-survey methods (pp. 4-6), observed center connections (Fig. 4, p. 8), behavioral models and conclusions (pp. 9-10)."
+  contribution_zh: "拥有多个就业中心，并不意味着都市区的功能联系已经均衡。本文把就业分布的形态证据与居民出行链的功能证据相互对照，发现 Wasatch Front 虽有多个中心，日常活动联系仍以盐湖城市中心为主。研究将多中心判断从中心的数量与密度，推进到中心之间的联系及其承载日常活动的能力，而不是据此简单判定多中心规划失败。"
+  contribution_en: "Multiple employment centers do not necessarily imply balanced metropolitan functions. Comparing employment-based morphology with household trip-chain evidence, the study finds that the Wasatch Front has several centers but daily activity links remain dominated by downtown Salt Lake City. It moves the assessment of polycentricity beyond center counts and densities toward their connections and role in everyday activity, without treating limited functional balance as proof that polycentric planning has failed."
+  highlights_zh:
+    - "结合就业数据识别中心，并利用 2012 年家庭出行调查比较中心内外的出行链、出行方式与中心间联系。"
+    - "盐湖城市中心是主要功能核心，其他中心的联系较弱。城市中心更多是较长出行链中的停留点，完全在中心内部生成的链较少。"
+    - "中心内部步行相对更常见，但区域整体仍以汽车出行为主。就业、设施和公共交通是政策讨论的重要条件，调查与模型关联并不直接证明干预的因果效果。"
+  highlights_en:
+    - "Employment data identify centers, while the 2012 household travel survey supports comparisons of trip chains, modes and connections within and outside those centers."
+    - "Downtown Salt Lake City is the main functional core, with weaker links among other centers. Centers are more often stops in longer activity chains than generators of chains contained entirely within them."
+    - "Walking is relatively more common within centers, but automobiles dominate region-wide. Jobs, amenities and transit inform the policy discussion; survey and model associations do not establish causal intervention effects."
+  visual_reviewed: true
+  visual: /images/publications/polycentricity-trip-chains-2021-v2-reviewed.png
+  thumbnail: /images/publications/polycentricity-trip-chains-2021-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Wei, Xiao & Wu (2021), supplied PDF pp. 1, 4-6, 8-10 and Fig. 4. Built-in image-generation tool; nodes and links are an explanatory topology, not observed center locations, counts, trip volumes or household trajectories. No inconsistent sample or center totals are reproduced."
+  visual_caption_zh: "依据 Wei, Xiao & Wu (2021) 对照就业形态与日常功能联系：多个中心并不自动形成均衡的功能网络，盐湖城市中心仍占主导。节点、连线和活动序列均为概念示意，不是实测地理位置、中心数量、出行量或个体轨迹；功能多中心程度较低也不等于规划失败。"
+  visual_caption_en: "Conceptual synthesis of Wei, Xiao & Wu (2021): several employment centers do not automatically form a functionally balanced network, and downtown Salt Lake City remains dominant. Nodes, links and activity sequences are explanatory, not measured locations, center counts, trip volumes or individual trajectories. A low degree of functional polycentricity does not imply planning failure."
+  visual_alt_zh: "就业中心的分散形态与集中于盐湖城市中心的日常活动联系相对照，下方用假想活动序列说明出行链；步行在中心内相对更常见，汽车仍主导区域出行。"
+  visual_alt_en: "Dispersed employment-center morphology is contrasted with activity links dominated by downtown Salt Lake City. A hypothetical activity sequence illustrates trip chains; walking is relatively more common within centers, while cars dominate region-wide."
+  thumbnail_alt_zh: "多个就业中心不保证功能联系均衡。"
+  thumbnail_alt_en: "Multiple employment centers do not ensure functional balance."
 2022-01-01-amenity-firm-agglomeration-local-creativity-producer-services-shanghai:
   authors: "Wu, Y., Wei, Y. D., Li, H., & Liu, M."
   doi: 10.1016/j.cities.2021.103421
   visual_reviewed: true
-  visual: /images/publications/amenity-creativity-spatial-context-reviewed.png
-  thumbnail: /images/publications/amenity-creativity-spatial-context-reviewed.png
-  visual_alt_en: "Co-location, accessibility and amenity clusters coexist as spatial relationships. A qualitative CBD-to-suburb comparison contrasts amenity associations that weaken for firm agglomeration with those that persist for creativity. The lines are not estimated effect curves or mapped flows."
-  visual_alt_zh: "共址、可达性与设施集群等空间关系同时存在。从中心城区到郊区的定性对照显示，设施与企业集聚的关联随远离中央商务区而减弱，与地方创意的关联则一直延续到郊区。图中线条并非估计出的效应曲线，也不是实测流量。"
+  visual: /images/publications/amenity-creativity-spatial-context-2022-v2-reviewed.png
+  thumbnail: /images/publications/amenity-creativity-spatial-context-2022-v2-reviewed.png
+  visual_source: "Refined conceptual synthesis of Wu, Wei, Li & Liu (2022), supplied PDF Fig. 1 (p. 4), creativity proxies (pp. 5-6), Table 2 distance-based proximity measures (p. 7), findings and limitations (pp. 12-16). Built-in image-generation tool edited the earlier reviewed graphic; the accessibility network was replaced by a single illustrative proximity segment."
+  visual_caption_zh: "依据 Wu et al. (2022) 区分设施对企业集聚与地方创意的关联，并对照共址、邻近距离和设施集群等空间关系。原文以注册专利、著作权及软件著作权识别创意企业，并不测量全部城市文化创意。点位、邻近连线和中心至郊区的横线均为概念示意，不是实测流量、交通路线或效应曲线。"
+  visual_caption_en: "Conceptual synthesis of Wu et al. (2022): amenity associations differ for firm agglomeration and local creativity, alongside co-location, proximity and amenity clusters. Registered patents, copyright and software copyright identify creative firms, not the full scope of urban cultural creativity. Points, proximity segments and CBD-to-suburb rules are schematic, not measured flows, transport routes or effect curves."
+  visual_alt_en: "Co-location, distance-based accessibility and amenity clusters coexist. A qualitative CBD-to-suburb comparison contrasts amenity associations that weaken for firm agglomeration with those that persist for creativity proxied through registered outputs. No transport network or estimated effect curve is shown."
+  visual_alt_zh: "共址、基于距离的可达性与设施集群等空间关系并存；定性对照显示设施与企业集聚的关联远离中央商务区后减弱，与注册成果所代理的地方创意的关联仍延续到郊区。图中不画实测交通网络或估计效应曲线。"
   thumbnail_alt_en: "Firm agglomeration and local creativity require different spatial explanations."
   thumbnail_alt_zh: "企业集聚与地方创意需要不同的空间解释。"
   summary_reviewed: true
+  summary_source: "Supplied publisher PDF: theoretical framework (p. 4), creative-firm definitions and spatial measures (pp. 5-7), comparative findings (pp. 12-15), conclusions and limitations (pp. 14-16)."
   contribution_zh: "城市设施对一般企业集聚的吸引力，和对地方创意的吸引力并不相同。本文围绕这两个维度构建理论框架，并结合共址、可达性与高密度设施簇等空间关系，说明城市设施在上海都市区内部发挥的作用为何不同。研究也澄清了产业集聚理论与创意理论各自适用于什么研究对象、怎样的城市空间。"
   contribution_en: "Attractiveness to firm agglomeration and attractiveness to local creativity are distinct dimensions of urban amenities. The study develops a framework connecting these dimensions to co-location, accessibility and high-density amenity clusters within Shanghai. It clarifies how the applicability of agglomeration and creativity theories differs across research objects and urban space."
   highlights_zh:

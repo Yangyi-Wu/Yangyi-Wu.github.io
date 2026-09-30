@@ -250,5 +250,26 @@
     "small": "/images/publications/firm-sector-neighborhood-2020-v2-reviewed-small.webp",
     "medium": "/images/publications/firm-sector-neighborhood-2020-v2-reviewed-medium.webp",
     "large": "/images/publications/firm-sector-neighborhood-2020-v2-reviewed-large.webp"
+  },
+  "/images/publications/regional-gap-structure-2020-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/regional-gap-structure-2020-v2-reviewed-small.webp",
+    "medium": "/images/publications/regional-gap-structure-2020-v2-reviewed-medium.webp",
+    "large": "/images/publications/regional-gap-structure-2020-v2-reviewed-large.webp"
+  },
+  "/images/publications/polycentricity-trip-chains-2021-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/polycentricity-trip-chains-2021-v2-reviewed-small.webp",
+    "medium": "/images/publications/polycentricity-trip-chains-2021-v2-reviewed-medium.webp",
+    "large": "/images/publications/polycentricity-trip-chains-2021-v2-reviewed-large.webp"
+  },
+  "/images/publications/amenity-creativity-spatial-context-2022-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-creativity-spatial-context-2022-v2-reviewed-small.webp",
+    "medium": "/images/publications/amenity-creativity-spatial-context-2022-v2-reviewed-medium.webp",
+    "large": "/images/publications/amenity-creativity-spatial-context-2022-v2-reviewed-large.webp"
   }
 }
