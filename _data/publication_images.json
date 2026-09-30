@@ -271,5 +271,26 @@
     "small": "/images/publications/amenity-creativity-spatial-context-2022-v2-reviewed-small.webp",
     "medium": "/images/publications/amenity-creativity-spatial-context-2022-v2-reviewed-medium.webp",
     "large": "/images/publications/amenity-creativity-spatial-context-2022-v2-reviewed-large.webp"
+  },
+  "/images/publications/transit-loss-recovery-2022-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/transit-loss-recovery-2022-v2-reviewed-small.webp",
+    "medium": "/images/publications/transit-loss-recovery-2022-v2-reviewed-medium.webp",
+    "large": "/images/publications/transit-loss-recovery-2022-v2-reviewed-large.webp"
+  },
+  "/images/publications/urban-form-stage-context-2023-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/urban-form-stage-context-2023-v2-reviewed-small.webp",
+    "medium": "/images/publications/urban-form-stage-context-2023-v2-reviewed-medium.webp",
+    "large": "/images/publications/urban-form-stage-context-2023-v2-reviewed-large.webp"
+  },
+  "/images/publications/watershed-integrated-agenda-2023-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/watershed-integrated-agenda-2023-v2-reviewed-small.webp",
+    "medium": "/images/publications/watershed-integrated-agenda-2023-v2-reviewed-medium.webp",
+    "large": "/images/publications/watershed-integrated-agenda-2023-v2-reviewed-large.webp"
   }
 }

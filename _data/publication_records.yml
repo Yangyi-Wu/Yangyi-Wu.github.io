@@ -231,12 +231,78 @@
 2022-02-01-neighborhood-built-environment-resilience-transportation-covid:
   authors: "Xiao, W., Wei, Y. D., & Wu, Y."
   doi: 10.1016/j.trd.2022.103428
+  summary_reviewed: true
+  summary_source: "Supplied publisher PDF: monthly station data (p. 4), BSTS relative-impact and resilience definitions (p. 5), regression-tree importance/Table 3 (p. 12), discussion and limits (pp. 11-14)."
+  contribution_zh: "公共交通的客流损失与恢复能力，不是同一个问题。本文先用贝叶斯结构时间序列估计无疫情情境下的客流基线，再比较各站点在前后两个时期的相对损失及其变化。盐湖县轻轨案例显示，损失模型和恢复模型最突出的邻里关联因素不同，因此交通韧性不能只由客流下降幅度判断，也不能只凭一种建成环境指标解释。"
+  contribution_en: "Ridership loss and recovery capacity are distinct questions. A Bayesian structural time-series model estimates a no-pandemic ridership baseline, against which station-level relative losses and their change across two periods are compared. The Salt Lake County light-rail case identifies different leading neighborhood correlates of loss and recovery. Transit resilience therefore cannot be inferred from the size of a ridership decline or explained by one built-environment indicator alone."
+  highlights_zh:
+    - "利用 2017—2021 年轻轨站点月度客流，以实际客流相对模型基线的偏差衡量冲击，以后期和前期相对影响之差衡量恢复。恢复指数不等于客流已完全回到疫情前水平。"
+    - "回归树中，邻里少数族裔人口占比在前后两期损失模型中的重要性最高，建筑覆盖率在恢复模型中的重要性最高。这是预测关联，不是对族群或环境因素的因果归因。"
+    - "初期客流骤降与居家建议的发布相伴，后续病例高峰并未带来同样的下降。本文据此强调政策情境、邻里差异与站点周边开放空间，但没有直接验证感染和出行变化的底层机制。"
+  highlights_en:
+    - "Monthly station ridership from 2017 to 2021 is compared with a modelled baseline. Recovery is the later-period relative impact minus the earlier-period impact, not evidence that ridership has fully returned to its pre-pandemic level."
+    - "Neighborhood minority share has the highest regression-tree importance in both loss models; building coverage has the highest importance in the recovery model. These are predictive associations, not causal attributions to ethnicity or environmental conditions."
+    - "The sharp early drop coincides with stay-at-home guidance, while later case peaks do not produce the same decline. The discussion emphasizes policy context, neighborhood differences and open space around stations without directly identifying the underlying infection-mobility mechanism."
+  visual_reviewed: true
+  visual: /images/publications/transit-loss-recovery-2022-v2-reviewed.png
+  thumbnail: /images/publications/transit-loss-recovery-2022-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Xiao, Wei & Wu (2022), supplied PDF pp. 4-5, 11-14 and Table 3. Built-in image-generation tool; formula connectors denote calculation, not causation. No ridership series or recovery curves were invented."
+  visual_caption_zh: "依据 Xiao, Wei & Wu (2022) 的测度定义与回归树结果：实际客流和模型基线共同构成相对影响，前后时期的相对影响之差衡量恢复。客流损失与恢复的主要关联因素不同。连线只表示计算关系，色带只区分时期，不表示实测客流或恢复速度；模型重要性不等于因果效应。"
+  visual_caption_en: "Conceptual synthesis of the measures and regression-tree results in Xiao, Wei & Wu (2022): observed and modelled baseline ridership define relative impact; the difference between later and earlier impacts measures recovery. Loss and recovery have different leading correlates. Connectors show calculation only; colored bands distinguish periods, not observed ridership or recovery speed. Model importance is not a causal effect."
+  visual_alt_zh: "轻轨客流损失和恢复的测度框架：实际客流相对模型基线计算相对影响，再比较前后时期。邻里少数族裔人口占比在损失模型中最突出，建筑覆盖率在恢复模型中最突出。"
+  visual_alt_en: "Measurement framework separates light-rail ridership loss from recovery using observed ridership and a modelled baseline. Neighborhood minority share leads the loss models; building coverage leads the recovery model."
+  thumbnail_alt_zh: "客流损失与恢复能力需要分开测量。"
+  thumbnail_alt_en: "Measure ridership loss and recovery separately."
 2023-03-01-urban-form-spatiotemporal-vulnerability-covid:
   authors: "Wu, Y., Wei, Y. D., & Liu, M."
   doi: 10.1080/00167428.2022.2155519
+  summary_reviewed: true
+  summary_source: "Supplied publisher PDF, including cover: abstract (p. 2), ZCTA data and DTW/beta-regression methods (pp. 6-7), Table 3 and stage results (pp. 12-14), interpretation and limitations (pp. 15-16)."
+  contribution_zh: "城市形态与疫情脆弱性的关系，不能归结为密度越高风险越大，也不能用一套全时期关系解释。本文把社区类型、疫情阶段与城市形态的多个维度放在一起比较，区分人口密度和高不透水率城市用地。盐湖县案例说明，同一种空间条件的关联随阶段而变，多种紧凑发展条件的组合也可能抵消单一指标的不利关联。"
+  contribution_en: "Urban-form associations with pandemic vulnerability cannot be reduced to higher density meaning higher risk or to one relationship across the entire pandemic. Comparing community types, pandemic stages and multiple form dimensions, the study distinguishes population density from highly impervious urban land use. The Salt Lake County case shows stage-dependent associations, with combinations of compact-development dimensions potentially offsetting adverse associations of individual indicators."
+  highlights_zh:
+    - "利用 2020 年 3 月至 2021 年 9 月的 34 个居住型邮编统计区数据，结合动态时间规整聚类与分阶段 beta 回归；少数族裔社区在初期和暴发期受到较大冲击，新郊区及偏远郊区社区在暴发期和恢复期更突出。"
+    - "街道连通性与步行性在初期关联较高病例率，土地混合在暴发期成为重要关联因素。恢复期高不透水率城市用地仍呈不利关联，人口密度及其他形态维度并不呈现统一的风险方向。"
+    - "多维度组合的结果支持按阶段和地方情境理解紧凑发展，而非否定或无条件肯定紧凑城市。样本、检测条件和研究时段有限，底层作用机制尚未确定。"
+  highlights_en:
+    - "The analysis combines dynamic-time-warping clustering and stage-specific beta regression for 34 residential ZCTAs, March 2020-September 2021. Minority communities are especially affected early and during the outbreak; new and remote suburban communities are especially affected during the outbreak and recovery."
+    - "Street connectivity and walkability accompany higher initial case rates; land-use mix becomes prominent during the outbreak. Highly impervious urban land use remains adversely associated during recovery, while population density and other form dimensions do not share a uniform risk direction."
+    - "The multidimensional results support interpreting compact development by stage and local context, not rejecting it or endorsing it unconditionally. Limited samples, testing conditions and time coverage constrain interpretation; underlying mechanisms remain unresolved."
+  visual_reviewed: true
+  visual: /images/publications/urban-form-stage-context-2023-v2-reviewed.png
+  thumbnail: /images/publications/urban-form-stage-context-2023-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Wu, Wei & Liu (2023), supplied PDF pp. 2, 6-7, 12-16. Built-in image-generation tool; hypothetical blocks illustrate dimensions and qualitative intervals summarize community timing, not observed maps, infection rates or causal effects."
+  visual_caption_zh: "依据 Wu, Wei & Liu (2023) 对照疫情初期、暴发期与恢复期：形态指标的关联和受冲击较大的社区类型随阶段变化，人口密度不能与高不透水率城市用地混为一谈。街区为假设示意；横线概括社区受影响的阶段，不表示病例数量、持续时间估计或效应大小。本文没有确定底层因果机制。"
+  visual_caption_en: "Conceptual synthesis of Wu, Wei & Liu (2023): urban-form associations and the community groups especially affected vary across initial, outbreak and recovery stages. Population density is distinct from highly impervious urban land use. Blocks are hypothetical; intervals summarize stages of community burden, not case counts, estimated durations or effect sizes. Underlying causal mechanisms were not identified."
+  visual_alt_zh: "三个疫情阶段的概念对照：初期突出连通性与步行性，暴发期突出土地混合，恢复期区分高不透水率用地与其他形态指标；下方对照少数族裔、新郊区及传统城市与郊区社区的受影响阶段。"
+  visual_alt_en: "Three-stage conceptual comparison highlights connectivity and walkability initially, land-use mix during the outbreak, and impervious urban land use during recovery; qualitative intervals compare the timing of burden across community types."
+  thumbnail_alt_zh: "城市形态与疫情脆弱性的关联随阶段和社区而变。"
+  thumbnail_alt_en: "Urban-form associations vary by pandemic stage and community."
 2023-04-01-remote-sensing-watershed-new-paradigm:
   authors: "Wang, J., Wu, Y., Hu, Z., & Zhang, J."
   doi: 10.3390/rs15102569
+  summary_reviewed: true
+  summary_source: "Supplied publisher PDF: editorial identification (p. 1), nature-human system and synthesis of 14 special-issue papers (p. 2), five proposed research priorities (pp. 2-3), data availability not applicable (p. 4)."
+  contribution_zh: "流域遥感不仅是对某一种自然要素的监测，更需要连接自然过程、人类活动与实际决策。本文作为专题刊的编者述评，归纳流域研究的多尺度、多维度和跨学科特征，提出从多源数据和尺度联系出发，综合理解流域总体环境的研究议程。其贡献是梳理研究范式与未来重点，不是验证新的治理成效。"
+  contribution_en: "Watershed remote sensing needs to connect natural processes, human activities and decision requirements rather than monitor one environmental layer in isolation. This special-issue editorial synthesizes the multiscale, multidimensional and interdisciplinary character of watershed research and proposes an agenda linking multisource data, scale interactions and the total environment. Its contribution is a research perspective and set of priorities, not a newly validated governance outcome."
+  highlights_zh:
+    - "综合专题刊的 14 篇研究，把流域理解为自然与人类活动相互联系的系统，强调物理、生物与社会经济过程的共同分析。"
+    - "提出五项未来重点：多源数据融合、多尺度建模、总体环境分析、克服数据壁垒并推动共享，以及面向行业与决策需求。"
+    - "建议遥感资料与现场观测、社会经济信息及其他地理数据互补，发展可互操作的数据和工具。文章没有新增实证数据，也不声称这些建议已产生可量化的治理收益。"
+  highlights_en:
+    - "The editorial synthesizes 14 special-issue papers and treats watersheds as interconnected nature-human systems, bringing physical, biological and socioeconomic processes into one research perspective."
+    - "Five priorities are proposed: multisource integration, multiscale modelling, total-environment analysis, overcoming data barriers and sharing, and addressing industry and decision needs."
+    - "Remote sensing is proposed alongside field observations, socioeconomic information and other geospatial data, supported by interoperable data and tools. The article adds no new empirical dataset or quantified governance-benefit evaluation."
+  visual_reviewed: true
+  visual: /images/publications/watershed-integrated-agenda-2023-v2-reviewed.png
+  thumbnail: /images/publications/watershed-integrated-agenda-2023-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Wang, Wu, Hu & Zhang (2023), editorial PDF pp. 1-3. Built-in image-generation tool; catchment, streams, land-cover patches and grids are hypothetical, not remote-sensing observations or a validated governance-impact model."
+  visual_caption_zh: "依据 Wang et al. (2023) 编者述评的五项研究重点，连接多源数据、多尺度分析、总体环境、决策需求和开放共享。中央流域、水系、用地与网格均为假设示意，不对应具体流域或实测遥感资料；连线表示研究内容的整合，不表示已验证的治理效果。"
+  visual_caption_en: "Conceptual synthesis of the five research priorities in the editorial by Wang et al. (2023), connecting multisource data, multiscale analysis, the total environment, decision needs and open sharing. The watershed, streams, land-cover patches and grids are hypothetical, not a named watershed or observed remote-sensing data. Connectors express research integration, not validated governance effects."
+  visual_alt_zh: "流域遥感研究议程：以自然与人类活动相联系的假设流域为中心，连接多源数据、多尺度分析、总体环境、决策需求和开放数据共享五个重点。"
+  visual_alt_en: "Watershed remote-sensing research agenda connects a hypothetical nature-human watershed with multisource data, multiscale analysis, the total environment, decision needs and open data sharing."
+  thumbnail_alt_zh: "从单层监测走向综合、面向决策的流域研究。"
+  thumbnail_alt_en: "Beyond single-layer monitoring toward integrated watershed research."
 2023-05-01-regional-development-inequality-city-regions-yangtze-river-delta:
   authors: "Qin, X., Wei, Y. D., Wu, Y., & Huang, X."
   doi: 10.1080/00167428.2021.2021780
