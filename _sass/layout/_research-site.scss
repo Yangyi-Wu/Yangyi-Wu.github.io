@@ -142,10 +142,11 @@ a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible
 .home-pi-description { min-width: 0; max-width: 800px; }
 .home-pi-profile .group-eyebrow { color: var(--global-link-color); margin: 0 0 6px; }
 .home-pi-profile h2 { font-size: 27px; line-height: 1.3; margin: 0; }
-.home-pi-profile .home-pi-role { font-size: 13px; line-height: 1.8; margin: 8px 0 0; }
+.home-pi-profile .home-pi-role { font-size: 14px; line-height: 1.8; margin: 8px 0 0; }
 .home-pi-profile .home-pi-bio { display: grid; gap: 18px; font-size: 15px; line-height: 1.8; margin: 0; }
 .home-pi-topic { min-width: 0; }
 .home-pi-profile .home-pi-topic h3 { font-size: 13px; line-height: 1.7; margin: 0 0 6px; }
+.home-pi-profile .home-pi-topic:first-child h3 { font-weight: 400; color: var(--global-text-color-light); }
 .home-pi-profile .home-pi-bio p { font-size: 16px; line-height: 1.85; color: var(--global-text-color-light); margin: 0; }
 .home-pi-profile .home-pi-topic:first-child p { font-size: 18px; color: var(--global-text-color); }
 .home-pi-description .home-pi-links { margin: 20px 0 0; gap: 4px 28px; font-size: 14px; }
@@ -160,8 +161,8 @@ a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible
 .page__content .home-section-heading > a:hover { text-decoration: underline; }
 .home-profile, .home-selected, .home-research, .home-content > .home-bottom-grid { position: relative; border-top: 0; }
 .home-selected::before { content: ""; position: absolute; top: 0; left: 40px; right: 40px; border-top: 1px solid var(--global-border-color); }
-.home-content > .home-profile { padding-top: 40px; padding-bottom: 24px; }
-.home-content > .home-profile + .home-research { padding-top: 28px; }
+.home-content > .home-profile { padding-top: 40px; padding-bottom: 16px; }
+.home-content > .home-profile + .home-research { padding-top: 20px; }
 .home-profile::before { display: none; }
 .home-highlights-grid { display: block; }
 .home-highlight { display: grid; grid-template-columns: minmax(0, 42fr) minmax(0, 58fr); gap: 56px; padding: 24px 0 40px; align-items: start; }
@@ -451,12 +452,12 @@ html[lang="zh"] .home-highlight h3 { text-wrap: initial; }
   .home-pi-description .home-pi-links { font-size: 13px; }
   .home-pi-links a { min-height: 44px; }
   .home-pi-profile h2 { font-size: 25px; }
-  .home-pi-profile .home-pi-role { font-size: 13px; }
+  .home-pi-profile .home-pi-role { font-size: 14px; }
   .home-pi-profile .group-eyebrow { font-size: 11px; }
   .home-profile::before, .home-selected::before, .home-research::before, .home-bottom-grid::before { left: 24px; right: 24px; }
   .home-content > .home-section { padding: 36px 24px; }
-  .home-content > .home-profile { padding-bottom: 16px; }
-  .home-content > .home-profile + .home-research { padding-top: 20px; }
+  .home-content > .home-profile { padding-bottom: 12px; }
+  .home-content > .home-profile + .home-research { padding-top: 16px; }
   .home-section-heading { flex-wrap: wrap; gap: 4px 16px; margin-bottom: 20px; }
   .home-section-heading h2, .home-research > h2 { font-size: 26px; }
   .page__content .home-section-heading > a { font-size: 13px; gap: 8px; }
