@@ -55,12 +55,26 @@
     "medium": "/images/publications/amenity-housing-dimensions-watercolor-reviewed-medium.webp",
     "large": "/images/publications/amenity-housing-dimensions-watercolor-reviewed-large.webp"
   },
+  "/images/publications/amenity-housing-framework-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-housing-framework-v2-reviewed-small.webp",
+    "medium": "/images/publications/amenity-housing-framework-v2-reviewed-medium.webp",
+    "large": "/images/publications/amenity-housing-framework-v2-reviewed-large.webp"
+  },
   "/images/publications/amenity-industry-mechanisms-reviewed.png": {
     "width": 1536,
     "height": 1024,
     "small": "/images/publications/amenity-industry-mechanisms-reviewed-small.webp",
     "medium": "/images/publications/amenity-industry-mechanisms-reviewed-medium.webp",
     "large": "/images/publications/amenity-industry-mechanisms-reviewed-large.webp"
+  },
+  "/images/publications/amenity-industry-nested-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/amenity-industry-nested-v2-reviewed-small.webp",
+    "medium": "/images/publications/amenity-industry-nested-v2-reviewed-medium.webp",
+    "large": "/images/publications/amenity-industry-nested-v2-reviewed-large.webp"
   },
   "/images/publications/amenity-industry-scales-reviewed.png": {
     "width": 1536,
@@ -131,6 +145,13 @@
     "small": "/images/publications/park-equity-context-contrast-reviewed-small.webp",
     "medium": "/images/publications/park-equity-context-contrast-reviewed-medium.webp",
     "large": "/images/publications/park-equity-context-contrast-reviewed-large.webp"
+  },
+  "/images/publications/park-equity-experience-v4-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/park-equity-experience-v4-reviewed-small.webp",
+    "medium": "/images/publications/park-equity-experience-v4-reviewed-medium.webp",
+    "large": "/images/publications/park-equity-experience-v4-reviewed-large.webp"
   },
   "/images/publications/park-equity-lenses-reviewed.png": {
     "width": 1536,

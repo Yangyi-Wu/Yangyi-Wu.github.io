@@ -147,10 +147,11 @@
   authors: "Wu, Y., Wei, Y. D., Liu, M., & García, I."
   doi: 10.1016/j.landurbplan.2024.105269
   visual_reviewed: true
-  visual: /images/publications/park-equity-context-contrast-reviewed.png
-  thumbnail: /images/publications/park-equity-context-contrast-reviewed.png
-  visual_caption_zh: "依据 Wu et al. (2025) 的概念示意：南部近郊的可达性感知与空间指标存在错位；西部近郊呈现更高的设施改善需求，以及疫情期间与质量观感相关的使用脆弱性。路网、人物和设施均为示意，连线表示对照。"
-  visual_caption_en: "Conceptual synthesis of Wu et al. (2025): southern peri-urban access perceptions diverge from spatial measures; western peri-urban communities report greater improvement needs and pandemic-era use vulnerability associated with perceived quality. Roads, people and facilities are schematic; connectors indicate comparisons."
+  visual: /images/publications/park-equity-experience-v4-reviewed.png
+  thumbnail: /images/publications/park-equity-experience-v4-reviewed.png
+  visual_source: "Conceptual synthesis of Wu et al. (2025), publisher PDF abstract and discussion/conclusions (pp. 1, 10-11). Built-in image-generation tool; streets and parks are illustrative, not measured Salt Lake City geography."
+  visual_caption_zh: "依据 Wu et al. (2025) 的概念归纳：南部近郊存在客观可达性劣势，居民评价却更乐观；西部近郊与中心城区的客观可达性相近，但感知不同，设施改善需求更高，疫情期间的使用也更容易受质量观感问题影响。街区与公园为示意，不对应实际地理；连线表示对照，不是因果效应。"
+  visual_caption_en: "Conceptual synthesis of Wu et al. (2025): southern peri-urban residents perceive access more optimistically despite measured disadvantage. Western peri-urban and urban-center communities have similar measured access but different perceptions; western residents report greater infrastructure needs and pandemic-era use vulnerability associated with perceived quality. Streets and parks are illustrative, not measured geography; connectors indicate comparisons, not causal effects."
   visual_alt_en: "Park equity beyond provision: southern peri-urban residents perceive access more optimistically than spatial measures suggest. Western peri-urban and urban-center communities have similar measured access but different perceptions; western residents report greater infrastructure needs and park use sensitive to quality perceptions during COVID-19. Conceptual regional comparisons, not empirical maps."
   visual_alt_zh: "公园公平的两组概念对照：南部近郊居民对可达性的感知比空间指标显示的更乐观；西部近郊与中心城区的客观可达性相近，但感知不同，且西部居民的设施改善需求更高，疫情期间公园使用更容易受质量观感问题影响。图中空间结构为示意。"
   thumbnail_alt_en: "Resource measures can miss context-specific park disadvantage in peri-urban communities."
@@ -178,10 +179,13 @@
   authors: "Qu, Z., Wu, Y., & Liu, M."
   doi: 10.1007/s12061-025-09667-1
   visual_reviewed: true
-  visual: /images/publications/amenity-housing-analysis-reviewed.png
-  thumbnail: /images/publications/amenity-housing-analysis-reviewed.png
-  visual_alt_en: "A four-dimensional amenity framework: accessibility covers quantity and quality; activity covers functional mix and spatial arrangement. Their associations with housing value are nonlinear and context-dependent."
-  visual_alt_zh: "设施评价的四维框架：可达性一侧包含数量与质量，活动一侧包含功能混合与空间组织。这些维度与住房价值的关联是非线性的，也随情境而变。"
+  visual: /images/publications/amenity-housing-framework-v2-reviewed.png
+  thumbnail: /images/publications/amenity-housing-framework-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Qu, Wu & Liu (2025), publisher PDF abstract, four-dimensional framework (Fig. 1, pp. 5-6) and conclusion (p. 22). Built-in image-generation tool; the neighborhood is hypothetical and the evidence is cross-sectional."
+  visual_caption_zh: "依据 Qu, Wu & Liu (2025) 的四维框架：数量与质量刻画可达性，功能混合与空间组织刻画活动条件。武汉案例中，私人服务的房价关联更依赖质量，基本服务则数量与质量都重要，且关联呈非线性、随城市情境变化。街区为概念示意，不是实测地图；横截面关联不能解释为因果效应。"
+  visual_caption_en: "Conceptual synthesis of Qu, Wu & Liu (2025): quantity and quality describe accessibility; functional mix and spatial arrangement describe activity conditions. In Wuhan, private-service housing-price associations rely more on quality, while both quantity and quality matter for essential services. Associations are nonlinear and context-dependent. The neighborhood is hypothetical, not measured geography; cross-sectional associations are not causal estimates."
+  visual_alt_en: "A four-dimensional amenity framework: accessibility covers quantity and quality; activity covers functional mix and spatial arrangement. Private-service housing-price associations rely more on quality, while essential services depend on both quantity and quality. Associations are nonlinear and context-dependent; the neighborhood is schematic."
+  visual_alt_zh: "设施评价的四维框架：可达性包含数量与质量，活动条件包含功能混合与空间组织。私人服务的房价关联更依赖质量，基本服务则数量与质量都重要；关联为非线性且随情境变化，街区为示意。"
   thumbnail_alt_en: "Amenity value depends on quantity, quality, functional mix and spatial arrangement, not proximity alone."
   thumbnail_alt_zh: "设施的价值取决于数量、质量、功能混合与空间组织，不能只看距离。"
   summary_reviewed: true
@@ -199,8 +203,11 @@
   authors: "Teng, Y., Wu, Y., & Liu, M."
   doi: 10.1016/j.apgeog.2025.103659
   visual_reviewed: true
-  visual: /images/publications/amenity-industry-mechanisms-reviewed.png
-  thumbnail: /images/publications/amenity-industry-mechanisms-reviewed.png
+  visual: /images/publications/amenity-industry-nested-v2-reviewed.png
+  thumbnail: /images/publications/amenity-industry-nested-v2-reviewed.png
+  visual_source: "Simplified conceptual synthesis of Teng, Wu & Liu (2025), publisher PDF Fig. 1 and discussion/conclusions (pp. 10, 13). Built-in image-generation tool; sector outlines and local point locations are hypothetical, not Wuhan geography or data."
+  visual_caption_zh: "依据 Teng, Wu & Liu (2025) 原文图 1 简化整理：都市区的资源获取条件形成潜在竞争优势，地方设施的供给与多样性支撑地方营造，两个嵌套尺度共同解释产业区位吸引力。中心城区与外围地区的需求不同，不能套用统一的设施组合。板块边界、街区及点位均为假想示意，不是武汉实测地图；箭头表示理论关系，不是因果效应估计。"
+  visual_caption_en: "Simplified synthesis of Fig. 1 in Teng, Wu & Liu (2025): metropolitan resource access underpins potential competitive advantage, while local amenity availability and diversity support placemaking. These nested scales explain industrial attractiveness; central and outer sectors have different amenity needs. Sector outlines, streets and points are hypothetical, not measured Wuhan geography. Arrows express theoretical relationships, not causal estimates."
   visual_alt_en: "Adapted from the paper's proposed framework: metropolitan potential resource access underpins competitive advantage, while local amenity availability and diversity support placemaking. These nested mechanisms jointly explain industrial attractiveness within an urban spatial context; schematic connections are not causal estimates."
   visual_alt_zh: "按原文理论框架重绘：都市区层面的潜在资源获取条件构成竞争优势，地方层面的设施供给与多样性支撑地方营造。两个嵌套尺度的机制共同解释城市空间中的产业吸引力，图中连线为示意，不代表因果效应估计。"
   thumbnail_alt_en: "Industrial attractiveness combines metropolitan resource advantages and local placemaking."

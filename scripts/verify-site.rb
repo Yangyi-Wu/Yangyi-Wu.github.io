@@ -10,6 +10,12 @@ require "uri"
 root = Pathname.new(ARGV.fetch(0, "_site"))
 node = ENV.fetch("NODE_EXE", "node")
 records = YAML.safe_load_file("_data/publication_records.yml")
+publication_images = JSON.parse(File.read("_data/publication_images.json", encoding: "UTF-8"))
+refined_figures = {
+  "2025-06-01-park-use-covid-peri-urban" => "/images/publications/park-equity-experience-v4-reviewed.png",
+  "2025-09-01-neighborhood-amenity-housing-prices-urban-china" => "/images/publications/amenity-housing-framework-v2-reviewed.png",
+  "2025-10-01-urban-amenities-knowledge-intensive-industry-locations" => "/images/publications/amenity-industry-nested-v2-reviewed.png"
+}
 themes = YAML.safe_load_file("_data/publication_themes.yml")
 scholar = YAML.safe_load_file("_data/scholar.yml")
 publication_categories = YAML.safe_load_file("_config.yml", aliases: true).fetch("publication_category")
@@ -85,6 +91,27 @@ Dir.glob("_publications/*.md").each do |source|
     check(page.css(".publication-figure").length == (record["visual_reviewed"] ? 1 : 0), "Unreviewed illustration: #{path}")
     headings = page.css(".page__content h2").map(&:text)
     check(headings.length == (record["summary_reviewed"] ? 2 : 0), "Unreviewed summary: #{path}")
+    if refined_figures.key?(File.basename(source, ".md"))
+      visual = refined_figures.fetch(File.basename(source, ".md"))
+      check(record.fetch("visual") == visual && record.fetch("thumbnail") == visual, "Stale refined-figure reference: #{path}")
+      image_info = publication_images.fetch(visual)
+      figure = page.at_css(".publication-figure")
+      image = figure.at_css("img")
+      check(figure.at_css("figcaption").text == record.fetch("visual_caption_#{language}"), "Missing bilingual evidence boundary: #{path}")
+      check(image["alt"] == record.fetch("visual_alt_#{language}"), "Missing localized figure description: #{path}")
+      check(image["src"] == image_info.fetch("medium") && image["width"].to_i == image_info.fetch("width") && image["height"].to_i == image_info.fetch("height"), "Invalid responsive refined figure: #{path}")
+      check(image["loading"] == "lazy" && image["srcset"] && image["sizes"], "Missing responsive image attributes: #{path}")
+      check(figure.at_css("[data-figure-open]")["href"] == image_info.fetch("large"), "Full-size viewer uses an old figure: #{path}")
+      [visual, *%w[small medium large].map { |size| image_info.fetch(size) }].each do |asset|
+        check(root.join(asset.delete_prefix("/")).file?, "Missing refined figure asset: #{asset}")
+      end
+      %w[small medium large].each do |size|
+        check(image["srcset"].include?(image_info.fetch(size)), "Incomplete refined figure srcset: #{path}")
+      end
+      check(root.join(image_info.fetch("medium").delete_prefix("/")).size < 300_000, "Refined default figure exceeds 300 KB: #{path}")
+      check(page.at_css(".publication-page .page__content h2 + p").text == record.fetch("contribution_#{language}"), "Reviewed contribution changed or missing: #{path}")
+      check(page.css(".publication-page .page__content ul li").map(&:text) == record.fetch("highlights_#{language}"), "Reviewed findings changed or missing: #{path}")
+    end
     if english_path == "/publication/2026-urban-form-politico-economic-transition-greater-bay-area"
       check(data.fetch("date") == Date.new(2026, 8, 17) && data.fetch("issue_date") == Date.new(2026, 12, 1), "Urban form online and issue dates must remain distinct")
       check(record.fetch("wu_author_role") == "co_corresponding", "Urban form authorship must match the published PDF")
