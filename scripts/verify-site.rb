@@ -15,6 +15,9 @@ refined_figures = {
   "2019-01-01-private-rental-housing-market-shanghai-open-data" => "/images/publications/rental-employment-access-2019-v2-reviewed.png",
   "2019-02-01-housing-prices-shanghai-open-data" => "/images/publications/housing-urban-context-2019-v2-reviewed.png",
   "2019-03-01-urban-amenity-human-capital-employment-distribution-shanghai" => "/images/publications/amenity-employment-sectors-2019-v2-reviewed.png",
+  "2019-04-01-innovation-network-capabilities-sustainable-development-regional-economies" => "/images/publications/network-access-control-2019-v2-reviewed.png",
+  "2020-02-01-spatial-heterogeneity-housing-prices-large-datasets" => "/images/publications/housing-connectivity-2020-v2-reviewed.png",
+  "2020-03-01-firm-suburbanization-urban-sprawl" => "/images/publications/firm-sector-neighborhood-2020-v2-reviewed.png",
   "2025-06-01-park-use-covid-peri-urban" => "/images/publications/park-equity-experience-v4-reviewed.png",
   "2025-09-01-neighborhood-amenity-housing-prices-urban-china" => "/images/publications/amenity-housing-framework-v2-reviewed.png",
   "2025-10-01-urban-amenities-knowledge-intensive-industry-locations" => "/images/publications/amenity-industry-nested-v2-reviewed.png"
@@ -61,6 +64,7 @@ def check_navigation(page, path)
 end
 
 scholar_records = scholar.fetch("publications")
+check(records.fetch("2020-01-01-spatial-analysis-uneven-metropolitan-development-big-data").fetch("visual_reviewed") == false, "The doctoral dissertation must remain text-only")
 check(themes.keys.sort == records.keys.sort, "Incomplete publication theme assignments")
 check(themes.values.all? { |ids| !ids.empty? && (ids - %w[transformation restructuring inequality methods]).empty? }, "Invalid research theme")
 check(scholar_records.keys.sort == records.keys.sort, "Scholar and publication records differ")

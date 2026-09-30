@@ -229,5 +229,26 @@
     "small": "/images/publications/amenity-employment-sectors-2019-v2-reviewed-small.webp",
     "medium": "/images/publications/amenity-employment-sectors-2019-v2-reviewed-medium.webp",
     "large": "/images/publications/amenity-employment-sectors-2019-v2-reviewed-large.webp"
+  },
+  "/images/publications/network-access-control-2019-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/network-access-control-2019-v2-reviewed-small.webp",
+    "medium": "/images/publications/network-access-control-2019-v2-reviewed-medium.webp",
+    "large": "/images/publications/network-access-control-2019-v2-reviewed-large.webp"
+  },
+  "/images/publications/housing-connectivity-2020-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/housing-connectivity-2020-v2-reviewed-small.webp",
+    "medium": "/images/publications/housing-connectivity-2020-v2-reviewed-medium.webp",
+    "large": "/images/publications/housing-connectivity-2020-v2-reviewed-large.webp"
+  },
+  "/images/publications/firm-sector-neighborhood-2020-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/firm-sector-neighborhood-2020-v2-reviewed-small.webp",
+    "medium": "/images/publications/firm-sector-neighborhood-2020-v2-reviewed-medium.webp",
+    "large": "/images/publications/firm-sector-neighborhood-2020-v2-reviewed-large.webp"
   }
 }

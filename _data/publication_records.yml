@@ -78,19 +78,46 @@
 2019-04-01-innovation-network-capabilities-sustainable-development-regional-economies:
   authors: "Li, D., Wei, Y. D., Miao, C., Wu, Y., & Xiao, W."
   doi: 10.3390/su11174770
+  summary_reviewed: true
+  summary_source: "Supplied publisher PDF: analytical framework and capability definitions (pp. 5-6), network inequality (pp. 9-11), spatial-regime results and Tables 3-5 (pp. 14-16), conclusions (pp. 16-17)."
+  contribution_zh: "区域的知识联系数量，与其在知识流通中占据的桥梁位置，是两种不同的网络优势。本文区分科学知识网络与技术知识网络，以获取能力和控制能力连接网络位置、地方创新资源与创新表现。研究说明，地方优势不仅来自本地资源存量，也来自跨地区关系；这种关系的意义随知识类型、地区与时期而变，并非连接越多就必然创新越强。"
+  contribution_en: "The number of knowledge connections and a region's brokerage position are distinct network advantages. By separating scientific and technological knowledge networks, the study links acquisition and control capabilities to local innovation resources and performance. Place advantages arise from interregional relationships as well as local resources, but their relevance varies by knowledge type, region and period: more connections do not necessarily imply stronger innovation."
+  highlights_zh:
+    - "利用 2000—2012 年生物技术领域的论文合著与专利共同申请关系，分别构建科学知识网络和技术知识网络。获取能力以度中心性度量，控制能力以中介中心性度量。"
+    - "技术知识网络的规模小于科学知识网络；控制能力比分散的获取联系更加集中，反映出知识网络中的核心—边缘格局。"
+    - "网络能力与创新表现的关系具有地区和时期差异，部分模型的关联方向也不同。可持续发展的讨论是政策含义，不是另行验证的因果结果。"
+  highlights_en:
+    - "Co-authored papers and co-applied patents in biotechnology from 2000 to 2012 define scientific and technological knowledge networks. Degree centrality measures acquisition capability; betweenness centrality measures control capability."
+    - "Technological knowledge networks are smaller than scientific networks. Control capability is more concentrated than acquisition capability, revealing a core-periphery structure."
+    - "Network-performance associations differ across regions and periods, including their direction in some models. Sustainable-development implications are not independently verified causal outcomes."
+  visual_reviewed: true
+  visual: /images/publications/network-access-control-2019-v2-reviewed.png
+  thumbnail: /images/publications/network-access-control-2019-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Li, Wei, Miao, Wu & Xiao (2019), supplied PDF pp. 5-6, 9-11, 14-17. Built-in image-generation tool; diagrams illustrate degree and betweenness, not measured city networks, knowledge-flow volumes or causal estimates."
+  visual_caption_zh: "依据 Li et al. (2019) 区分获取能力与控制能力：直接联系提供知识获取机会，桥梁位置体现连接不同群体的能力。控制能力更集中，但网络能力与创新表现的关联随知识类型、地区和时期变化。节点与连线仅为拓扑示意，不是实测城市网络、知识流量或因果估计。"
+  visual_caption_en: "Conceptual synthesis of Li et al. (2019): direct connections represent acquisition opportunities, while brokerage between groups represents control capability. Control is more concentrated, but network-performance associations vary by knowledge type, region and period. Nodes and edges illustrate topology, not measured city networks, knowledge flows or causal estimates."
+  visual_alt_zh: "获取能力与控制能力的拓扑对照：左侧突出直接联系和度中心性，右侧突出群体间桥梁和中介中心性；控制能力更集中，创新关联具有地区和时期差异。"
+  visual_alt_en: "Conceptual topology contrasts acquisition through direct connections and degree centrality with control through brokerage and betweenness centrality. Control is more concentrated; innovation associations vary by region and period."
+  thumbnail_alt_zh: "知识获取的连接不等于知识流通中的控制位置。"
+  thumbnail_alt_en: "Network access is not network control."
 2020-01-01-spatial-analysis-uneven-metropolitan-development-big-data:
   authors: "Wu, Y."
+  visual_reviewed: false
 2020-02-01-spatial-heterogeneity-housing-prices-large-datasets:
   authors: "Wu, Y., Wei, Y. D., & Li, H."
   doi: 10.1007/s12061-019-09301-x
   visual_reviewed: true
-  visual: /images/publications/housing-connectivity-reviewed.png
-  thumbnail: /images/publications/housing-connectivity-reviewed.png
-  visual_alt_en: "Similarity, substitutability and spatial connectivity combine to identify 43 housing submarkets in Salt Lake County."
-  visual_alt_zh: "把相似性、可替代性与空间连接性结合起来，在盐湖县识别出 43 个住房子市场。"
+  visual: /images/publications/housing-connectivity-2020-v2-reviewed.png
+  thumbnail: /images/publications/housing-connectivity-2020-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Wu, Wei & Li (2020), supplied PDF pp. 7-8 (Fig. 2), 12-13 (distance/density connectivity), 18 (Fig. 5), 29-30. Built-in image-generation tool, using original Fig. 2 as a conceptual reference; point patterns and search circles are hypothetical, not the observed 43-submarket map."
+  visual_caption_zh: "依据 Wu, Wei & Li (2020) 的分类框架，把属性相似性、价格机制上的可替代性和基于距离与密度的空间连接性结合起来。原文以模型残差代理可替代性，实证识别出 43 个子市场。点位与圆圈仅解释方法，不是盐湖县的实测分类图，也不表示通勤或交易网络。"
+  visual_caption_en: "Conceptual synthesis of Wu, Wei & Li (2020): attribute similarity, substitutability in price mechanisms and distance-and-density connectivity inform a hybrid classification. Hedonic residuals proxy substitutability; the empirical analysis identifies 43 submarkets. Points and circles explain the method, not the observed Salt Lake County classification or a commuting or transaction network."
+  visual_alt_en: "A hypothetical parcel pattern illustrates spatial connectivity based on distance and density rather than strict continuity. Similarity and substitutability inform hybrid classification; 43 empirical submarkets are reported separately from the schematic pattern."
+  visual_alt_zh: "假想地块点位解释基于距离与密度、而非严格连续性的空间连接性；属性相似性与价格机制可替代性共同支持混合分类，43 个实证子市场的数量与示意图分开呈现。"
   thumbnail_alt_en: "Housing submarket classification through spatial connectivity."
   thumbnail_alt_zh: "借助空间连接性识别住房子市场。"
   summary_reviewed: true
+  summary_source: "Supplied publisher PDF: data and hybrid framework (pp. 7-8), connectivity and outlier processing (pp. 12-13), classification results (p. 18), conclusions (pp. 29-30)."
   contribution_en: "Housing submarkets need not be defined by simple spatial continuity. This study combines similarity, substitutability and spatial connectivity in a hybrid classification method, linking the definition of local markets to the price processes that operate within them."
   contribution_zh: "住房子市场并不能只按空间上的连续分布来划分。本文把相似性、可替代性与空间连接性结合起来，用一套混合分类方法界定子市场，让市场边界与内部的价格形成过程对应起来。方法的意义不在于把房价预测做得更准，而在于重新处理市场的边界与空间关系。"
   highlights_en:
@@ -104,6 +131,28 @@
 2020-03-01-firm-suburbanization-urban-sprawl:
   authors: "Wu, Y., Wei, Y. D., & Li, H."
   doi: 10.1080/00330124.2020.1750437
+  summary_reviewed: true
+  summary_source: "Supplied publisher PDF: abstract (p. 2), variables and spatial scales (pp. 7-8), general and sectoral results (pp. 15-17; Tables 5-7), discussion and conclusions (p. 18)."
+  contribution_zh: "企业郊区化不等于城市中心衰退，也不是各类产业同步向外转移。本文在盐湖县比较制造业与生产性服务业，并区分本街区与周边邻里的条件。研究把中心及其周边增长、城市边缘增长和产业内部差异放在同一框架中，说明解释郊区化需要同时关注产业类型、邻里尺度与城市发展情境。"
+  contribution_en: "Firm suburbanization is neither equivalent to core decline nor a uniform outward shift across industries. Comparing manufacturing and producer services in Salt Lake County, the study distinguishes local block-group conditions from surrounding-neighborhood conditions. It brings central and nearby growth, edge growth and within-sector differences into one framework, showing why sector, neighborhood scale and urban context matter to explanations of suburbanization."
+  highlights_zh:
+    - "依据 2000—2010 年企业数据，制造业呈现郊区化增长，生产性服务业则兼有中心及周边增长和新开发边缘增长；郊区增长与中心增长可以并存。"
+    - "生产性服务业比制造业更敏感于社区特征，相关条件的关联也延伸到周边邻里。制造业在周边邻里尺度上主要表现为集聚关联，这不意味着本街区的社区条件无关。"
+    - "不同生产性服务业分支的区位关联并不一致。研究比较的是企业数量与空间条件，没有追踪单家企业搬迁，也不把回归关联当作已证明的因果机制。"
+  highlights_en:
+    - "Firm data for 2000–2010 show suburbanizing manufacturing growth, while producer services combine center and nearby growth with growth at newly developed edges. Peripheral and central growth can coexist."
+    - "Producer services are more sensitive to community characteristics, with associations extending into nearby areas. At the surrounding-neighborhood scale, manufacturing mainly shows agglomeration associations; local community conditions are not thereby irrelevant."
+    - "Locational associations differ among producer-service branches. The analysis relates establishment counts to spatial conditions; it does not track individual firm relocations or establish causal mechanisms."
+  visual_reviewed: true
+  visual: /images/publications/firm-sector-neighborhood-2020-v2-reviewed.png
+  thumbnail: /images/publications/firm-sector-neighborhood-2020-v2-reviewed.png
+  visual_source: "Conceptual synthesis of Wu, Wei & Li (2020), supplied PDF pp. 2, 7-8, 15-18, Tables 5-7. Built-in image-generation tool; hypothetical urban strips illustrate sectoral growth patterns, and the neighborhood inset explicitly excludes the local block group."
+  visual_caption_zh: "依据 Wu, Wei & Li (2020) 的产业与尺度对照：生产性服务业兼有中心及周边增长和新开发边缘增长，制造业则呈现郊区化增长。下方区分本街区与不含本街区的周边邻里。街区、点位和密度均为概念示意，不是实测地图、企业数量、搬迁轨迹或因果效应。"
+  visual_caption_en: "Conceptual synthesis of Wu, Wei & Li (2020): producer services combine central and nearby growth with new-edge growth, while manufacturing shows suburbanizing growth. The inset separates the local block group from its surrounding neighborhood, which excludes that block group. Layouts, points and densities are schematic, not observed geography, establishment counts, relocation tracks or causal effects."
+  visual_alt_zh: "生产性服务业与制造业的增长模式示意：前者在中心及周边和新开发边缘增长，后者表现为郊区化增长；下方区分本街区及排除本街区的周边邻里，说明解释随产业和尺度而变。"
+  visual_alt_en: "Schematic producer-service and manufacturing growth patterns contrast central and new-edge growth with suburbanizing growth. An inset distinguishes the local block group from the surrounding area excluding it, highlighting sectoral and scale-dependent explanations."
+  thumbnail_alt_zh: "郊区增长不等于中心衰退，解释随产业与邻里尺度变化。"
+  thumbnail_alt_en: "Suburban growth does not mean core decline; sector and neighborhood scale matter."
 2020-04-01-regional-inequality-spatial-polarization-place-mobility-jiangsu:
   authors: "Wei, Y. D., Wu, Y., Liao, F. H., & Zhang, L."
   doi: 10.1016/j.apgeog.2020.102296
