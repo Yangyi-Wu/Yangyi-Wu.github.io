@@ -39,8 +39,18 @@
       </div>
       <div class="home-pi-description">
         <div class="home-pi-bio">
-          <p>{{ home.pi_statement }}</p>
-          <p>{{ home.pi_approach }}</p>
+          <div class="home-pi-topic">
+            <h3>{% if page.lang == 'zh' %}研究关注{% else %}Research focus{% endif %}</h3>
+            <p>{{ home.pi_statement }}</p>
+          </div>
+          <div class="home-pi-topic">
+            <h3>{% if page.lang == 'zh' %}研究方法{% else %}Research methods{% endif %}</h3>
+            <p>{{ home.pi_approach }}</p>
+          </div>
+          <div class="home-pi-topic">
+            <h3>{% if page.lang == 'zh' %}数据与尺度{% else %}Data and scales{% endif %}</h3>
+            <p>{{ home.pi_data }}</p>
+          </div>
         </div>
         <nav class="home-pi-links section-links" aria-label="{% if page.lang == 'zh' %}PI 个人资料与联系{% else %}PI profile and contact{% endif %}">
           <a href="{{ language_prefix | append: '/cv/' | relative_url }}">{{ g.cv }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>

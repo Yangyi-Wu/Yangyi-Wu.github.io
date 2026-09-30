@@ -257,7 +257,9 @@ role_labels = {
   check(pi_profile && pi_profile.at_css("h2").text == group_data.fetch("pi_name"), "Missing homepage PI identity")
   check(pi_profile.at_css("img")["src"] == people.at_css(".group-person img")["src"], "Homepage must use the approved PI photograph")
   check(pi_profile.at_css(".home-pi-role").text.include?(group_data.fetch("pi_role")) && pi_profile.at_css(".home-pi-role").text.include?(group_data.fetch("affiliation")), "Missing PI role or affiliation")
-  check(pi_profile.css(".home-pi-bio p").map(&:text) == %w[pi_statement pi_approach].map { |key| homepage.fetch(language).fetch(key) }, "Missing PI research perspective or approach")
+  check(pi_profile.css(".home-pi-bio p").map(&:text) == %w[pi_statement pi_approach pi_data].map { |key| homepage.fetch(language).fetch(key) }, "Missing PI research focus, methods or data")
+  expected_pi_topics = language == "zh" ? ["研究关注", "研究方法", "数据与尺度"] : ["Research focus", "Research methods", "Data and scales"]
+  check(pi_profile.css(".home-pi-topic h3").map(&:text) == expected_pi_topics, "PI research topics must correspond across languages")
   check(page.at_css(".home-pi a")["href"] == "#home-pi", "Hero identity must link to the PI profile")
   check(pi_profile.css(".home-pi-links a").map { |a| a["href"] } == ["#{prefix}/cv/", YAML.safe_load_file("_config.yml", aliases: true).fetch("author").fetch("googlescholar"), "mailto:yangyi.wu@whu.edu.cn"], "Incomplete homepage PI links")
   section_order = page.css(".home-content > section, .home-content > .home-bottom-grid").map { |section| section["class"].split.last }
@@ -269,7 +271,7 @@ role_labels = {
   admissions = YAML.safe_load_file("_data/group.yml").fetch("admissions").find { |cohort| cohort.fetch("year") == "2027" }
   check(page.at_css(".home-admissions").text.include?(admissions.fetch(language)), "Homepage admissions differ from the shared data")
   check(page.at_css(".home-phd-note").text.include?("2028"), "Missing expected PhD recruitment year")
-  %w[pi_statement pi_approach pi invitation].each do |key|
+  %w[pi_statement pi_approach pi_data pi invitation].each do |key|
     check(page.css(".home-content p").any? { |p| p.text == homepage.fetch(language).fetch(key) }, "Missing homepage #{key}: #{language}")
   end
   research_page = html(root, "#{prefix}/research/")
