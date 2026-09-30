@@ -369,5 +369,12 @@
     "small": "/images/publications/vegetation-dynamic-context-2025-v2-reviewed-small.webp",
     "medium": "/images/publications/vegetation-dynamic-context-2025-v2-reviewed-medium.webp",
     "large": "/images/publications/vegetation-dynamic-context-2025-v2-reviewed-large.webp"
+  },
+  "/images/publications/sprawl-definition-patterns-2026-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/sprawl-definition-patterns-2026-v2-reviewed-small.webp",
+    "medium": "/images/publications/sprawl-definition-patterns-2026-v2-reviewed-medium.webp",
+    "large": "/images/publications/sprawl-definition-patterns-2026-v2-reviewed-large.webp"
   }
 }

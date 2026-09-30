@@ -677,6 +677,9 @@
   visual_reviewed: true
   visual: /images/publications/housing-tenure-institutional-reviewed.png
   thumbnail: /images/publications/housing-tenure-institutional-reviewed.png
+  visual_source: "Retained conceptual synthesis of Wei, Wu & Li, Journal of Urban Affairs, DOI 10.1080/07352166.2023.2285465. Supplied publisher PDF pp. 2, 16-19 rechecked; online and issue years are distinct. Connectors express shared conceptual context, not coefficient magnitude or causal identification."
+  visual_caption_zh: "依据 Wei、Wu 与 Li 的上海租售比较（DOI：10.1080/07352166.2023.2285465）：买方相对更重视服务设施，租方相对更重视就业机会，但两类人群都可能关注这些条件。全球化、制度与城市空间构成共同背景，住房占有方式是理解机会与约束差异的一个维度。图为概念归纳，连线不表示系数大小或因果效应；代理变量与横截面数据也不能完整解释社会排斥过程。"
+  visual_caption_en: "Conceptual synthesis of the Shanghai rent-sale comparison by Wei, Wu & Li (DOI 10.1080/07352166.2023.2285465). Buyers place relatively greater emphasis on service amenities and renters on jobs; neither has exclusive preferences. Globalization, institutions and urban space provide a shared context, with tenure differentiating opportunities and constraints. Connectors do not encode coefficients or causal effects. Proxies and cross-sectional data cannot fully explain social exclusion."
   visual_alt_en: "Within a shared global, institutional and urban context, buyers place greater emphasis on service amenities and renters on job opportunities. The comparison treats tenure as a dimension of urban inequality, not as an absolute division of preferences."
   visual_alt_zh: "在同样的全球化、制度与城市空间背景下，买方更看重服务设施，租方更看重就业机会。这项租售比较把住房占有方式视为城市不平等的一个维度，而不是把两类人群的偏好截然分开。"
   thumbnail_alt_en: "One city, two housing markets: tenure differentiates urban opportunities."
@@ -698,6 +701,9 @@
   visual_reviewed: true
   visual: /images/publications/polycentric-cartographic-reviewed.png
   thumbnail: /images/publications/polycentric-cartographic-reviewed.png
+  visual_source: "Retained conceptual synthesis of Wei, Xiao & Wu (2025), Chinese Geographical Science, supplied publisher PDF pp. 1-2 and 9-10. Five hypothetical centers illustrate morphology versus function; point counts, line widths and arrangements do not encode measured Chinese city data."
+  visual_caption_zh: "依据 Wei、Xiao 与 Wu（2025）综述中的形态与功能区分，用同一组五个假想中心说明：人口或就业形成多个空间集聚，并不意味着中心之间已经构成均衡的功能网络，次中心仍可能依赖同一核心。中心数量、点位与连线均为示意，不是中国城市的实测格局。尺度、测度与制度背景影响判断，也不能预设多中心必然改善效率、公平或环境表现。"
+  visual_caption_en: "Conceptual synthesis of the morphological-functional distinction in Wei, Xiao & Wu (2025). Five hypothetical centers illustrate that multiple population or employment concentrations can still depend on one functional hub. Center counts, points and connectors are illustrative, not measured Chinese urban patterns. Scale, measurement and institutions matter; polycentricity does not automatically ensure efficiency, equity or environmental benefits."
   visual_alt_en: "The same five schematic urban centers illustrate the distinction between morphological concentration and functional connectivity. Several physical centers can coexist with dependence on a dominant network center; scale, measurement and institutions matter."
   visual_alt_zh: "用同一组五个示意中心对照形态上的集聚与功能上的联系：多个空间中心可能仍然依赖同一个网络核心。理解多中心发展，需要区分尺度、测度和制度背景。"
   thumbnail_alt_en: "Multiple physical centers do not necessarily form a balanced functional network."
@@ -716,6 +722,28 @@
 2026-01-01-urban-sprawl:
   authors: "Wu, Y."
   doi: 10.1007/978-3-031-92524-5_211
+  visual_reviewed: true
+  visual: /images/publications/sprawl-definition-patterns-2026-v2-reviewed.png
+  thumbnail: /images/publications/sprawl-definition-patterns-2026-v2-reviewed.png
+  visual_source: "Concept explainer based only on the publisher's public Definition section for Wu, Urban Sprawl, https://link.springer.com/rwe/10.1007/978-3-031-92524-5_211. Full entry is subscription content. Built-in image-generation tool; matched hypothetical plans are not maps or new empirical findings."
+  visual_caption_zh: "依据《人文地理百科全书》“城市蔓延”词条的公开定义，说明低密度、功能分离、汽车依赖与不连续开发等特征如何共同构成蔓延格局，不能只用向外增长来判断。左右规划图为假想对照，既不是实测城市地图，也不是干预前后效果。这里只归纳已核实的公开定义，未把订阅全文中未读取的内容或新实证发现写进图中。"
+  visual_caption_en: "Concept explainer based on the public definition in the Urban Sprawl encyclopedia entry: sparse development, separated uses, vehicle reliance and discontinuous growth characterize a sprawling pattern beyond expansion alone. Plans are hypothetical comparisons, not measured cities or before-after interventions. The figure summarizes the verified public definition, not unread subscription content or new empirical findings."
+  visual_alt_en: "Two hypothetical planning diagrams contrast continuous mixed urban fabric with a sprawling pattern. Leaders identify sparse development, separated uses, vehicle reliance and discontinuous growth; the diagram explains an encyclopedia definition, not measured results."
+  visual_alt_zh: "两幅假想规划图对照连续混合的城市肌理与蔓延格局，标出低密度、功能分离、汽车依赖及不连续开发；图示解释百科定义，不是实测研究结果。"
+  thumbnail_alt_en: "Urban sprawl is a multidimensional spatial pattern, not outward growth alone."
+  thumbnail_alt_zh: "城市蔓延是具有多项特征的空间格局，不能只看向外增长。"
+  summary_reviewed: true
+  summary_source: "Publisher public Definition section only, https://link.springer.com/rwe/10.1007/978-3-031-92524-5_211. The full subscription entry was not available."
+  contribution_zh: "这篇百科词条梳理城市蔓延的概念。已核实的公开定义强调，蔓延不仅是城市边界向外增长，更是一种涉及开发密度、用地功能、交通依赖和建设连续性的空间格局。它帮助读者区分城市增长与蔓延，但不应被当作一项新的实证研究或经过验证的治理方案。"
+  contribution_en: "This encyclopedia entry explains urban sprawl as a spatial pattern involving development density, land-use separation, vehicle reliance and discontinuous building. The verified public definition distinguishes the concept from outward growth alone. This is conceptual reference material, not a new empirical study or a validated governance intervention."
+  highlights_zh:
+    - "公开定义描述了低密度、功能分离、汽车依赖与跳跃式开发等特征，不宜仅凭建设面积扩大判断蔓延。"
+    - "住宅、就业与服务的空间分离，是理解蔓延格局的重要部分；图中的道路联系为示意，不是交通量数据。"
+    - "当前介绍和图片限于出版方可公开读取的定义部分；假想规划对照不代表具体城市，也不表示规划干预的成效。"
+  highlights_en:
+    - "The public definition links sprawl with sparse development, separated uses, vehicle dependence and leapfrog building, rather than expansion alone."
+    - "Housing, employment and service separation help explain the pattern; illustrated roads do not represent measured traffic volumes."
+    - "This overview is limited to the publicly readable definition. Hypothetical plans do not depict actual cities or intervention outcomes."
 2026-12-01-urban-form-politico-economic-transition-greater-bay-area:
   authors: "Wang, S., Wu, Y., & Zhang, X."
   doi: 10.1016/j.landusepol.2026.108280

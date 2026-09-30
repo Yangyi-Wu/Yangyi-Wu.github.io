@@ -38,7 +38,10 @@ refined_figures = {
   "2025-07-01-multi-scale-geographic-environmental-monitoring" => "/images/publications/monitoring-cross-scale-agenda-2025-v2-reviewed.png",
   "2025-08-01-urban-expansion-vegetation-growth" => "/images/publications/vegetation-dynamic-context-2025-v2-reviewed.png",
   "2025-09-01-neighborhood-amenity-housing-prices-urban-china" => "/images/publications/amenity-housing-framework-v2-reviewed.png",
-  "2025-10-01-urban-amenities-knowledge-intensive-industry-locations" => "/images/publications/amenity-industry-nested-v2-reviewed.png"
+  "2025-10-01-urban-amenities-knowledge-intensive-industry-locations" => "/images/publications/amenity-industry-nested-v2-reviewed.png",
+  "2025-11-01-institutions-urban-space-residential-markets-shanghai" => "/images/publications/housing-tenure-institutional-reviewed.png",
+  "2025-12-01-polycentric-urban-development-china" => "/images/publications/polycentric-cartographic-reviewed.png",
+  "2026-01-01-urban-sprawl" => "/images/publications/sprawl-definition-patterns-2026-v2-reviewed.png"
 }
 themes = YAML.safe_load_file("_data/publication_themes.yml")
 scholar = YAML.safe_load_file("_data/scholar.yml")
