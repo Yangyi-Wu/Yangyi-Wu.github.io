@@ -306,5 +306,26 @@
     "small": "/images/publications/sprawl-amenity-legacy-2023-v2-reviewed-small.webp",
     "medium": "/images/publications/sprawl-amenity-legacy-2023-v2-reviewed-medium.webp",
     "large": "/images/publications/sprawl-amenity-legacy-2023-v2-reviewed-large.webp"
+  },
+  "/images/publications/green-alternatives-joint-response-2023-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/green-alternatives-joint-response-2023-v2-reviewed-small.webp",
+    "medium": "/images/publications/green-alternatives-joint-response-2023-v2-reviewed-medium.webp",
+    "large": "/images/publications/green-alternatives-joint-response-2023-v2-reviewed-large.webp"
+  },
+  "/images/publications/water-inequality-spatial-concentration-2023-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/water-inequality-spatial-concentration-2023-v2-reviewed-small.webp",
+    "medium": "/images/publications/water-inequality-spatial-concentration-2023-v2-reviewed-medium.webp",
+    "large": "/images/publications/water-inequality-spatial-concentration-2023-v2-reviewed-large.webp"
+  },
+  "/images/publications/walking-frequency-duration-2023-v2-reviewed.png": {
+    "width": 1536,
+    "height": 1024,
+    "small": "/images/publications/walking-frequency-duration-2023-v2-reviewed-small.webp",
+    "medium": "/images/publications/walking-frequency-duration-2023-v2-reviewed-medium.webp",
+    "large": "/images/publications/walking-frequency-duration-2023-v2-reviewed-large.webp"
   }
 }

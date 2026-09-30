@@ -384,12 +384,75 @@
 2023-09-01-green-infrastructure-inequality-covid:
   authors: "Wu, Y., Wei, Y. D., Liu, M., & García, I."
   doi: 10.1016/j.ufug.2023.128027
+  visual_reviewed: true
+  visual: /images/publications/green-alternatives-joint-response-2023-v2-reviewed.png
+  thumbnail: /images/publications/green-alternatives-joint-response-2023-v2-reviewed.png
+  visual_source: "Supplied publisher PDF, Wu et al. (2023), survey design p. 3, joint-response models pp. 6-7 and discussion p. 8. Built-in image-generation tool; illustrative park and trail, not measured geography."
+  visual_caption_zh: "公园与步道的使用变化应联合判断：两者可能同时减少、保持不变、同时增加，也可能方向相反。矩阵展示相对于前一年自报访问频次的九类组合，颜色区分概念类别，不代表样本数量、发生概率或因果效应。个人资源、既有可达性和社区条件与这些选择有关；公园与步道为示意，不对应实际地理。"
+  visual_caption_en: "Park and trail visit changes are assessed jointly: both can decline, remain unchanged, increase, or move in opposing directions. The matrix illustrates nine combinations of self-reported frequency changes relative to the previous year. Colors distinguish conceptual categories, not sample counts, probabilities or causal effects. Personal resources, existing access and neighborhood conditions are associated with these choices; park and trail drawings are illustrative, not measured geography."
+  visual_alt_zh: "公园与步道各有减少、不变、增加三种响应，形成九类联合使用变化；个人资源、既有可达性与社区条件影响可选择的替代方案。"
+  visual_alt_en: "A three-by-three matrix of less, unchanged and more park and trail visits; opposing responses show why green-space alternatives matter alongside access."
+  thumbnail_alt_zh: "绿地公平不只关乎可达性，也关乎不同居民有哪些替代选择。"
+  thumbnail_alt_en: "Green-space equity involves alternatives as well as access."
+  summary_reviewed: true
+  contribution_zh: "绿色基础设施公平不只是离公园或步道有多近，还涉及居民能否调整使用方式、获得替代选择。本文联合分析疫情期间公园与步道访问频次的九类变化，发现两者可能相互补充，也可能一增一减。个人资源、既有可达性和社区条件与这些不同响应有关，因此把绿地使用简化成单一的增减尺度，会遗漏不平等的重要表现。"
+  contribution_en: "Green-infrastructure equity concerns alternatives as well as proximity. Jointly analyzing nine combinations of pandemic-era park and trail visit changes, the study identifies both complementary and opposing responses. These patterns are associated with personal resources, existing access and neighborhood conditions, showing why a single linear increase-or-decrease measure can miss important dimensions of inequality."
+  highlights_zh:
+    - "公园与步道的使用变化不能合并成一个简单的增减指标；同时减少与转向另一类绿地，代表不同的处境。"
+    - "较富裕居民拥有更多替代选择；部分老年居民的使用减少，却没有通过增加另一类绿地访问来补偿。"
+    - "使用减少者所在社区的感染水平更高，但问卷没有直接识别需求增加、感染风险或使用变化之间的因果机制。"
+  highlights_en:
+    - "Joint reductions and shifts toward an alternative green space represent different situations, not positions on one simple ordinal scale."
+    - "Wealthier respondents have more alternatives; some older respondents report fewer visits without a compensating increase in another type of green space."
+    - "Respondents reporting fewer visits live in neighborhoods with higher infection levels; the survey does not causally identify demand, infection or behavioral responses."
 2023-10-01-regional-drinking-water-pakistan:
   authors: "Wu, Y., & Wei, Y. D."
   doi: 10.1080/00330124.2023.2183414
+  visual_reviewed: true
+  visual: /images/publications/water-inequality-spatial-concentration-2023-v2-reviewed.png
+  thumbnail: /images/publications/water-inequality-spatial-concentration-2023-v2-reviewed.png
+  visual_source: "Supplied publisher PDF, Wu and Wei (2023), source definitions p. 6, coverage comparisons pp. 9-12, discussion pp. 13-14 (including cover). Built-in image-generation tool; category and analytical-dimension diagrams, not empirical maps or numerical charts."
+  visual_caption_zh: "改良水源在本研究中包括自来水、手压泵和电动泵，自来水是其中的子类。全人口地区比较中，改良水源覆盖的非空间不平等较低，空间集中却更强，说明差距大小与空间组织是不同维度。图中符号仅作概念说明，不表示指标数值；不同省份和城乡人群并非都有同样的格局。水源类别覆盖也不等于安全、持续可用的饮水服务。"
+  visual_caption_en: "The study defines improved sources as tap water, hand pumps and motor pumps; tap water is a subset. In the all-population district comparison, improved-water coverage has lower non-spatial inequality but stronger spatial concentration than tap-water coverage. Symbols illustrate analytical dimensions, not index values; provincial and urban-rural patterns vary. Source-category coverage does not establish safe, continuously available drinking-water service."
+  visual_alt_zh: "改良水源包含自来水和泵水；较低的地区覆盖差距仍可伴随更强的空间集中，覆盖率也不能证明水质安全或供应可靠。"
+  visual_alt_en: "Tap water is nested within improved sources; lower across-district inequality coexists with stronger spatial concentration, and coverage alone does not establish safe, reliable water."
+  thumbnail_alt_zh: "饮水供给的差距大小与空间集中并不等价。"
+  thumbnail_alt_en: "Water-coverage inequality and spatial concentration are distinct."
+  summary_reviewed: true
+  contribution_zh: "饮水覆盖的地区差距缩小，并不意味着空间排斥随之消失。本文将不平等、极化和空间集中结合起来，发现巴基斯坦改良水源覆盖的非空间差距小于自来水覆盖，空间集中却更强。自来水是改良水源的一部分，两种统计口径揭示了不同的区域格局及其相关条件，也说明规划判断不能只依赖一个覆盖率或不平等指标。"
+  contribution_en: "Smaller regional gaps in drinking-water coverage do not necessarily imply less spatial exclusion. Combining inequality, polarization and spatial concentration, the study finds lower non-spatial inequality but stronger spatial concentration for improved-water coverage than for tap-water coverage in Pakistan. Tap water is a subset of improved sources; the two measures reveal different regional patterns and associated conditions, showing why a single coverage or inequality indicator is insufficient."
+  highlights_zh:
+    - "研究使用 2015 年水源调查覆盖的 112 个地区；改良水源包括自来水、手压泵和电动泵，不是与自来水互斥的另一类系统。"
+    - "自来水覆盖与自然环境的关联更明显，改良水源覆盖对人口条件更敏感；城乡模型的关联也有差异。"
+    - "较低的非空间不平等可以掩盖空间集聚与排斥；水质、可达性和持续供应仍需独立评估，不能由水源类别直接推定。"
+  highlights_en:
+    - "The 2015 source survey covers 112 districts. Improved sources include tap water, hand pumps and motor pumps, rather than a mutually exclusive second system."
+    - "Tap-water coverage is more closely associated with environmental conditions; improved-water coverage is more sensitive to demographic conditions, with urban-rural differences."
+    - "Lower non-spatial inequality can conceal spatial clustering and exclusion. Quality, accessibility and availability need separate assessment, not inference from source category alone."
 2023-11-01-urban-form-air-pollution-walking:
   authors: "Wei, Y. D., Wu, Y., Xiao, W., Garcia, I., & Wen, M."
   doi: 10.1016/j.jth.2023.101686
+  visual_reviewed: true
+  visual: /images/publications/walking-frequency-duration-2023-v2-reviewed.png
+  thumbnail: /images/publications/walking-frequency-duration-2023-v2-reviewed.png
+  visual_source: "Supplied publisher PDF, Wei et al. (2023), data/methods pp. 4-5, spatial model Table 3 p. 7, discussion pp. 8-9. Built-in image-generation tool; hypothetical street segment, qualitative PM associations checked against Table 3."
+  visual_caption_zh: "频次与时长、起点与终点及潜在路径不能相互替代。原文表 3 的空间模型中，PM 与起点、潜在路径的步行时长呈显著负关联，与起点的频次呈显著正关联；其余三项未达到 5% 显著性水平。符号表示关联方向与显著性，不是效应大小或因果结论；虚线路段为示意，污染指标来自排放数据插值，不是个人暴露剂量或健康结果。"
+  visual_caption_en: "Frequency and duration, and origins, destinations and potential paths, are not interchangeable. In the spatial models of Table 3, PM has significant negative associations with origin and potential-path duration and a significant positive association with origin frequency; the other three comparisons are not significant at the 5% level. Symbols show direction and significance, not effect size or causality. The dashed street segment is illustrative; pollution indicators are interpolated from emissions, not measured personal exposure or health outcomes."
+  visual_alt_zh: "PM 空间模型六项对照：起点与潜在路径时长负关联，起点频次正关联；终点时长以及潜在路径、终点频次不显著。"
+  visual_alt_en: "Six spatial-model PM comparisons: negative origin and potential-path duration associations, positive origin-frequency association, and three nonsignificant comparisons."
+  thumbnail_alt_zh: "步行频次、时长及其空间位置可能给出不同的判断。"
+  thumbnail_alt_en: "Walking frequency, duration and spatial position can yield different interpretations."
+  summary_reviewed: true
+  contribution_zh: "步行活动多，并不意味着步行时间更长，也不能直接等同于更健康的环境。本文区分起点、终点与潜在路径，分别分析频次和时长，并控制空间效应。结果表明，紧凑用地对步行的关联会随指标和空间位置改变，污染较高的地方也可能出现频繁但较短的步行。研究把单一的步行性判断推进为对活动、空间情境与环境负担的联合分析。"
+  contribution_en: "More walking trips do not necessarily mean longer walks or a healthier environment. Separating origins, destinations and potential paths, the study models frequency and duration with spatial controls. Associations with compact land use vary by outcome and spatial position, while frequent but shorter walks can coincide with higher pollution indicators. The contribution is a joint analysis of activity, spatial context and environmental burden, rather than a single walkability measure."
+  highlights_zh:
+    - "控制空间效应后，紧凑用地不再与更高频次显著相关，并与潜在路径的步行时长呈负关联。"
+    - "就业类型混合与起点、终点的频次和时长呈正关联；职住混合在这些模型中却呈负关联，不能把不同混合方式视作同一种机制。"
+    - "PM 的关联随频次、时长及空间位置而不同；污染估计不是个人剂量，模型也没有测量健康改善或识别因果效应。"
+  highlights_en:
+    - "After spatial controls, compact land use is not significantly associated with higher frequency and is negatively associated with potential-path walking duration."
+    - "Job-type mixture is positively associated with origin and destination frequency and duration, while housing-job mixture has negative associations in these models."
+    - "PM associations differ across frequency, duration and spatial position. Pollution estimates are not personal doses, and the models do not measure health improvements or causal effects."
 2023-12-01-vulnerable-populations-affordable-housing:
   authors: "Wei, Y. D., Wu, Y., Xiao, W., & Wu, X."
   doi: 10.1061/JUPDDM.UPENG-4271
