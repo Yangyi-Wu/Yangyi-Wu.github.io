@@ -3,7 +3,7 @@ pages:
   projects: {en: Research Projects, zh: 科研项目}
   people: {en: People, zh: 团队成员}
   news: {en: News, zh: 学术动态}
-  join: {en: Exchange and Admissions, zh: 学术交流与招生}
+  join: {en: Join Us, zh: 学术交流与招生}
 source: https://sud.whu.edu.cn/info/1611/49111.htm
 source_checked: '2026-09-25'
 en:
@@ -21,6 +21,7 @@ en:
   practice: >-
     Our work informs questions about industrial location, housing and public resource provision. We distinguish findings that depend on local conditions from those that may inform planning elsewhere, and consider whose needs are met by different spatial arrangements.
   pi_title: Principal investigator
+  member_names_note: Members are listed using their preferred public names.
   pi_name: Yangyi Wu
   pi_role: Associate Professor · Department of Urban Planning
   pi_bio: Yangyi Wu works in urban and economic geography, with a focus on urban spatial change, amenities and unequal access to resources. He joined Wuhan University in 2022 after postdoctoral research at the University of Utah.
@@ -37,7 +38,7 @@ en:
   contact_title: Get in touch
   contact: Please email Yangyi Wu with your academic background, research interests and a question you would like to explore. A CV and an example of relevant work are helpful. Admissions follow the university’s official procedures.
   recruitment_title: Admissions
-  recruitment_note: Programs, places and application arrangements follow Wuhan University’s annual admissions announcements.
+  recruitment_note: Programs, available places and application arrangements are subject to Wuhan University's annual admissions announcements.
   assistant_title: Research assistants
   assistant: >-
     Undergraduate and master’s students interested in the group’s research are welcome to join ongoing work as research assistants; please get in touch by email.
@@ -60,6 +61,7 @@ zh:
   practice: >-
     研究回应产业区位、住房和公共资源配置中的实际问题。我们关注不同空间安排满足了谁的需要，也分清哪些结论依赖地方情境、哪些可以为其他城市的规划提供参考。
   pi_title: 课题组负责人
+  member_names_note: 成员姓名按本人公开偏好显示。
   pi_name: 伍杨屹
   pi_role: 副教授 · 城市规划系
   pi_bio: 伍杨屹从事城市与经济地理研究，关注城市空间变化、城市设施与资源获取的不平等。曾在美国犹他大学从事博士后研究，2022 年加入武汉大学城市设计学院。
@@ -143,37 +145,42 @@ projects:
     title_en: 'Comparative Regional Inequality Dynamics: Multiscalar and Multinational Perspectives'
 admissions:
   - year: '2027'
-    zh: 硕士研究生，招生专业：设计学、城乡规划学。
+    zh: 硕士研究生招生，专业方向：设计学、城乡规划学。
     en: Master’s students in Design and in Urban and Rural Planning.
   - year: '2028'
     zh: 预计开始招收博士研究生。
     en: PhD recruitment expected to begin.
 news:
   - date: '2026.07'
-    title_zh: 担任第 20 届 IACP 年会分会场主持人（Chair）
+    date_en: Jul 2026
+    title_zh: 担任第 20 届 IACP 年会分会场主持人
     title_en: Served as session chair at the 20th IACP Annual Conference
     url: /talks/
   - date: '2026.05'
+    date_en: May 2026
     title_zh: 共同召集城市与区域管理年会“数智化下的都市圈空间治理”分会场
-    title_en: Co-convened a session on metropolitan spatial governance in the digital age
+    title_en: Co-convened a session on metropolitan spatial governance in the era of digital and intelligent technologies
     url: /talks/
   - date: '2026'
     title_zh: 政治经济转型与大湾区城市形态研究发表于 Land Use Policy
-    title_en: Greater Bay Area urban form and politico-economic transition study in Land Use Policy
+    title_en: Study on Greater Bay Area urban form and politico-economic transition published in Land Use Policy
     url: /publication/2026-urban-form-politico-economic-transition-greater-bay-area
   - date: '2026'
     title_zh: “城市蔓延”词条发表于 The Encyclopedia of Human Geography
-    title_en: Urban Sprawl chapter published in The Encyclopedia of Human Geography
+    title_en: Urban Sprawl entry published in The Encyclopedia of Human Geography
     url: /publication/2026-urban-sprawl
   - date: '2025.10'
+    date_en: Oct 2025
     title_zh: 共同主持经济地理年会“新兴技术对经济地理学的挑战”分会场
     title_en: Co-chaired the conference session on emerging technologies and economic geography
     url: /talks/
   - date: '2025.07'
+    date_en: Jul 2025
     title_zh: 共同主持城市地理年会“大数据驱动的城市空间转型”分会场
     title_en: Co-chaired the conference session on big data-driven urban spatial transformation
     url: /talks/
   - date: '2025.04'
+    date_en: Apr 2025
     title_zh: 共同主持地理建模与 GIS 分析年会“城市感知与计算”分会场
     title_en: Co-chaired the conference session on urban sensing and computing
     url: /talks/
@@ -183,9 +190,9 @@ news:
     url: /publication/2025-park-use-covid-peri-urban
   - date: '2025'
     title_zh: 城市设施与知识密集型产业区位研究发表于 Applied Geography
-    title_en: Urban amenities and knowledge-intensive industry locations in Applied Geography
+    title_en: Study on urban amenities and knowledge-intensive industry locations published in Applied Geography
     url: /publication/2025-urban-amenities-knowledge-intensive-industry-locations
   - date: '2025'
     title_zh: 中国多中心城市发展研究发表于 Chinese Geographical Science
-    title_en: Polycentric urban development in China in Chinese Geographical Science
+    title_en: Study on polycentric urban development in China published in Chinese Geographical Science
     url: /publication/2025-polycentric-urban-development-china

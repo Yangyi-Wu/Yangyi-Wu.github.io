@@ -44,7 +44,7 @@ author_profile: false
 ======
 
 {% assign admission = site.data.group.admissions | where: 'year', '2027' | first %}
-指导方向包括城市空间公平、产业区位与空间数据分析。{{ admission.year }} 级招收{{ admission.zh }}预计自 2028 年起招收博士研究生；2026 级招生专业为规划专业（专硕、学硕）。
+指导方向包括城市空间公平、产业区位与空间数据分析。{{ admission.year }} 级{{ admission.zh }}预计自 2028 年起招收博士研究生；2026 级招生专业为规划专业（专硕、学硕）。
 
 研究合作与招生详情见[学术交流与招生]({{ '/zh/join/' | relative_url }})。具体专业与名额以武汉大学当年度招生通知为准。
 

@@ -10,7 +10,7 @@ author_profile: true
 
 ## 会议组织与受邀报告
 
-- **2026 年 7 月 10–12 日**，西安：担任第 20 届国际中国规划学会（IACP）年会分会场主持人（Chair）。[会议议程](https://www.china-planning.org/alpha/the-20-iacp-annual-conference-conference-program/)
+- **2026 年 7 月 10–12 日**，西安：担任第 20 届国际中国规划学会（IACP）年会分会场主持人。[会议议程](https://www.china-planning.org/alpha/the-20-iacp-annual-conference-conference-program/)
 - **2026 年 5 月 22–24 日**，芜湖：与肖伟辉、席广亮、沈静共同召集中国城市与区域管理学术年会“数智化下的都市圈空间治理”分会场。[官方通知与召集人名单](https://www.gsc.org.cn/gsc/xueshuDetail.html?contentId=2374&id=54)
 - **2025 年 10 月 17-19 日**，江西师范大学（南昌）：共同主持经济地理专业委员会年会分会场“新兴技术对经济地理学的挑战”。
 - **2025 年 7 月 25-28 日**，开封：共同主持城市地理专业委员会年会分会场“大数据驱动的城市空间转型”。

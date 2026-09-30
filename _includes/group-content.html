@@ -22,6 +22,7 @@
   </div>
 </section>
 <section class="group-section people-members" id="student-collaborators-title" aria-label="{% if page.lang == 'zh' %}学生与研究合作{% else %}Students and Research Collaborators{% endif %}">
+  <p class="group-meta people-names-note">{{ g.member_names_note }}</p>
   {% assign name_key = 'name_' | append: page.lang %}
   {% assign cohort_key = 'cohort_' | append: page.lang %}
   {% assign period_note_key = 'period_note_' | append: page.lang %}

@@ -116,10 +116,10 @@
     {% assign prefix = language_prefix %}{% include group-news.html limit=6 %}
   </section>
   <section class="home-section home-contact" aria-labelledby="home-contact-title">
-    <div class="home-section-heading"><h2 id="home-contact-title">{% if page.lang == 'zh' %}学生与合作{% else %}Students and collaboration{% endif %}</h2></div>
+    <div class="home-section-heading"><h2 id="home-contact-title">{{ site.data.group.pages.join[page.lang] }}</h2></div>
     <p>{{ home.invitation }}</p>
     {% assign admissions = site.data.group.admissions | where: 'year', '2027' | first %}
-    <p class="home-admissions"><strong>{{ admissions.year }}{% if page.lang == 'zh' %} 级招生：{% else %} entry: {% endif %}</strong>{{ admissions[page.lang] }}</p>
+    <p class="home-admissions"><strong>{{ admissions.year }}{% if page.lang == 'zh' %} 级{% else %} entry: {% endif %}</strong>{{ admissions[page.lang] }}</p>
     {% if page.lang == 'zh' %}
     <p class="home-phd-note">预计自 2028 年起招收博士研究生，具体安排以学校招生通知为准。</p>
     {% else %}

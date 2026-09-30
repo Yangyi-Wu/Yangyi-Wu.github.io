@@ -49,7 +49,7 @@ Teaching and supervision
 {% assign admission = site.data.group.admissions | where: 'year', '2027' | first %}
 I supervise research on urban spatial equity, industrial location, and spatial data analysis. {{ admission.year }} entry: {{ admission.en }} PhD recruitment is expected from 2028. The 2026 cohort covers professional and academic Master's tracks in Planning.
 
-See [Exchange and Admissions]({{ '/join/' | relative_url }}) for research collaborations and recruitment details. Programs and places are subject to Wuhan University's annual admissions announcements.
+See [{{ site.data.group.pages.join.en }}]({{ '/join/' | relative_url }}) for research collaborations and recruitment details. Programs and places are subject to Wuhan University's annual admissions announcements.
 
 Links
 ======

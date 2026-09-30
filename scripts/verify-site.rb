@@ -33,7 +33,7 @@ def check_navigation(page, path)
   slugs = %w[about research people publications join]
   links = page.css("#site-nav .masthead__menu-item:not(.persist) a")
   check(links.map { |a| a["href"] } == slugs.map { |slug| "#{prefix}/#{slug}/" }, "Expected five primary sections: #{path}")
-  titles = chinese ? %w[课题组 研究方向 团队成员 论文成果 学术交流与招生] : ["About", "Research", "People", "Publications", "Exchange and Admissions"]
+  titles = chinese ? %w[课题组 研究方向 团队成员 论文成果 学术交流与招生] : ["About", "Research", "People", "Publications", "Join Us"]
   check(links.map(&:text) == titles, "Incorrect localized navigation labels: #{path}")
   brand = page.at_css("#site-nav .masthead__menu-item--lg a")
   check(brand["href"] == (chinese ? "/zh/" : "/en/"), "Brand must return to the localized homepage: #{path}")
@@ -198,6 +198,10 @@ role_labels = {
   check(html(root, "#{prefix}/people/").at_css(".group-person img"), "Missing PI profile")
   students = YAML.safe_load_file("_data/students.yml")
   people = html(root, "#{prefix}/people/")
+  member_names_note = YAML.safe_load_file("_data/group.yml").fetch(language).fetch("member_names_note")
+  check(people.at_css(".people-names-note").text == member_names_note, "Missing member display-name policy")
+  yin = students.find { |student| student.fetch("id") == "yin" }
+  check(yin.fetch("quote_#{language}") == "🌷", "Yin's chosen personal reflection must be preserved")
   check(people.css(".group-student").length == students.length, "Missing student profiles: #{language}")
   check(students.map { |student| student.fetch("id") }.sort == %w[d deng l q t x y yin z], "Incorrect student roster")
   { "t" => ["T 同学", "Y. T."], "x" => ["X 同学", "Q. X."], "y" => ["Y 同学", "Z. Y."] }.each do |id, names|
@@ -254,6 +258,7 @@ role_labels = {
   join_copy = YAML.safe_load_file("_data/group.yml").fetch(language)
   check(join_page.css(".group-section p").any? { |p| p.text == join_copy.fetch("assistant") }, "Missing research assistant note")
   check(join_page.css(".group-section p").any? { |p| p.text == join_copy.fetch("exchange") }, "Missing academic exchange note")
+  check(join_page.css(".group-page-body > p").any? { |p| p.text == join_copy.fetch("recruitment_note") }, "Missing university admissions qualification")
   check(html(root, "#{prefix}/join/").css(".group-admissions dt").map(&:text) == expected_cohorts, "Admissions page differs from shared data")
   check(page.at_css(".profile-lead").text == homepage.fetch(language).fetch("lead"), "Wrong homepage introduction: #{language}")
   check(page.css(".home-introduction").empty?, "Geospatial perspective belongs in the PI profile")
@@ -283,6 +288,27 @@ role_labels = {
   end
   research_page = html(root, "#{prefix}/research/")
   group = YAML.safe_load_file("_data/group.yml")
+  join_title = group.fetch("pages").fetch("join").fetch(language)
+  check(page.at_css("#home-contact-title").text == join_title && join_page.at_css("h1").text == join_title, "Homepage and destination must use the same section label")
+  news_page = html(root, "#{prefix}/news/")
+  [[page, 6], [news_page, group.fetch("news").length]].each do |news_container, limit|
+    expected_news = group.fetch("news").first(limit)
+    expected_dates = expected_news.map do |item|
+      date = item.fetch("date")
+      language == "en" && date.match?(/\A\d{4}\.\d{2}\z/) ? Date.strptime(date, "%Y.%m").strftime("%b %Y") : date
+    end
+    check(news_container.css(".group-news time").map(&:text) == expected_dates, "News dates must respect language and known precision: #{language}")
+    check(news_container.css(".group-news a").map(&:text) == expected_news.map { |item| item.fetch("title_#{language}") }, "News titles differ from shared bilingual data")
+  end
+  if language == "zh"
+    check(page.at_css(".home-admissions").text == "2027 级硕士研究生招生，专业方向：设计学、城乡规划学。", "Repeated or broken Chinese admissions wording")
+    check(!html(root, "/zh/talks/").at_css("#main").text.include?("（Chair）"), "Redundant English session-chair label remains in Chinese")
+  else
+    check(news_page.at_css(".group-news").text.include?("Urban Sprawl entry published"), "Encyclopedia item must be called an entry")
+    check(!news_page.at_css(".group-news").text.include?("digital age"), "Digital and intelligent technologies must both be represented")
+    cv_page = html(root, "/cv/")
+    check(cv_page.css("#main a").any? { |a| a["href"] == "/join/" && a.text == join_title }, "CV must use the current admissions section label")
+  end
   check(research_page.css(".research-sections a").length == 5, "Missing research section navigation")
   check(research_page.css(".research-sections a").all? { |a| research_page.at_css(a["href"]) }, "Broken research section anchor")
   check(research_page.css("#research-methods p").map(&:text) == [homepage.fetch(language).fetch("methods"), homepage.fetch(language).fetch("data_analysis"), group.fetch(language).fetch("methods")], "Methods and data must be preserved in Research")

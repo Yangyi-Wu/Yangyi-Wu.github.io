@@ -8,7 +8,7 @@ zh:
   pi_approach: >-
     研究结合定量与定性方法：用空间数据识别分布格局和关联，用问卷与访谈理解居民的行为、感知和需求，通过不同证据的相互对照解释空间差异的形成机制。
   pi_data: >-
-    研究使用企业登记、住房交易、设施兴趣点、遥感影像与居民调查等数据，覆盖城市群、城市、社区及个体尺度。
+    研究使用企业登记、住房交易、设施兴趣点（POI）、遥感影像与居民调查等数据，覆盖城市群、城市、社区及个体尺度。
   perspective_title: 地理空间视角
   introduction: >-
     产业调整、人口流动与公共投资重塑城市空间，影响企业区位、住房市场和公共设施使用。我们从地理空间视角解释这些变化，以及发展机会如何在不同地区和人群之间分配。
@@ -26,14 +26,14 @@ zh:
 en:
   hero_lines: ['Urban Transformation', 'and Spatial Inequality']
   lead: >-
-    We study how urban transformation reshapes the geography of jobs, housing and public resources, and how these changes distribute opportunities across places and people.
+    Urban transformation reshapes opportunity: where do industries and jobs cluster, how do housing markets diverge, and whom do public resources serve?
   pi: Led by Associate Professor Yangyi Wu · School of Urban Design
   pi_statement: >-
     The UTSI Research Group studies urban transformation from a geospatial perspective, focusing on the spatial reorganization of firms and employment, housing markets and public resources, and how these changes affect opportunities across places and social groups.
   pi_approach: >-
     Our research combines quantitative and qualitative methods: spatial data identify patterns and relationships, while surveys and interviews reveal residents' behavior, perceptions and needs. Comparing these sources of evidence helps explain the mechanisms behind spatial differences.
   pi_data: >-
-    Research uses firm registration records, housing transactions, amenity points of interest, remote sensing imagery and resident surveys, spanning city-region, city, neighborhood and individual scales.
+    Research uses firm registration records, housing transactions, amenity points of interest (POIs), remote sensing imagery and resident surveys, spanning city-region, city, neighborhood and individual scales.
   perspective_title: A geospatial perspective
   introduction: >-
     Industrial restructuring, migration and public investment reshape firm locations, housing markets and the use of public facilities. A geospatial perspective explains these changes and how they redistribute development opportunities across places and social groups.
