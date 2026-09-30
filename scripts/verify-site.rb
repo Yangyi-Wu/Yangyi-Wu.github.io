@@ -85,6 +85,13 @@ Dir.glob("_publications/*.md").each do |source|
     check(page.css(".publication-figure").length == (record["visual_reviewed"] ? 1 : 0), "Unreviewed illustration: #{path}")
     headings = page.css(".page__content h2").map(&:text)
     check(headings.length == (record["summary_reviewed"] ? 2 : 0), "Unreviewed summary: #{path}")
+    if english_path == "/publication/2026-urban-form-politico-economic-transition-greater-bay-area"
+      check(data.fetch("date") == Date.new(2026, 8, 17) && data.fetch("issue_date") == Date.new(2026, 12, 1), "Urban form online and issue dates must remain distinct")
+      check(record.fetch("wu_author_role") == "co_corresponding", "Urban form authorship must match the published PDF")
+      check(page.at_css(".publication-page .page__content h2 + p").text == record.fetch("contribution_#{language}"), "Missing reviewed urban form contribution: #{path}")
+      check(page.css(".publication-page .page__content ul li").map(&:text) == record.fetch("highlights_#{language}"), "Missing urban form findings or methodological qualifications: #{path}")
+      check(page.at_css(".publication-figure figcaption").text == record.fetch("visual_caption_#{language}"), "Missing original urban form figure attribution: #{path}")
+    end
   end
 end
 

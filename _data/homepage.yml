@@ -54,6 +54,7 @@ selection:
     - Landscape and Urban Planning
     - Cities
     - Applied Geography
+    - Land Use Policy
 highlights:
   - paper: /publication/2025-park-use-covid-peri-urban
     figure: park-equity-study-area
@@ -64,12 +65,12 @@ highlights:
     title_en: Park equity through access, needs and use
     summary_zh: 公园分布并不能完整反映使用公平。盐湖城研究将空间指标与居民感知、疫情期间的使用变化相互对照，发现南部近郊的感知可达性高于客观评价，西部社区则面临更突出的质量短板。公平评价需要同时回应居民的实际体验与改善需求。
     summary_en: Park distribution alone does not capture equity. In Salt Lake City, southern peri-urban residents perceived better access than spatial measures suggested, while western communities faced greater quality deficits. Comparing spatial indicators, residents' perceptions and pandemic-era use connects equity assessment to lived experience and improvement needs.
-  - paper: /publication/2025-urban-amenities-knowledge-intensive-industry-locations
-    figure: amenity-industry-framework
-    figure_height: 925
-    figure_caption_zh: 城市设施与产业区位的多尺度框架。原文图 1，Teng et al. (2025)。
-    figure_caption_en: A multi-scalar framework of amenities and industry location. Original Fig. 1, Teng et al. (2025).
-    title_zh: 产业区位：都市区优势与地方营造
-    title_en: Industry location across metropolitan and local scales
-    summary_zh: 产业区位同时受都市区格局与地方条件影响。武汉汽车产业研究发现，都市区设施格局塑造板块优势，地方设施的数量与多样性影响集聚吸引力，基础设施和公共服务的作用更稳定。这意味着中心城区与外围地区需要不同的设施配置重点。
-    summary_en: Industry location reflects both metropolitan patterns and local conditions. Research on Wuhan's automotive industry finds that metropolitan amenities shape competitive advantage, while local availability and diversity support clustering. Infrastructure and public services have more consistent effects, pointing to different priorities for central and peripheral areas.
+  - paper: /publication/2026-urban-form-politico-economic-transition-greater-bay-area
+    figure: urban-form-quadruple-process
+    figure_height: 656
+    figure_caption_zh: 区域化与城市转型的四重过程框架。原文图 1，Wang et al. (2026)。
+    figure_caption_en: Regionalization in the quadruple-process framework. Original Fig. 1, Wang et al. (2026).
+    title_zh: 城市转型：区域协作与土地驱动增长
+    title_en: Regional cooperation and the persistence of land-driven growth
+    summary_zh: 大湾区研究把区域化与分权化、市场化、全球化放在同一框架中，解释城市形态背后的权力与资本关系。区域协作增强斑块连通性和土地利用多样性，却未根本改变依靠土地推动增长的治理逻辑；城市空间由产业、交通和房地产共同重组。
+    summary_en: The Greater Bay Area study extends decentralization, marketization and globalization with regionalization to explain the power and capital relations behind urban form. Cooperation improves patch connectivity and land-use diversity without fundamentally displacing land-driven local growth. Industry, transport infrastructure and real estate jointly shape urban restructuring.

@@ -19,6 +19,7 @@
   text_en: >-
     Why do firms choose particular locations? Our analysis proceeds at two levels. Within metropolitan areas, research on Shanghai shows that amenities do not attract all economic activity alike: they matter only modestly for the average producer-services firm, whereas "local creativity" — activity sustained by knowledge spillovers and face-to-face contact — responds far more strongly to co-location, accessibility and dense amenity clusters (Cities, 2022). Firm suburbanization is equally differentiated: producer services respond more strongly than manufacturing to neighborhood characteristics, and reading suburban job growth as simple decentralization obscures these differences (The Professional Geographer, 2020). At the finer scale of individual sites, a study of Wuhan's automotive industry finds that metropolitan amenity patterns set each district's competitive advantage, while the clustering appeal of a specific location depends on the quantity and diversity of local amenities, with infrastructure and public services the most stable factors (Applied Geography, 2025). The policy implication is clear: central and peripheral districts need different amenity priorities, and industrial policy works best in concert with placemaking.
   papers:
+    - /publication/2026-urban-form-politico-economic-transition-greater-bay-area
     - /publication/2025-urban-amenities-knowledge-intensive-industry-locations
     - /publication/2022-amenity-firm-agglomeration-local-creativity-producer-services-shanghai
     - /publication/2020-firm-suburbanization-urban-sprawl
@@ -43,6 +44,7 @@
   text_en: >-
     The number of centers on a map is only one facet of urban structure. "Polycentricity" can mean entirely different things: population, employment, housing prices, amenities and transport networks each identify different centers, and single-indicator judgments are easily misleading (Chinese Geographical Science, 2025). Form and function must also be verified separately. Utah's Wasatch Front is morphologically dispersed, yet trip-chain data show that daily life remains functionally dominated by downtown Salt Lake City — walking and cycling trip chains are common inside centers, while cars dominate elsewhere (Applied Geography, 2021). Housing markets require a different identification strategy: we replace administrative boundaries with attribute similarity, substitutability and spatial connectivity, treating submarkets as connected local markets; the resulting structure measurably improves hedonic models (Applied Spatial Analysis and Policy, 2020).
   papers:
+    - /publication/2026-urban-form-politico-economic-transition-greater-bay-area
     - /publication/2025-polycentric-urban-development-china
     - /publication/2020-spatial-heterogeneity-housing-prices-large-datasets
     - /publication/2021-trip-generation-trip-chains-polycentric-development-utah
