@@ -136,17 +136,19 @@ a:focus-visible, input:focus-visible, button:focus-visible, select:focus-visible
 .home-introduction-copy { min-width: 0; }
 .home-introduction-copy .home-introduction-lead { font-size: 18px; line-height: 1.8; margin: 0; }
 .home-introduction-copy .home-approach { font-size: 15px; line-height: 1.8; margin: 18px 0 10px; color: var(--global-text-color-light); }
-.home-pi-profile { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,2fr); gap: 64px; align-items: start; min-width: 0; scroll-margin-top: 110px; }
-.home-pi-person { display: grid; grid-template-columns: 104px minmax(0,1fr); gap: 12px 20px; align-items: start; }
-.home-pi-person > img { display: block; width: 104px; height: 130px; object-fit: cover; margin: 0; grid-row: 1 / span 2; }
-.home-pi-description { min-width: 0; }
-.home-pi-profile .group-eyebrow { color: var(--global-link-color); margin: 0 0 10px; }
+.home-pi-profile { display: grid; grid-template-columns: 220px minmax(0,1fr); gap: 64px; align-items: center; min-width: 0; scroll-margin-top: 110px; }
+.home-pi-person { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.home-pi-person > img { display: block; width: 180px; height: auto; aspect-ratio: 4 / 5; object-fit: cover; margin: 0; }
+.home-pi-description { min-width: 0; max-width: 800px; }
+.home-pi-profile .group-eyebrow { color: var(--global-link-color); margin: 0 0 6px; }
 .home-pi-profile h2 { font-size: 27px; line-height: 1.3; margin: 0; }
-.home-pi-profile .home-pi-role { grid-column: 2; font-size: 13px; line-height: 1.8; margin: 0; }
-.home-pi-profile .home-pi-bio { grid-column: 2; font-size: 15px; line-height: 1.8; margin: 0; }
-.home-pi-profile .home-pi-bio p { font-size: 17px; line-height: 1.85; margin: 0 0 18px; }
-.home-pi-profile .home-pi-bio p:last-child { font-size: 15px; color: var(--global-text-color-light); margin-bottom: 0; }
-.home-pi-person .home-pi-links { grid-column: 1 / -1; margin: 8px 0 0; gap: 4px 20px; font-size: 13px; }
+.home-pi-profile .home-pi-role { font-size: 13px; line-height: 1.8; margin: 8px 0 0; }
+.home-pi-profile .home-pi-bio { font-size: 15px; line-height: 1.8; margin: 0; }
+.home-pi-profile .home-pi-bio p { font-size: 18px; line-height: 1.85; margin: 0 0 18px; }
+.home-pi-profile .home-pi-bio p:last-child { font-size: 16px; color: var(--global-text-color-light); margin-bottom: 0; }
+.home-pi-description .home-pi-links { margin: 20px 0 0; gap: 4px 28px; font-size: 14px; }
+.home-pi-links a { justify-content: space-between; }
+.home-pi-links i { font-size: 11px; flex: 0 0 14px; text-align: center; }
 .home-pi-identity { min-width: 0; }
 .home-content > .home-section { max-width: 1280px; margin: 0 auto; padding: 48px 40px; }
 .home-content h2 { scroll-margin-top: 100px; }
@@ -397,8 +399,7 @@ html[lang="zh"] .home-highlight h3 { text-wrap: initial; }
   .home-introduction, .home-pi-profile { column-gap: 40px; }
   .home-research-areas { gap: 48px; }
   .home-research-areas section + section::before { left: -24px; }
-  .home-pi-person { grid-template-columns: 88px minmax(0,1fr); column-gap: 16px; }
-  .home-pi-person > img { width: 88px; height: 110px; }
+  .home-pi-profile { grid-template-columns: 200px minmax(0,1fr); }
   .home-pi-profile h2 { font-size: 24px; }
 }
 @media (min-width: 768px) and (max-width: 960px) {
@@ -437,12 +438,19 @@ html[lang="zh"] .home-highlight h3 { text-wrap: initial; }
   .home-section-label h2 { font-size: 26px; margin: 0; }
   .home-introduction-copy { display: block; }
   .home-introduction-copy .home-introduction-lead { font-size: 17px; margin-bottom: 22px; }
-  .home-pi-profile { grid-template-columns: 1fr; gap: 28px; }
+  .home-pi-profile { grid-template-columns: 156px minmax(0,1fr); gap: 24px; align-items: start; }
+  .home-pi-person { grid-column: 1; grid-row: 1; gap: 14px; }
+  .home-pi-person > img { width: 156px; }
+  .home-pi-description { display: contents; }
+  .home-pi-profile .home-pi-bio { grid-column: 1 / -1; grid-row: 2; }
+  .home-pi-description .home-pi-links { grid-column: 2; grid-row: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; margin: 0; padding-top: 8px; }
+  .home-pi-profile .home-pi-bio p { font-size: 17px; }
+  .home-pi-profile .home-pi-bio p:last-child { font-size: 15px; }
+  .home-pi-description .home-pi-links { font-size: 13px; }
+  .home-pi-links a { min-height: 44px; }
   .home-pi-profile h2 { font-size: 25px; }
   .home-pi-profile .home-pi-role { font-size: 13px; }
-  .home-pi-identity { align-self: center; }
   .home-pi-profile .group-eyebrow { font-size: 11px; }
-  .home-pi-profile .home-pi-role { grid-column: 2; }
   .home-profile::before, .home-selected::before, .home-research::before, .home-bottom-grid::before { left: 24px; right: 24px; }
   .home-content > .home-section { padding: 36px 24px; }
   .home-content > .home-profile { padding-bottom: 16px; }
