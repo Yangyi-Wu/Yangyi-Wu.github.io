@@ -340,7 +340,20 @@ html[lang="zh"] .home-highlight h3 { text-wrap: initial; }
 .publication-media img, .publication-figure img { display: block; width: 100%; height: auto; max-height: none; border: 0; background: #fff; box-shadow: none !important; }
 .publication-figure { margin: 30px 0 0; }
 .publication-figure--portrait { max-width: 640px; margin-left: auto; margin-right: auto; }
+.publication-figure > a { display: block; position: relative; max-width: 850px; padding-top: 48px; }
+.publication-figure-zoom { position: absolute; top: 0; right: 0; display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--global-border-color); border-radius: 2px; background: #fff; color: var(--global-text-color); font-size: 16px; }
+.publication-figure > a:hover .publication-figure-zoom, .publication-figure > a:focus-visible .publication-figure-zoom { border-color: var(--global-link-color); color: var(--global-link-color); }
 .publication-figure figcaption { color: var(--global-text-color-light); font-size: 13px; margin: 14px 0; }
+.figure-viewer-open { overflow: hidden; }
+.publication-image-viewer { width: min(96vw, 1600px); height: 92svh; max-width: none; max-height: none; padding: 0; border: 1px solid var(--global-border-color); border-radius: 2px; background: #fff; color: #222; }
+.publication-image-viewer::backdrop { background: rgba(0,0,0,.72); }
+.publication-viewer-toolbar { display: flex; justify-content: flex-end; gap: 4px; height: 56px; margin: 0; padding: 6px; border-bottom: 1px solid #ddd; }
+.publication-viewer-toolbar button { display: grid; place-items: center; width: 44px; height: 44px; margin: 0; padding: 0; border: 0; border-radius: 2px; background: #fff; color: #222; font-size: 16px; cursor: pointer; }
+.publication-viewer-toolbar button:hover, .publication-viewer-toolbar button:focus-visible { background: #eee; }
+.publication-viewer-toolbar button:disabled { color: #aaa; cursor: default; }
+.publication-viewer-stage { display: flex; height: calc(100% - 56px); overflow: auto; padding: 12px; overscroll-behavior: contain; }
+.publication-image-viewer .publication-viewer-stage img { display: block; flex-shrink: 0; width: auto; height: auto; max-width: none; max-height: none; margin: auto; background: #fff; }
+.publication-image-viewer .publication-viewer-stage img[hidden] { display: none; }
 .publication-back { font-size: 14px; display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; }
 .publication-page .page__title { font-size: 36px; margin: 18px 0; line-height: 1.45; }
 .publication-page .page__content { margin-top: 30px; font-size: 17px; line-height: 1.9; }

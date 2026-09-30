@@ -34,11 +34,25 @@ layout: default
           {% if page.lang == 'zh' %}{% assign visual_alt = page.visual_alt_zh %}{% endif %}
           {% assign image_info = site.data.publication_images[page.visual] %}
           <figure class="publication-figure{% if image_info.height > image_info.width %} publication-figure--portrait{% endif %}">
-            <a href="{{ image_info.large | relative_url }}" target="_blank" rel="noopener" aria-label="{% if page.lang == 'zh' %}查看大图{% else %}View full-size figure{% endif %}">
+            <a data-figure-open href="{{ image_info.large | relative_url }}" target="_blank" rel="noopener" aria-label="{% if page.lang == 'zh' %}查看大图{% else %}View full-size figure{% endif %}" title="{% if page.lang == 'zh' %}查看大图{% else %}View full-size figure{% endif %}">
               {% include publication-image.html path=page.visual alt=visual_alt %}
+              <span class="publication-figure-zoom" aria-hidden="true"><i class="fa-solid fa-expand" aria-hidden="true"></i></span>
             </a>
             <figcaption>{% if page.lang == 'zh' %}{{ page.visual_caption_zh | default: '研究概念示意，非实测地图或统计图。' }}{% else %}{{ page.visual_caption_en | default: 'Conceptual illustration, not an empirical map or statistical plot.' }}{% endif %}</figcaption>
           </figure>
+          <dialog class="publication-image-viewer" data-figure-viewer aria-label="{% if page.lang == 'zh' %}研究图片{% else %}Research figure{% endif %}">
+            <form method="dialog" class="publication-viewer-toolbar">
+              <button type="button" data-figure-out aria-label="{% if page.lang == 'zh' %}缩小{% else %}Zoom out{% endif %}" title="{% if page.lang == 'zh' %}缩小{% else %}Zoom out{% endif %}"><i class="fa-solid fa-magnifying-glass-minus" aria-hidden="true"></i></button>
+              <button type="button" data-figure-in aria-label="{% if page.lang == 'zh' %}放大{% else %}Zoom in{% endif %}" title="{% if page.lang == 'zh' %}放大{% else %}Zoom in{% endif %}"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></button>
+              <button type="button" data-figure-fit aria-label="{% if page.lang == 'zh' %}适应窗口{% else %}Fit to window{% endif %}" title="{% if page.lang == 'zh' %}适应窗口{% else %}Fit to window{% endif %}"><i class="fa-solid fa-compress" aria-hidden="true"></i></button>
+              <button type="submit" aria-label="{% if page.lang == 'zh' %}关闭图片{% else %}Close figure{% endif %}" title="{% if page.lang == 'zh' %}关闭图片{% else %}Close figure{% endif %}" autofocus><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+            </form>
+            <div class="publication-viewer-stage" data-figure-stage tabindex="0">
+              <p hidden data-figure-status data-loading="{% if page.lang == 'zh' %}正在加载图片…{% else %}Loading figure…{% endif %}" data-error="{% if page.lang == 'zh' %}图片暂时无法加载。{% else %}The figure could not be loaded.{% endif %}" role="status"></p>
+              <img data-figure-full alt="" decoding="async">
+            </div>
+          </dialog>
+          <script src="{{ '/assets/js/figure-viewer.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
         {% endif %}
       </section>
     </div>

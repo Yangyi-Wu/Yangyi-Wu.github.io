@@ -1,5 +1,7 @@
 # Park equity: evidence-led replacement
 
+Update, 2026-09-30: the numeric comparison below remains valid as selected supporting evidence, but was rejected as the main graphical abstract because it underrepresents the paper's contribution. The website now selects `images/publications/park-equity-context-contrast-reviewed.png`, a schematic comparison of southern and western peri-urban assessment contexts. Its generation prompts and source checks are recorded in `park-equity-figure-2026-09-30.json`. Neither the schematic roads nor the depicted residents represent mapped observations; connectors indicate comparisons, not causal or individual-to-park links.
+
 Built-in image tool used, no CLI/API-key fallback. Tool does not expose exact model.
 
 Source rechecked: supplied Wu25LAUP_Park equity.pdf, abstract and PDF pp. 7-8, Tables 3 and 6. Urban-center distance 322.30 m and western peri-urban distance 349.78 m rounded to 322 and 350 m. Litter-cleanup requests: 33.64% and 50.38%. These are stated needs, not measured litter or causal effects. Selected comparison excludes the southern group.
@@ -27,4 +29,3 @@ Use no more text than specified. No fake journal masthead. Prioritize visual hie
 ## Correction prompt
 
 Edit this academic research figure. Preserve every exact word, number, group assignment, color and all other content. Remove BOTH percentage bars and their gray tracks entirely: the numerals 33.64% and 50.38% alone are the quantitative evidence. Do not replace bars with any other chart. Refine typography to be less poster-like: reduce the huge top title by about 20%, use that saved space to create calm balanced spacing; keep numerical comparisons as the central focus. Keep white opaque background, portrait format, all text crisp and mobile readable. No new content, no extra illustrations. Preserve source and selected-comparison qualifier.
-

@@ -147,14 +147,14 @@
   authors: "Wu, Y., Wei, Y. D., Liu, M., & García, I."
   doi: 10.1016/j.landurbplan.2024.105269
   visual_reviewed: true
-  visual: /images/publications/park-access-needs-evidence-reviewed.png
-  thumbnail: /images/publications/park-access-needs-evidence-reviewed.png
-  visual_caption_zh: "中心城区与西部近郊的平均公园距离分别约为 322 米和 350 米，提出垃圾清理需求的受访者比例分别为 33.64% 和 50.38%。数据来自原文表 3、表 6；距离四舍五入至整数。该对照说明可达性评价需结合居民需求，不代表垃圾实测量或因果关系；路径图标仅为示意。"
-  visual_caption_en: "Urban-center and western peri-urban average park distances are approximately 322 m and 350 m; 33.64% and 50.38% of respondents, respectively, request litter cleanup. Source: Tables 3 and 6; distances rounded to whole meters. This selected comparison connects access assessment with resident needs, not measured litter or causality. Route symbols are schematic."
-  visual_alt_en: "Urban center versus western peri-urban communities: average park distance 322 versus 350 meters; respondents requesting litter cleanup 33.64% versus 50.38%. Similar access can coexist with different resident needs."
-  visual_alt_zh: "中心城区与西部近郊对照：平均公园距离约 322 米与 350 米，提出垃圾清理需求的受访者比例为 33.64% 与 50.38%。可达性相近，居民需求仍有差异。"
-  thumbnail_alt_en: "Similar measured park access does not mean the same experienced equity."
-  thumbnail_alt_zh: "客观可达性相近，并不意味着居民的服务体验相同。"
+  visual: /images/publications/park-equity-context-contrast-reviewed.png
+  thumbnail: /images/publications/park-equity-context-contrast-reviewed.png
+  visual_caption_zh: "依据 Wu et al. (2025) 的概念示意：南部近郊的可达性感知与空间指标存在错位；西部近郊呈现更高的设施改善需求，以及疫情期间与质量观感相关的使用脆弱性。路网、人物和设施均为示意，连线表示对照。"
+  visual_caption_en: "Conceptual synthesis of Wu et al. (2025): southern peri-urban access perceptions diverge from spatial measures; western peri-urban communities report greater improvement needs and pandemic-era use vulnerability associated with perceived quality. Roads, people and facilities are schematic; connectors indicate comparisons."
+  visual_alt_en: "Park equity beyond provision: southern peri-urban residents perceive access more optimistically than spatial measures suggest. Western peri-urban and urban-center communities have similar measured access but different perceptions; western residents report greater infrastructure needs and park use sensitive to quality perceptions during COVID-19. Conceptual regional comparisons, not empirical maps."
+  visual_alt_zh: "公园公平的两组概念对照：南部近郊居民对可达性的感知比空间指标显示的更乐观；西部近郊与中心城区的客观可达性相近，但感知不同，且西部居民的设施改善需求更高，疫情期间公园使用更容易受质量观感问题影响。图中空间结构为示意。"
+  thumbnail_alt_en: "Resource measures can miss context-specific park disadvantage in peri-urban communities."
+  thumbnail_alt_zh: "只看公园资源指标，可能遗漏不同近郊社区的不利处境。"
   wu_author_role: first
   authorship_source: "Publisher PDF, p. 1: Yangyi Wu is the first listed author; Yehua Dennis Wei is the corresponding author."
   summary_reviewed: true
