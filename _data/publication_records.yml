@@ -456,12 +456,71 @@
 2023-12-01-vulnerable-populations-affordable-housing:
   authors: "Wei, Y. D., Wu, Y., Xiao, W., & Wu, X."
   doi: 10.1061/JUPDDM.UPENG-4271
+  visual_reviewed: true
+  visual: /images/publications/housing-needs-policy-access-2023-v2-reviewed.png
+  thumbnail: /images/publications/housing-needs-policy-access-2023-v2-reviewed.png
+  visual_source: "Supplied publisher PDF, Wei et al. (2023), Nanjing survey design p. 3, satisfaction models Table 6 p. 9, conclusion p. 10. Built-in image-generation tool; dwellings and policy-access thresholds are conceptual illustrations."
+  visual_caption_zh: "保障性住房的供给、不同人群的居住偏好与政策可及性并不自动匹配。南京调查提示，资格条件、政策信息和申请程序都需要关注，而最常被报告的问题未必是与不满关联最强的问题。连线不表示人数流失或因果效应；户型和住宅为示意，不是三类人群的实测、推荐居住模式。图示归纳论文研究时期的案例，不是现行政策指引。"
+  visual_caption_en: "Housing provision, heterogeneous preferences and policy access do not automatically align. The Nanjing survey highlights eligibility, information and procedures; the most frequently reported problem is not necessarily the one most strongly associated with dissatisfaction. Connectors do not show attrition or causality. Dwellings are illustrative, not measured or recommended layouts for the groups. This is a historical study synthesis, not current policy guidance."
+  visual_alt_zh: "毕业生、外来务工人员和本地低收入家庭的住房偏好不同；政策资格、信息与申请程序使需求与政策可及性难以自动匹配。"
+  visual_alt_en: "Different housing needs are considered alongside eligibility, information and application barriers, rather than supply alone."
+  thumbnail_alt_zh: "住房需求与政策可及性并不自动匹配。"
+  thumbnail_alt_en: "Housing need and policy access do not automatically align."
+  summary_reviewed: true
+  contribution_zh: "保障性住房的难题不只是供应不足，也在于政策是否对接不同人群的居住偏好和申请能力。南京调查发现，新就业毕业生、外来务工人员与本地低收入家庭的需求不同，现有政策却存在明显错配；尤其是住房需求较强的外来务工人员，面临较多制度与行政障碍。本文还区分问题被报告的频率与其同满意度的关联，说明改善住房不能只处理最显眼的供给或区位问题。"
+  contribution_en: "Affordable-housing problems concern policy access and heterogeneous preferences as well as supply. The Nanjing survey identifies mismatches among graduates, migrant workers and local low-income families, particularly barriers facing migrants with strong housing needs. It also distinguishes how often a problem is reported from its association with dissatisfaction, showing why the most visible supply or location concern is not necessarily the most consequential barrier."
+  highlights_zh:
+    - "研究以 2016 年调查和 2018 年追访为基础，最终分析 822 份有效样本，分别比较三类人群。"
+    - "政策信息不足、申请程序复杂和保障范围有限，与满意度的关联不能用房源数量或远近替代解释。"
+    - "外来务工人员的租赁需求与政策可及性存在错配；本文讨论的是调查时期的制度安排，不是对当前政策的判断。"
+  highlights_en:
+    - "The 2016 survey and 2018 follow-up yield 822 validated observations for comparisons of three population groups."
+    - "Information, procedures and policy coverage matter to satisfaction; dwelling counts and remoteness do not capture these barriers."
+    - "Migrant rental needs and policy access are mismatched in the historical case, not a statement about current eligibility rules."
 2024-01-01-urban-structure-housing-prices-amenity-nanjing:
   authors: "Liu, M., Wei, Y. D., & Wu, Y."
   doi: 10.1007/s12061-023-09536-9
+  visual_reviewed: true
+  visual: /images/publications/amenity-double-role-regimes-2024-v2-reviewed.png
+  thumbnail: /images/publications/amenity-double-role-regimes-2024-v2-reviewed.png
+  visual_source: "Publisher abstract: https://link.springer.com/article/10.1007/s12061-023-09536-9. Built-in image-generation tool; hypothetical POIs and regimes, not measured Nanjing maps or model outputs."
+  visual_caption_zh: "设施既帮助识别城市空间结构，也与住房价格相关。价格关联的方向和显著性随空间分区变化，不能简化为普遍一致的溢价。图中兴趣点、街区与 A/B/C 分区均为示意，不是南京实测地图、真实分区数量或自组织映射输出；连线表示两种分析用途，不表示因果效应。"
+  visual_caption_en: "Amenities indicate urban structure and are associated with housing prices; direction and significance vary across spatial regimes. POIs, streets and A/B/C regimes are hypothetical, not measured Nanjing geography, the actual number of regimes or self-organizing-map outputs. Connectors show analytical roles, not causality."
+  visual_alt_zh: "同一设施格局有两种分析用途：识别城市结构，以及解释随空间分区而异的住房价格关联。"
+  visual_alt_en: "An illustrative amenity pattern branches into a structure-indicator role and regime-dependent housing-price associations."
+  thumbnail_alt_zh: "设施的双重角色，不等于普遍一致的房价溢价。"
+  thumbnail_alt_en: "Two amenity roles, not one universal price premium."
+  summary_reviewed: true
+  contribution_zh: "设施不只是住房价格模型中的邻里属性，也是识别城市空间结构的线索。本文结合自组织映射与空间分区模型，发现住房属性的价格关联在不同空间分区中，方向和显著性会变化。其贡献是把设施的双重角色联系起来，避免把城市结构压缩成到中心的距离，也避免把设施理解为处处相同的价格溢价。"
+  contribution_en: "Amenities are both housing-model attributes and indicators of urban structure. Self-organizing maps and spatial-regime models reveal regime-dependent directions and significance, connecting these two roles beyond distance-to-center measures or a universal premium."
+  highlights_zh:
+    - "结合遥感与设施兴趣点数据识别空间情境，而不只依靠到中心的距离。"
+    - "住房属性的关联方向和显著性随空间分区变化，设施不能被赋予统一的价格效应。"
+  highlights_en:
+    - "Remote sensing and POIs identify spatial context beyond center distance."
+    - "Hedonic associations vary by regime, rather than a uniform amenity effect."
 2024-02-01-producer-services-shanghai:
   authors: "Wei, Y. D., Xiao, W., & Wu, Y."
   doi: 10.1177/0308518X241245322
+  visual_reviewed: true
+  visual: /images/publications/producer-services-sector-context-2024-v2-reviewed.png
+  thumbnail: /images/publications/producer-services-sector-context-2024-v2-reviewed.png
+  visual_source: "Publisher abstract: https://journals.sagepub.com/doi/10.1177/0308518X241245322. Built-in image-generation tool; conceptual core/subcentre positions and reported association directions, not measured Shanghai geography."
+  visual_caption_zh: "中心集聚与郊区副中心兴起可以并存，但不同服务业不能套用相同的集聚解释。出版方摘要报告，集聚与信息技术、研发中心形成呈正关联，与金融、房地产服务的集中呈负关联；公共交通也与前两类服务发展有关。符号不表示大小、显著性等级或因果效应；中心与副中心位置、数量为示意，不是企业迁移轨迹或实际上海地图。"
+  visual_caption_en: "Core concentration and suburban subcentres can coexist. The publisher abstract reports positive agglomeration associations with IT/research centre emergence and negative associations with finance/real-estate concentration; transit is also associated with IT/research development. Symbols show neither magnitudes nor significance levels or causal effects. Positions and counts are illustrative, not Shanghai geography or firm-migration tracks."
+  visual_alt_zh: "中心与郊区副中心并存，集聚关联因行业不同：信息技术和研发为正，金融与房地产为负。"
+  visual_alt_en: "Centring and suburbanization coexist, with opposing reported agglomeration associations across producer-service sectors."
+  thumbnail_alt_zh: "生产性服务业区位需要行业与地方情境的解释。"
+  thumbnail_alt_en: "Producer-service location requires sector- and context-sensitive explanation."
+  summary_reviewed: true
+  contribution_zh: "生产性服务业仍向城市中心集中，并不排斥郊区副中心同时成长。本文将城市结构、制度情境与行业差异结合起来，揭示上海不同服务业的区位关联并不一致，尤其是集聚对信息技术、研发与金融、房地产的关联方向相反。因此，中心化或郊区化不是非此即彼的选择，也不能用单一的区位理论解释所有行业。"
+  contribution_en: "Persistent core concentration can coexist with emerging suburban subcentres. Combining spatial structure, institutions and sectoral differences, the Shanghai study finds opposing agglomeration associations across service sectors; neither a binary centring/suburbanization choice nor one location theory is sufficient."
+  highlights_zh:
+    - "集聚与信息技术、研发中心形成呈正关联，与金融、房地产服务的集中呈负关联。"
+    - "公共交通与信息技术、研发服务的发展有关；行业差异是区位解释的一部分，而不是模型之外的例外。"
+  highlights_en:
+    - "Agglomeration associations are positive for IT/research centre emergence and negative for finance/real-estate concentration."
+    - "Transit is associated with IT/research development; sectoral differences belong within the explanation."
 2025-05-01-urban-park-equity-wuhan:
   authors: "Yang, Y., Wu, Y., & Jiao, H."
   doi: 10.3390/su17052255
