@@ -126,7 +126,7 @@ Dir.glob("_publications/*.md").each do |source|
       image_info = publication_images.fetch(visual)
       figure = page.at_css(".publication-figure")
       image = figure.at_css("img")
-      check(figure.at_css("figcaption").text == record.fetch("visual_caption_#{language}"), "Missing bilingual evidence boundary: #{path}")
+      check(figure.at_css("figcaption").text == record.fetch("visual_caption_#{language}"), "Missing reviewed bilingual figure caption: #{path}")
       check(image["alt"] == record.fetch("visual_alt_#{language}"), "Missing localized figure description: #{path}")
       check(image["src"] == image_info.fetch("medium") && image["width"].to_i == image_info.fetch("width") && image["height"].to_i == image_info.fetch("height"), "Invalid responsive refined figure: #{path}")
       check(image["loading"] == "lazy" && image["srcset"] && image["sizes"], "Missing responsive image attributes: #{path}")

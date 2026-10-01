@@ -19,8 +19,8 @@
   visual: /images/publications/rental-employment-access-2019-v2-reviewed.png
   thumbnail: /images/publications/rental-employment-access-2019-v2-reviewed.png
   visual_source: "Conceptual synthesis of Li, Wei & Wu (2019), publisher PDF pp. 1, 4-5, 11-12. Built-in image-generation tool; urban layouts and transit connections are illustrative, not observed Shanghai geography or flows."
-  visual_caption_zh: "依据 Li, Wei & Wu (2019) 的概念归纳：中心区集中了高薪就业和高租金，郊区租金相对可负担，但交通与服务可达性仍与租金密切相关。租房可负担性需要与就业可达性一起理解。建筑与交通连接为示意，不是上海实测地图、通勤流量或因果效应。"
-  visual_caption_en: "Conceptual synthesis of Li, Wei & Wu (2019): central areas concentrate high-paying jobs and high rents; suburban rents are relatively affordable, while transport and service access remain important to rental values. Rental affordability should be considered alongside employment accessibility. Buildings and transit links are schematic, not measured Shanghai geography, commuting flows or causal effects."
+  visual_caption_zh: "租房可负担性与就业可达性需要一起理解。上海中心区的高薪就业与高租金相伴，郊区租金相对可负担，交通与服务可达性仍与租金密切相关（Li 等，2019）。"
+  visual_caption_en: "Rental affordability and employment accessibility belong in the same framework. Shanghai's central areas combine high-paying jobs with high rents; suburban rents are more affordable, while transport and service access remain closely associated with rental values (Li et al., 2019)."
   visual_alt_zh: "中心区与郊区的租赁市场概念对照：中心区高薪就业与高租金相伴，郊区租金相对可负担但交通可达性重要；就业、工资、流动人口、交通和服务设施共同构成分析框架。"
   visual_alt_en: "Conceptual comparison of central and suburban rental contexts: high-paying jobs and high rents coincide in central areas, while suburbs offer relatively affordable rents and transport access matters. Jobs, salaries, migrant population, transit and service amenities form the analytical framework."
   thumbnail_alt_zh: "租房可负担性需要与就业可达性一起理解。"
@@ -44,8 +44,8 @@
   visual: /images/publications/housing-urban-context-2019-v2-reviewed.png
   thumbnail: /images/publications/housing-urban-context-2019-v2-reviewed.png
   visual_source: "Conceptual synthesis of Li, Wei, Wu & Tian (2019), publisher PDF pp. 1, 11-13, Tables 6-7. Built-in image-generation tool; rings represent analytical zones schematically, not Shanghai boundaries or a measured price surface."
-  visual_caption_zh: "依据 Li, Wei, Wu & Tian (2019) 的圈层比较：住宅属性、交通可达性与服务设施的房价关联随城市空间情境而变。内城、扩展内城和郊区的侧重点不同，但不是排他的偏好分类。圆环及建筑为概念示意，不是上海实际边界或房价曲面；图中连线不表示因果效应。"
-  visual_caption_en: "Conceptual synthesis of the urban-zone comparisons in Li, Wei, Wu & Tian (2019): housing-price associations of dwelling attributes, transport access and service amenities vary with spatial context. The emphasis differs across the inner city, expanded inner city and suburbs without defining exclusive preferences. Rings and buildings are schematic, not Shanghai boundaries or an estimated price surface; connectors do not imply causality."
+  visual_caption_zh: "同一种区位属性，在不同城区的房价关联并不相同。上海内城的服务设施关联突出，扩展内城兼具地铁与设施优势，郊区则更凸显交通可达性的重要性（Li 等，2019）。"
+  visual_caption_en: "Housing-price associations vary across urban zones. Service amenities feature prominently in Shanghai's inner city, metro access and services in the expanded inner city, and transport accessibility in the suburbs (Li et al., 2019)."
   visual_alt_zh: "用三个示意圆环对照内城、扩展内城和郊区：内城突出公共与私人服务设施，扩展内城突出地铁和服务设施，郊区突出公共交通可达性。同一种属性的房价关联并非处处相同。"
   visual_alt_en: "Three schematic zones contrast the inner city's public and private service amenities, the expanded inner city's metro and service amenities, and suburban transport access. Housing-value associations of the same attributes differ by urban context."
   thumbnail_alt_zh: "城市空间结构影响区位属性与房价之间的关联。"
@@ -69,8 +69,8 @@
   visual: /images/publications/amenity-employment-sectors-2019-v2-reviewed.png
   thumbnail: /images/publications/amenity-employment-sectors-2019-v2-reviewed.png
   visual_source: "Conceptual synthesis of Li, Wei & Wu (2019), publisher PDF pp. 1, 4-5, 9-11 and Tables 5-6. Built-in image-generation tool; hypothetical layouts and symbol sizes are not mapped employment, measured popularity or effect estimates."
-  visual_caption_zh: "依据 Li, Wei & Wu (2019) 的产业对照：生产性服务业与私人服务设施热度的联系较紧，制造业则更关联基础设施和人口规模，说明舒适性及人力资本理论的适用性有产业差异。街区、点位和符号大小均为示意，不代表实测就业、评论数量或效应强弱；两类产业的条件并非互斥，设施与就业的因果方向也未确定。"
-  visual_caption_en: "Conceptual synthesis of the sectoral comparison in Li, Wei & Wu (2019): producer services are relatively more closely associated with private-service popularity, while manufacturing is more related to infrastructure and population. Amenity and human-capital explanations are sector-dependent. Layouts, locations and symbol sizes are illustrative, not measured jobs, comment counts or effects. Conditions are not exclusive to one sector, and causal direction remains unresolved."
+  visual_caption_zh: "舒适性理论的解释力随产业而变。上海生产性服务业就业与私人服务设施热度的联系较紧，制造业就业则更关联交通基础设施和当地人口规模（Li 等，2019）。"
+  visual_caption_en: "Amenity-based explanations are sector-dependent. Producer-service employment in Shanghai is more closely associated with private-service popularity, while manufacturing employment is more related to transport infrastructure and local population (Li et al., 2019)."
   visual_alt_zh: "生产性服务业与制造业的概念对照：前者较紧地联系私人服务设施热度，后者更关联基础设施和人口规模。人力资本理论提供部分解释，设施与就业的因果方向未确定。"
   visual_alt_en: "Conceptual comparison of producer services and manufacturing: private-service popularity is relatively more relevant to the former, infrastructure and population to the latter. Human-capital theory offers a partial explanation, with no causal direction established."
   thumbnail_alt_zh: "舒适性理论的解释力随产业而变。"
@@ -94,8 +94,8 @@
   visual: /images/publications/network-access-control-2019-v2-reviewed.png
   thumbnail: /images/publications/network-access-control-2019-v2-reviewed.png
   visual_source: "Conceptual synthesis of Li, Wei, Miao, Wu & Xiao (2019), supplied PDF pp. 5-6, 9-11, 14-17. Built-in image-generation tool; diagrams illustrate degree and betweenness, not measured city networks, knowledge-flow volumes or causal estimates."
-  visual_caption_zh: "依据 Li et al. (2019) 区分获取能力与控制能力：直接联系提供知识获取机会，桥梁位置体现连接不同群体的能力。控制能力更集中，但网络能力与创新表现的关联随知识类型、地区和时期变化。节点与连线仅为拓扑示意，不是实测城市网络、知识流量或因果估计。"
-  visual_caption_en: "Conceptual synthesis of Li et al. (2019): direct connections represent acquisition opportunities, while brokerage between groups represents control capability. Control is more concentrated, but network-performance associations vary by knowledge type, region and period. Nodes and edges illustrate topology, not measured city networks, knowledge flows or causal estimates."
+  visual_caption_zh: "知识获取与网络控制是两种不同的地方优势：直接联系提供获取机会，桥梁位置体现跨群体的控制能力。控制能力更集中，网络优势与创新表现的关联则随知识类型、地区和时期变化（Li 等，2019）。"
+  visual_caption_en: "Knowledge acquisition and network control are distinct place advantages: direct ties provide access, while brokerage connects separate groups. Control is more concentrated, and network-performance associations vary by knowledge type, region and period (Li et al., 2019)."
   visual_alt_zh: "获取能力与控制能力的拓扑对照：左侧突出直接联系和度中心性，右侧突出群体间桥梁和中介中心性；控制能力更集中，创新关联具有地区和时期差异。"
   visual_alt_en: "Conceptual topology contrasts acquisition through direct connections and degree centrality with control through brokerage and betweenness centrality. Control is more concentrated; innovation associations vary by region and period."
   thumbnail_alt_zh: "知识获取的连接不等于知识流通中的控制位置。"
@@ -110,8 +110,8 @@
   visual: /images/publications/housing-connectivity-2020-v2-reviewed.png
   thumbnail: /images/publications/housing-connectivity-2020-v2-reviewed.png
   visual_source: "Conceptual synthesis of Wu, Wei & Li (2020), supplied PDF pp. 7-8 (Fig. 2), 12-13 (distance/density connectivity), 18 (Fig. 5), 29-30. Built-in image-generation tool, using original Fig. 2 as a conceptual reference; point patterns and search circles are hypothetical, not the observed 43-submarket map."
-  visual_caption_zh: "依据 Wu, Wei & Li (2020) 的分类框架，把属性相似性、价格机制上的可替代性和基于距离与密度的空间连接性结合起来。原文以模型残差代理可替代性，实证识别出 43 个子市场。点位与圆圈仅解释方法，不是盐湖县的实测分类图，也不表示通勤或交易网络。"
-  visual_caption_en: "Conceptual synthesis of Wu, Wei & Li (2020): attribute similarity, substitutability in price mechanisms and distance-and-density connectivity inform a hybrid classification. Hedonic residuals proxy substitutability; the empirical analysis identifies 43 submarkets. Points and circles explain the method, not the observed Salt Lake County classification or a commuting or transaction network."
+  visual_caption_zh: "住房子市场识别同时考虑属性相似性、价格机制上的可替代性和空间连接性。以模型残差代理可替代性、以距离与密度刻画连接性，研究在盐湖县识别出 43 个子市场（Wu 等，2020）。"
+  visual_caption_en: "Housing submarkets combine attribute similarity, substitutability in price mechanisms and spatial connectivity. Hedonic residuals proxy substitutability; distance and density measure connectivity. The hybrid classification identifies 43 submarkets in Salt Lake County (Wu et al., 2020)."
   visual_alt_en: "A hypothetical parcel pattern illustrates spatial connectivity based on distance and density rather than strict continuity. Similarity and substitutability inform hybrid classification; 43 empirical submarkets are reported separately from the schematic pattern."
   visual_alt_zh: "假想地块点位解释基于距离与密度、而非严格连续性的空间连接性；属性相似性与价格机制可替代性共同支持混合分类，43 个实证子市场的数量与示意图分开呈现。"
   thumbnail_alt_en: "Housing submarket classification through spatial connectivity."
@@ -147,8 +147,8 @@
   visual: /images/publications/firm-sector-neighborhood-2020-v2-reviewed.png
   thumbnail: /images/publications/firm-sector-neighborhood-2020-v2-reviewed.png
   visual_source: "Conceptual synthesis of Wu, Wei & Li (2020), supplied PDF pp. 2, 7-8, 15-18, Tables 5-7. Built-in image-generation tool; hypothetical urban strips illustrate sectoral growth patterns, and the neighborhood inset explicitly excludes the local block group."
-  visual_caption_zh: "依据 Wu, Wei & Li (2020) 的产业与尺度对照：生产性服务业兼有中心及周边增长和新开发边缘增长，制造业则呈现郊区化增长。下方区分本街区与不含本街区的周边邻里。街区、点位和密度均为概念示意，不是实测地图、企业数量、搬迁轨迹或因果效应。"
-  visual_caption_en: "Conceptual synthesis of Wu, Wei & Li (2020): producer services combine central and nearby growth with new-edge growth, while manufacturing shows suburbanizing growth. The inset separates the local block group from its surrounding neighborhood, which excludes that block group. Layouts, points and densities are schematic, not observed geography, establishment counts, relocation tracks or causal effects."
+  visual_caption_zh: "企业郊区化具有产业差异：生产性服务业兼有中心及周边增长和新开发边缘增长，制造业则更趋向郊区化。本街区与周边邻里的条件共同构成区位分析的两个尺度（Wu 等，2020）。"
+  visual_caption_en: "Firm suburbanization varies by sector. Producer services combine central and nearby growth with new-edge growth, while manufacturing shows suburbanizing growth. Local block-group conditions and the surrounding neighborhood define two analytical scales (Wu et al., 2020)."
   visual_alt_zh: "生产性服务业与制造业的增长模式示意：前者在中心及周边和新开发边缘增长，后者表现为郊区化增长；下方区分本街区及排除本街区的周边邻里，说明解释随产业和尺度而变。"
   visual_alt_en: "Schematic producer-service and manufacturing growth patterns contrast central and new-edge growth with suburbanizing growth. An inset distinguishes the local block group from the surrounding area excluding it, highlighting sectoral and scale-dependent explanations."
   thumbnail_alt_zh: "郊区增长不等于中心衰退，解释随产业与邻里尺度变化。"
@@ -172,8 +172,8 @@
   visual: /images/publications/regional-gap-structure-2020-v2-reviewed.png
   thumbnail: /images/publications/regional-gap-structure-2020-v2-reviewed.png
   visual_source: "Conceptual synthesis of Wei, Wu, Liao & Zhang (2020), supplied PDF pp. 1-2, 13-15 and Figs. 13-14. Built-in image-generation tool; symbolic gap spacing, hypothetical neighboring tiles and illustrative ordering are not empirical index series, Jiangsu boundaries or observed county ranks."
-  visual_caption_zh: "依据 Wei et al. (2020) 区分差距、空间结构与地方发展地位流动：常规不平等下降，并不等于核心—边缘格局消失。不同极化指标和地区划分的走势也不相同。色块间距、相邻拼块与排列连线仅解释概念，不是江苏实测地图、指数曲线或县域排名。"
-  visual_caption_en: "Conceptual synthesis of Wei et al. (2020): a decline in conventional inequality does not erase core-periphery structure. Polarization trends also differ by measure and geographical division. Symbolic spacing, neighboring tiles and ordering traces explain the concepts; they are not measured Jiangsu geography, index series or county rankings."
+  visual_caption_zh: "区域差距、空间极化与地方发展地位流动是三个不同维度。江苏案例中，常规不平等下降与核心—边缘格局持续并存，极化趋势也随指标和地区划分变化（Wei 等，2020）。"
+  visual_caption_en: "Regional inequality, spatial polarization and place mobility capture distinct dimensions. In Jiangsu, declining conventional inequality coexists with persistent core-periphery structure; polarization trends also vary by measure and geographical division (Wei et al., 2020)."
   visual_alt_zh: "三个概念对照：差距可以缩小，高—高与低—低集群仍持续，部分地方地位变化也未打破整体核心—边缘格局；所有色块和连线均为示意。"
   visual_alt_en: "Three conceptual views show a narrowing gap, persistent high-high and low-low spatial clusters, and some place mobility without overturning the core-periphery hierarchy. All tiles, spacing and ordering traces are schematic."
   thumbnail_alt_zh: "指标上的差距收敛不等于空间发展机会的收敛。"
@@ -197,8 +197,8 @@
   visual: /images/publications/polycentricity-trip-chains-2021-v2-reviewed.png
   thumbnail: /images/publications/polycentricity-trip-chains-2021-v2-reviewed.png
   visual_source: "Conceptual synthesis of Wei, Xiao & Wu (2021), supplied PDF pp. 1, 4-6, 8-10 and Fig. 4. Built-in image-generation tool; nodes and links are an explanatory topology, not observed center locations, counts, trip volumes or household trajectories. No inconsistent sample or center totals are reproduced."
-  visual_caption_zh: "依据 Wei, Xiao & Wu (2021) 对照就业形态与日常功能联系：多个中心并不自动形成均衡的功能网络，盐湖城市中心仍占主导。节点、连线和活动序列均为概念示意，不是实测地理位置、中心数量、出行量或个体轨迹；功能多中心程度较低也不等于规划失败。"
-  visual_caption_en: "Conceptual synthesis of Wei, Xiao & Wu (2021): several employment centers do not automatically form a functionally balanced network, and downtown Salt Lake City remains dominant. Nodes, links and activity sequences are explanatory, not measured locations, center counts, trip volumes or individual trajectories. A low degree of functional polycentricity does not imply planning failure."
+  visual_caption_zh: "就业的形态多中心与日常活动的功能多中心并不一致。犹他 Wasatch Front 地区虽有多个就业中心，出行与活动联系仍由盐湖城市中心主导；出行链揭示了中心之间的实际功能关系（Wei 等，2021）。"
+  visual_caption_en: "Morphological and functional polycentricity differ. The Wasatch Front has several employment centers, yet daily activity links remain dominated by downtown Salt Lake City. Trip chains reveal the functional relationships between centers (Wei et al., 2021)."
   visual_alt_zh: "就业中心的分散形态与集中于盐湖城市中心的日常活动联系相对照，下方用假想活动序列说明出行链；步行在中心内相对更常见，汽车仍主导区域出行。"
   visual_alt_en: "Dispersed employment-center morphology is contrasted with activity links dominated by downtown Salt Lake City. A hypothetical activity sequence illustrates trip chains; walking is relatively more common within centers, while cars dominate region-wide."
   thumbnail_alt_zh: "多个就业中心不保证功能联系均衡。"
@@ -210,8 +210,8 @@
   visual: /images/publications/amenity-creativity-spatial-context-2022-v2-reviewed.png
   thumbnail: /images/publications/amenity-creativity-spatial-context-2022-v2-reviewed.png
   visual_source: "Refined conceptual synthesis of Wu, Wei, Li & Liu (2022), supplied PDF Fig. 1 (p. 4), creativity proxies (pp. 5-6), Table 2 distance-based proximity measures (p. 7), findings and limitations (pp. 12-16). Built-in image-generation tool edited the earlier reviewed graphic; the accessibility network was replaced by a single illustrative proximity segment."
-  visual_caption_zh: "依据 Wu et al. (2022) 区分设施对企业集聚与地方创意的关联，并对照共址、邻近距离和设施集群等空间关系。原文以注册专利、著作权及软件著作权识别创意企业，并不测量全部城市文化创意。点位、邻近连线和中心至郊区的横线均为概念示意，不是实测流量、交通路线或效应曲线。"
-  visual_caption_en: "Conceptual synthesis of Wu et al. (2022): amenity associations differ for firm agglomeration and local creativity, alongside co-location, proximity and amenity clusters. Registered patents, copyright and software copyright identify creative firms, not the full scope of urban cultural creativity. Points, proximity segments and CBD-to-suburb rules are schematic, not measured flows, transport routes or effect curves."
+  visual_caption_zh: "设施与企业集聚、地方创意的关联各有侧重，共址、邻近和设施集群也对应不同的空间关系。上海研究以专利和著作权识别创意企业，将设施的区位吸引力与创意关联分开分析（Wu 等，2022）。"
+  visual_caption_en: "Amenities have different associations with firm agglomeration and local creativity, across co-location, proximity and amenity clusters. The Shanghai study identifies creative firms through patents and copyright, separating locational attraction from creativity-related associations (Wu et al., 2022)."
   visual_alt_en: "Co-location, distance-based accessibility and amenity clusters coexist. A qualitative CBD-to-suburb comparison contrasts amenity associations that weaken for firm agglomeration with those that persist for creativity proxied through registered outputs. No transport network or estimated effect curve is shown."
   visual_alt_zh: "共址、基于距离的可达性与设施集群等空间关系并存；定性对照显示设施与企业集聚的关联远离中央商务区后减弱，与注册成果所代理的地方创意的关联仍延续到郊区。图中不画实测交通网络或估计效应曲线。"
   thumbnail_alt_en: "Firm agglomeration and local creativity require different spatial explanations."
@@ -247,8 +247,8 @@
   visual: /images/publications/transit-loss-recovery-2022-v2-reviewed.png
   thumbnail: /images/publications/transit-loss-recovery-2022-v2-reviewed.png
   visual_source: "Conceptual synthesis of Xiao, Wei & Wu (2022), supplied PDF pp. 4-5, 11-14 and Table 3. Built-in image-generation tool; formula connectors denote calculation, not causation. No ridership series or recovery curves were invented."
-  visual_caption_zh: "依据 Xiao, Wei & Wu (2022) 的测度定义与回归树结果：实际客流和模型基线共同构成相对影响，前后时期的相对影响之差衡量恢复。客流损失与恢复的主要关联因素不同。连线只表示计算关系，色带只区分时期，不表示实测客流或恢复速度；模型重要性不等于因果效应。"
-  visual_caption_en: "Conceptual synthesis of the measures and regression-tree results in Xiao, Wei & Wu (2022): observed and modelled baseline ridership define relative impact; the difference between later and earlier impacts measures recovery. Loss and recovery have different leading correlates. Connectors show calculation only; colored bands distinguish periods, not observed ridership or recovery speed. Model importance is not a causal effect."
+  visual_caption_zh: "交通韧性需要分别衡量客流损失与恢复。实际客流相对模型基线的偏离刻画冲击，前后时期相对影响的变化刻画恢复；回归树显示，两者的主要关联因素不同（Xiao 等，2022）。"
+  visual_caption_en: "Transport resilience separates ridership loss from recovery. Observed ridership relative to a modelled baseline measures impact; changes in relative impact measure recovery. Regression trees identify different leading correlates for loss and recovery (Xiao et al., 2022)."
   visual_alt_zh: "轻轨客流损失和恢复的测度框架：实际客流相对模型基线计算相对影响，再比较前后时期。邻里少数族裔人口占比在损失模型中最突出，建筑覆盖率在恢复模型中最突出。"
   visual_alt_en: "Measurement framework separates light-rail ridership loss from recovery using observed ridership and a modelled baseline. Neighborhood minority share leads the loss models; building coverage leads the recovery model."
   thumbnail_alt_zh: "客流损失与恢复能力需要分开测量。"
@@ -272,8 +272,8 @@
   visual: /images/publications/urban-form-stage-context-2023-v2-reviewed.png
   thumbnail: /images/publications/urban-form-stage-context-2023-v2-reviewed.png
   visual_source: "Conceptual synthesis of Wu, Wei & Liu (2023), supplied PDF pp. 2, 6-7, 12-16. Built-in image-generation tool; hypothetical blocks illustrate dimensions and qualitative intervals summarize community timing, not observed maps, infection rates or causal effects."
-  visual_caption_zh: "依据 Wu, Wei & Liu (2023) 对照疫情初期、暴发期与恢复期：形态指标的关联和受冲击较大的社区类型随阶段变化，人口密度不能与高不透水率城市用地混为一谈。街区为假设示意；横线概括社区受影响的阶段，不表示病例数量、持续时间估计或效应大小。本文没有确定底层因果机制。"
-  visual_caption_en: "Conceptual synthesis of Wu, Wei & Liu (2023): urban-form associations and the community groups especially affected vary across initial, outbreak and recovery stages. Population density is distinct from highly impervious urban land use. Blocks are hypothetical; intervals summarize stages of community burden, not case counts, estimated durations or effect sizes. Underlying causal mechanisms were not identified."
+  visual_caption_zh: "城市形态与社区脆弱性的关联随疫情阶段变化。初期、暴发期与恢复期受冲击较大的社区类型不同，人口密度与不透水率也需要作为不同的形态维度理解（Wu 等，2023）。"
+  visual_caption_en: "Urban-form associations with community vulnerability change across pandemic stages. The communities most affected differ between the initial, outbreak and recovery stages; population density and impervious cover capture distinct dimensions of urban form (Wu et al., 2023)."
   visual_alt_zh: "三个疫情阶段的概念对照：初期突出连通性与步行性，暴发期突出土地混合，恢复期区分高不透水率用地与其他形态指标；下方对照少数族裔、新郊区及传统城市与郊区社区的受影响阶段。"
   visual_alt_en: "Three-stage conceptual comparison highlights connectivity and walkability initially, land-use mix during the outbreak, and impervious urban land use during recovery; qualitative intervals compare the timing of burden across community types."
   thumbnail_alt_zh: "城市形态与疫情脆弱性的关联随阶段和社区而变。"
@@ -297,8 +297,8 @@
   visual: /images/publications/watershed-integrated-agenda-2023-v2-reviewed.png
   thumbnail: /images/publications/watershed-integrated-agenda-2023-v2-reviewed.png
   visual_source: "Conceptual synthesis of Wang, Wu, Hu & Zhang (2023), editorial PDF pp. 1-3. Built-in image-generation tool; catchment, streams, land-cover patches and grids are hypothetical, not remote-sensing observations or a validated governance-impact model."
-  visual_caption_zh: "依据 Wang et al. (2023) 编者述评的五项研究重点，连接多源数据、多尺度分析、总体环境、决策需求和开放共享。中央流域、水系、用地与网格均为假设示意，不对应具体流域或实测遥感资料；连线表示研究内容的整合，不表示已验证的治理效果。"
-  visual_caption_en: "Conceptual synthesis of the five research priorities in the editorial by Wang et al. (2023), connecting multisource data, multiscale analysis, the total environment, decision needs and open sharing. The watershed, streams, land-cover patches and grids are hypothetical, not a named watershed or observed remote-sensing data. Connectors express research integration, not validated governance effects."
+  visual_caption_zh: "流域遥感的研究议程连接多源数据、多尺度分析、总体环境、决策需求与开放共享。编者述评将这些重点放在同一框架中，推动从单项观测走向流域系统的综合理解（Wang 等，2023）。"
+  visual_caption_en: "The watershed remote-sensing agenda connects multisource data, multiscale analysis, the total environment, decision needs and open sharing. The editorial brings these priorities into a framework for integrated watershed understanding (Wang et al., 2023)."
   visual_alt_zh: "流域遥感研究议程：以自然与人类活动相联系的假设流域为中心，连接多源数据、多尺度分析、总体环境、决策需求和开放数据共享五个重点。"
   visual_alt_en: "Watershed remote-sensing research agenda connects a hypothetical nature-human watershed with multisource data, multiscale analysis, the total environment, decision needs and open data sharing."
   thumbnail_alt_zh: "从单层监测走向综合、面向决策的流域研究。"
@@ -322,8 +322,8 @@
   visual: /images/publications/city-region-provincial-scales-2023-v2-reviewed.png
   thumbnail: /images/publications/city-region-provincial-scales-2023-v2-reviewed.png
   visual_source: "Conceptual synthesis of Qin, Wei, Wu & Huang (2023 final issue; 2022 online), supplied PDF pp. 2, 22-24. Built-in image-generation tool; matched hypothetical cities and provincial compartments show analytical scales, not YRD geography, measured index values or policy effects."
-  visual_caption_zh: "依据 Qin et al. (2023) 的尺度比较：长三角整体的后期趋同，可以与省内核心—边缘差距并存。左右两图使用相同的假设点位，仅改变分析范围；方框与颜色不对应真实省界、城市位置或经济数值，也不表示各省的实际格局完全相同。下方概括发展阶段，不是统计曲线或政策因果链。"
-  visual_caption_en: "Conceptual synthesis of the scale comparison in Qin et al. (2023): later YRD-wide convergence can coexist with provincial core-periphery divides. The two views use matched hypothetical places with different analytical extents. Compartments and colors are not real provincial boundaries, city locations or economic values, nor evidence that all provinces share identical patterns. The chronology summarizes stages, not a statistical series or policy-causal chain."
+  visual_caption_zh: "区域趋同具有尺度差异：长三角整体的后期趋同，与省内核心—边缘差距持续并存。跨省城市区域和省内空间结构的对照，解释了不同分析范围为何会得到不同的不平等判断（Qin 等，2023）。"
+  visual_caption_en: "Regional convergence is scale-dependent. Later convergence across the Yangtze River Delta coexists with persistent provincial core-periphery divides. Comparing city-region and provincial structures explains why assessments of inequality vary with analytical extent (Qin et al., 2023)."
   visual_alt_zh: "以同一套假设点位对照跨省城市区域和省内分析：区域后期增长与向上流动，并不消除省内核心—边缘差距；下方区分核心主导增长、外围次中心形成与后期趋同。"
   visual_alt_en: "Matched hypothetical places contrast a cross-border city-region extent with separate provincial frames. Later peripheral growth and mobility can coexist with persistent provincial divides; a short chronology distinguishes development stages."
   thumbnail_alt_zh: "大区域趋同可以与省内分化并存。"
@@ -347,8 +347,8 @@
   visual: /images/publications/sprawl-amenity-legacy-2023-v2-reviewed.png
   thumbnail: /images/publications/sprawl-amenity-legacy-2023-v2-reviewed.png
   visual_source: "Conceptual synthesis of Zhang, Wu & Liu (2023), supplied PDF pp. 5, 8-10, 13-14. Built-in image-generation tool; the planning sketch illustrates Type 2, not an observed Wuhan neighborhood, measured population or amenity map."
-  visual_caption_zh: "依据 Zhang, Wu & Liu (2023) 八类发展模式中的一种：紧凑趋势、持续人口增长与低于全市平均的人均设施增长可以并存。手绘街区只说明规划情境，不是武汉实测街道或设施分布。图中区分蔓延测度与服务诊断，避免把设施变化直接当作蔓延指数；引线不表示因果作用。"
-  visual_caption_en: "Conceptual synthesis of one of the eight development types in Zhang, Wu & Liu (2023): a compact trend, continued population growth and below-average per-capita amenity growth can coexist. The planning sketch is not a mapped Wuhan neighborhood or amenity distribution. The graphic distinguishes sprawl measurement from service diagnosis; leader lines do not imply causation."
+  visual_caption_zh: "武汉的发展类型比较显示，紧凑趋势与持续人口增长可以伴随低于全市平均的人均设施增长。蔓延测度识别发展形态，服务诊断揭示设施配置与人口变化的匹配程度（Zhang 等，2023）。"
+  visual_caption_en: "One of Wuhan's development types combines a compact trend and continued population growth with below-average per-capita amenity growth. Sprawl measures describe development form; service diagnosis examines how amenity provision matches population change (Zhang et al., 2023)."
   visual_alt_zh: "假设传统郊区的规划手绘示意与三项诊断并列：紧凑发展趋势、人口持续增长、人均设施增长低于全市平均。下方区分建成区扩张相对人口变化的蔓延测度和设施服务诊断。"
   visual_alt_en: "A hypothetical suburban planning sketch accompanies a compact-development trend, continued population growth and below-average per-capita amenity growth. The lower comparison separates sprawl measurement from service diagnosis."
   thumbnail_alt_zh: "紧凑趋势并不保证服务充分。"
@@ -359,8 +359,8 @@
   visual_reviewed: true
   summary_source: "Publisher abstract and highlights, https://www.sciencedirect.com/science/article/pii/S0264275123001610, checked 2026-10-01. The supplied source set contains no full PDF for this paper; no additional coefficient or causal-mechanism claim is made."
   visual_source: "Existing built-in-engine conceptual matrix retained after comparison with the publisher abstract and highlights. Signs summarize reported model associations by type and scale, not magnitudes or causal effects."
-  visual_caption_zh: "Xiong, Wei & Wu (2023) 的类型—尺度对照：集聚外部性并非处处以相同方式发挥作用。图中的 detected effect 概括所检验模型中的关联，不表示因果效应或效应大小；未检出也不等于在所有情境中永远没有作用。这些关联不能直接解释为观测到的知识流动或因果机制。"
-  visual_caption_en: "Type-scale comparison in Xiong, Wei & Wu (2023): agglomeration externalities do not operate uniformly across space. Detected effect summarizes reported model associations, not causal effects or their magnitude; no detected effect is not proof of no relationship in every context. These associations cannot be read directly as observed knowledge flows or causal mechanisms."
+  visual_caption_zh: "解释科技企业创生，需要同时区分集聚外部性的类型与尺度。专业化和相关多样性在邻里与全市尺度均有关联，专业化的空间作用范围更广；城市化经济仅在全市尺度呈负关联（Xiong 等，2023）。"
+  visual_caption_en: "Tech firm births depend on the type and scale of agglomeration externalities. Specialization and related variety are associated with births at neighborhood and city-wide scales, with specialization having a broader spatial reach; urbanization economies show a negative association only city-wide (Xiong et al., 2023)."
   visual: /images/publications/agglomeration-scales-reviewed.png
   thumbnail: /images/publications/agglomeration-scales-reviewed.png
   visual_alt_en: "Specialization and related variety act at neighborhood and city-wide scales; unrelated variety shows no detected effect; urbanization economies act negatively only city-wide."
@@ -388,8 +388,8 @@
   visual: /images/publications/green-alternatives-joint-response-2023-v2-reviewed.png
   thumbnail: /images/publications/green-alternatives-joint-response-2023-v2-reviewed.png
   visual_source: "Supplied publisher PDF, Wu et al. (2023), survey design p. 3, joint-response models pp. 6-7 and discussion p. 8. Built-in image-generation tool; illustrative park and trail, not measured geography."
-  visual_caption_zh: "公园与步道的使用变化应联合判断：两者可能同时减少、保持不变、同时增加，也可能方向相反。矩阵展示相对于前一年自报访问频次的九类组合，颜色区分概念类别，不代表样本数量、发生概率或因果效应。个人资源、既有可达性和社区条件与这些选择有关；公园与步道为示意，不对应实际地理。"
-  visual_caption_en: "Park and trail visit changes are assessed jointly: both can decline, remain unchanged, increase, or move in opposing directions. The matrix illustrates nine combinations of self-reported frequency changes relative to the previous year. Colors distinguish conceptual categories, not sample counts, probabilities or causal effects. Personal resources, existing access and neighborhood conditions are associated with these choices; park and trail drawings are illustrative, not measured geography."
+  visual_caption_zh: "公园与步道的使用变化应联合判断。相对于前一年的自报访问频次形成九类组合，既包括同向变化，也包括异向变化；个人资源、既有可达性和社区条件与这些响应有关（Wu 等，2023）。"
+  visual_caption_en: "Park and trail use changes are assessed jointly. Self-reported visit frequencies relative to the previous year form nine response combinations, including changes in parallel and opposing directions. Personal resources, existing access and neighborhood conditions are associated with these responses (Wu et al., 2023)."
   visual_alt_zh: "公园与步道各有减少、不变、增加三种响应，形成九类联合使用变化；个人资源、既有可达性与社区条件影响可选择的替代方案。"
   visual_alt_en: "A three-by-three matrix of less, unchanged and more park and trail visits; opposing responses show why green-space alternatives matter alongside access."
   thumbnail_alt_zh: "绿地公平不只关乎可达性，也关乎不同居民有哪些替代选择。"
@@ -412,8 +412,8 @@
   visual: /images/publications/water-inequality-spatial-concentration-2023-v2-reviewed.png
   thumbnail: /images/publications/water-inequality-spatial-concentration-2023-v2-reviewed.png
   visual_source: "Supplied publisher PDF, Wu and Wei (2023), source definitions p. 6, coverage comparisons pp. 9-12, discussion pp. 13-14 (including cover). Built-in image-generation tool; category and analytical-dimension diagrams, not empirical maps or numerical charts."
-  visual_caption_zh: "改良水源在本研究中包括自来水、手压泵和电动泵，自来水是其中的子类。全人口地区比较中，改良水源覆盖的非空间不平等较低，空间集中却更强，说明差距大小与空间组织是不同维度。图中符号仅作概念说明，不表示指标数值；不同省份和城乡人群并非都有同样的格局。水源类别覆盖也不等于安全、持续可用的饮水服务。"
-  visual_caption_en: "The study defines improved sources as tap water, hand pumps and motor pumps; tap water is a subset. In the all-population district comparison, improved-water coverage has lower non-spatial inequality but stronger spatial concentration than tap-water coverage. Symbols illustrate analytical dimensions, not index values; provincial and urban-rural patterns vary. Source-category coverage does not establish safe, continuously available drinking-water service."
+  visual_caption_zh: "饮水供给的差距大小与空间集中是两个不同维度。巴基斯坦全人口地区比较中，改良水源覆盖比自来水覆盖的非空间不平等更低，空间集中却更强；改良水源包括自来水、手压泵和电动泵（Wu 与 Wei，2023）。"
+  visual_caption_en: "Inequality and spatial concentration capture different dimensions of water provision. In Pakistan's all-population district comparison, improved-source coverage has lower non-spatial inequality but stronger spatial concentration than tap-water coverage. Improved sources include taps, hand pumps and motor pumps (Wu & Wei, 2023)."
   visual_alt_zh: "改良水源包含自来水和泵水；较低的地区覆盖差距仍可伴随更强的空间集中，覆盖率也不能证明水质安全或供应可靠。"
   visual_alt_en: "Tap water is nested within improved sources; lower across-district inequality coexists with stronger spatial concentration, and coverage alone does not establish safe, reliable water."
   thumbnail_alt_zh: "饮水供给的差距大小与空间集中并不等价。"
@@ -436,8 +436,8 @@
   visual: /images/publications/walking-frequency-duration-2023-v2-reviewed.png
   thumbnail: /images/publications/walking-frequency-duration-2023-v2-reviewed.png
   visual_source: "Supplied publisher PDF, Wei et al. (2023), data/methods pp. 4-5, spatial model Table 3 p. 7, discussion pp. 8-9. Built-in image-generation tool; hypothetical street segment, qualitative PM associations checked against Table 3."
-  visual_caption_zh: "频次与时长、起点与终点及潜在路径不能相互替代。原文表 3 的空间模型中，PM 与起点、潜在路径的步行时长呈显著负关联，与起点的频次呈显著正关联；其余三项未达到 5% 显著性水平。符号表示关联方向与显著性，不是效应大小或因果结论；虚线路段为示意，污染指标来自排放数据插值，不是个人暴露剂量或健康结果。"
-  visual_caption_en: "Frequency and duration, and origins, destinations and potential paths, are not interchangeable. In the spatial models of Table 3, PM has significant negative associations with origin and potential-path duration and a significant positive association with origin frequency; the other three comparisons are not significant at the 5% level. Symbols show direction and significance, not effect size or causality. The dashed street segment is illustrative; pollution indicators are interpolated from emissions, not measured personal exposure or health outcomes."
+  visual_caption_zh: "步行频次与时长，以及起点、终点和潜在路径，反映不同的行为与空间维度。空间模型中，PM 与起点和潜在路径的步行时长呈显著负关联，与起点的步行频次呈显著正关联（Wei 等，2023）。"
+  visual_caption_en: "Walking frequency and duration capture different behaviors, while origins, destinations and potential paths capture different spatial contexts. Spatial models show significant negative PM associations with origin and potential-path duration, but a significant positive association with origin frequency (Wei et al., 2023)."
   visual_alt_zh: "PM 空间模型六项对照：起点与潜在路径时长负关联，起点频次正关联；终点时长以及潜在路径、终点频次不显著。"
   visual_alt_en: "Six spatial-model PM comparisons: negative origin and potential-path duration associations, positive origin-frequency association, and three nonsignificant comparisons."
   thumbnail_alt_zh: "步行频次、时长及其空间位置可能给出不同的判断。"
@@ -460,8 +460,8 @@
   visual: /images/publications/housing-needs-policy-access-2023-v2-reviewed.png
   thumbnail: /images/publications/housing-needs-policy-access-2023-v2-reviewed.png
   visual_source: "Supplied publisher PDF, Wei et al. (2023), Nanjing survey design p. 3, satisfaction models Table 6 p. 9, conclusion p. 10. Built-in image-generation tool; dwellings and policy-access thresholds are conceptual illustrations."
-  visual_caption_zh: "保障性住房的供给、不同人群的居住偏好与政策可及性并不自动匹配。南京调查提示，资格条件、政策信息和申请程序都需要关注，而最常被报告的问题未必是与不满关联最强的问题。连线不表示人数流失或因果效应；户型和住宅为示意，不是三类人群的实测、推荐居住模式。图示归纳论文研究时期的案例，不是现行政策指引。"
-  visual_caption_en: "Housing provision, heterogeneous preferences and policy access do not automatically align. The Nanjing survey highlights eligibility, information and procedures; the most frequently reported problem is not necessarily the one most strongly associated with dissatisfaction. Connectors do not show attrition or causality. Dwellings are illustrative, not measured or recommended layouts for the groups. This is a historical study synthesis, not current policy guidance."
+  visual_caption_zh: "保障性住房需要同时回应居住偏好与政策可及性。南京调查识别出资格条件、政策信息和申请程序等障碍；被报告最多的问题，与居住不满关联最强的问题可能不同（Wei 等，2023）。"
+  visual_caption_en: "Affordable housing needs to address both residential preferences and policy access. The Nanjing survey identifies barriers involving eligibility, information and application procedures; the most frequently reported problem may differ from the strongest correlate of dissatisfaction (Wei et al., 2023)."
   visual_alt_zh: "毕业生、外来务工人员和本地低收入家庭的住房偏好不同；政策资格、信息与申请程序使需求与政策可及性难以自动匹配。"
   visual_alt_en: "Different housing needs are considered alongside eligibility, information and application barriers, rather than supply alone."
   thumbnail_alt_zh: "住房需求与政策可及性并不自动匹配。"
@@ -484,8 +484,8 @@
   visual: /images/publications/amenity-double-role-regimes-2024-v2-reviewed.png
   thumbnail: /images/publications/amenity-double-role-regimes-2024-v2-reviewed.png
   visual_source: "Publisher abstract: https://link.springer.com/article/10.1007/s12061-023-09536-9. Built-in image-generation tool; hypothetical POIs and regimes, not measured Nanjing maps or model outputs."
-  visual_caption_zh: "设施既帮助识别城市空间结构，也与住房价格相关。价格关联的方向和显著性随空间分区变化，不能简化为普遍一致的溢价。图中兴趣点、街区与 A/B/C 分区均为示意，不是南京实测地图、真实分区数量或自组织映射输出；连线表示两种分析用途，不表示因果效应。"
-  visual_caption_en: "Amenities indicate urban structure and are associated with housing prices; direction and significance vary across spatial regimes. POIs, streets and A/B/C regimes are hypothetical, not measured Nanjing geography, the actual number of regimes or self-organizing-map outputs. Connectors show analytical roles, not causality."
+  visual_caption_zh: "设施具有双重分析角色：既帮助识别城市空间结构，也与住房价格相关。南京研究显示，同类设施的价格关联方向和显著性随空间分区变化，设施价值需要放在具体城市情境中理解（Liu 等，2024）。"
+  visual_caption_en: "Amenities have two analytical roles: indicating urban structure and explaining housing-price associations. In Nanjing, the direction and significance of these associations vary across spatial regimes, making urban context essential to understanding amenity value (Liu et al., 2024)."
   visual_alt_zh: "同一设施格局有两种分析用途：识别城市结构，以及解释随空间分区而异的住房价格关联。"
   visual_alt_en: "An illustrative amenity pattern branches into a structure-indicator role and regime-dependent housing-price associations."
   thumbnail_alt_zh: "设施的双重角色，不等于普遍一致的房价溢价。"
@@ -506,8 +506,8 @@
   visual: /images/publications/producer-services-sector-context-2024-v2-reviewed.png
   thumbnail: /images/publications/producer-services-sector-context-2024-v2-reviewed.png
   visual_source: "Publisher abstract: https://journals.sagepub.com/doi/10.1177/0308518X241245322. Built-in image-generation tool; conceptual core/subcentre positions and reported association directions, not measured Shanghai geography."
-  visual_caption_zh: "中心集聚与郊区副中心兴起可以并存，但不同服务业不能套用相同的集聚解释。出版方摘要报告，集聚与信息技术、研发中心形成呈正关联，与金融、房地产服务的集中呈负关联；公共交通也与前两类服务发展有关。符号不表示大小、显著性等级或因果效应；中心与副中心位置、数量为示意，不是企业迁移轨迹或实际上海地图。"
-  visual_caption_en: "Core concentration and suburban subcentres can coexist. The publisher abstract reports positive agglomeration associations with IT/research centre emergence and negative associations with finance/real-estate concentration; transit is also associated with IT/research development. Symbols show neither magnitudes nor significance levels or causal effects. Positions and counts are illustrative, not Shanghai geography or firm-migration tracks."
+  visual_caption_zh: "上海生产性服务业的中心集聚与郊区副中心兴起并存。集聚与信息技术、研发中心形成呈正关联，与金融、房地产服务集中呈负关联；公共交通也与前两类服务发展有关（Wei 等，2024）。"
+  visual_caption_en: "Core concentration and suburban subcentres coexist in Shanghai's producer services. Agglomeration is positively associated with IT and research-center emergence but negatively associated with finance and real-estate concentration; transit is also associated with IT and research development (Wei et al., 2024)."
   visual_alt_zh: "中心与郊区副中心并存，集聚关联因行业不同：信息技术和研发为正，金融与房地产为负。"
   visual_alt_en: "Centring and suburbanization coexist, with opposing reported agglomeration associations across producer-service sectors."
   thumbnail_alt_zh: "生产性服务业区位需要行业与地方情境的解释。"
@@ -528,8 +528,8 @@
   visual: /images/publications/park-supply-demand-matching-2025-v2-reviewed.png
   thumbnail: /images/publications/park-supply-demand-matching-2025-v2-reviewed.png
   visual_source: "Conceptual synthesis of Yang, Wu & Jiao (2025), publisher article sections 2.3 and 4-6, DOI 10.3390/su17052255. Built-in image-generation tool; plans are hypothetical, and 28.25% is a supply-demand classification of communities, not a survey response rate or intervention effect."
-  visual_caption_zh: "依据 Yang、Wu 与 Jiao（2025）的供需匹配框架：公园服务供给结合容量、质量与可达性，需求结合人口年龄结构与开发情境。武汉案例中，28.25% 的社区按相对供需等级被识别为需求未满足，并非这一比例的受访居民直接报告了不满。高供给的中心城区也可能面临更高需求；不同地区需采用有针对性的规划回应。公园与街区均为假想示意，不是武汉实测地图，也不是经过验证的干预效果。"
-  visual_caption_en: "Conceptual synthesis of Yang, Wu & Jiao (2025): service supply combines capacity, quality and accessibility; demand accounts for population age composition and development context. In Wuhan, 28.25% of communities are classified as having unmet demand by relative supply-demand grades, not the share of survey respondents reporting dissatisfaction. High central-area provision can still fall short of demand. Plans are hypothetical, not measured Wuhan geography or tested intervention effects."
+  visual_caption_zh: "公园公平取决于供给与需求的匹配。供给结合容量、质量与可达性，需求结合人口年龄结构与开发情境；武汉 28.25% 的社区按相对供需等级被识别为需求未满足，中心城区较高的供给也可能跟不上需求（Yang 等，2025）。"
+  visual_caption_en: "Park equity depends on matching supply with demand. Capacity, quality and accessibility define supply; age composition and development context inform demand. Relative supply-demand grades classify 28.25% of Wuhan communities as having unmet demand, including shortfalls despite high central-area provision (Yang et al., 2025)."
   visual_alt_en: "Park equity as matching quality-adjusted supply to age-sensitive demand. High central-area supply can still fall short of demand; underserved suburbs need context-specific responses. The Wuhan model classifies 28.25 percent of communities as having unmet demand. All plans are hypothetical."
   visual_alt_zh: "公园公平从资源数量转向质量调整后的服务供给与年龄敏感需求的匹配：中心城区高供给仍可能不够，服务不足的郊区需要因地制宜回应。武汉模型将28.25%的社区归为需求未满足，图中规划图均为假想示意。"
   thumbnail_alt_en: "Park equity depends on matching services to differentiated needs."
@@ -552,8 +552,8 @@
   visual: /images/publications/park-equity-experience-v4-reviewed.png
   thumbnail: /images/publications/park-equity-experience-v4-reviewed.png
   visual_source: "Conceptual synthesis of Wu et al. (2025), publisher PDF abstract and discussion/conclusions (pp. 1, 10-11). Built-in image-generation tool; streets and parks are illustrative, not measured Salt Lake City geography."
-  visual_caption_zh: "依据 Wu et al. (2025) 的概念归纳：南部近郊存在客观可达性劣势，居民评价却更乐观；西部近郊与中心城区的客观可达性相近，但感知不同，设施改善需求更高，疫情期间的使用也更容易受质量观感问题影响。街区与公园为示意，不对应实际地理；连线表示对照，不是因果效应。"
-  visual_caption_en: "Conceptual synthesis of Wu et al. (2025): southern peri-urban residents perceive access more optimistically despite measured disadvantage. Western peri-urban and urban-center communities have similar measured access but different perceptions; western residents report greater infrastructure needs and pandemic-era use vulnerability associated with perceived quality. Streets and parks are illustrative, not measured geography; connectors indicate comparisons, not causal effects."
+  visual_caption_zh: "公园公平需要对照客观可达性、居民感知与实际使用。盐湖城南部近郊客观可达性较差，评价却更乐观；西部近郊与中心城区可达性相近，居民的设施改善需求和使用体验仍有差异（Wu 等，2025）。"
+  visual_caption_en: "Park equity brings measured access, residents' perceptions and actual use together. Southern peri-urban Salt Lake City residents report more optimistic perceptions despite poorer access; western communities have access similar to the urban center but different infrastructure needs and use experiences (Wu et al., 2025)."
   visual_alt_en: "Park equity beyond provision: southern peri-urban residents perceive access more optimistically than spatial measures suggest. Western peri-urban and urban-center communities have similar measured access but different perceptions; western residents report greater infrastructure needs and park use sensitive to quality perceptions during COVID-19. Conceptual regional comparisons, not empirical maps."
   visual_alt_zh: "公园公平的两组概念对照：南部近郊居民对可达性的感知比空间指标显示的更乐观；西部近郊与中心城区的客观可达性相近，但感知不同，且西部居民的设施改善需求更高，疫情期间公园使用更容易受质量观感问题影响。图中空间结构为示意。"
   thumbnail_alt_en: "Resource measures can miss context-specific park disadvantage in peri-urban communities."
@@ -578,8 +578,8 @@
   visual: /images/publications/monitoring-cross-scale-agenda-2025-v2-reviewed.png
   thumbnail: /images/publications/monitoring-cross-scale-agenda-2025-v2-reviewed.png
   visual_source: "Conceptual synthesis of Wang et al. (2025), Land editorial, sections 2 and 3.1-3.5, DOI 10.3390/land14051059. Built-in image-generation tool; the article synthesizes 44 topic papers and proposes future directions, not a validated end-to-end monitoring system."
-  visual_caption_zh: "依据 Wang et al.（2025）社论提出的研究议程：多源观测要转化为跨尺度理解，需要处理尺度兼容性、动态耦合与不确定性。下方五项对应原文的理论、协同监测、决策支持、验证与跨学科开放研究方向。景观及尺度范围均为概念示意，不是实测地图；本文综合44篇专题论文，没有验证图中的整套系统或报告其性能。"
-  visual_caption_en: "Research-agenda synthesis of the Wang et al. (2025) editorial: cross-scale understanding requires compatible scales, dynamic coupled models and traceable uncertainty. The five priorities correspond to theory, collaborative monitoring, decision support, validation and open interdisciplinary research. Landscape and extents are schematic. The editorial synthesizes 44 topic papers; it does not validate this entire system or report performance results."
+  visual_caption_zh: "多源观测转化为跨尺度理解，需要协调尺度、动态过程与不确定性。综合 44 篇专题论文的社论提出五项研究重点：理论、协同监测、决策支持、验证，以及跨学科开放研究（Wang 等，2025）。"
+  visual_caption_en: "Cross-scale understanding requires compatible scales, dynamic models and traceable uncertainty. Synthesizing 44 topic papers, the editorial proposes five priorities: theory, collaborative monitoring, decision support, validation and open interdisciplinary research (Wang et al., 2025)."
   visual_alt_en: "A hypothetical landscape with nested local, regional and broader extents, connecting space-air-ground observations with proposed cross-scale integration. Five future research priorities are shown; this is an editorial agenda, not a validated system."
   visual_alt_zh: "假想景观上相互嵌套的地方、区域与更广范围，将空天地观测与拟议的跨尺度整合联系起来，下方列出五项未来研究重点。这是社论研究议程，不是已验证的系统。"
   thumbnail_alt_en: "Multi-source observations need compatible scales, dynamic models and uncertainty assessment to support cross-scale understanding."
@@ -603,8 +603,8 @@
   visual: /images/publications/vegetation-dynamic-context-2025-v2-reviewed.png
   thumbnail: /images/publications/vegetation-dynamic-context-2025-v2-reviewed.png
   visual_source: "Conceptual synthesis of Liu et al. (2025), publisher abstract, highlights and introduction, DOI 10.1016/j.landusepol.2025.107541. Full PDF unavailable. Built-in image-generation tool; hypothetical land-cover grids do not reproduce measured areas, fitted surfaces or threshold values."
-  visual_caption_zh: "依据 Liu et al.（2025）出版方摘要与引言：直接影响是植被用地被不透水表面替代，间接影响则是剩余植被的增长增强或减弱。研究把扩张强度、植被指数与时间联系起来，识别两类动态阈值及其气候差异：湿润区的扩张强度阈值较高，半干旱区的植被指数阈值较低。格网与植物均为概念示意，不是实测地图、模型曲面或阈值数值；间接增绿不能被预设为足以抵消直接损失。"
-  visual_caption_en: "Synthesis of the publisher abstract and introduction in Liu et al. (2025): direct effects replace vegetation with impervious cover; indirect effects enhance or weaken remaining vegetation. The framework links expansion intensity, vegetation index and time. UEI thresholds are higher in humid zones; VI thresholds are lower in semi-arid zones. Grids and vegetation are illustrative, not measured maps, fitted surfaces or threshold values. Indirect enhancement cannot be assumed to offset direct loss."
+  visual_caption_zh: "城市扩张既直接替代植被用地，也与剩余植被增长的增强或减弱有关。扩张强度、植被指数与时间共同刻画动态阈值：湿润区的扩张强度阈值较高，半干旱区的植被指数阈值较低（Liu 等，2025）。"
+  visual_caption_en: "Urban expansion directly replaces vegetation and is also associated with enhanced or weakened growth of remaining vegetation. Expansion intensity, vegetation index and time define dynamic thresholds: UEI thresholds are higher in humid zones, while VI thresholds are lower in semi-arid zones (Liu et al., 2025)."
   visual_alt_en: "Direct land-cover conversion is distinguished from indirect enhancement or weakening of remaining vegetation. Time and climate contextualize expansion-intensity and vegetation-index thresholds. Hypothetical grids illustrate the distinction without depicting measured data."
   visual_alt_zh: "区分土地覆盖替代造成的直接植被损失，以及剩余植被增长增强或减弱的间接响应；时间与气候情境对应扩张强度和植被指数两类阈值。格网为假想示意，不是实测数据。"
   thumbnail_alt_en: "Vegetation response thresholds vary over time and climate context; direct loss and indirect responses are distinct."
@@ -628,8 +628,8 @@
   visual: /images/publications/amenity-housing-framework-v2-reviewed.png
   thumbnail: /images/publications/amenity-housing-framework-v2-reviewed.png
   visual_source: "Conceptual synthesis of Qu, Wu & Liu (2025), publisher PDF abstract, four-dimensional framework (Fig. 1, pp. 5-6) and conclusion (p. 22). Built-in image-generation tool; the neighborhood is hypothetical and the evidence is cross-sectional."
-  visual_caption_zh: "依据 Qu, Wu & Liu (2025) 的四维框架：数量与质量刻画可达性，功能混合与空间组织刻画活动条件。武汉案例中，私人服务的房价关联更依赖质量，基本服务则数量与质量都重要，且关联呈非线性、随城市情境变化。街区为概念示意，不是实测地图；横截面关联不能解释为因果效应。"
-  visual_caption_en: "Conceptual synthesis of Qu, Wu & Liu (2025): quantity and quality describe accessibility; functional mix and spatial arrangement describe activity conditions. In Wuhan, private-service housing-price associations rely more on quality, while both quantity and quality matter for essential services. Associations are nonlinear and context-dependent. The neighborhood is hypothetical, not measured geography; cross-sectional associations are not causal estimates."
+  visual_caption_zh: "设施的数量、质量、功能混合与空间组织共同构成四维分析框架。武汉私人服务的房价关联更依赖质量，基本服务则数量与质量都重要；这些关联呈非线性，并随城市情境变化（Qu 等，2025）。"
+  visual_caption_en: "Quantity, quality, functional mix and spatial arrangement form a four-dimensional amenity framework. In Wuhan, private-service housing-price associations rely more on quality, while both quantity and quality matter for essential services. Associations are nonlinear and context-dependent (Qu et al., 2025)."
   visual_alt_en: "A four-dimensional amenity framework: accessibility covers quantity and quality; activity covers functional mix and spatial arrangement. Private-service housing-price associations rely more on quality, while essential services depend on both quantity and quality. Associations are nonlinear and context-dependent; the neighborhood is schematic."
   visual_alt_zh: "设施评价的四维框架：可达性包含数量与质量，活动条件包含功能混合与空间组织。私人服务的房价关联更依赖质量，基本服务则数量与质量都重要；关联为非线性且随情境变化，街区为示意。"
   thumbnail_alt_en: "Amenity value depends on quantity, quality, functional mix and spatial arrangement, not proximity alone."
@@ -652,8 +652,8 @@
   visual: /images/publications/amenity-industry-nested-v2-reviewed.png
   thumbnail: /images/publications/amenity-industry-nested-v2-reviewed.png
   visual_source: "Simplified conceptual synthesis of Teng, Wu & Liu (2025), publisher PDF Fig. 1 and discussion/conclusions (pp. 10, 13). Built-in image-generation tool; sector outlines and local point locations are hypothetical, not Wuhan geography or data."
-  visual_caption_zh: "依据 Teng, Wu & Liu (2025) 原文图 1 简化整理：都市区的资源获取条件形成潜在竞争优势，地方设施的供给与多样性支撑地方营造，两个嵌套尺度共同解释产业区位吸引力。中心城区与外围地区的需求不同，不能套用统一的设施组合。板块边界、街区及点位均为假想示意，不是武汉实测地图；箭头表示理论关系，不是因果效应估计。"
-  visual_caption_en: "Simplified synthesis of Fig. 1 in Teng, Wu & Liu (2025): metropolitan resource access underpins potential competitive advantage, while local amenity availability and diversity support placemaking. These nested scales explain industrial attractiveness; central and outer sectors have different amenity needs. Sector outlines, streets and points are hypothetical, not measured Wuhan geography. Arrows express theoretical relationships, not causal estimates."
+  visual_caption_zh: "产业区位连接两个嵌套尺度：都市区资源获取对应潜在竞争优势，地方设施供给与多样性对应地方营造。武汉中心城区与外围地区的设施需求不同，区位吸引力取决于设施组合及其空间情境（Teng 等，2025）。"
+  visual_caption_en: "Industrial location connects two nested scales: metropolitan resource access underpins potential competitive advantage, while local amenity availability and diversity support placemaking. Central and outer Wuhan sectors have different amenity needs, linking attractiveness to amenity combinations and spatial context (Teng et al., 2025)."
   visual_alt_en: "Adapted from the paper's proposed framework: metropolitan potential resource access underpins competitive advantage, while local amenity availability and diversity support placemaking. These nested mechanisms jointly explain industrial attractiveness within an urban spatial context; schematic connections are not causal estimates."
   visual_alt_zh: "按原文理论框架重绘：都市区层面的潜在资源获取条件构成竞争优势，地方层面的设施供给与多样性支撑地方营造。两个嵌套尺度的机制共同解释城市空间中的产业吸引力，图中连线为示意，不代表因果效应估计。"
   thumbnail_alt_en: "Industrial attractiveness combines metropolitan resource advantages and local placemaking."
@@ -678,8 +678,8 @@
   visual: /images/publications/housing-tenure-institutional-reviewed.png
   thumbnail: /images/publications/housing-tenure-institutional-reviewed.png
   visual_source: "Retained conceptual synthesis of Wei, Wu & Li, Journal of Urban Affairs, DOI 10.1080/07352166.2023.2285465. Supplied publisher PDF pp. 2, 16-19 rechecked; online and issue years are distinct. Connectors express shared conceptual context, not coefficient magnitude or causal identification."
-  visual_caption_zh: "依据 Wei、Wu 与 Li 的上海租售比较（DOI：10.1080/07352166.2023.2285465）：买方相对更重视服务设施，租方相对更重视就业机会，但两类人群都可能关注这些条件。全球化、制度与城市空间构成共同背景，住房占有方式是理解机会与约束差异的一个维度。图为概念归纳，连线不表示系数大小或因果效应；代理变量与横截面数据也不能完整解释社会排斥过程。"
-  visual_caption_en: "Conceptual synthesis of the Shanghai rent-sale comparison by Wei, Wu & Li (DOI 10.1080/07352166.2023.2285465). Buyers place relatively greater emphasis on service amenities and renters on jobs; neither has exclusive preferences. Globalization, institutions and urban space provide a shared context, with tenure differentiating opportunities and constraints. Connectors do not encode coefficients or causal effects. Proxies and cross-sectional data cannot fully explain social exclusion."
+  visual_caption_zh: "住房占有方式对应不同的机会与约束。上海租售市场比较显示，买方相对更重视服务设施，租方相对更重视就业机会；全球化、制度与城市空间共同构成理解这种分化的背景（Wei 等，2025）。"
+  visual_caption_en: "Housing tenure differentiates opportunities and constraints. Shanghai's rent-sale comparison finds relatively greater emphasis on service amenities among buyers and employment among renters, within a shared context of globalization, institutions and urban space (Wei et al., 2025)."
   visual_alt_en: "Within a shared global, institutional and urban context, buyers place greater emphasis on service amenities and renters on job opportunities. The comparison treats tenure as a dimension of urban inequality, not as an absolute division of preferences."
   visual_alt_zh: "在同样的全球化、制度与城市空间背景下，买方更看重服务设施，租方更看重就业机会。这项租售比较把住房占有方式视为城市不平等的一个维度，而不是把两类人群的偏好截然分开。"
   thumbnail_alt_en: "One city, two housing markets: tenure differentiates urban opportunities."
@@ -702,8 +702,8 @@
   visual: /images/publications/polycentric-cartographic-reviewed.png
   thumbnail: /images/publications/polycentric-cartographic-reviewed.png
   visual_source: "Retained conceptual synthesis of Wei, Xiao & Wu (2025), Chinese Geographical Science, supplied publisher PDF pp. 1-2 and 9-10. Five hypothetical centers illustrate morphology versus function; point counts, line widths and arrangements do not encode measured Chinese city data."
-  visual_caption_zh: "依据 Wei、Xiao 与 Wu（2025）综述中的形态与功能区分，用同一组五个假想中心说明：人口或就业形成多个空间集聚，并不意味着中心之间已经构成均衡的功能网络，次中心仍可能依赖同一核心。中心数量、点位与连线均为示意，不是中国城市的实测格局。尺度、测度与制度背景影响判断，也不能预设多中心必然改善效率、公平或环境表现。"
-  visual_caption_en: "Conceptual synthesis of the morphological-functional distinction in Wei, Xiao & Wu (2025). Five hypothetical centers illustrate that multiple population or employment concentrations can still depend on one functional hub. Center counts, points and connectors are illustrative, not measured Chinese urban patterns. Scale, measurement and institutions matter; polycentricity does not automatically ensure efficiency, equity or environmental benefits."
+  visual_caption_zh: "多中心的空间形态与功能联系需要分别理解。人口或就业形成多个集聚中心，日常联系仍可能依赖同一核心；判断多中心发展的表现，需要结合尺度、测度和制度背景（Wei 等，2025）。"
+  visual_caption_en: "Polycentric morphology and functional links require separate attention. Several population or employment centers can still depend on one functional hub; assessments of polycentric development depend on scale, measurement and institutional context (Wei et al., 2025)."
   visual_alt_en: "The same five schematic urban centers illustrate the distinction between morphological concentration and functional connectivity. Several physical centers can coexist with dependence on a dominant network center; scale, measurement and institutions matter."
   visual_alt_zh: "用同一组五个示意中心对照形态上的集聚与功能上的联系：多个空间中心可能仍然依赖同一个网络核心。理解多中心发展，需要区分尺度、测度和制度背景。"
   thumbnail_alt_en: "Multiple physical centers do not necessarily form a balanced functional network."
@@ -726,8 +726,8 @@
   visual: /images/publications/sprawl-definition-patterns-2026-v2-reviewed.png
   thumbnail: /images/publications/sprawl-definition-patterns-2026-v2-reviewed.png
   visual_source: "Concept explainer based only on the publisher's public Definition section for Wu, Urban Sprawl, https://link.springer.com/rwe/10.1007/978-3-031-92524-5_211. Full entry is subscription content. Built-in image-generation tool; matched hypothetical plans are not maps or new empirical findings."
-  visual_caption_zh: "依据《人文地理百科全书》“城市蔓延”词条的公开定义，说明低密度、功能分离、汽车依赖与不连续开发等特征如何共同构成蔓延格局，不能只用向外增长来判断。左右规划图为假想对照，既不是实测城市地图，也不是干预前后效果。这里只归纳已核实的公开定义，未把订阅全文中未读取的内容或新实证发现写进图中。"
-  visual_caption_en: "Concept explainer based on the public definition in the Urban Sprawl encyclopedia entry: sparse development, separated uses, vehicle reliance and discontinuous growth characterize a sprawling pattern beyond expansion alone. Plans are hypothetical comparisons, not measured cities or before-after interventions. The figure summarizes the verified public definition, not unread subscription content or new empirical findings."
+  visual_caption_zh: "城市蔓延是一组相互关联的空间特征：低密度、功能分离、汽车依赖与不连续开发。连续混合的城市肌理与蔓延格局的对照，说明城市增长的组织方式与扩张规模同样值得关注（Wu，2026）。"
+  visual_caption_en: "Urban sprawl combines sparse development, separated uses, vehicle reliance and discontinuous growth. Contrasting continuous mixed urban fabric with a sprawling pattern highlights how urban growth is organized, alongside how far it extends (Wu, 2026)."
   visual_alt_en: "Two hypothetical planning diagrams contrast continuous mixed urban fabric with a sprawling pattern. Leaders identify sparse development, separated uses, vehicle reliance and discontinuous growth; the diagram explains an encyclopedia definition, not measured results."
   visual_alt_zh: "两幅假想规划图对照连续混合的城市肌理与蔓延格局，标出低密度、功能分离、汽车依赖及不连续开发；图示解释百科定义，不是实测研究结果。"
   thumbnail_alt_en: "Urban sprawl is a multidimensional spatial pattern, not outward growth alone."
@@ -773,5 +773,5 @@
   visual_alt_en: "Regionalization is mutually constitutive with the triple process, rescaling power, capital and local-government strategies. GBA cooperation is associated with higher patch connectivity, land-use diversity and patch density. Industry moderation differs from infrastructure and real estate mediation. Patches are hypothetical."
   thumbnail_alt_zh: "区域化重组权力、资本与城市形态，连通与破碎化可以并存。"
   thumbnail_alt_en: "Regionalization reshapes power, capital and urban form; connectivity and fragmentation can coexist."
-  visual_caption_zh: "依据 Wang、Wu 与 Zhang（2026）原文图1及讨论、结论整理的图片摘要：区域化与三重转型相互构成，通过权力与资本的尺度重组改变地方政府策略，但协作与竞争仍并存。大湾区证据中，更高的斑块连通性和用地多样性可以与更高斑块密度同时出现；产业投资的调节作用也不同于基础设施与房地产的中介路径。理论箭头不表示因果效应，斑块是概念示意，不是大湾区实测图。首页仍单独使用未改动的原文框架图。"
-  visual_caption_en: "Graphical synthesis of Fig. 1 and the discussion/conclusions in Wang, Wu & Zhang (2026). Regionalization and the triple process are mutually constitutive, rescaling power and capital and changing local-government strategies while cooperation and competition coexist. GBA evidence associates cooperation with higher patch connectivity, diversity and density; industry moderation differs from infrastructure and real estate mediation. Arrows are theoretical, not causal estimates. Patches are hypothetical, not measured GBA land cover. The homepage retains the unaltered original framework separately."
+  visual_caption_zh: "区域化通过权力与资本的尺度重组，与分权化、市场化和全球化共同解释城市形态变化。大湾区研究显示，连通性提升与空间破碎化可以并存；产业投资发挥调节作用，基础设施和房地产投资则构成中介路径（Wang、Wu 与 Zhang，2026）。"
+  visual_caption_en: "Regionalization extends the triple-process framework through the rescaling of power and capital. Greater Bay Area evidence links cooperation to both greater connectivity and fragmentation; industry investment plays a moderating role, while infrastructure and real estate form mediation pathways (Wang, Wu & Zhang, 2026)."
