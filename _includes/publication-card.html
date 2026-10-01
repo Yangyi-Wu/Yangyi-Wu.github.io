@@ -1,9 +1,10 @@
 {% assign paper = include.paper | default: post %}
 {% assign paper_url = paper.url %}
 {% if page.lang == 'zh' %}{% assign paper_url = paper.alternate_url %}{% endif %}
+{% capture role_label %}{% include publication-role.html paper=paper %}{% endcapture %}
 <article class="publication-entry" data-publication-themes="{{ paper.research_themes | join: ' ' }}">
-  <h3><a href="{{ paper_url | relative_url }}">{{ paper.title }}</a></h3>
-  <p class="publication-authors">{{ paper.authors | escape }}</p>
-  <p class="publication-venue"><i>{{ paper.venue }}</i> · {{ paper.date | date: '%Y' }}</p>
+  <h4 class="publication-title"><a href="{{ paper_url | relative_url }}">{{ paper.title }}</a></h4>
+  <p class="publication-authors">{% include publication-authors.html authors=paper.authors %}</p>
+  <p class="publication-venue"><i>{{ paper.venue }}</i> · {{ paper.date | date: '%Y' }}{% if role_label != '' %} · <span class="publication-role">{{ role_label }}</span>{% endif %}</p>
   {% include publication-links.html paper=paper %}
 </article>

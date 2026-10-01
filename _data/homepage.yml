@@ -19,7 +19,7 @@ zh:
   data_analysis: >-
     研究使用企业登记、住房交易、设施兴趣点（POI）、遥感影像与居民调查等数据，覆盖城市群、城市、社区及个体尺度，结合空间计量、网络分析与定性分析开展研究。
   research_intro: >-
-    三个方向对应城市变化的三个环节：产业和人口变化怎样推动城市转型（城市转型），就业、居住和日常活动怎样重新组织城市空间（空间重构），变化的结果在不同地方和人群之间怎样分配（空间不平等）。三个环节首尾相接：转型引发重构，重构改变分配，分配格局又塑造下一轮转型的起点。
+    课题组连接城市变化的动力、空间组织与机会分配三个问题。制度和经济活动重塑城市，空间重构改变不同地方与人群的机会，既有的不平等又影响后续转型。
   invitation: >-
     欢迎对城市与经济地理、城乡规划和空间分析感兴趣的学生与同行，来信交流研究、招生与合作。
   conversation: 交流可以从一个具体的城市现象、一篇论文、一组数据观察，或者一个尚未成形的研究问题开始。研究训练、合作议题与招生安排，都欢迎来信讨论。
@@ -44,7 +44,7 @@ en:
   data_analysis: >-
     Our research draws on firm registration and housing transaction records, amenity points of interest (POIs), remote sensing imagery and resident surveys. We work across city-region, city, neighborhood and individual scales, using spatial econometrics, network analysis and qualitative analysis.
   research_intro: >-
-    Our three themes follow the chain of urban change: how industrial and population shifts drive it (Urban Transformation), how jobs, housing and daily activities reorganize space (Spatial Restructuring), and how outcomes are distributed across places and groups (Spatial Inequality). The links are sequential and recursive: transformation drives restructuring, restructuring reshapes distribution, and distribution conditions the next round of transformation.
+    Our research connects the drivers of urban change, spatial organization and the distribution of opportunities. Institutions and economic activities reshape cities; restructuring changes opportunities across places and groups, while existing inequalities influence subsequent transformation.
   invitation: >-
     We welcome students and colleagues interested in urban and economic geography, planning and spatial analysis. Get in touch about research, admissions or collaboration.
   conversation: A conversation can begin with an urban observation, a paper, a pattern in the data, or an emerging research question. Please get in touch to discuss research training, collaboration or admissions.
@@ -57,20 +57,16 @@ selection:
     - Land Use Policy
 highlights:
   - paper: /publication/2025-park-use-covid-peri-urban
-    figure: park-equity-study-area
-    figure_height: 988
-    figure_caption_zh: 盐湖城公园与受访者分布。原文图 1，Wu et al. (2025)。
-    figure_caption_en: Parks and respondents in Salt Lake City. Original Fig. 1, Wu et al. (2025).
+    figure_caption_zh: 客观可达性与居民体验的两组对照。Wu 等（2025）。
+    figure_caption_en: Measured access and resident experience in two peri-urban contexts. Wu et al. (2025).
     title_zh: 公园使用公平：可达性、需求与实际使用
     title_en: Park equity through access, needs and use
     summary_zh: 公园分布并不能完整反映使用公平。盐湖城研究将空间指标与居民感知、疫情期间的使用变化相互对照，发现南部近郊的感知可达性高于客观评价，西部社区则面临更突出的质量短板。公平评价需要同时回应居民的实际体验与改善需求。
     summary_en: Park distribution alone does not capture equity. In Salt Lake City, southern peri-urban residents perceived better access than spatial measures suggested, while western communities faced greater quality deficits. Comparing spatial indicators, residents' perceptions and pandemic-era use connects equity assessment to lived experience and improvement needs.
   - paper: /publication/2026-urban-form-politico-economic-transition-greater-bay-area
-    figure: urban-form-quadruple-process
-    figure_height: 656
-    figure_caption_zh: 区域化与城市转型的四重过程框架。原文图 1，Wang et al. (2026)。
-    figure_caption_en: Regionalization in the quadruple-process framework. Original Fig. 1, Wang et al. (2026).
+    figure_caption_zh: 区域化、权力与资本的尺度重组。Wang、Wu 与 Zhang（2026）。
+    figure_caption_en: Regionalization and the rescaling of power and capital. Wang, Wu & Zhang (2026).
     title_zh: 城市转型：区域协作与土地驱动增长
     title_en: Regional cooperation and the persistence of land-driven growth
-    summary_zh: 大湾区研究把区域化与分权化、市场化、全球化放在同一框架中，解释城市形态背后的权力与资本关系。区域协作增强斑块连通性和土地利用多样性，却未根本改变依靠土地推动增长的治理逻辑；城市空间由产业、交通和房地产共同重组。
-    summary_en: The Greater Bay Area study extends decentralization, marketization and globalization with regionalization to explain the power and capital relations behind urban form. Cooperation improves patch connectivity and land-use diversity without fundamentally displacing land-driven local growth. Industry, transport infrastructure and real estate jointly shape urban restructuring.
+    summary_zh: 大湾区研究把区域化与分权化、市场化、全球化放在同一框架中，解释城市形态背后的权力与资本关系。区域协作与更高的斑块连通性、土地利用多样性及斑块密度相关，协作与竞争仍然并存；依靠土地推动增长的治理逻辑也未根本改变。
+    summary_en: The Greater Bay Area study connects regionalization with decentralization, marketization and globalization to explain the power and capital relations behind urban form. Cooperation is associated with greater patch connectivity, land-use diversity and patch density. It coexists with competition without fundamentally displacing land-driven local growth.

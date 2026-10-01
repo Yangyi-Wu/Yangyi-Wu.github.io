@@ -5,7 +5,30 @@
 {% when 'about' %}
 <p class="group-intro">{{ g.about }}</p>
 <p>{{ g.agenda }}</p>
-<section class="group-section"><h2>{{ g.practice_title }}</h2><p>{{ g.practice }}</p></section>
+<section class="about-section">
+  <h2>{{ g.work_title }}</h2>
+  <div>
+    <p>{{ g.work_intro }}</p>
+    {% assign lead_project = site.data.group.projects | where: 'lead', true | first %}
+    {% assign funder_key = 'funder_' | append: page.lang %}
+    <p class="about-project"><span class="group-meta">{{ lead_project[funder_key] }} · {{ lead_project.period }}</span><a href="{{ prefix | append: '/projects/' | relative_url }}#{{ lead_project.id }}">{{ lead_project[title_key] }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
+  </div>
+</section>
+<section class="about-section">
+  <h2>{{ g.students_title }}</h2>
+  <div>
+    <p>{{ g.students_intro }}</p>
+    {% assign student_name_key = 'name_' | append: page.lang %}
+    <ul class="about-student-research">
+      {% for example in site.data.group.student_research %}
+      {% assign student = site.data.students | where: 'id', example.student | first %}
+      {% assign paper = site.publications | where: 'url', student.paper | first %}
+      <li data-student-research="{{ student.id }}"><a href="{{ prefix | append: student.paper | relative_url }}">{{ example[title_key] }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><span>{{ student[student_name_key] }} · <i>{{ paper.venue }}</i> · {{ paper.date | date: '%Y' }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<section class="about-section"><h2>{{ g.practice_title }}</h2><div><p>{{ g.practice }}</p></div></section>
 <nav class="section-links" aria-label="{% if page.lang == 'zh' %}了解课题组{% else %}Explore the group{% endif %}">
   <a href="{{ prefix | append: '/research/' | relative_url }}">{% if page.lang == 'zh' %}研究方向{% else %}Research{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
   <a href="{{ prefix | append: '/people/' | relative_url }}">{% if page.lang == 'zh' %}团队成员{% else %}People{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>

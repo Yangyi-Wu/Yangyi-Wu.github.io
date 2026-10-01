@@ -2,27 +2,39 @@
   legacy_id: innovation
   title_zh: 城市转型
   title_en: Urban Transformation
-  overview_zh: 研究经济转型、企业区位与城市设施如何共同塑造地方发展——以及为什么相似的转型，在不同城市会走出不同的路径。
-  overview_en: How economic change, firm location and urban amenities jointly shape local development — and why similar transformations follow different paths in different cities.
+  overview_zh: 研究制度变迁、资本流动与企业区位如何塑造地方发展，解释不同城市的转型路径，以及区域协作与地方竞争之间的关系。
+  overview_en: How institutional change, capital flows and firm location shape local development, producing different urban trajectories and relationships between regional cooperation and local competition.
   home_question_zh: 城市如何适应经济与产业变化？
   home_question_en: How do cities respond to economic and industrial change?
   home_context_zh: >-
     从上海的生产性服务业到武汉的汽车产业，设施的作用比通常设想的更有选择性：地方创意活动依赖知识溢出和面对面交流，受设施影响很大；一般的企业集聚，受设施的影响则弱得多。都市区格局决定板块的竞争力，街区层面的设施组合决定具体区位——这两层逻辑需要分开对待。
   home_context_en: >-
     From Shanghai's producer services to Wuhan's automotive industry, amenities prove more selective than usually assumed: they strongly shape local creativity, which depends on knowledge spillovers and face-to-face contact, while doing much less for general firm agglomeration. Metropolitan patterns decide a district's competitiveness; neighborhood amenity mixes decide specific sites. The two logics call for separate treatment.
-  focus_zh: ['产业转型与企业区位', '城市竞争优势', '经济活动的空间集聚', '城市发展路径']
-  focus_en: ['Industrial change and firm location', 'Urban competitive advantages', 'Spatial agglomeration', 'Urban development paths']
-  question_zh: 经济活动的区位选择，如何改变城市发展的动力与地方优势？
-  question_en: How do location choices reshape the drivers of urban development and the advantages of places?
-  text_zh: >-
-    产业为什么选择特定区位？我们从都市区和具体区位两个空间尺度展开分析。在都市区尺度上，上海的研究显示，设施对不同类型经济活动的吸引力并不相同：对一般的生产性服务业企业，设施的作用有限；但「地方创意」活动依赖知识溢出和面对面交流，对共址、可达性和高密度设施簇的反应要强得多（Cities, 2022）。同一尺度下的企业郊区化研究也发现产业差异：生产性服务业比制造业更在意社区特征；若把就业郊区化视为单一的去中心化过程，这些差异就会被遮蔽（The Professional Geographer, 2020）。在具体区位尺度上，武汉汽车产业的研究发现：都市区的设施格局决定各板块的竞争优势，具体区位能否吸引企业集聚，取决于地方设施的数量和多样性，其中基础设施和公共服务的作用最稳定（Applied Geography, 2025）。政策含义很明确：中心城区和外围地区的设施配置重点应当不同，产业政策需要与地方营造相互配合。
-  text_en: >-
-    Why do firms choose particular locations? We examine this question at two spatial scales: metropolitan areas and individual sites. At the metropolitan scale, research on Shanghai shows that amenities do not attract all economic activity alike: they matter only modestly for the average producer-services firm, whereas "local creativity", sustained by knowledge spillovers and face-to-face contact, responds far more strongly to co-location, accessibility and dense amenity clusters (Cities, 2022). Research on firm suburbanization at the same scale also reveals sectoral differences: producer services respond more strongly than manufacturing to neighborhood characteristics, and reading suburban job growth as simple decentralization obscures these differences (The Professional Geographer, 2020). At the site scale, a study of Wuhan's automotive industry finds that metropolitan amenity patterns set each district's competitive advantage, while the clustering appeal of a specific location depends on the quantity and diversity of local amenities, with infrastructure and public services the most stable factors (Applied Geography, 2025). The policy implication is clear: central and peripheral districts need different amenity priorities, and industrial policy works best in concert with placemaking.
+  focus_zh: ['区域化与制度变迁', '权力与资本的尺度重组', '企业区位与地方优势', '产业差异与城市发展路径']
+  focus_en: ['Regionalization and institutional change', 'Rescaling power and capital', 'Firm location and place advantage', 'Sectoral differences and urban trajectories']
+  question_zh: 制度与经济活动的变化，如何重塑地方发展的条件？
+  question_en: How do institutional and economic changes reshape the conditions for local development?
+  paragraphs_zh:
+    - 大湾区研究把区域化与分权化、市场化、全球化联系起来，解释权力和资本的尺度重组如何改变地方政府策略。区域协作与地方竞争仍然并存；更强的空间连通性，也可能伴随更高的斑块密度（Land Use Policy, 2026）。
+    - 地方优势还取决于城市内部的设施条件。武汉汽车产业研究区分都市区的竞争优势与具体区位的吸引力，将区域资源获取与地方营造联系起来。中心城区和外围地区的设施需求不同，产业政策需要回应这种差异（Applied Geography, 2025）。
+    - 产业之间同样存在差别。上海生产性服务业研究发现，城市设施对地方创意活动的作用强于一般企业集聚；企业郊区化研究则显示，生产性服务业比制造业更敏感于社区特征。相似的空间变化，背后可能是不同的区位逻辑。
+  paragraphs_en:
+    - Research on the Greater Bay Area connects regionalization with decentralization, marketization and globalization to explain how rescaling power and capital changes local-government strategies. Regional cooperation coexists with local competition; greater spatial connectivity can also accompany higher patch density (Land Use Policy, 2026).
+    - Place advantages also depend on amenities within cities. Our study of Wuhan's automotive industry distinguishes metropolitan competitive advantage from site-level attractiveness, connecting access to regional resources with placemaking. Central and peripheral areas have different amenity needs, with implications for industrial policy (Applied Geography, 2025).
+    - These relationships vary by sector. In Shanghai's producer services, amenities matter more for local creativity than for general firm agglomeration. Research on suburbanization also finds producer services more responsive to neighborhood characteristics than manufacturing. Similar spatial changes can reflect different location strategies.
   papers:
-    - /publication/2026-urban-form-politico-economic-transition-greater-bay-area
-    - /publication/2025-urban-amenities-knowledge-intensive-industry-locations
-    - /publication/2022-amenity-firm-agglomeration-local-creativity-producer-services-shanghai
-    - /publication/2020-firm-suburbanization-urban-sprawl
+    - path: /publication/2026-urban-form-politico-economic-transition-greater-bay-area
+      title_zh: 区域化、权力与资本重组
+      title_en: Regionalization, power and capital
+    - path: /publication/2025-urban-amenities-knowledge-intensive-industry-locations
+      title_zh: 产业区位的多尺度地方优势
+      title_en: Place advantages across scales
+    - path: /publication/2022-amenity-firm-agglomeration-local-creativity-producer-services-shanghai
+      title_zh: 城市设施与地方创意
+      title_en: Amenities and local creativity
+    - path: /publication/2020-firm-suburbanization-urban-sprawl
+      title_zh: 企业郊区化的产业差异
+      title_en: Sectoral differences in suburbanization
 - id: restructuring
   legacy_id: structure
   title_zh: 空间重构
@@ -39,15 +51,27 @@
   focus_en: ['Metropolitan spatial structure', 'Polycentric development', 'Jobs-housing relationships', 'Reorganization of urban functions']
   question_zh: 看似相近的空间格局，是否具有相同的功能联系与组织方式？
   question_en: Do similar spatial patterns imply similar functional connections and forms of urban organization?
-  text_zh: >-
-    地图上的中心数量，只是城市结构的一个侧面。同样是「多中心」，含义可能完全不同：人口、就业、房价、设施和交通网络会识别出不同的中心，用单一指标判断城市结构，容易误判（Chinese Geographical Science, 2025）。形态和功能也必须分开验证：犹他州 Wasatch Front 都市区在形态上已相当分散，但出行链数据显示，日常活动在功能上仍由盐湖城市中心主导——中心内部，步行和骑行的出行链较为常见；中心之外，汽车仍占绝对主导（Applied Geography, 2021）。住房市场的空间结构另有识别方法：我们用属性相似性、可替代性和空间连接性代替行政边界，把住房子市场看作相互连接的地方市场——据此识别的市场结构，能切实提高房价模型的解释力（Applied Spatial Analysis and Policy, 2020）。
-  text_en: >-
-    The number of centers on a map is only one facet of urban structure. "Polycentricity" can mean entirely different things: population, employment, housing prices, amenities and transport networks each identify different centers, and single-indicator judgments are easily misleading (Chinese Geographical Science, 2025). Form and function must also be verified separately. Utah's Wasatch Front is morphologically dispersed, yet trip-chain data show that daily life remains functionally dominated by downtown Salt Lake City — walking and cycling trip chains are common inside centers, while cars dominate elsewhere (Applied Geography, 2021). Housing markets require a different identification strategy: we replace administrative boundaries with attribute similarity, substitutability and spatial connectivity, treating submarkets as connected local markets; the resulting structure measurably improves hedonic models (Applied Spatial Analysis and Policy, 2020).
+  paragraphs_zh:
+    - 多中心发展需要区分空间形态与功能联系。人口、就业和交通网络识别出的中心并不总是一致，中心数量也不能直接说明效率或公平。大湾区研究进一步显示，区域协作可以同时伴随连通性提升与空间破碎化。
+    - 出行数据能检验空间结构如何实际运转。犹他州 Wasatch Front 都市区在形态上相当分散，但出行链仍以盐湖城市中心为功能核心；步行和骑行更多发生在中心内部，外围活动则更依赖汽车（Applied Geography, 2021）。
+    - 住房子市场呈现另一种空间组织。我们依据住宅属性、可替代性与空间连接性识别相互联系的地方市场，而非直接沿用行政边界。这样划分的子市场提高了房价模型的解释力（Applied Spatial Analysis and Policy, 2020）。
+  paragraphs_en:
+    - Polycentric development requires a distinction between spatial form and functional connections. Population, employment and transport networks do not always identify the same centers; counting centers alone says little about efficiency or equity. Greater Bay Area evidence further shows that cooperation can accompany both connectivity and fragmentation.
+    - Travel data reveal how these structures work in daily life. Utah's Wasatch Front is morphologically dispersed, yet trip chains remain functionally centered on downtown Salt Lake City. Walking and cycling are more common within centers, while activities outside them depend more on cars (Applied Geography, 2021).
+    - Housing submarkets reveal another form of spatial organization. We identify connected local markets through housing attributes, substitutability and spatial connectivity rather than administrative boundaries. These submarkets improve the explanatory power of housing-price models (Applied Spatial Analysis and Policy, 2020).
   papers:
-    - /publication/2026-urban-form-politico-economic-transition-greater-bay-area
-    - /publication/2025-polycentric-urban-development-china
-    - /publication/2020-spatial-heterogeneity-housing-prices-large-datasets
-    - /publication/2021-trip-generation-trip-chains-polycentric-development-utah
+    - path: /publication/2026-urban-form-politico-economic-transition-greater-bay-area
+      title_zh: 连通性与空间破碎化
+      title_en: Connectivity and fragmentation
+    - path: /publication/2025-polycentric-urban-development-china
+      title_zh: 多中心的形态与功能
+      title_en: Polycentric form and function
+    - path: /publication/2020-spatial-heterogeneity-housing-prices-large-datasets
+      title_zh: 住房子市场的空间识别
+      title_en: Identifying housing submarkets
+    - path: /publication/2021-trip-generation-trip-chains-polycentric-development-utah
+      title_zh: 出行链与都市区日常联系
+      title_en: Trip chains and metropolitan connections
 - id: inequality
   legacy_id: equity
   title_zh: 空间不平等
@@ -57,19 +81,31 @@
   home_question_zh: 城市发展的机会如何在空间中分布？
   home_question_en: How are the opportunities created by urban development distributed across space?
   home_context_zh: >-
-    公园、住房和区域差距，三条线索反复呈现同一种错位：资源分布是一回事，机会真正落在谁身上是另一回事。可达性指标乐观的近郊，居民体验可能相反；不平等指数下降的省份，核心与边缘的格局可能依然如故。
+    公园、住房和区域差距的研究，关注资源条件如何转化为实际机会。客观可达性较差的近郊，居民感知可能更乐观；不平等指数下降的省份，核心与边缘的格局可能依然如故。
   home_context_en: >-
-    Parks, housing and regional disparities repeatedly display the same mismatch: the distribution of resources and the distribution of opportunities are two different things. Peri-urban areas that score well on accessibility may be experienced otherwise by residents; a province with falling inequality indices may keep its core–periphery structure intact.
+    Research on parks, housing and regional disparities asks how resource conditions translate into opportunities. Peri-urban residents may perceive access more optimistically despite poorer measured accessibility; a province with falling inequality indices may retain its core-periphery structure.
   focus_zh: ['公共资源可达性', '城市设施公平', '住房市场分化', '社会空间差异']
   focus_en: ['Access to public resources', 'Equity in urban amenities', 'Housing market differentiation', 'Socio-spatial disparities']
   question_zh: 资源配置的改善，为什么未必使不同群体同等受益？
   question_en: Why do improvements in resource provision not necessarily benefit social groups equally?
-  text_zh: >-
-    公平研究首先要把两件事分开：资源分布在哪里，机会真正落在谁身上。公园研究反复发现二者错位：盐湖城的南部近郊，居民对公园可达性的评价比空间指标显示的更乐观，而西部社区的质量短板在疫情期间进一步放大——城区与近郊的对比说明，公平评价要同时看设施分布、居民体验和改善需求（Landscape and Urban Planning, 2025）。武汉的评估换了角度：不看单一的可达性指标，而是把公园质量和供给能力结合起来，看供给是否跟得上不同人群的需求——老年人群体尤其值得关注（Sustainability, 2025）。住房市场的分化遵循另一套逻辑：上海的租售比较显示，租房者对就业机会、社会服务和通勤便利更敏感，买房者更看重产权价值和投资属性，产权本身正在成为城市不平等的新轴线（Journal of Urban Affairs, 2025）。区域尺度上，江苏的案例提醒我们：不平等指数下降，可以和持续的空间极化、地方流动性不足并存——强势核心的累积优势，会固化核心与边缘的等级结构（Applied Geography, 2020）。
-  text_en: >-
-    Equity research starts by separating two things: where resources are located, and where opportunities actually land. Park studies repeatedly find the two misaligned. In Salt Lake City, southern peri-urban residents rated park access more positively than spatial metrics suggest, while western communities' quality deficits deepened during the pandemic — the urban–peri-urban contrast shows why equity assessment must combine facility distribution with lived experience and stated needs (Landscape and Urban Planning, 2025). The Wuhan evaluation adopts a complementary perspective: rather than a single accessibility metric, it asks whether quality-adjusted park supply matches the differentiated needs of the population, with older adults as the most vulnerable group (Sustainability, 2025). Housing markets divide along different lines: Shanghai's sale–rental comparison shows renters respond more to jobs, social services and mobility, while buyers weight ownership value and investment conditions — tenure itself is becoming a new axis of urban inequality (Journal of Urban Affairs, 2025). At the regional scale, Jiangsu warns that falling inequality indices can coexist with persistent spatial polarization and low place mobility, as accumulated advantages in strong cores lock in the core–periphery hierarchy (Applied Geography, 2020).
+  paragraphs_zh:
+    - 公园公平需要把资源条件与居民体验放在一起理解。盐湖城南部近郊客观可达性较差，居民评价却更乐观；西部近郊与中心城区可达性相近，设施改善需求仍有差异。武汉研究则结合公园质量与服务能力，分析供给能否回应不同人群的需求。
+    - 住房占有方式也是机会分化的一个维度。上海租售比较发现，买方相对更重视服务设施，租方相对更重视就业机会。两类人群面对不同的制度约束和区位选择，租金与售价因而不能沿用同一套市场解释（Journal of Urban Affairs, 2025）。
+    - 区域尺度上，总体差距收窄也可能伴随地方等级的延续。江苏研究发现，不平等指数下降可以与空间极化、地方流动性不足并存。理解地区发展机会，需要同时分析差距大小和地方在区域结构中的位置（Applied Geography, 2020）。
+  paragraphs_en:
+    - Park equity connects resource conditions with residents' experience. Southern peri-urban Salt Lake City residents report more optimistic perceptions despite poorer measured access. Western communities have access similar to the center but different infrastructure needs. Research in Wuhan combines park quality and service capacity to assess provision for different population groups.
+    - Housing tenure is another dimension of unequal opportunity. Shanghai's rent-sale comparison finds buyers placing relatively greater emphasis on service amenities and renters on employment. Different institutional constraints and location choices mean that rents and sale prices require distinct explanations (Journal of Urban Affairs, 2025).
+    - At the regional scale, narrowing disparities can coexist with persistent hierarchies. Research on Jiangsu finds falling inequality indices alongside spatial polarization and limited place mobility. Understanding development opportunities requires attention both to the size of disparities and to places' positions within the regional structure (Applied Geography, 2020).
   papers:
-    - /publication/2025-park-use-covid-peri-urban
-    - /publication/2025-urban-park-equity-wuhan
-    - /publication/2025-institutions-urban-space-residential-markets-shanghai
-    - /publication/2020-regional-inequality-spatial-polarization-place-mobility-jiangsu
+    - path: /publication/2025-park-use-covid-peri-urban
+      title_zh: 公园可达性与居民体验
+      title_en: Park access and residents' experience
+    - path: /publication/2025-urban-park-equity-wuhan
+      title_zh: 公园供给与差异化需求
+      title_en: Park provision and differentiated needs
+    - path: /publication/2025-institutions-urban-space-residential-markets-shanghai
+      title_zh: 住房租售与城市机会
+      title_en: Housing tenure and urban opportunities
+    - path: /publication/2020-regional-inequality-spatial-polarization-place-mobility-jiangsu
+      title_zh: 区域差距与地方流动性
+      title_en: Regional inequality and place mobility

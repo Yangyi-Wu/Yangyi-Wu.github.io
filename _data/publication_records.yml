@@ -549,13 +549,13 @@
   authors: "Wu, Y., Wei, Y. D., Liu, M., & García, I."
   doi: 10.1016/j.landurbplan.2024.105269
   visual_reviewed: true
-  visual: /images/publications/park-equity-experience-v4-reviewed.png
-  thumbnail: /images/publications/park-equity-experience-v4-reviewed.png
-  visual_source: "Conceptual synthesis of Wu et al. (2025), publisher PDF abstract and discussion/conclusions (pp. 1, 10-11). Built-in image-generation tool; streets and parks are illustrative, not measured Salt Lake City geography."
+  visual: /images/publications/park-equity-experience-v5-reviewed.png
+  thumbnail: /images/publications/park-equity-experience-v5-reviewed.png
+  visual_source: "Conceptual synthesis of Wu et al. (2025), publisher PDF abstract and discussion/conclusions (pp. 1, 10-11). Built-in image-generation tool, web-readable revision on 2026-10-01. Streets and parks are illustrative, not measured Salt Lake City geography; comparisons do not encode causal effects."
   visual_caption_zh: "公园公平需要对照客观可达性、居民感知与实际使用。盐湖城南部近郊客观可达性较差，评价却更乐观；西部近郊与中心城区可达性相近，居民的设施改善需求和使用体验仍有差异（Wu 等，2025）。"
   visual_caption_en: "Park equity brings measured access, residents' perceptions and actual use together. Southern peri-urban Salt Lake City residents report more optimistic perceptions despite poorer access; western communities have access similar to the urban center but different infrastructure needs and use experiences (Wu et al., 2025)."
-  visual_alt_en: "Park equity beyond provision: southern peri-urban residents perceive access more optimistically than spatial measures suggest. Western peri-urban and urban-center communities have similar measured access but different perceptions; western residents report greater infrastructure needs and park use sensitive to quality perceptions during COVID-19. Conceptual regional comparisons, not empirical maps."
-  visual_alt_zh: "公园公平的两组概念对照：南部近郊居民对可达性的感知比空间指标显示的更乐观；西部近郊与中心城区的客观可达性相近，但感知不同，且西部居民的设施改善需求更高，疫情期间公园使用更容易受质量观感问题影响。图中空间结构为示意。"
+  visual_alt_en: "Two park-equity comparisons: southern peri-urban residents report more optimistic perceptions despite poorer measured access; western residents have access similar to the center but greater infrastructure needs and use sensitive to perceived quality. Small illustrative park plans accompany each comparison."
+  visual_alt_zh: "公园公平的两组对照：南部近郊客观可达性较差，居民感知却更乐观；西部近郊与中心城区可达性相近，但设施改善需求更高，使用更易受质量观感影响。两组对照各配有公园规划示意。"
   thumbnail_alt_en: "Resource measures can miss context-specific park disadvantage in peri-urban communities."
   thumbnail_alt_zh: "只看公园资源指标，可能遗漏不同近郊社区的不利处境。"
   wu_author_role: first
@@ -766,12 +766,12 @@
     - "Core-periphery differences depend on the morphological outcome. Under regionalization, responses differ in aggregation, shape complexity and connectivity, but not significantly in urban area, patch density or land-use diversity."
     - "The study covers 11 Greater Bay Area cities in 2010-2019, measuring six dimensions of urban form with 30 m land-cover data and using two-way fixed effects, moderation analysis and PLS-SEM. Investment mechanism analysis covers only the nine mainland cities because of statistical differences; these models do not establish policy-experiment causal identification."
   visual_reviewed: true
-  visual: /images/publications/urban-form-power-capital-2026-v2-reviewed.png
-  thumbnail: /images/publications/urban-form-power-capital-2026-v2-reviewed.png
-  visual_source: "Conceptual synthesis of Wang, Wu & Zhang (2026), supplied published PDF Fig. 1 and sections 2.2-3.2, 6.1 and 7 (pp. 3-4, 11-13). Built-in image-generation tool used the original Fig. 1 as a relationship reference. Hypothetical patches do not reproduce GBA land cover; theoretical arrows are not coefficient estimates. Original homepage figure retained separately."
-  visual_alt_zh: "区域化与分权化、市场化、全球化相互构成，共同重组权力、资本及地方政府策略。大湾区协作与更高的斑块连通性、用地多样性和斑块密度相关；产业投资为调节作用，基础设施与房地产为中介路径。斑块是概念示意，不是实测地理。"
-  visual_alt_en: "Regionalization is mutually constitutive with the triple process, rescaling power, capital and local-government strategies. GBA cooperation is associated with higher patch connectivity, land-use diversity and patch density. Industry moderation differs from infrastructure and real estate mediation. Patches are hypothetical."
+  visual: /images/publications/urban-form-power-capital-2026-v3-reviewed.png
+  thumbnail: /images/publications/urban-form-power-capital-2026-v3-reviewed.png
+  visual_source: "Focused conceptual synthesis of Wang, Wu & Zhang (2026), supplied published PDF Fig. 1 and sections 2.2-3.2, 6.1 and 7 (pp. 3-4, 11-13). Built-in image-generation tool, web-readable revision on 2026-10-01. Abstract network nodes represent a conceptual relationship, not measured GBA patches or boundaries. Theoretical connectors are not coefficient estimates. Investment-pathway distinctions remain in the reviewed article text; original Fig. 1 remains in research-originals."
+  visual_alt_zh: "区域化与分权化、市场化、全球化双向联系，经权力与资本的尺度重组影响地方政府策略，协作与竞争并存。下方概念网络将更高连通性与更高斑块密度并列呈现。"
+  visual_alt_en: "Regionalization is mutually constitutive with decentralization, marketization and globalization. Rescaling power and capital shapes local-government strategies, where cooperation and competition coexist. An abstract network pairs greater connectivity with higher patch density."
   thumbnail_alt_zh: "区域化重组权力、资本与城市形态，连通与破碎化可以并存。"
   thumbnail_alt_en: "Regionalization reshapes power, capital and urban form; connectivity and fragmentation can coexist."
-  visual_caption_zh: "区域化通过权力与资本的尺度重组，与分权化、市场化和全球化共同解释城市形态变化。大湾区研究显示，连通性提升与空间破碎化可以并存；产业投资发挥调节作用，基础设施和房地产投资则构成中介路径（Wang、Wu 与 Zhang，2026）。"
-  visual_caption_en: "Regionalization extends the triple-process framework through the rescaling of power and capital. Greater Bay Area evidence links cooperation to both greater connectivity and fragmentation; industry investment plays a moderating role, while infrastructure and real estate form mediation pathways (Wang, Wu & Zhang, 2026)."
+  visual_caption_zh: "区域化与分权化、市场化和全球化共同重组权力、资本及地方政府策略。大湾区研究显示，协作与竞争并存，连通性提升也可伴随更高的斑块密度（Wang、Wu 与 Zhang，2026）。"
+  visual_caption_en: "Regionalization interacts with decentralization, marketization and globalization to rescale power, capital and local-government strategies. Greater Bay Area evidence shows cooperation coexisting with competition, and greater connectivity alongside higher patch density (Wang, Wu & Zhang, 2026)."

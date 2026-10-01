@@ -1,0 +1,10 @@
+{%- assign author_role = include.paper.wu_author_role -%}
+{%- assign author_prefix = include.paper.authors | slice: 0, 7 -%}
+{%- if author_role == nil and include.paper.category == 'journal-articles' and author_prefix == 'Wu, Y.,' -%}
+  {%- assign author_role = 'first' -%}
+{%- endif -%}
+{%- case author_role -%}
+  {%- when 'first' -%}{%- if page.lang == 'zh' -%}第一作者{%- else -%}First author{%- endif -%}
+  {%- when 'corresponding' -%}{%- if page.lang == 'zh' -%}通讯作者{%- else -%}Corresponding author{%- endif -%}
+  {%- when 'co_corresponding' -%}{%- if page.lang == 'zh' -%}共同通讯作者{%- else -%}Co-corresponding author{%- endif -%}
+{%- endcase -%}

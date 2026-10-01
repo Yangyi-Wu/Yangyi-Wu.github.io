@@ -34,7 +34,7 @@ refined_figures = {
   "2024-01-01-urban-structure-housing-prices-amenity-nanjing" => "/images/publications/amenity-double-role-regimes-2024-v2-reviewed.png",
   "2024-02-01-producer-services-shanghai" => "/images/publications/producer-services-sector-context-2024-v2-reviewed.png",
   "2025-05-01-urban-park-equity-wuhan" => "/images/publications/park-supply-demand-matching-2025-v2-reviewed.png",
-  "2025-06-01-park-use-covid-peri-urban" => "/images/publications/park-equity-experience-v4-reviewed.png",
+  "2025-06-01-park-use-covid-peri-urban" => "/images/publications/park-equity-experience-v5-reviewed.png",
   "2025-07-01-multi-scale-geographic-environmental-monitoring" => "/images/publications/monitoring-cross-scale-agenda-2025-v2-reviewed.png",
   "2025-08-01-urban-expansion-vegetation-growth" => "/images/publications/vegetation-dynamic-context-2025-v2-reviewed.png",
   "2025-09-01-neighborhood-amenity-housing-prices-urban-china" => "/images/publications/amenity-housing-framework-v2-reviewed.png",
@@ -42,7 +42,7 @@ refined_figures = {
   "2025-11-01-institutions-urban-space-residential-markets-shanghai" => "/images/publications/housing-tenure-institutional-reviewed.png",
   "2025-12-01-polycentric-urban-development-china" => "/images/publications/polycentric-cartographic-reviewed.png",
   "2026-01-01-urban-sprawl" => "/images/publications/sprawl-definition-patterns-2026-v2-reviewed.png",
-  "2026-12-01-urban-form-politico-economic-transition-greater-bay-area" => "/images/publications/urban-form-power-capital-2026-v2-reviewed.png"
+  "2026-12-01-urban-form-politico-economic-transition-greater-bay-area" => "/images/publications/urban-form-power-capital-2026-v3-reviewed.png"
 }
 themes = YAML.safe_load_file("_data/publication_themes.yml")
 scholar = YAML.safe_load_file("_data/scholar.yml")
@@ -106,6 +106,7 @@ Dir.glob("_publications/*.md").each do |source|
     check_navigation(page, path)
     check(page.at_css("html")["lang"] == language, "Wrong language: #{path}")
     check(page.at_css(".publication-authors").text == record.fetch("authors"), "Missing authors: #{path}")
+    check(page.css(".publication-authors strong").map(&:text) == ["Wu, Y."], "PI author emphasis missing or incorrect: #{path}")
     scholar_url = "https://scholar.google.com/citations?view_op=view_citation&user=#{scholar.fetch('profile_id')}&citation_for_view=#{scholar.fetch('profile_id')}:#{scholar_record.fetch('id')}"
     check(page.css(".publication-links a").any? { |link| link["href"] == scholar_url }, "Wrong Scholar record link: #{path}")
     alternate = page.at_css("[data-language-option]")
@@ -158,7 +159,7 @@ end
   check(cards.length == records.length, "Incomplete publication list: #{path}")
   check(page.css("[data-publication-count]").length == 1 && page.at_css(".publication-toolbar [data-publication-count]"), "Publication count must appear once, alongside its filters: #{path}")
   check(page.at_css("[data-publication-count]").text.start_with?(records.length.to_s), "Missing no-JS publication count: #{path}")
-  links = cards.map { |entry| entry.at_css("h3 a")["href"] }
+  links = cards.map { |entry| entry.at_css(".publication-title a")["href"] }
   check(links.uniq.length == records.length, "Duplicate publications: #{path}")
   groups = page.css(".publication-group")
   check(groups.map { |group| group["data-publication-category"] } == publication_categories.keys, "Unexpected publication grouping: #{path}")
@@ -166,15 +167,29 @@ end
     category = group["data-publication-category"]
     title_key = path.start_with?("/zh/") ? "title_zh" : "title"
     check(group.at_css("h2").text == publication_categories.fetch(category).fetch(title_key), "Wrong category heading: #{path}")
-    actual = group.css(".publication-entry h3 a").map { |link| link["href"].delete_prefix("/zh") }
+    actual = group.css(".publication-entry .publication-title a").map { |link| link["href"].delete_prefix("/zh") }
     expected = publications.select { |_, record| record.fetch("category") == category }.sort_by { |_, record| record.fetch("date") }.reverse.map(&:first)
     check(actual == expected, "Incomplete or non-chronological category #{category}: #{path}")
+    year_sections = group.css("[data-publication-year-group]")
+    expected_years = expected.map { |url| publications.fetch(url).fetch("date").year.to_s }.uniq
+    check(year_sections.map { |section| section.at_css(".publication-year-title").text } == expected_years, "Year groups must follow publication dates: #{path}")
+    year_sections.each do |section|
+      check(section.css(".publication-entry").all? { |entry| publications.fetch(entry.at_css(".publication-title a")["href"].delete_prefix("/zh")).fetch("date").year.to_s == section.at_css("h3").text }, "Publication under wrong year: #{path}")
+    end
   end
+  year_links = page.css("[data-publication-years] a")
+  check(year_links.map { |link| link["href"] } == page.css("[data-publication-category='journal-articles'] [data-publication-year-group]").map { |section| "##{section['id']}" }, "Year navigation must target each journal year once: #{path}")
   check(page.css(".publication-media, .publication-entry img").empty?, "Publication list must be text-only: #{path}")
   cards.each do |entry|
     check(!entry["data-publication-themes"].to_s.empty?, "Missing publication themes")
-    media = entry.at_css(".publication-media")
-    check(media.nil? || media["href"] == entry.at_css("h3 a")["href"], "Image/title language mismatch")
+    record = publications.fetch(entry.at_css(".publication-title a")["href"].delete_prefix("/zh"))
+    check(entry.at_css(".publication-authors").text == record.fetch("authors"), "Author emphasis changed the author list: #{path}")
+    check(entry.css(".publication-authors strong").map(&:text) == ["Wu, Y."], "PI must be emphasized without highlighting other authors")
+    role = entry.at_css(".publication-role")
+    known_role = record["wu_author_role"]
+    first_author = record.fetch("category") == "journal-articles" && record.fetch("authors").start_with?("Wu, Y.,")
+    check(!role.nil? == (!!known_role || first_author), "Missing or unsupported author role: #{record.fetch('title')}")
+    check(role.nil? || known_role || ["第一作者", "First author"].include?(role.text), "Corresponding authorship requires verified metadata")
   end
   bytes = page.css(".publication-entry img").sum do |img|
     check(img["loading"] == "lazy" && img["srcset"] && img["width"] && img["height"], "Missing responsive image attributes")
@@ -378,6 +393,22 @@ role_labels = {
   about_page = html(root, "#{prefix}/about/")
   check(!about_page.at_css(".group-page-body").text.include?(group.fetch(language).fetch("methods")), "Duplicated methods in About")
   check(about_page.css(".section-links a").map { |a| a["href"] } == %w[research people join].map { |slug| "#{prefix}/#{slug}/" }, "Missing group introduction entry points")
+  lead_project = group.fetch("projects").find { |project| project["lead"] }
+  check(about_page.at_css(".about-project a")["href"] == "#{prefix}/projects/##{lead_project.fetch('id')}", "About must link to the verified lead project")
+  group.fetch("student_research").each do |example|
+    student = students.find { |member| member.fetch("id") == example.fetch("student") }
+    entry = about_page.at_css("[data-student-research='#{student.fetch('id')}']")
+    check(entry && entry.at_css("a")["href"] == "#{prefix}#{student.fetch('paper')}", "Student research must use the member's verified publication")
+    check(entry.at_css("span").text.start_with?(student.fetch("name_#{language}")), "About must respect preferred member names")
+  end
+  lead_project = group.fetch("projects").find { |project| project["lead"] }
+  check(about_page.at_css(".about-project a")["href"] == "#{prefix}/projects/##{lead_project.fetch('id')}", "About must link to the verified lead project")
+  group.fetch("student_research").each do |example|
+    student = students.find { |member| member.fetch("id") == example.fetch("student") }
+    entry = about_page.at_css("[data-student-research='#{student.fetch('id')}']")
+    check(entry && entry.at_css("a")["href"] == "#{prefix}#{student.fetch('paper')}", "Student research must use the member's verified publication")
+    check(entry.at_css("span").text.start_with?(student.fetch("name_#{language}")), "About must respect preferred member names")
+  end
   cv_page = html(root, "#{prefix}/cv/")
   check(cv_page.at_css("#main").text.include?(admissions.fetch(language)), "CV admissions must use the shared current information")
   check(cv_page.at_css(".group-page--inner") && cv_page.css(".sidebar").empty?, "CV must share the site page layout")
@@ -395,10 +426,12 @@ role_labels = {
     check(detail && detail.at_css("h2").text == theme.fetch("title_#{language}"), "Missing research theme anchor: #{language}")
     check(detail.at_css(".research-question").text == theme.fetch("question_#{language}"), "Missing research question: #{language}")
     check(detail.css(".research-focus li").map(&:text) == theme.fetch("focus_#{language}"), "Detailed topics must remain in Research")
-    check(detail.css("p").last.text == theme.fetch("text_#{language}"), "Missing research discussion: #{language}")
+    check(detail.css(".research-discussion p").map(&:text) == theme.fetch("paragraphs_#{language}"), "Missing research discussion: #{language}")
+    check(detail.css(".research-discussion p").all? { |paragraph| paragraph.text.length < (language == 'zh' ? 200 : 600) }, "Research paragraphs too long for mobile reading: #{language}")
     links = detail.css(".research-papers a").map { |a| a["href"] }
-    check(links == theme.fetch("papers").map { |path| "#{prefix}#{path}" }, "Incorrect theme publications: #{language}")
-    theme.fetch("papers").each { |path| check(publications.key?(path), "Unknown research publication: #{path}") }
+    check(links == theme.fetch("papers").map { |reading| "#{prefix}#{reading.fetch('path')}" }, "Incorrect theme publications: #{language}")
+    check(detail.css(".research-papers a").map(&:text) == theme.fetch("papers").map { |reading| reading.fetch("title_#{language}") }, "Missing localized research labels: #{language}")
+    theme.fetch("papers").each { |reading| check(publications.key?(reading.fetch('path')), "Unknown research publication: #{reading.fetch('path')}") }
     check(cv_page.css("#main a").any? { |a| a.text == theme.fetch("title_#{language}") && a["href"] == "#{prefix}/research/##{theme.fetch('id')}" }, "Inconsistent CV research theme: #{language}")
   end
   check(page.css(".home-highlight").length == homepage.fetch("highlights").length, "Missing homepage highlights: #{language}")
@@ -413,13 +446,15 @@ role_labels = {
     check(entry && entry.at_css("h3 a").text == highlight.fetch("title_#{language}"), "Untranslated homepage highlight: #{language}")
     check(entry.at_css("h3 a")["href"] == "#{prefix}#{highlight.fetch('paper')}", "Wrong homepage publication link: #{language}")
     check(entry.at_css("p:not(.home-highlight-source)").text == highlight.fetch("summary_#{language}"), "Missing homepage contribution: #{language}")
-    figure = entry.at_css(".home-original-figure")
-    check(figure.at_css("figcaption span").text == highlight.fetch("figure_caption_#{language}"), "Missing original-figure provenance: #{language}")
-    check(figure.at_css("a")["href"] == "#{prefix}#{highlight.fetch('paper')}", "Original figure must link to localized research")
+    figure = entry.at_css(".home-research-figure")
+    check(figure.at_css("figcaption span").text == highlight.fetch("figure_caption_#{language}"), "Missing highlight figure caption: #{language}")
+    check(figure.at_css("a")["href"] == "#{prefix}#{highlight.fetch('paper')}", "Highlight figure must link to localized research")
     image = figure.at_css("img")
-    expected_image = "/images/research-originals/#{highlight.fetch('figure')}-1280.webp"
-    check(image["src"] == expected_image && image["srcset"] && image["width"] == "1280" && image["height"] == highlight.fetch("figure_height").to_s, "Invalid original-figure asset or dimensions")
-    check(image["alt"] == highlight.fetch("figure_caption_#{language}"), "Untranslated original-figure alternative text")
+    image_info = publication_images.fetch(record.fetch("visual"))
+    expected_image = image_info.fetch("medium")
+    check(image["src"] == expected_image && image["srcset"] && image["width"].to_i == image_info.fetch("width") && image["height"].to_i == image_info.fetch("height"), "Invalid highlight figure asset or dimensions")
+    check(figure.at_css(".figure-zoom")["href"] == image_info.fetch("large"), "Highlight full-size link uses a different figure")
+    check(image["alt"] == record.fetch("visual_alt_#{language}"), "Untranslated highlight figure alternative text")
     check(root.join(expected_image.delete_prefix("/")).size < 200_000, "Homepage figure exceeds image budget")
     venue = entry.at_css(".home-highlight-source i").text
     check(selection.fetch("allowed_venues").include?(venue), "Unapproved homepage journal: #{venue}")

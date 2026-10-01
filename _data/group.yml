@@ -14,6 +14,12 @@ en:
     The UTSI Research Group, led by Associate Professor Yangyi Wu at Wuhan University's School of Urban Design, conducts empirical research in urban and economic geography. Our work concerns the spatial organization of firm location, housing markets and public resources, and how these processes shape development opportunities across places and social groups.
   agenda: >-
     Urban change affects places and people differently. We connect economic transformation, spatial restructuring and the distribution of opportunities, moving between regions, cities, neighborhoods and individual experience. Our aim is to explain how these differences arise and the conditions under which they persist or change.
+  work_title: Questions and evidence
+  work_intro: >-
+    Our NSFC Young Scientists Fund project in Wuhan asks how objective amenity conditions and personal perceptions relate to talent's choices of living space. Comparing spatial data with surveys and interviews helps explain why the same local environment can mean different things to different people.
+  students_title: Students in research
+  students_intro: >-
+    Student collaborations have produced publications on urban sprawl, industrial location and housing markets. These studies connect specific planning questions with spatial analysis. Members share their experiences of developing research questions, working with data and revising papers on the People page.
   methods_title: Data and methods
   methods: >-
     Two relationships deserve particular attention: proximity becomes real connection only through daily flows between centers, and provision becomes actual use only through residents' experience. Park accessibility metrics and residents' own assessments sometimes point in opposite directions.
@@ -54,6 +60,12 @@ zh:
     课题组由武汉大学城市设计学院伍杨屹副教授牵头，从事城市与经济地理的实证研究，关注企业区位、住房市场和公共资源的空间组织，以及这些过程如何影响不同地方、不同人群的发展机会。
   agenda: >-
     城市变化对不同地方和人群的影响并不相同。我们把经济转型、空间重构和机会分配联系起来，在区域、城市、社区与个体经验之间寻找解释，理解这些差异如何形成，以及在什么条件下延续或改变。
+  work_title: 问题与证据
+  work_intro: >-
+    课题组主持的国家自然科学基金青年项目以武汉为例，研究设施的客观条件与个人感知如何影响人才的生活空间选择。空间数据与问卷、访谈相互对照，帮助解释同样的地方环境为何对应不同的居住体验和选择。
+  students_title: 学生参与研究
+  students_intro: >-
+    与学生合作的研究已在城市蔓延、产业区位和住房市场等议题上形成论文成果。这些研究从具体的规划问题出发，结合空间分析寻找解释。成员在团队页面分享了选题、数据处理和论文修改过程中的收获。
   methods_title: 数据与方法
   methods: >-
     两组关系尤其值得关注：从地理邻近到实际联系，需要中心之间的日常流动来验证；从资源供给到实际使用，中间隔着居民的体验。公园的可达性指标和居民自己的评价，有时指向相反的方向。
@@ -86,6 +98,16 @@ zh:
   exchange: >-
     欢迎访问学生、访问学者来组交流，也欢迎有意开展合作研究的同行邮件联系。
   news_intro: 伍杨屹及合作者的论文发表与学术活动。
+student_research:
+  - student: z
+    title_zh: 城市蔓延与设施空间
+    title_en: Urban sprawl and amenities
+  - student: t
+    title_zh: 产业区位与地方优势
+    title_en: Industrial location and place advantage
+  - student: q
+    title_zh: 邻里设施与住房价格
+    title_en: Neighborhood amenities and housing prices
 research_values:
   - word: Understand
     label_zh: 理解问题

@@ -4,6 +4,7 @@
 {% assign role_key = 'role_' | append: page.lang %}
 {% assign funder_key = 'funder_' | append: page.lang %}
 {% assign focus_key = 'focus_' | append: page.lang %}
+{% assign paragraphs_key = 'paragraphs_' | append: page.lang %}
 <nav class="section-links research-sections" aria-label="{% if page.lang == 'zh' %}研究页目录{% else %}Research sections{% endif %}">
   {% for theme in site.data.research %}<a href="#{{ theme.id }}">{{ theme[title_key] }}</a>{% endfor %}
   <a href="#research-methods">{{ g.methods_title }}</a>
@@ -17,13 +18,13 @@
   <p class="research-question">{% if page.lang == 'zh' %}{{ theme.question_zh }}{% else %}{{ theme.question_en }}{% endif %}</p>
   <ul class="research-focus">{% for topic in theme[focus_key] %}<li>{{ topic }}</li>{% endfor %}</ul>
   <div class="research-theme-body">
-  <p class="research-discussion">{% if page.lang == 'zh' %}{{ theme.text_zh }}{% else %}{{ theme.text_en }}{% endif %}</p>
+  <div class="research-discussion">{% for paragraph in theme[paragraphs_key] %}<p>{{ paragraph }}</p>{% endfor %}</div>
   <aside class="research-related" aria-labelledby="{{ theme.id }}-papers-title">
   <h3 id="{{ theme.id }}-papers-title">{% if page.lang == 'zh' %}相关成果{% else %}Related publications{% endif %}</h3>
   <ul class="research-papers">
-  {% for path in theme.papers %}
-    {% assign paper = site.publications | where: 'publication_url', path | first %}
-    <li><a href="{% if page.lang == 'zh' %}{{ paper.alternate_url | relative_url }}{% else %}{{ paper.url | relative_url }}{% endif %}">{{ paper.title }}</a> <span>({{ paper.date | date: '%Y' }})</span></li>
+  {% for reading in theme.papers %}
+    {% assign paper = site.publications | where: 'publication_url', reading.path | first %}
+    <li><a href="{% if page.lang == 'zh' %}{{ paper.alternate_url | relative_url }}{% else %}{{ paper.url | relative_url }}{% endif %}">{{ reading[title_key] }}</a><span class="research-paper-source"><i>{{ paper.venue }}</i> · {{ paper.date | date: '%Y' }}</span></li>
   {% endfor %}
   </ul>
   </aside>

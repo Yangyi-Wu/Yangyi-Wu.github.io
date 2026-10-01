@@ -16,11 +16,22 @@
   </div>
 </div>
 {% assign publications_by_date = site.publications | sort: 'date' | reverse %}
+{% assign journals = publications_by_date | where: 'category', 'journal-articles' %}
+{% assign journal_years = journals | group_by_exp: 'publication', "publication.date | date: '%Y'" %}
+<nav class="publication-years" data-publication-years aria-label="{% if page.lang == 'zh' %}按年份浏览期刊论文{% else %}Journal articles by year{% endif %}">
+  <span>{% if page.lang == 'zh' %}期刊年份{% else %}Journal years{% endif %}</span>
+  {% for year in journal_years %}<a href="#publications-journal-articles-{{ year.name }}">{{ year.name }}</a>{% endfor %}
+</nav>
 {% for category in site.publication_category %}
 <div class="publication-group" data-publication-category="{{ category[0] }}">
   <h2>{% if page.lang == 'zh' %}{{ category[1].title_zh }}{% else %}{{ category[1].title }}{% endif %}</h2>
-  {% for post in publications_by_date %}
-    {% if post.category == category[0] %}{% include publication-card.html paper=post %}{% endif %}
+  {% assign category_publications = publications_by_date | where: 'category', category[0] %}
+  {% assign years = category_publications | group_by_exp: 'publication', "publication.date | date: '%Y'" %}
+  {% for year in years %}
+  <section class="publication-year" data-publication-year-group id="publications-{{ category[0] }}-{{ year.name }}" aria-labelledby="year-{{ category[0] }}-{{ year.name }}">
+    <h3 class="publication-year-title" id="year-{{ category[0] }}-{{ year.name }}">{{ year.name }}</h3>
+    <div class="publication-year-entries">{% for post in year.items %}{% include publication-card.html paper=post %}{% endfor %}</div>
+  </section>
   {% endfor %}
 </div>
 {% endfor %}

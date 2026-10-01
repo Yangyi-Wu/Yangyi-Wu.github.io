@@ -383,5 +383,19 @@
     "small": "/images/publications/urban-form-power-capital-2026-v2-reviewed-small.webp",
     "medium": "/images/publications/urban-form-power-capital-2026-v2-reviewed-medium.webp",
     "large": "/images/publications/urban-form-power-capital-2026-v2-reviewed-large.webp"
+  },
+  "/images/publications/park-equity-experience-v5-reviewed.png": {
+    "width": 1254,
+    "height": 1254,
+    "small": "/images/publications/park-equity-experience-v5-reviewed-small.webp",
+    "medium": "/images/publications/park-equity-experience-v5-reviewed-medium.webp",
+    "large": "/images/publications/park-equity-experience-v5-reviewed-large.webp"
+  },
+  "/images/publications/urban-form-power-capital-2026-v3-reviewed.png": {
+    "width": 1254,
+    "height": 1254,
+    "small": "/images/publications/urban-form-power-capital-2026-v3-reviewed-small.webp",
+    "medium": "/images/publications/urban-form-power-capital-2026-v3-reviewed-medium.webp",
+    "large": "/images/publications/urban-form-power-capital-2026-v3-reviewed-large.webp"
   }
 }

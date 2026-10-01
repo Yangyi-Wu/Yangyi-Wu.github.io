@@ -10,8 +10,9 @@ layout: default
     <div class="group-page-body publication-page">
       <header>
         <h1 class="page__title">{{ page.title }}</h1>
-        <p class="publication-authors">{{ page.authors | escape }}</p>
-        <p class="publication-venue"><i>{{ page.venue }}</i> · {{ page.date | date: '%Y' }}</p>
+        <p class="publication-authors">{% include publication-authors.html authors=page.authors %}</p>
+        {% capture role_label %}{% include publication-role.html paper=page %}{% endcapture %}
+        <p class="publication-venue"><i>{{ page.venue }}</i> · {{ page.date | date: '%Y' }}{% if role_label != '' %} · <span class="publication-role">{{ role_label }}</span>{% endif %}</p>
         {% include publication-links.html paper=page %}
       </header>
       <section class="page__content">
@@ -33,7 +34,7 @@ layout: default
           {% assign visual_alt = page.visual_alt_en %}
           {% if page.lang == 'zh' %}{% assign visual_alt = page.visual_alt_zh %}{% endif %}
           {% assign image_info = site.data.publication_images[page.visual] %}
-          <figure class="publication-figure{% if image_info.height > image_info.width %} publication-figure--portrait{% endif %}">
+          <figure class="publication-figure{% if image_info.height >= image_info.width %} publication-figure--compact{% endif %}">
             <a data-figure-open href="{{ image_info.large | relative_url }}" target="_blank" rel="noopener" aria-label="{% if page.lang == 'zh' %}查看大图{% else %}View full-size figure{% endif %}" title="{% if page.lang == 'zh' %}查看大图{% else %}View full-size figure{% endif %}">
               {% include publication-image.html path=page.visual alt=visual_alt %}
               <span class="publication-figure-zoom" aria-hidden="true"><i class="fa-solid fa-expand" aria-hidden="true"></i></span>
