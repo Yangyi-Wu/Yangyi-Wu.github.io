@@ -1,0 +1,23 @@
+/*
+ * Refinements layered on top of _research-site.scss.
+ * Kept separate so the base stylesheet stays easy to diff.
+ */
+
+/* Minimum legible size for secondary labels */
+.group-brand-label { font-size: 12px; }
+.home-hero .photo-credit, .language-entry .photo-credit { font-size: 12px; }
+.footer-colophon { font-size: 12px; }
+
+@media (max-width: 767px) {
+  /* PI profile: photo + identity side by side, links as one row, bio full width */
+  .home-pi-profile { grid-template-columns: 112px minmax(0, 1fr); gap: 20px; align-items: start; }
+  .home-pi-person { display: contents; }
+  .home-pi-person > img { grid-column: 1; grid-row: 1; width: 112px; }
+  .home-pi-identity { grid-column: 2; grid-row: 1; align-self: end; }
+  .home-pi-profile .home-pi-role { font-size: 13px; line-height: 1.7; margin-top: 6px; }
+  .home-pi-description .home-pi-links { grid-column: 1 / -1; grid-row: 2; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 0 24px; margin: -4px 0 0; padding: 0 0 4px; border-bottom: 1px solid var(--global-border-color); }
+  .home-pi-profile .home-pi-bio { grid-column: 1 / -1; grid-row: 3; }
+
+  .home-hero .group-eyebrow, .home-pi-profile .group-eyebrow, .language-entry .group-eyebrow { font-size: 12px; }
+  .home-hero .photo-credit, .language-entry .photo-credit { font-size: 11px; }
+}

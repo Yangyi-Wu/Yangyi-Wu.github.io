@@ -39,6 +39,7 @@ $site-asset-version: "{{ site.time | date: '%s' }}";
     "layout/sidebar",
     "layout/json_cv",
     "layout/research-site",
+    "layout/research-site-refinements",
 
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
