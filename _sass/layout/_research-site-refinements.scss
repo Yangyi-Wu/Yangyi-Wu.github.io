@@ -53,7 +53,7 @@ html[data-theme="dark"] .home-research-figure img { filter: brightness(.88); }
 
 /* ---------- PI ---------- */
 .home-content > .home-profile { max-width: none; padding: 0; background: var(--site-band); }
-.home-content > .home-profile .home-pi-profile { display: flex; align-items: center; justify-content: space-between; gap: 32px 64px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding: 48px 40px; }
+.home-content > .home-profile .home-pi-profile { display: flex; align-items: center; justify-content: space-between; gap: 32px 64px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding: 48px 40px; box-sizing: content-box; }
 .home-pi-person { flex-direction: row; align-items: center; gap: 28px; }
 .home-pi-person > img { width: 120px; }
 .home-pi-profile h2 { font-size: 28px; }
