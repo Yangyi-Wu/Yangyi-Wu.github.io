@@ -24,14 +24,26 @@
     if (link) remember(link.dataset.languageOption);
   });
 
-  // The shared entry asks new visitors; only an explicit saved choice redirects.
+  function browserLanguage() {
+    var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || ""];
+    for (var i = 0; i < list.length; i++) {
+      var tag = String(list[i] || "").toLowerCase();
+      if (tag.indexOf("zh") === 0) return "zh";
+      if (tag.indexOf("en") === 0) return "en";
+    }
+    return "en";
+  }
+
+  // The shared entry sends visitors straight to a homepage: an explicit query
+  // wins, then a saved choice, then the browser language. Without JavaScript
+  // the chooser page remains as the fallback.
   if (root.dataset.languageEntry === "true") {
     var preference = requested;
     if (preference !== "zh" && preference !== "en") {
-      try { preference = localStorage.getItem(key); } catch (error) { /* Keep the chooser available. */ }
+      try { preference = localStorage.getItem(key); } catch (error) { preference = null; }
+      if (preference !== "zh" && preference !== "en") preference = browserLanguage();
     } else remember(preference);
-    if (preference === "zh") navigate(root.dataset.chineseHome);
-    if (preference === "en") navigate(root.dataset.englishHome);
+    navigate(preference === "zh" ? root.dataset.chineseHome : root.dataset.englishHome);
     return;
   }
 

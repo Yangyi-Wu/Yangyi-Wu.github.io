@@ -27,22 +27,15 @@
     </div>
     {% include photo-credit.html photo=site.data.site_visual.home_photo %}
   </header>
-  <section class="home-section home-profile" aria-labelledby="home-pi-name">
-    <div class="home-pi-profile" id="home-pi">
-      <div class="home-pi-person">
-        <img src="{{ '/images/yangyi-wu-portrait.png' | relative_url }}?v=20260928-2" width="180" height="225" alt="{{ g.pi_name }}" loading="lazy" decoding="async">
-        <div class="home-pi-identity">
-          <p class="group-eyebrow">{% if page.lang == 'zh' %}课题组负责人 · PI{% else %}Principal investigator{% endif %}</p>
-          <h2 id="home-pi-name">{{ g.pi_name }}</h2>
-          <p class="home-pi-role">{{ g.pi_role }}<br>{{ g.affiliation }}</p>
+  <section class="home-band home-about" aria-labelledby="home-about-title">
+    <div class="home-about-inner">
+      <h2 id="home-about-title" class="home-band-label">{% if page.lang == 'zh' %}关于课题组{% else %}About the group{% endif %}</h2>
+      <div class="home-about-body">
+        <div class="home-pi-topic home-about-statement">
+          <h3 class="visually-hidden">{% if page.lang == 'zh' %}研究关注{% else %}Research focus{% endif %}</h3>
+          <p>{{ home.pi_statement }}</p>
         </div>
-      </div>
-      <div class="home-pi-description">
-        <div class="home-pi-bio">
-          <div class="home-pi-topic">
-            <h3>{% if page.lang == 'zh' %}研究关注{% else %}Research focus{% endif %}</h3>
-            <p>{{ home.pi_statement }}</p>
-          </div>
+        <div class="home-about-columns">
           <div class="home-pi-topic">
             <h3>{% if page.lang == 'zh' %}研究方法{% else %}Research methods{% endif %}</h3>
             <p>{{ home.pi_approach }}</p>
@@ -52,11 +45,6 @@
             <p>{{ home.pi_data }}</p>
           </div>
         </div>
-        <nav class="home-pi-links section-links" aria-label="{% if page.lang == 'zh' %}PI 个人资料与联系{% else %}PI profile and contact{% endif %}">
-          <a href="{{ language_prefix | append: '/cv/' | relative_url }}">{{ g.cv }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-          <a href="{{ site.author.googlescholar }}">Google Scholar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-          <a href="mailto:yangyi.wu@whu.edu.cn">{% if page.lang == 'zh' %}邮件联系{% else %}Email{% endif %} <i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
-        </nav>
       </div>
     </div>
   </section>
@@ -75,7 +63,6 @@
         </div>
         <div class="home-theme-copy">
           <p class="home-theme-question">{{ theme[question_key] }}</p>
-          <p class="home-theme-overview">{{ theme[overview_key] }}</p>
           <a class="text-link" href="{{ language_prefix | append: '/research/' | relative_url }}#{{ theme.id }}">{% if page.lang == 'zh' %}了解{{ theme.title_zh }}研究{% else %}Explore {{ theme.title_en | downcase }}{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
       </section>
@@ -104,13 +91,30 @@
           <a class="publication-media" href="{{ language_prefix | append: paper.url | relative_url }}" aria-label="{{ highlight[title_key] | escape }}">
             {% assign image_alt_key = 'visual_alt_' | append: page.lang %}
             {% assign image_alt = paper[image_alt_key] %}
-            {% include publication-image.html path=paper.visual alt=image_alt sizes='(max-width: 767px) calc(100vw - 48px), (max-width: 1280px) 46vw, 580px' %}
+            {% include publication-image.html path=paper.visual alt=image_alt sizes='(max-width: 767px) calc(100vw - 48px), 400px' %}
           </a>
           <figcaption><span>{{ highlight[caption_key] }}</span><a class="figure-zoom" href="{{ image_info.large | relative_url }}" target="_blank" rel="noopener" aria-label="{% if page.lang == 'zh' %}在新标签页查看大图：{% else %}Open full-size figure in a new tab: {% endif %}{{ highlight[title_key] | escape }}">{% if page.lang == 'zh' %}查看大图{% else %}Full size{% endif %} <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></figcaption>
         </figure>
       </article>
       {% endif %}
     {% endfor %}
+    </div>
+  </section>
+  <section class="home-band home-profile" aria-labelledby="home-pi-name">
+    <div class="home-pi-profile" id="home-pi">
+      <div class="home-pi-person">
+        <img src="{{ '/images/yangyi-wu-portrait.png' | relative_url }}?v=20260928-2" width="180" height="225" alt="{{ g.pi_name }}" loading="lazy" decoding="async">
+        <div class="home-pi-identity">
+          <p class="group-eyebrow">{% if page.lang == 'zh' %}课题组负责人 · PI{% else %}Principal investigator{% endif %}</p>
+          <h2 id="home-pi-name">{{ g.pi_name }}</h2>
+          <p class="home-pi-role">{{ g.pi_role }}<br>{{ g.affiliation }}</p>
+        </div>
+      </div>
+      <nav class="home-pi-links section-links" aria-label="{% if page.lang == 'zh' %}PI 个人资料与联系{% else %}PI profile and contact{% endif %}">
+        <a href="{{ language_prefix | append: '/cv/' | relative_url }}">{{ g.cv }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        <a href="{{ site.author.googlescholar }}">Google Scholar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        <a href="mailto:yangyi.wu@whu.edu.cn">{% if page.lang == 'zh' %}邮件联系{% else %}Email{% endif %} <i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
+      </nav>
     </div>
   </section>
   <div class="home-bottom-grid home-section">
@@ -133,9 +137,10 @@
       <a href="mailto:yangyi.wu@whu.edu.cn">yangyi.wu@whu.edu.cn</a>
     </p>
     <aside class="home-values" aria-label="{% if page.lang == 'zh' %}研究与成长{% else %}Research and growth{% endif %}">
+      <p class="home-values-label">{% if page.lang == 'zh' %}课题组的研究与成长理念{% else %}How we work and grow together{% endif %}</p>
       <a href="{{ language_prefix | append: '/join/' | relative_url }}#join-values-title">
         <span class="home-values-words" lang="en">{% for value in site.data.group.research_values %}<span><b>{{ value.word | slice: 0 }}</b>{{ value.word | slice: 1, 99 }}</span>{% endfor %}</span>
-        <span class="home-values-caption">{% if page.lang == 'zh' %}理解问题 · 独立思考 · 严谨求知 · 相互启发{% else %}Research and growth{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+        <span class="home-values-caption">{% if page.lang == 'zh' %}理解问题 · 独立思考 · 严谨求知 · 相互启发{% else %}Context · Independent thinking · Rigorous inquiry · Learning together{% endif %} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
       </a>
     </aside>
   </section>
