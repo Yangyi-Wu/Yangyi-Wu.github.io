@@ -24,10 +24,14 @@ function run(options = {}) {
   return result;
 }
 
-test('first visit shows chooser regardless of browser language', () => {
-  for (const languages of [['en-US'], ['zh-CN'], ['fr', 'zh-TW']]) {
-    assert.deepEqual(run({ entry: true, path: '/', languages }).redirects, []);
-  }
+test('first visit follows browser language', () => {
+  assert.deepEqual(run({ entry: true, path: '/', languages: ['en-US'] }).redirects, ['https://example.com/en/#section']);
+  assert.deepEqual(run({ entry: true, path: '/', languages: ['zh-CN'] }).redirects, ['https://example.com/zh/#section']);
+  assert.deepEqual(run({ entry: true, path: '/', languages: ['fr', 'zh-TW'] }).redirects, ['https://example.com/zh/#section']);
+  assert.deepEqual(run({ entry: true, path: '/', languages: ['fr'] }).redirects, ['https://example.com/en/#section']);
+});
+test('saved choice beats browser language', () => {
+  assert.deepEqual(run({ entry: true, saved: 'en', languages: ['zh-CN'] }).redirects, ['https://example.com/en/#section']);
 });
 test('saved preferences redirect only the shared entry', () => {
   assert.deepEqual(run({ entry: true, saved: 'en' }).redirects, ['https://example.com/en/#section']);
@@ -36,9 +40,9 @@ test('saved preferences redirect only the shared entry', () => {
   assert.equal(run({ saved: 'zh', home: false, path: '/publications/' }).redirects.length, 0);
   assert.equal(run({ lang: 'zh', saved: 'en', path: '/zh/', alternate: '/' }).redirects.length, 0);
 });
-test('storage failure preserves the chooser and manual navigation', () => {
+test('storage failure falls back to browser language and keeps manual navigation', () => {
   const state = run({ entry: true, noStorage: true, languages: ['zh'] });
-  assert.equal(state.redirects.length, 0);
+  assert.deepEqual(state.redirects, ['https://example.com/zh/#section']);
   assert.doesNotThrow(() => state.listeners.click({ target: { closest: () => ({ dataset: { languageOption: 'en' } }) } }));
 });
 test('legacy query resolves to the translated page and preserves other params and hash', () => {
@@ -61,5 +65,5 @@ test('entry language query overrides saved preference and preserves tracking par
   const state = run({ entry: true, saved: 'zh', search: '?lang=en&ref=1' });
   assert.deepEqual(state.redirects, ['https://example.com/en/?ref=1#section']);
   assert.deepEqual(state.saved, ['en']);
-  assert.deepEqual(run({ entry: true, saved: 'invalid' }).redirects, []);
+  assert.deepEqual(run({ entry: true, saved: 'invalid' }).redirects, ['https://example.com/en/#section']);
 });
