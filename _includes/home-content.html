@@ -48,10 +48,10 @@
       </div>
       <aside class="home-profile home-about-pi" aria-labelledby="home-pi-name">
         <div class="home-pi-profile" id="home-pi">
+          <p class="home-band-label">{% if page.lang == 'zh' %}课题组负责人 · PI{% else %}Principal investigator{% endif %}</p>
           <div class="home-pi-person">
             <img src="{{ '/images/yangyi-wu-portrait.png' | relative_url }}?v=20260928-2" width="180" height="225" alt="{{ g.pi_name }}" loading="lazy" decoding="async">
             <div class="home-pi-identity">
-              <p class="group-eyebrow">{% if page.lang == 'zh' %}课题组负责人 · PI{% else %}Principal investigator{% endif %}</p>
               <h2 id="home-pi-name">{{ g.pi_name }}</h2>
               <p class="home-pi-role">{{ g.pi_role }}<br>{{ g.affiliation }}</p>
             </div>

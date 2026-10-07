@@ -10,7 +10,7 @@
 .footer-colophon { font-size: 12px; }
 
 .home-band { position: relative; }
-.home-band-label { margin: 0 0 18px; padding-top: 0; font-size: 13px !important; font-weight: 600; line-height: 1.6 !important; color: var(--global-link-color); letter-spacing: .04em; }
+.home-band-label { margin: 0 0 20px; padding-top: 0; font-size: 13px !important; font-weight: 600; line-height: 1.6 !important; color: var(--global-link-color); letter-spacing: 0; }
 html[lang="en"] .home-band-label { text-transform: uppercase; }
 
 /* Section headings get one consistent, larger scale */
@@ -22,13 +22,14 @@ html[lang="en"] .home-band-label { text-transform: uppercase; }
 .home-hero .group-home-title { font-size: 64px; }
 
 /* ---------- About the group ---------- */
-.home-about-inner { display: grid; grid-template-columns: minmax(0, 1fr) 340px; align-items: start; gap: 72px; max-width: 1280px; margin: 0 auto; padding: 64px 40px; }
+.home-about-inner { display: grid; grid-template-columns: minmax(0, 1fr) 340px; align-items: start; gap: 72px; max-width: 1280px; margin: 0 auto; padding: 56px 40px; }
 .home-about-body { min-width: 0; }
-.home-about-statement p { margin: 0; font-size: 26px !important; line-height: 1.65; font-weight: 500; color: var(--global-text-color); text-wrap: pretty; }
-html[lang="en"] .home-about-statement p { font-size: 24px !important; }
-.home-about-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--global-border-color); }
+.home-about .home-band-label { margin: 0 0 20px; }
+.home-about-statement p { margin: 0; font-size: 22px !important; line-height: 1.75; font-weight: 400; color: var(--global-text-color); text-wrap: pretty; }
+html[lang="en"] .home-about-statement p { font-size: 21px !important; line-height: 1.6; }
+.home-about-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: 28px; padding-top: 0; border: 0; }
 .home-about-columns h3 { margin: 0 0 8px; font-size: 15px !important; line-height: 1.6; }
-.home-about-columns p { margin: 0; font-size: 15px; line-height: 1.85; color: var(--global-text-color); }
+.home-about-columns p { margin: 0; font-size: 15px; line-height: 1.85; color: var(--global-text-color-light); text-wrap: pretty; }
 
 /* ---------- Research framework on a band ---------- */
 .home-content > .home-research { max-width: none; background: var(--site-band); padding-left: 0; padding-right: 0; }
@@ -50,14 +51,16 @@ html[lang="en"] .home-about-statement p { font-size: 24px !important; }
 .home-research-figure figcaption { align-items: flex-start; }
 html[data-theme="dark"] .home-research-figure img { filter: brightness(.88); }
 
-/* ---------- PI card beside the group introduction ---------- */
-.home-about-pi { padding: 24px; background: var(--site-band); }
+/* ---------- Unframed PI profile, aligned with the introduction ---------- */
+.home-about-pi { padding: 0; background: transparent; min-width: 0; }
 .home-about-pi .home-pi-profile { display: block; }
-.home-about-pi .home-pi-person { display: flex; flex-direction: row; align-items: center; gap: 18px; }
-.home-about-pi .home-pi-person > img { width: 92px; }
-.home-about-pi .home-pi-profile h2 { font-size: 24px; }
-.home-about-pi .home-pi-profile .home-pi-role { font-size: 13px; line-height: 1.7; margin-top: 4px; }
-.home-about-pi .home-pi-profile .home-pi-links { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 0 16px; margin: 14px 0 0; padding-top: 6px; border-top: 1px solid var(--global-border-color); font-size: 13px; }
+.home-about-pi .home-pi-person { display: flex; flex-direction: row; align-items: flex-start; gap: 20px; }
+.home-about-pi .home-pi-person > img { width: 128px; flex: 0 0 128px; }
+.home-about-pi .home-pi-identity { padding-top: 2px; }
+.home-about-pi .home-pi-profile h2 { font-size: 26px; line-height: 1.35; }
+.home-about-pi .home-pi-profile .home-pi-role { font-size: 14px; line-height: 1.8; margin-top: 12px; }
+.home-about-pi .home-pi-profile .home-pi-links { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 0 20px; margin: 14px 0 0; padding: 0; border: 0; font-size: 13px; }
+.home-about-pi .home-pi-links a { min-height: 44px; }
 .home-about-pi .home-pi-links a { gap: 6px; }
 
 /* ---------- News + join ---------- */
@@ -70,8 +73,8 @@ html[data-theme="dark"] .home-research-figure img { filter: brightness(.88); }
 /* ---------- Tablet ---------- */
 @media (max-width: 1100px) {
   .home-hero .group-home-title { font-size: 52px; }
-  .home-about-inner { grid-template-columns: minmax(0, 1fr); gap: 32px; }
-  .home-about-pi { max-width: 420px; }
+  .home-about-inner { grid-template-columns: minmax(0, 1fr) 300px; gap: 40px; }
+  .home-about-columns { grid-template-columns: minmax(0, 1fr); gap: 18px; }
   .home-highlight { grid-template-columns: minmax(0, 1fr) 300px; gap: 40px; }
 }
 
@@ -84,10 +87,13 @@ html[data-theme="dark"] .home-research-figure img { filter: brightness(.88); }
   .home-hero .photo-credit, .language-entry .photo-credit { font-size: 11px; }
   .language-entry .group-eyebrow { font-size: 12px; }
 
-  .home-about-inner { padding: 40px 24px; gap: 28px; }
-  .home-about-pi { padding: 20px; max-width: none; }
+  .home-about-inner { grid-template-columns: minmax(0, 1fr); padding: 40px 24px; gap: 32px; }
+  .home-about-pi { padding: 0; max-width: none; }
   .home-about-statement p, html[lang="en"] .home-about-statement p { font-size: 19px !important; line-height: 1.7; }
-  .home-about-columns { grid-template-columns: minmax(0, 1fr); gap: 20px; margin-top: 24px; padding-top: 20px; }
+  .home-about-columns { grid-template-columns: minmax(0, 1fr); gap: 20px; margin-top: 24px; padding-top: 0; }
+  .home-about-pi .home-pi-person > img { width: 112px; flex-basis: 112px; }
+  .home-about-pi .home-pi-profile h2 { font-size: 24px; }
+  .home-about-pi .home-pi-person { gap: 18px; }
 
   .home-research > .home-section-heading, .home-research > .home-research-areas { padding-left: 24px; padding-right: 24px; }
   .home-research-areas section + section { border-top-color: var(--global-dark-border-color); }
